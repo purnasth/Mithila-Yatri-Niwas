@@ -17,11 +17,31 @@
   span,
   button,
   input,
-  label {
+  label,
+  body {
     @apply font-body;
+  }
+
+  section {
+    @apply py-[12rem] px-[1rem];
   }
 
   .transition-linear {
     @apply transition-all duration-300 ease-linear;
   }
+}
+
+.slick-initialized .slick-slide {
+  @apply px-2;
+}
+
+.slick-dots li {
+  margin: 0 5px;
+  cursor: pointer;
+  /* transform: scale(0.75); */
+}
+
+.slick-dots li.slick-active button:before {
+  color: #be6138;
+  transform: scale(1.5);
 }

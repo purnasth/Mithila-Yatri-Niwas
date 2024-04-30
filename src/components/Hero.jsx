@@ -11,7 +11,7 @@ const Hero = () => {
   }
 
   return (
-    <section className="absolute top-0 w-full h-full lg:h-screen overflow-hidden">
+    <div className="relative top-0 w-full h-full lg:h-screen overflow-hidden -mt-36">
       {/* <div className="overlay absolute top-0 left-0 w-screen h-screen bg-[rgba(0,0,0,0.25)]"></div> */}
       <video
         ref={videoRef}
@@ -30,7 +30,7 @@ const Hero = () => {
         A video of Mithila Yatri Niwas where you can see the beautiful
         infrastructure of the resort and the heritage of Janaki Temple.
       </video>
-    </section>
+    </div>
   );
 };
 
