@@ -35,8 +35,8 @@ const Accommodation = () => {
 
   return (
     <>
-      <section className="bg-alt-bg">
-        <div className="container">
+      <section className="bg-gradient-to-t from-logo-bg to-alt-bg p-10">
+        <div className="containe r">
           <div className="grid grid-cols-1 md:grid-cols-3 md:gap-8">
             <div className="col-span-1 md:col-span-1 text-center md:text-left">
               <h2 className="text-3xl text-primary">Accommodation</h2>

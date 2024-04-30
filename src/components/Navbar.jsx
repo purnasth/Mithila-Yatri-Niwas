@@ -128,7 +128,7 @@ const Navbar = () => {
                         <li key={subLink.id}>
                           <a
                             href={subLink.link}
-                            className="inline-block text-sm w-full h-full px-4 py-3 transition-linear drop-shadow-lg hover:scale-110 border-t border-b border-custom-white/50"
+                            className="inline-block hover:bg-custom-black/50 text-sm w-full h-full px-4 py-3 transition-linear drop-shadow-lg hover:scale-110 border-t border-b border-custom-white/50"
                           >
                             {subLink.title}
                           </a>
