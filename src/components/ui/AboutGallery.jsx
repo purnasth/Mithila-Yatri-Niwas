@@ -3,6 +3,8 @@ import room1 from "../../assets/rooms/room1.webp";
 import room2 from "../../assets/rooms/room2.webp";
 import hall1 from "../../assets/halls/hall1.webp";
 import exterior1 from "../../assets/halls/exterior1.webp";
+import exterior2 from "../../assets/halls/exterior2.webp";
+import exterior3 from "../../assets/halls/exterior3.webp";
 
 import LightGallery from "lightgallery/react";
 import lgZoom from "lightgallery/plugins/zoom";
@@ -21,8 +23,8 @@ const AboutGallery = () => {
   const galleryImages = [
     {
       id: 1,
-      url: "https://mayurstay.com/hotelhimalaya/images/mservices/mBk0x-1.jpg",
-      alt: "",
+      url: exterior3,
+      alt: "Exterior",
     },
     {
       id: 2,
@@ -36,7 +38,7 @@ const AboutGallery = () => {
     },
     {
       id: 4,
-      url: "https://mayurstay.com/hotelhimalaya/images/mservices/w7fbd-2.jpg",
+      url: exterior2,
       alt: "",
     },
 
