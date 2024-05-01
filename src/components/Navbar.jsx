@@ -1,10 +1,8 @@
 import React, { useState } from "react";
 import logo from "../assets/logo.svg";
 import Button from "./ui/Button";
-import { TbBrandFacebook } from "react-icons/tb";
-import { FaTripadvisor } from "react-icons/fa";
-import { FaInstagram } from "react-icons/fa";
 import { RiArrowDropDownLine } from "react-icons/ri";
+import Socials from "./ui/Socials";
 
 const Navbar = () => {
   const [openDropdownId, setOpenDropdownId] = useState(null);
@@ -84,17 +82,8 @@ const Navbar = () => {
   return (
     <>
       <header className="relative h-24 w-full flex items-center justify-between px-6 z-50 bg-custom-black/20 backdrop-blur-sm">
-        <div className="flex gap-5 w-24">
-          <a href="">
-            <TbBrandFacebook className="text-xl text-custom-white hover:text-logo-clr transition-linear hover:scale-125 drop-shadow-lg" />
-          </a>
-          <a href="">
-            <FaInstagram className="text-xl text-custom-white hover:text-logo-clr transition-linear hover:scale-125 drop-shadow-lg" />
-          </a>
-          <a href="">
-            <FaTripadvisor className="text-xl text-custom-white hover:text-logo-clr transition-linear hover:scale-125 drop-shadow-lg" />
-          </a>
-        </div>
+        <Socials />
+
         <h1>
           <a href="/">
             <img
