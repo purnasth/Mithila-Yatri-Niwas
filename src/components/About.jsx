@@ -5,15 +5,16 @@ import janakpur from "../assets/janakpur.webp";
 const About = () => {
   return (
     <>
-      <section className="bg-gradient-to-b from-logo-bg to-alt-bg">
+      {/* <section className="bg-gradient-to-b from-logo-bg to-alt-bg"> */}
+      <section className="bg-logo-bg">
         <div className="container">
-          <div class="space-y-6 text-center text-custom-black">
-            <h3 class="w-3/4 mx-auto text-3xl leading-relaxed">
+          <div className="space-y-6 text-center text-custom-black">
+            <h3 className="w-3/4 mx-auto text-3xl leading-relaxed">
               Mithila Yatri Niwas a luxurious hotel property in Janakpur is set
               at just 10 min walking distance from the famous Janakai Temple
               along the banks of Dashrath Lake.
             </h3>
-            <p class="w-11/12 mx-auto text-lg text-center text-custom-black/80">
+            <p className="w-11/12 mx-auto text-lg text-center text-custom-black/80">
               Our Hotel is conveniently located, which allows a hassle free easy
               access by road, domestic airport and railway connectivity to
               Indian border. It is the only Hotel in Janakpur well equipped with

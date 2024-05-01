@@ -23,7 +23,7 @@
   }
 
   section {
-    @apply py-[12rem] px-[1rem];
+    @apply py-[9rem] px-[1rem];
   }
 
   .transition-linear {
