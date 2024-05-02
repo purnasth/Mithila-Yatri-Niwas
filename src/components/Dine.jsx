@@ -2,11 +2,12 @@ import React from "react";
 import room1 from "../assets/rooms/room1.webp";
 import room2 from "../assets/rooms/room2.webp";
 import room3 from "../assets/rooms/room3.webp";
-import RoomSlider from "./ui/RoomSlider";
 import LearnMore from "./ui/LearnMore";
+import DineGallery from "./ui/DineGallery";
+import SvgWave from "./ui/SvgWave";
 
 const Dine = () => {
-  const roomsCategories = [
+  const foodsCategories = [
     {
       id: 1,
       title: "Deluxe Room",
@@ -37,9 +38,10 @@ const Dine = () => {
     <>
       {/* <section className="bg-gradient-to-b from-logo-bg to-alt-bg px-10"> */}
       <section className="bg-logo-bg px-10">
+        <SvgWave/>
         <div className="containe r">
-          <div className="grid grid-cols-1 md:grid-cols-3 md:gap-8">
-            <div className="col-span-1 md:col-span-1 text-center md:text-left">
+          <div className="">
+            <div className="text-center mb-12 container max-w-6xl mx-auto">
               <h2 className="text-3xl text-primary">Dine</h2>
               <p className="text-base text-gray-500 mt-4">
                 At Mithila Yatri Niwas we curate delicious food dishes made in
@@ -54,14 +56,9 @@ const Dine = () => {
                 ambience and décor of our Restaurant suits the theme and
                 celebrates the religious and cultural setting of our vicinity.
               </p>
-              <LearnMore
-                text="Explore"
-                primaryColor="bg-logo-clr"
-                secondaryColor="bg-alt-logo-clr"
-              />
             </div>
-            <div className="col-span-2 md:col-span-2">
-              <RoomSlider contents={roomsCategories} />
+            <div className="">
+              <DineGallery contents={foodsCategories} />
             </div>
           </div>
         </div>

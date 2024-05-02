@@ -3,6 +3,7 @@ import TestimonialsSlider from "./ui/TestimonialsSlider";
 import LearnMore from "./ui/LearnMore";
 import tripadvisor from "../assets/tripadvisor.webp";
 import booking from "../assets/booking.webp";
+import SvgWave from "./ui/SvgWave";
 
 const Testimonials = () => {
   const roomsCategories = [
@@ -35,7 +36,8 @@ const Testimonials = () => {
   return (
     <>
       {/* <section className="bg-gradient-to-b from-logo-bg to-alt-bg px-10"> */}
-      <section className="bg-alt-bg px-10">
+      <section className="bg-logo-bg px-10">
+        <SvgWave/>
         <div className="containe r">
           <div className="grid grid-cols-1 md:grid-cols-3 md:gap-8">
             <div className="col-span-1 md:col-span-1 text-center md:text-left">

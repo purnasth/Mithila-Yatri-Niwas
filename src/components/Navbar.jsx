@@ -53,12 +53,12 @@ const Navbar = () => {
         {
           id: "sabhaHall",
           title: "Sabha Hall",
-          link: "/accommodation/sabha-hall",
+          link: "/hall/sabha-hall",
         },
         {
           id: "pdr",
           title: "PDR",
-          link: "/accommodation/pdr",
+          link: "/hall/pdr",
         },
       ],
     },

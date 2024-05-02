@@ -1,12 +1,14 @@
 import React from "react";
 import AboutGallery from "./ui/AboutGallery";
 import janakpur from "../assets/janakpur.webp";
+import SvgWave from "./ui/SvgWave";
 
 const About = () => {
   return (
     <>
       {/* <section className="bg-gradient-to-b from-logo-bg to-alt-bg"> */}
       <section className="bg-logo-bg">
+        <SvgWave />
         <div className="container">
           <div className="space-y-6 text-center text-custom-black">
             <h3 className="w-3/4 mx-auto text-3xl leading-relaxed">

@@ -6,6 +6,9 @@ import About from "./components/About";
 import Dine from "./components/Dine";
 import Testimonials from "./components/Testimonials";
 import Footer from "./components/Footer";
+import Offers from "./components/Offers";
+import Hall from "./components/Hall";
+import Janaki from "./components/Janaki";
 
 const App = () => {
   return (
@@ -13,9 +16,12 @@ const App = () => {
       <Navbar />
       <Hero />
       <About />
+      <Janaki/>
       <Accommodation />
       <Dine />
+      <Hall />
       <Testimonials />
+      <Offers />
       <Footer />
     </>
   );
