@@ -19,7 +19,7 @@ import "lightgallery/css/lg-thumbnail.css";
 import "lightgallery/css/lg-fullscreen.css";
 import "lightgallery/css/lg-share.css";
 
-const DineGallery = () => {
+const AboutGallery = () => {
   const galleryImages = [
     {
       id: 1,
@@ -83,4 +83,4 @@ const DineGallery = () => {
   );
 };
 
-export default DineGallery;
+export default AboutGallery;

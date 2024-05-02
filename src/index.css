@@ -44,8 +44,6 @@
 
 .slick-dots li.slick-active button:before {
   color: #be6138;
-  color: #e98459;
-  color: #27b5f1;
   transform: scale(1.5);
 }
 

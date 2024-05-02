@@ -2,8 +2,8 @@ import React from "react";
 import hall1 from "../assets/halls/hall1.webp";
 import exterior3 from "../assets/halls/exterior2.webp";
 import RoomSlider from "./ui/RoomSlider";
-import LearnMore from "./ui/LearnMore";
 import SvgWave from "./ui/SvgWave";
+import { HiArrowLongRight } from "react-icons/hi2";
 
 const Hall = () => {
   const hallCategories = [
@@ -23,6 +23,19 @@ const Hall = () => {
       icon: exterior3,
       router: "/hall/pdr",
     },
+  ];
+
+  const hallAmenities = [
+    "Projector",
+    "PA System",
+    "Microphone",
+    "video conferencing",
+    "computer / laptop",
+    "white board",
+    "flip chart",
+    "soft (pin) board",
+    "printing services",
+    "Air conditioner",
   ];
 
   return (
@@ -46,11 +59,40 @@ const Hall = () => {
                 service and perfect thematic ambience that complements our
                 sacred surroundings.
               </p>
-              <LearnMore
+              <h5 className="text-3xl mt-8 mb-6">Amenities</h5>
+              <div className="flex items-start gap-20">
+                <ul className="flex items-start justify-center flex-col gap-4">
+                  {hallAmenities
+                    .slice(0, Math.ceil(hallAmenities.length / 2))
+                    .map((amenity) => (
+                      <li
+                        key={amenity}
+                        className="flex items-center gap-4 text-gray-500 capitalize"
+                      >
+                        <HiArrowLongRight />
+                        {amenity}
+                      </li>
+                    ))}
+                </ul>
+                <ul className="flex items-start justify-center flex-col gap-4">
+                  {hallAmenities
+                    .slice(Math.ceil(hallAmenities.length / 2))
+                    .map((amenity) => (
+                      <li
+                        key={amenity}
+                        className="flex items-center gap-4 text-gray-500 capitalize"
+                      >
+                        <HiArrowLongRight />
+                        {amenity}
+                      </li>
+                    ))}
+                </ul>
+              </div>
+              {/* <LearnMore
                 text="Explore"
                 primaryColor="bg-logo-clr"
                 secondaryColor="bg-alt-logo-clr"
-              />
+              /> */}
             </div>
           </div>
         </div>

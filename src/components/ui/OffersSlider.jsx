@@ -51,7 +51,7 @@ const OffersSlider = ({ contents }) => {
             Price: &nbsp; &nbsp; Rs. {price} /- */}
           <a
             href="#"
-            className="overflow-hidden mt-2 group-hover:mt-0 absolute left-1/2 -translate-x-1/2 w-40 z-10 flex items-center justify-center gap-2 bg-alt-logo-clr group-hover:bg-logo-clr px-6 text-custom-white py-3 group-hover:py-2 mx-auto rounded-full transition-linear group"
+            className="overflow-hidden mt-2 group-hover:mt-0 absolute left-1/2 -translate-x-1/2 w-40 z-10 flex items-center justify-center gap-2 bg-alt-logo-clr hover:bg-alt-logo-clr group-hover:bg-logo-clr px-6 text-custom-white py-3 group-hover:py-2 mx-auto rounded-full transition-linear group"
           >
             <span className="font-title group-hover:hidden transition-linear">
               Rs. {price} /-
@@ -68,7 +68,7 @@ const OffersSlider = ({ contents }) => {
             className="w-full h-full transition duration-700 ease-in-out transform group-hover:scale-150 object-cover z-0"
           />
           <div className="absolute bottom-0 overlay bg-gradient-to-b from-[rgba(0,0,0,0)] to-[rgba(0,0,0,0.6)] w-full h-1/2 transition-linear group-hover:h-full" />
-          <div className="group absolute inset-0 flex flex-col items-center justify-center bg-gradient-to-b from-[rgba(0,0,0,0)] to-[rgba(0,0,0,0.6)] text-custom-white text-center transition-all duration-700 ease-in-out transform translate-y-1/2 group-hover:translate-y-0">
+          <div className="group absolute inset-0 flex flex-col items-center justify-center bg-gradient-to-b from-[rgba(0,0,0,0)] to-[rgba(0,0,0,0.6)] text-custom-white text-center transition-all duration-700 ease-in-out transform translate-y-1/2 group-hover:translate-y-1/3">
             <div className="p-4">
               <h3 className="text-3xl font-medium mb-12 group-hover:mb-0 transition-all duration-300">
                 {title}

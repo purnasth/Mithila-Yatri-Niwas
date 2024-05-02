@@ -6,6 +6,8 @@ import RoomSlider from "./ui/RoomSlider";
 import LearnMore from "./ui/LearnMore";
 import SvgWave from "./ui/SvgWave";
 
+import { HiArrowLongRight } from "react-icons/hi2";
+
 const Accommodation = () => {
   const roomsCategories = [
     {
@@ -34,6 +36,21 @@ const Accommodation = () => {
     },
   ];
 
+  const roomAmenities = [
+    "Wi-Fi",
+    "Air conditioning",
+    "Bathrobe",
+    "Coffee and tea set",
+    "Desk",
+    "Hairdryer",
+    "Slippers",
+    "Telephone",
+    "Television",
+    "Toiletries",
+    "Towel service",
+    "Twin bed/double bed",
+  ];
+
   return (
     <>
       <section className="bg-alt-bg px-10">
@@ -42,7 +59,7 @@ const Accommodation = () => {
         <div className="containe r">
           <div className="grid grid-cols-1 md:grid-cols-3 md:gap-8">
             <div className="col-span-1 md:col-span-1 text-center md:text-left">
-              <h2 className="text-3xl text-primary">Accommodation</h2>
+              <h2 className="text-3xl">Accommodation</h2>
               <p className="text-base text-gray-500 mt-4">
                 With 30 immaculately designed rooms that are carefully planned
                 to ensure soothing modern comfort, they all afford wonderful
@@ -52,11 +69,40 @@ const Accommodation = () => {
                 service and perfect thematic ambience that complements our
                 sacred surroundings.
               </p>
-              <LearnMore
+              <h5 className="text-3xl mt-8 mb-6">Amenities</h5>
+              <div className="flex items-start gap-20">
+                <ul className="flex items-start justify-center flex-col gap-4">
+                  {roomAmenities
+                    .slice(0, Math.ceil(roomAmenities.length / 2))
+                    .map((amenity) => (
+                      <li
+                        key={amenity}
+                        className="flex items-center gap-4 text-gray-500"
+                      >
+                        <HiArrowLongRight />
+                        {amenity}
+                      </li>
+                    ))}
+                </ul>
+                <ul className="flex items-start justify-center flex-col gap-4">
+                  {roomAmenities
+                    .slice(Math.ceil(roomAmenities.length / 2))
+                    .map((amenity) => (
+                      <li
+                        key={amenity}
+                        className="flex items-center gap-4 text-gray-500"
+                      >
+                        <HiArrowLongRight />
+                        {amenity}
+                      </li>
+                    ))}
+                </ul>
+              </div>
+              {/* <LearnMore
                 text="Explore"
                 primaryColor="bg-logo-clr"
                 secondaryColor="bg-alt-logo-clr"
-              />
+              /> */}
             </div>
             <div className="col-span-2 md:col-span-2">
               <RoomSlider contents={roomsCategories} />

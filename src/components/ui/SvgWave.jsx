@@ -116,7 +116,7 @@ import React from "react";
 const SvgWave = () => {
   return (
     <>
-      <div className="absolute left-0 top-0 z-10 w-full overflow-hidden group">
+      <div className="absolute left-0 top-0 z-10 w-full overflow-hidden group opacity-50">
         <svg
           version="1.2"
           xmlns="http://www.w3.org/2000/svg"

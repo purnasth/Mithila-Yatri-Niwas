@@ -23,9 +23,7 @@ const Footer = () => {
       {/* <div className="text-white relative overflow-hidden backdrop-blur-sm z-30"> */}
       <div className="text-white relative overflow-hidden backdrop-blur-sm z-30">
         <div className="container pt-20 pb-8 h-full">
-          {/* First Row */}
           <div className="grid grid-cols-3 place-items-center px-8">
-            {/* Logo */}
             <ul className="col-span-1 flex flex-col gap-4">
               <li className="flex items-center justify-start gap-2 text-custom-white hover:text-white transition-linear">
                 <GrLocation className="text-xl" />
@@ -83,7 +81,7 @@ const Footer = () => {
                 <li>
                   <a
                     href="#"
-                    className="font-body relative group text-custom-white hover:text-white transition-linear flex items-center gap-2"
+                    className="font-body relative group text-custom-white hover:text-white hover:scale-110 transition-linear flex items-center gap-2"
                   >
                     <MdOutlineBed /> Deluxe
                   </a>
@@ -91,7 +89,7 @@ const Footer = () => {
                 <li>
                   <a
                     href="#"
-                    className="font-body relative group text-custom-white hover:text-white transition-linear flex items-center gap-2"
+                    className="font-body relative group text-custom-white hover:text-white hover:scale-110 transition-linear flex items-center gap-2"
                   >
                     <MdOutlineBed /> Executive
                   </a>
@@ -99,7 +97,7 @@ const Footer = () => {
                 <li>
                   <a
                     href="#"
-                    className="font-body relative group text-custom-white hover:text-white transition-linear flex items-center gap-2"
+                    className="font-body relative group text-custom-white hover:text-white hover:scale-110 transition-linear flex items-center gap-2"
                   >
                     <MdOutlineBed /> Suite
                   </a>
@@ -109,7 +107,7 @@ const Footer = () => {
                 <li>
                   <a
                     href="#"
-                    className="font-body relative group text-custom-white hover:text-white transition-linear flex items-center gap-2"
+                    className="font-body relative group text-custom-white hover:text-white hover:scale-110 transition-linear flex items-center gap-2"
                   >
                     <MdOutlineBrunchDining />
                     Bhojan Griha
@@ -121,7 +119,7 @@ const Footer = () => {
                 <li>
                   <a
                     href="#"
-                    className="font-body relative group text-custom-white hover:text-white transition-linear flex items-center gap-2"
+                    className="font-body relative group text-custom-white hover:text-white hover:scale-110 transition-linear flex items-center gap-2"
                   >
                     <TbCalendarEvent />
                     Sabha Hall
@@ -130,7 +128,7 @@ const Footer = () => {
                 <li>
                   <a
                     href="#"
-                    className="font-body relative group text-custom-white hover:text-white transition-linear flex items-center gap-2"
+                    className="font-body relative group text-custom-white hover:text-white hover:scale-110 transition-linear flex items-center gap-2"
                   >
                     <TbCalendarEvent />
                     PDR
@@ -217,16 +215,25 @@ const Footer = () => {
             </a>
           </div>
 
-          <hr className="border-custom-white/50 mb-8" />
+          <hr className="border-custom-white/50 mb-4" />
+
+          <div className="text-center mb-8">
+            <p>
+              Our Affiliations / Sister concerns: &nbsp;
+              <a href="#" className="font-body font-bold">
+                Stream Peak International Ptd. Ltd.
+              </a>
+            </p>
+          </div>
 
           <div className="flex justify-between">
             <span>&copy; 2024 Mithila Yatri Niwas | All Rights Reserved </span>
             <span>
-              Website by{" "}
+              Website by: &nbsp;
               <a
                 href="https://www.longtail.info/"
                 target="_blank"
-                className="font-body underline"
+                className="font-body font-bold underline"
               >
                 Longtail e-media
               </a>

@@ -41,7 +41,7 @@ function ScrollReveal({ para }) {
   return (
     <>
       <div className="space-y-6 text-center reveal-type p-36 container">
-        <p className="font-title text-3xl leading-relaxed">{para}</p>
+        <p className="font-body font-bold text-3xl leading-relaxed">{para}</p>
       </div>
     </>
   );
