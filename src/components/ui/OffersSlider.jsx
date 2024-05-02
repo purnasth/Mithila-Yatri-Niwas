@@ -50,7 +50,7 @@ const OffersSlider = ({ contents }) => {
           {/* <MdAttachMoney className="text-lg" />
             Price: &nbsp; &nbsp; Rs. {price} /- */}
           <a
-            href="#"
+            href="https://www.mithilayatriniwas.com/result.php?hotel_code=gBRaLW"
             className="overflow-hidden mt-2 group-hover:mt-0 absolute left-1/2 -translate-x-1/2 w-40 z-10 flex items-center justify-center gap-2 bg-alt-logo-clr hover:bg-alt-logo-clr group-hover:bg-logo-clr px-6 text-custom-white py-3 group-hover:py-2 mx-auto rounded-full transition-linear group"
           >
             <span className="font-title group-hover:hidden transition-linear">

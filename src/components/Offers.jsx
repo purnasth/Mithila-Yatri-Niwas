@@ -1,8 +1,9 @@
 import React from "react";
-import TestimonialsSlider from "./ui/TestimonialsSlider";
-import LearnMore from "./ui/LearnMore";
 import OffersSlider from "./ui/OffersSlider";
 import SvgWave from "./ui/SvgWave";
+import room1 from "../assets/rooms/room1.webp";
+import room2 from "../assets/rooms/room2.webp";
+import room3 from "../assets/rooms/room3.webp";
 
 const Offers = () => {
   const offersContents = [
@@ -10,21 +11,21 @@ const Offers = () => {
       id: 1,
       title: "For Couple",
       description: "1 night Package MAP plan",
-      icon: "https://w0.peakpx.com/wallpaper/42/851/HD-wallpaper-jai-shri-ram-janaki-shri-ram-sita-vishnu-lord-lakshman-hanuman-ramayan-god.jpg",
+      icon: room1,
       price: "7500",
     },
     {
       id: 2,
       title: "For Couple",
       description: "1 night Package MAP plan",
-      icon: "https://w0.peakpx.com/wallpaper/42/851/HD-wallpaper-jai-shri-ram-janaki-shri-ram-sita-vishnu-lord-lakshman-hanuman-ramayan-god.jpg",
+      icon: room2,
       price: "7500",
     },
     {
       id: 3,
       title: "For Couple",
       description: "1 night Package MAP plan",
-      icon: "https://w0.peakpx.com/wallpaper/42/851/HD-wallpaper-jai-shri-ram-janaki-shri-ram-sita-vishnu-lord-lakshman-hanuman-ramayan-god.jpg",
+      icon: room3,
       price: "7500",
     },
   ];
@@ -33,7 +34,7 @@ const Offers = () => {
     <>
       {/* <section className="bg-gradient-to-b from-logo-bg to-alt-bg px-10"> */}
       <section className="bg-alt-bg px-10">
-        <SvgWave/>
+        <SvgWave />
         <div className="text-center mb-12 container max-w-6xl mx-auto">
           <h2 className="text-3xl text-primary">Offers</h2>
           <p className="text-base text-gray-500 mt-4">
