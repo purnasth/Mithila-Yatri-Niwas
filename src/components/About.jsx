@@ -1,6 +1,5 @@
 import React from "react";
 import AboutGallery from "./ui/AboutGallery";
-import janakpur from "../assets/janakpur.webp";
 import SvgWave from "./ui/SvgWave";
 
 const About = () => {
@@ -34,13 +33,6 @@ const About = () => {
           </div>
 
           <div className="mt-16">
-            <div className="p-5 pb-0">
-              <img
-                src={janakpur}
-                alt="Janaki Temple"
-                className="w-full h-[60vh] object-cover shadow-md"
-              />
-            </div>
             <AboutGallery />
           </div>
         </div>
