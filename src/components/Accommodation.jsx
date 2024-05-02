@@ -7,6 +7,7 @@ import LearnMore from "./ui/LearnMore";
 import SvgWave from "./ui/SvgWave";
 
 import { HiArrowLongRight } from "react-icons/hi2";
+import Button from "./ui/Button";
 
 const Accommodation = () => {
   const roomsCategories = [
@@ -44,10 +45,8 @@ const Accommodation = () => {
     "Desk",
     "Hairdryer",
     "Slippers",
-    "Telephone",
     "Television",
     "Toiletries",
-    "Towel service",
     "Twin bed/double bed",
   ];
 
@@ -97,6 +96,9 @@ const Accommodation = () => {
                       </li>
                     ))}
                 </ul>
+              </div>
+              <div className="my-8">
+                <Button />
               </div>
               {/* <LearnMore
                 text="Explore"
