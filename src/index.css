@@ -24,7 +24,7 @@
   }
 
   section {
-    @apply py-[9rem] px-[1rem] relative;
+    @apply pt-[12rem] pb-[9rem] px-[1rem] relative;
   }
 
   .transition-linear {
@@ -44,6 +44,8 @@
 
 .slick-dots li.slick-active button:before {
   color: #be6138;
+  color: #e98459;
+  color: #27b5f1;
   transform: scale(1.5);
 }
 
