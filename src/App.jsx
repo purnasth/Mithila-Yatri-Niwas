@@ -9,6 +9,7 @@ import Footer from "./components/Footer";
 import Offers from "./components/Offers";
 import Hall from "./components/Hall";
 import Janaki from "./components/Janaki";
+import Direction from "./components/Direction";
 
 const App = () => {
   return (
@@ -16,7 +17,8 @@ const App = () => {
       <Navbar />
       <Hero />
       <About />
-      <Janaki/>
+      <Direction />
+      <Janaki />
       <Accommodation />
       <Dine />
       <Hall />
