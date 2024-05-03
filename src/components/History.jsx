@@ -11,7 +11,7 @@ const History = () => {
         {/* <div className="absolute bg-black/40 inset-0 z-0" /> */}
         <section className="z-10 text-custom-black pt-[8rem] pb-[20rem]">
           <div className="text-center mb-12 container max-w-7xl mx-auto space-y-4 text-custom-black">
-            <h3 className="text-3xl ">The History</h3>
+            <h3 className="text-3xl ">Cultural Legacy of Mithila</h3>
             <p className="text-base text-gray-600">
               The Janaki Temple is a Hindu temple in Janakpur, Nepal, dedicated
               to the Hindu goddess Sita. It is an example of mixed Islam and

@@ -94,7 +94,10 @@ const Navbar = () => {
           </a>
         </h1>
 
-        <Button />
+        <Button
+          title="Booking"
+          router="https://www.mithilayatriniwas.com/result.php?hotel_code=gBRaLW"
+        />
       </header>
 
       <nav className="sticky top-0 h-12 bg-custom-black/30 backdrop-blur-sm border-t border-b border-custom-white/50 text-custom-white  drop-shadow-lg z-50">

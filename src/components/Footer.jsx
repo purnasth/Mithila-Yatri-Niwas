@@ -141,7 +141,8 @@ const Footer = () => {
             </div>
           </div>
 
-          <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 py-16">
+          {/* <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 py-16"> */}
+          <div className="flex items-center justify-center gap-12 py-16">
             <a
               href="#"
               target="_blank"
@@ -196,7 +197,8 @@ const Footer = () => {
             </a>
           </div>
 
-          <div className="flex justify-between mb-12">
+          {/* <div className="flex justify-between mb-12"> */}
+          <div className="flex justify-center items-center gap-16 mb-12">
             <a
               href="#"
               className="relative group font-body text-custom-white hover:text-white transition-linear underline"

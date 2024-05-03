@@ -1,6 +1,7 @@
 import React from "react";
 import AboutGallery from "./ui/AboutGallery";
 import SvgWave from "./ui/SvgWave";
+import LearnMore from "./ui/LearnMore";
 
 const About = () => {
   return (
@@ -36,6 +37,14 @@ const About = () => {
 
           <div className="mt-16">
             <AboutGallery />
+          </div>
+
+          <div className="flex items-center justify-center p-0">
+            <LearnMore
+              text="Explore"
+              primaryColor="bg-alt-logo-clr"
+              secondaryColor="bg-red-600"
+            />
           </div>
         </div>
       </section>

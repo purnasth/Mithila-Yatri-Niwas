@@ -27,16 +27,16 @@ const Socials = () => {
               rel="noopener noreferrer">
           <FaTripadvisor className="text-xl text-custom-white hover:text-logo-clr transition-linear hover:scale-125 drop-shadow-lg" />
         </a> */}
-        <a href="tel:9820113410" target="_blank" rel="noopener noreferrer">
+        <a href="tel:+9779820113410" target="_blank" rel="noopener noreferrer">
           <TbPhone className="text-xl text-custom-white hover:text-logo-clr transition-linear hover:scale-125 drop-shadow-lg" />
         </a>
-        <a
+        {/* <a
           href="mailto:info@hotelmithilanepal.com"
           target="_blank"
           rel="noopener noreferrer"
         >
           <HiOutlineMail className="text-xl text-custom-white hover:text-logo-clr transition-linear hover:scale-125 drop-shadow-lg" />
-        </a>
+        </a> */}
       </div>
     </>
   );

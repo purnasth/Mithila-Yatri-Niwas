@@ -103,7 +103,10 @@ const Accommodation = () => {
                 </ul>
               </div>
               <div className="my-8">
-                <Button />
+                <Button
+                  title="Booking"
+                  router="https://www.mithilayatriniwas.com/result.php?hotel_code=gBRaLW"
+                />
               </div>
               {/* <LearnMore
                 text="Explore"

@@ -11,7 +11,7 @@ const Button = ({ text, primaryColor, secondaryColor }) => {
           {text}
         </span>
         <span
-          className={`absolute right-0 h-full w-10 rounded-full group-hover:${secondaryColor} ${primaryColor} flex items-center justify-center transform group-hover:translate-x-0 group-hover:w-full transition-linear`}
+          className={`absolute right-0 h-full w-10 rounded-full ${primaryColor} group-hover:${secondaryColor} flex items-center justify-center transform group-hover:translate-x-0 group-hover:w-full transition-linear`}
         >
           <CgArrowLongRight className="text-custom-white -ml-6 group-hover:ml-0 text-xl group-hover:text-2xl transition-linear" />
         </span>

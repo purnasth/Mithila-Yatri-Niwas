@@ -4,6 +4,7 @@ import exterior3 from "../assets/halls/exterior2.webp";
 import RoomSlider from "./ui/RoomSlider";
 import SvgWave from "./ui/SvgWave";
 import { HiArrowLongRight } from "react-icons/hi2";
+import Button from "./ui/Button";
 
 const Hall = () => {
   const hallCategories = [
@@ -90,11 +91,10 @@ const Hall = () => {
                     ))}
                 </ul>
               </div>
-              {/* <LearnMore
-                text="Explore"
-                primaryColor="bg-logo-clr"
-                secondaryColor="bg-alt-logo-clr"
-              /> */}
+
+              <div className="my-8">
+                <Button title="Reserve" router="#" />
+              </div>
             </div>
           </div>
         </div>
