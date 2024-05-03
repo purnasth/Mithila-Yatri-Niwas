@@ -29,7 +29,9 @@ const WhatsApp = () => {
   return (
     <>
       <a
-        href="#"
+        href="https://wa.me/+9779820113410"
+        target="_blank"
+        rel="noopener noreferrer"
         className={`${
           showButton ? "scale-100 translate-y-0" : "scale-0 translate-y-20"
           // } size-12 z-50 fixed bottom-4 left-4 border hover:border-logo-clr border-alt-logo-clr border-dotted backdrop-blur-md p-0 rounded-full shadow-lg transition-all duration-500 ease-in-out hover:bg-logo-bg hover:text-logo-clr bg-custom-white/70 text-alt-logo-clr flex items-center justify-center`}
