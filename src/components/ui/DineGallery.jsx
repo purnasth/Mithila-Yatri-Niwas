@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import room1 from "../../assets/rooms/room1.webp";
 import room2 from "../../assets/rooms/room2.webp";
 import hall1 from "../../assets/halls/hall1.webp";
@@ -25,37 +25,72 @@ const AboutGallery = () => {
       id: 1,
       url: exterior3,
       alt: "Exterior",
+      category: "Bhojan Griha",
     },
     {
       id: 2,
       url: room1,
       alt: "Room Image",
+      category: "Bhojan Griha",
     },
     {
       id: 3,
       url: exterior1,
       alt: "Exterior",
+      category: "Bhojan Griha",
     },
     {
       id: 4,
       url: exterior2,
-      alt: "",
+      alt: "Exterior",
+      category: "Bhojan Griha",
     },
 
     {
       id: 5,
       url: hall1,
       alt: "Event Hall",
+      category: "Bhojan Griha",
     },
     {
       id: 6,
       url: room2,
       alt: "Room",
+      category: "Bhojan Griha",
+    },
+    {
+      id: 7,
+      url: room2,
+      alt: "Room",
+      category: "Mithila Griha",
     },
   ];
 
+  const [activeCategory, setActiveCategory] = useState("Bhojan Griha");
+
+  const filteredImages = galleryImages.filter(
+    (image) => image.category === activeCategory
+  );
+
+  const categories = [...new Set(galleryImages.map((image) => image.category))];
+
   return (
     <>
+      <div className="filter-buttons flex items-center justify-center gap-8 p-8">
+        {categories.map((category) => (
+          <button
+            key={category}
+            onClick={() => setActiveCategory(category)}
+            className={`${
+              activeCategory === category
+                ? "opacity-100"
+                : "opacity-50 hover:opacity-100"
+            } font-title font-bold text-custom-black uppercase px-6 py-2 transition-linear`}
+          >
+            {category}
+          </button>
+        ))}
+      </div>
       <LightGallery
         plugins={[lgZoom, lgVideo, lgThumbnail, lgFullscreen, lgShare]}
         mode="lg-fade"
@@ -65,7 +100,7 @@ const AboutGallery = () => {
           autoplay: true,
         }}
       >
-        {galleryImages.map((image) => (
+        {filteredImages.map((image) => (
           <div
             key={image.id}
             className="group gallery-item overflow-hidden"
