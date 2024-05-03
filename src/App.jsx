@@ -11,6 +11,8 @@ import Hall from "./components/Hall";
 import Janaki from "./components/Janaki";
 import Direction from "./components/Direction";
 import History from "./components/History";
+import BackToTop from "./components/ui/BackToTop";
+import WhatsApp from "./components/ui/WhatsApp";
 
 const App = () => {
   return (
@@ -27,6 +29,8 @@ const App = () => {
       <Testimonials />
       <Offers />
       <Footer />
+      <BackToTop />
+      <WhatsApp />
     </>
   );
 };

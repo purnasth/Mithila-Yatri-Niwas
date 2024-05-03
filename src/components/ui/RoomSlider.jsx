@@ -43,7 +43,7 @@ const RoomSlider = ({ contents }) => {
               <p className="text-custom-white my-8">{description}</p>
               <a
                 href={router}
-                className="flex items-center justify-center gap-2 bg-alt-logo-clr hover:bg-logo-clr px-6 py-3 w-32 mx-auto rounded-full transition-linear group"
+                className="font-title flex items-center justify-center gap-2 bg-alt-logo-clr hover:bg-logo-clr px-6 py-3 w-32 mx-auto rounded-full transition-linear group"
               >
                 More
                 <CgArrowLongRight />

@@ -108,7 +108,7 @@ const Navbar = () => {
                 <div className="dropdown">
                   <a
                     href={link.link}
-                    className="flex items-center transition-linear drop-shadow-lg hover:scale-125"
+                    className="font-title flex items-center transition-linear drop-shadow-lg hover:scale-125"
                     onClick={(e) => toggleDropdown(link.id, e)}
                   >
                     {link.title}
@@ -120,7 +120,7 @@ const Navbar = () => {
                         <li key={subLink.id}>
                           <a
                             href={subLink.link}
-                            className="inline-block hover:bg-custom-black/50 text-sm w-full h-full px-4 py-3 transition-linear drop-shadow-lg hover:scale-110 border-t border-b border-custom-white/50"
+                            className="font-title inline-block hover:bg-custom-black/50 text-sm w-full h-full px-4 py-3 transition-linear drop-shadow-lg hover:scale-110 border-t border-b border-custom-white/50"
                           >
                             {subLink.title}
                           </a>
@@ -132,7 +132,7 @@ const Navbar = () => {
               ) : (
                 <a
                   href={link.link}
-                  className="inline-block transition-linear drop-shadow-lg hover:scale-125"
+                  className="font-title inline-block transition-linear drop-shadow-lg hover:scale-125"
                 >
                   {link.title}
                 </a>

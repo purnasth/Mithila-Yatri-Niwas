@@ -43,7 +43,7 @@ const About = () => {
             <LearnMore
               text="Explore"
               primaryColor="bg-alt-logo-clr"
-              secondaryColor="bg-red-600"
+              secondaryColor="bg-logo-clr"
             />
           </div>
         </div>

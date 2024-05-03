@@ -3,7 +3,6 @@ import room1 from "../assets/rooms/room1.webp";
 import room2 from "../assets/rooms/room2.webp";
 import room3 from "../assets/rooms/room3.webp";
 import RoomSlider from "./ui/RoomSlider";
-import LearnMore from "./ui/LearnMore";
 import SvgWave from "./ui/SvgWave";
 
 import { HiArrowLongRight } from "react-icons/hi2";

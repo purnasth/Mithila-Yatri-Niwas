@@ -2,7 +2,6 @@ import React from "react";
 import room1 from "../assets/rooms/room1.webp";
 import room2 from "../assets/rooms/room2.webp";
 import room3 from "../assets/rooms/room3.webp";
-import LearnMore from "./ui/LearnMore";
 import DineGallery from "./ui/DineGallery";
 import SvgWave from "./ui/SvgWave";
 

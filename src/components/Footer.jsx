@@ -28,36 +28,25 @@ const Footer = () => {
         <div className="container pt-20 pb-8 h-full">
           <div className="grid grid-cols-3 place-items-center px-8">
             <ul className="col-span-1 flex flex-col gap-4">
-              <li className="flex items-center justify-start gap-2 text-custom-white hover:text-white transition-linear">
+              <li className="flex items-center justify-start gap-2 text-custom-white hover:scale-105 hover:text-white transition-linear">
                 <GrLocation className="text-xl" />
-                <a
-                  href="#"
-                  target="_blank"
-                  rel="noopener"
-                  className="font-body"
-                >
+                <a href="#" target="_blank" rel="noopener">
                   Dasrath Talau, Janakpur Dham, Dhanusha
                 </a>
               </li>
 
-              <li className="flex items-center justify-start gap-2 text-custom-white hover:text-white transition-linear">
+              <li className="flex items-center justify-start gap-2 text-custom-white hover:scale-105 hover:text-white transition-linear">
                 <TbPhone className="text-xl" />
-                <a
-                  href="tel:+97714229996"
-                  target="_blank"
-                  rel="noopener"
-                  className="font-body"
-                >
+                <a href="tel:+97714229996" target="_blank" rel="noopener">
                   +977-14229996
                 </a>
               </li>
-              <li className="flex items-center justify-start gap-2 text-custom-white hover:text-white transition-linear">
+              <li className="flex items-center justify-start gap-2 text-custom-white hover:scale-105 hover:text-white transition-linear">
                 <HiOutlineMail className="text-xl" />
                 <a
                   href="mailto:info@hotelmithilanepal.com"
                   target="_blank"
                   rel="noopener"
-                  className="font-body"
                 >
                   info@hotelmithilanepal.com
                 </a>
@@ -84,7 +73,7 @@ const Footer = () => {
                 <li>
                   <a
                     href="#"
-                    className="font-body relative group text-custom-white hover:text-white hover:scale-110 transition-linear flex items-center gap-2"
+                    className="relative group text-custom-white hover:text-white hover:scale-110 transition-linear flex items-center gap-2"
                   >
                     <MdOutlineBed /> Deluxe
                   </a>
@@ -92,7 +81,7 @@ const Footer = () => {
                 <li>
                   <a
                     href="#"
-                    className="font-body relative group text-custom-white hover:text-white hover:scale-110 transition-linear flex items-center gap-2"
+                    className="relative group text-custom-white hover:text-white hover:scale-110 transition-linear flex items-center gap-2"
                   >
                     <MdOutlineBed /> Executive
                   </a>
@@ -100,7 +89,7 @@ const Footer = () => {
                 <li>
                   <a
                     href="#"
-                    className="font-body relative group text-custom-white hover:text-white hover:scale-110 transition-linear flex items-center gap-2"
+                    className="relative group text-custom-white hover:text-white hover:scale-110 transition-linear flex items-center gap-2"
                   >
                     <MdOutlineBed /> Suite
                   </a>
@@ -110,7 +99,7 @@ const Footer = () => {
                 <li>
                   <a
                     href="#"
-                    className="font-body relative group text-custom-white hover:text-white hover:scale-110 transition-linear flex items-center gap-2"
+                    className="relative group text-custom-white hover:text-white hover:scale-110 transition-linear flex items-center gap-2"
                   >
                     <MdOutlineBrunchDining />
                     Bhojan Griha
@@ -122,7 +111,7 @@ const Footer = () => {
                 <li>
                   <a
                     href="#"
-                    className="font-body relative group text-custom-white hover:text-white hover:scale-110 transition-linear flex items-center gap-2"
+                    className="relative group text-custom-white hover:text-white hover:scale-110 transition-linear flex items-center gap-2"
                   >
                     <TbCalendarEvent />
                     Sabha Hall
@@ -131,7 +120,7 @@ const Footer = () => {
                 <li>
                   <a
                     href="#"
-                    className="font-body relative group text-custom-white hover:text-white hover:scale-110 transition-linear flex items-center gap-2"
+                    className="relative group text-custom-white hover:text-white hover:scale-110 transition-linear flex items-center gap-2"
                   >
                     <TbCalendarEvent />
                     PDR
@@ -144,7 +133,7 @@ const Footer = () => {
           {/* <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 py-16"> */}
           <div className="flex items-center justify-center gap-12 py-16">
             <a
-              href="#"
+              href="https://www.booking.com/hotel/np/mithila-yatri-niwas.en-gb.html?aid=356980&label=gog235jc-1DCAsoqwFCE21pdGhpbGEteWF0cmktbml3YXNIM1gDaKsBiAEBmAEJuAEXyAEM2AED6AEBiAIBqAIDuAKml9OxBsACAdICJDgzYWY5MGYzLWFmMDAtNDg4ZS1iNDJlLTNhYzdmYjQwMzY1NNgCBOACAQ&sid=92d4f646b70df7ccf9096a36f66af01e&dist=0&keep_landing=1&sb_price_type=total&type=total&"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center justify-center"
@@ -157,7 +146,7 @@ const Footer = () => {
               />
             </a>
             <a
-              href="#"
+              href="https://www.tripadvisor.com/Hotel_Review-g424939-d24969555-Reviews-Mithila_Yatri_Niwas-Janakpur_Janakpur_Zone_Central_Region.html"
               target="_blank"
               rel="noopener noreferrer"
               className="p-2 flex items-center justify-center"
@@ -170,7 +159,7 @@ const Footer = () => {
               />
             </a>
             <a
-              href="#"
+              href="https://www.agoda.com/dasrath-talau-janakpur-dham-dhanusha/hotel/janakpur-np.html"
               target="_blank"
               rel="noopener noreferrer"
               className="p-2 flex items-center justify-center"
@@ -183,7 +172,7 @@ const Footer = () => {
               />
             </a>
             <a
-              href="#"
+              href="https://www.expedia.com/Janakpur-Hotels-Mithila-Yatri-Niwas.h83936278.Hotel-Information?"
               target="_blank"
               rel="noopener noreferrer"
               className="p-2 flex items-center justify-center"
@@ -201,20 +190,20 @@ const Footer = () => {
           <div className="flex justify-center items-center gap-16 mb-12">
             <a
               href="#"
-              className="relative group font-body text-custom-white hover:text-white transition-linear underline"
+              className="relative group text-custom-white hover:text-white transition-linear underline hover:scale-105"
             >
               Terms & Conditions
               {/* <div className="mt-1 absolute h-[2px] rounded-full w-4 bg-custom-white/20 group-hover:bg-custom-white -translate-y-1 origin-left group-hover:w-12 transition-linear" /> */}
             </a>
             <a
               href="#"
-              className="relative group font-body text-custom-white hover:text-white transition-linear underline"
+              className="relative group text-custom-white hover:text-white transition-linear underline hover:scale-105"
             >
               Privacy Policy
             </a>
             <a
               href="#"
-              className="relative group font-body text-custom-white hover:text-white transition-linear underline"
+              className="relative group text-custom-white hover:text-white transition-linear underline hover:scale-105"
             >
               Child Policy
             </a>
@@ -225,7 +214,12 @@ const Footer = () => {
           <div className="text-center mb-8">
             <p>
               Our Affiliations / Sister concerns: &nbsp;
-              <a href="#" className="font-body font-bold">
+              <a
+                href="https://streampeak.com.sg/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="font-bold"
+              >
                 Stream Peak International Ptd. Ltd.
               </a>
             </p>
@@ -238,7 +232,7 @@ const Footer = () => {
               <a
                 href="https://www.longtail.info/"
                 target="_blank"
-                className="font-body font-bold underline"
+                className="font-bold"
               >
                 Longtail e-media
               </a>

@@ -4,7 +4,6 @@
 
 @layer components {
 
-  a,
   h1,
   h2,
   h3,
@@ -14,6 +13,7 @@
     @apply font-title;
   }
 
+  a,
   p,
   span,
   button,
