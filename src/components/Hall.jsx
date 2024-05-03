@@ -40,8 +40,10 @@ const Hall = () => {
 
   return (
     <>
-      <section className="bg-alt-bg px-10">
+      <section className="bg-alt-bg px-10 overflow-hidden">
         <SvgWave />
+        <div className="absolute right-0 top-64 w-80 h-96 bg-[url('src/assets/graphics/ram.svg')] bg-contain bg-no-repeat mix-blend-overlay -z-10 opacity-70 -rotate-90" />
+
         {/* <section className="bg-gradient-to-t from-logo-bg to-alt-bg px-10"> */}
         <div className="containe r">
           <div className="grid grid-cols-1 md:grid-cols-3 md:gap-8">

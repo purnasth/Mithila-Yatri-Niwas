@@ -18,7 +18,7 @@ const App = () => {
       <Navbar />
       <Hero />
       <About />
-      <Direction />
+      {/* <Direction /> */}
       {/* <Janaki /> */}
       <History />
       <Accommodation />

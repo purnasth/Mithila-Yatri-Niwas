@@ -12,7 +12,7 @@ import { TbCalendarEvent } from "react-icons/tb";
 
 const Footer = () => {
   return (
-    <footer className="relative overflow-hidden bg-alt-logo-clr">
+    <footer className="relative overflow-hidden bg-alt-logo-clr z-10">
       {/* <img
         src={mithila}
         alt="Mithila Yatri Niwas"
@@ -21,7 +21,10 @@ const Footer = () => {
       <div className="absolute inset-0 bg-black/70 -z-10" /> */}
 
       {/* <div className="text-white relative overflow-hidden backdrop-blur-sm z-30"> */}
-      <div className="text-white relative overflow-hidden backdrop-blur-sm z-30">
+      {/* <div className="absolute inset-0 size-full bg-[url('https://as2.ftcdn.net/v2/jpg/03/75/84/95/1000_F_375849552_wcE7DBipdqataw3aNPUDRdUSmW3kI6p5.jpg')] bg-contain bg-repeat mix-blend-darken opacity-80 -z-20" /> */}
+      <div className="absolute inset-0 size-full bg-[url('src/assets/graphics/flowers.png')] bg-contain bg-repeat mix-blend-multiply opacity-10 -z-20" />
+
+      <div className="text-white relative overflow-hidden z-30">
         <div className="container pt-20 pb-8 h-full">
           <div className="grid grid-cols-3 place-items-center px-8">
             <ul className="col-span-1 flex flex-col gap-4">

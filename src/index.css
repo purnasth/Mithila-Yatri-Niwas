@@ -24,7 +24,7 @@
   }
 
   section {
-    @apply pt-[12rem] pb-[9rem] px-[1rem] relative;
+    @apply pt-[12rem] pb-[9rem] px-[1rem] relative z-10;
   }
 
   .transition-linear {
