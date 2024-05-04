@@ -9,7 +9,7 @@ const TestimonialsSlider = ({ contents }) => {
     infinite: false,
     speed: 500,
     slidesToShow: 2,
-    slidesToScroll: 2,
+    slidesToScroll: 1,
     responsive: [
       {
         breakpoint: 768,

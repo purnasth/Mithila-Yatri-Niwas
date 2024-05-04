@@ -6,13 +6,11 @@ import About from "./components/About";
 import Dine from "./components/Dine";
 import Testimonials from "./components/Testimonials";
 import Footer from "./components/Footer";
-import Offers from "./components/Offers";
 import Hall from "./components/Hall";
-import Janaki from "./components/Janaki";
-import Direction from "./components/Direction";
 import History from "./components/History";
 import BackToTop from "./components/ui/BackToTop";
 import WhatsApp from "./components/ui/WhatsApp";
+import PlacesToVisit from "./components/PlacesToVisit";
 
 const App = () => {
   return (
@@ -27,7 +25,8 @@ const App = () => {
       <Dine />
       <Hall />
       <Testimonials />
-      <Offers />
+      {/* <Offers /> */}
+      <PlacesToVisit />
       <Footer />
       <BackToTop />
       <WhatsApp />
