@@ -8,7 +8,7 @@ const PlacesToVisitSlider = ({ contents }) => {
   const settings = {
     dots: true,
     infinite: false,
-    speed: 500,
+    speed: 1000,
     slidesToShow: 3,
     slidesToScroll: 1,
     responsive: [
@@ -35,7 +35,7 @@ const PlacesToVisitSlider = ({ contents }) => {
             </div>
             <div className="mt-4 text-center">
               <h3 className="text-lg font-medium mb-2">{title}</h3>
-              <p className="text-sm text-gray-600 text-justify line-clamp-4">
+              <p className="text-sm text-gray-600 text-justify line-clamp-3">
                 {description}
               </p>
               <a
