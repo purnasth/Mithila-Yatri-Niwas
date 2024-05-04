@@ -68,7 +68,7 @@ const Dine = () => {
           </div>
         </div>
       </section> */}
-      <section className="bg-logo-bg px-10">
+      <section className="bg-logo-bg px-10 pb-8">
         <SvgWave />
         <div>
           {dineCategories.map((dine) => (
@@ -115,7 +115,7 @@ const Dine = () => {
                         ].map((item, innerIndex) => (
                           <span
                             key={`${detail.type}-${innerIndex}`}
-                            className="flex items-center justify-center gap-4"
+                            className="flex items-center justify-center gap-2"
                           >
                             {item.icon}
                             {item.text}

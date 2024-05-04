@@ -11,6 +11,7 @@ import History from "./components/History";
 import BackToTop from "./components/ui/BackToTop";
 import WhatsApp from "./components/ui/WhatsApp";
 import PlacesToVisit from "./components/PlacesToVisit";
+import MithilaThali from "./components/ui/MithilaThali";
 
 const App = () => {
   return (
@@ -23,6 +24,7 @@ const App = () => {
       <History />
       <Accommodation />
       <Dine />
+      <MithilaThali />
       <Hall />
       <Testimonials />
       {/* <Offers /> */}
