@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import logo from "../assets/logo.svg";
 import Button from "./ui/Button";
 import { RiArrowDropDownLine } from "react-icons/ri";
@@ -6,6 +6,7 @@ import Socials from "./ui/Socials";
 
 const Navbar = () => {
   const [openDropdownId, setOpenDropdownId] = useState(null);
+  const [activePage, setActivePage] = useState("");
 
   const navLinks = [
     // {
@@ -79,9 +80,20 @@ const Navbar = () => {
     setOpenDropdownId(openDropdownId === id ? null : id);
   };
 
+  useEffect(() => {
+    // Set active page based on current URL pathname
+    const pathname = window.location.pathname;
+    const matchedLink = navLinks.find((link) => pathname.startsWith(link.link));
+    if (matchedLink) {
+      setActivePage(matchedLink.id);
+    } else {
+      setActivePage("");
+    }
+  }, [navLinks]);
+
   return (
     <>
-      <header className="relative h-24 w-full flex items-center justify-between px-6 z-50 bg-custom-black/20 backdrop-blur-sm">
+      <header className="relative h-24 w-full flex items-center justify-between px-6 z-50 bg-custom-black/20 backdrop-blur-sm bg-gradient-to-t from-custom-white/40 to-transparent">
         <Socials />
 
         <h1>
@@ -89,7 +101,7 @@ const Navbar = () => {
             <img
               src={logo}
               alt="Mithila Yatri Niwas"
-              className=" w-32 h-24 p-1 object-contain bg-custom-white/90"
+              className=" w-32 h-24 p-1 object-contain"
             />
           </a>
         </h1>
@@ -101,14 +113,19 @@ const Navbar = () => {
       </header>
 
       <nav className="sticky top-0 h-12 bg-custom-black/30 backdrop-blur-sm border-t border-b border-custom-white/50 text-custom-white  drop-shadow-lg z-50">
-        <ul className="flex items-center flex-wrap justify-center gap-20 h-full px-6 font-medium cursor-pointer tracking-wider">
+        <ul className="flex items-center flex-wrap justify-center gap-12 h-full font-medium cursor-pointer tracking-wider">
           {navLinks.map((link) => (
-            <li key={link.id} className="relative">
+            <li
+              key={link.id}
+              className={`relative ${activePage === link.id ? "active" : ""}`}
+            >
               {link.subLinks ? (
                 <div className="dropdown">
                   <a
                     href={link.link}
-                    className="font-title flex items-center transition-linear drop-shadow-lg hover:scale-125"
+                    className={`font-title flex items-center transition-linear drop-shadow-lg hover:scale-110 px-3 py-1 rounded-full ${
+                      activePage === link.id ? "bg-custom-black/40" : ""
+                    }`}
                     onClick={(e) => toggleDropdown(link.id, e)}
                   >
                     {link.title}
@@ -132,7 +149,9 @@ const Navbar = () => {
               ) : (
                 <a
                   href={link.link}
-                  className="font-title inline-block transition-linear drop-shadow-lg hover:scale-125"
+                  className={`font-title inline-block transition-linear drop-shadow-lg hover:scale-110 px-3 py-1 rounded-full ${
+                    activePage === link.id ? "bg-custom-black/40" : ""
+                  }`}
                 >
                   {link.title}
                 </a>

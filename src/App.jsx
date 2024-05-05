@@ -12,32 +12,26 @@ import BackToTop from "./components/ui/BackToTop";
 import WhatsApp from "./components/ui/WhatsApp";
 import PlacesToVisit from "./components/PlacesToVisit";
 import MithilaThali from "./components/ui/MithilaThali";
-import GalleryPage from "./pages/GalleryPage";
 
 const App = () => {
   return (
-    // <>
-    //   <Navbar />
-    //   <Hero />
-    //   <About />
-    //   {/* <Direction /> */}
-    //   {/* <Janaki /> */}
-    //   <History />
-    //   <Accommodation />
-    //   <Dine />
-    //   <MithilaThali />
-    //   <Hall />
-    //   <Testimonials />
-    //   {/* <Offers /> */}
-    //   <PlacesToVisit />
-    //   <Footer />
-    //   <BackToTop />
-    //   <WhatsApp />
-    // </>
     <>
       <Navbar />
-      <GalleryPage />
+      <Hero />
+      <About />
+      {/* <Direction /> */}
+      {/* <Janaki /> */}
+      <History />
+      <Accommodation />
+      <Dine />
+      <MithilaThali />
+      <Hall />
+      <Testimonials />
+      {/* <Offers /> */}
+      <PlacesToVisit />
       <Footer />
+      <BackToTop />
+      <WhatsApp />
     </>
   );
 };
