@@ -1,7 +1,7 @@
 import React from "react";
 import Banner from "../components/ui/Banner";
 import Direction from "../components/Direction";
-import mithila from "../assets/mithila.webp";
+import mithilaNight from "../assets/mithila_night.webp";
 import Socials from "../components/ui/Socials";
 import SvgWave from "../components/ui/SvgWave";
 
@@ -40,7 +40,7 @@ const Contact = () => {
   ];
   return (
     <>
-      <Banner banner={mithila} page="Contact" />
+      <Banner banner={mithilaNight} page="Contact" />
 
       {/* <section className="bg-alt-bg">
         <div className="grid sm:grid-cols-2 items-center gap-16 p-8 mx-auto max-w-4xl bg-alt-logo-clr shadow-lg rounded-md text-custom-white">
@@ -132,7 +132,7 @@ const Contact = () => {
           <div className="grid lg:grid-cols-3 items-center gap-4 p-2 shadow-lg rounded-xl mt-8 bg-custom-white">
             <div className="bg-[#011c2b] rounded-xl max-lg:text-center px-6 py-12 relative z-10">
               <img
-                src={mithila}
+                src={mithilaNight}
                 alt="Mithila Yatri Niwas"
                 className="w-full h-full absolute inset-0 object-cover -z-10 rounded-xl"
               />
