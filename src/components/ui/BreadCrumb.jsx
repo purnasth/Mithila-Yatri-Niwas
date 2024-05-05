@@ -1,0 +1,37 @@
+import React from "react";
+import { IoHome } from "react-icons/io5";
+import { MdKeyboardDoubleArrowRight } from "react-icons/md";
+
+const BreadCrumb = ({ page }) => {
+  return (
+    <>
+      <nav
+        className="flex items-center justify-center px-5 pt-16 py-3 absolute left-0 bottom-0 w-full bg-gradient-to-t from-[rgba(0,0,0,0.6)] to-[rgba(0,0,0,0)]"
+        aria-label="Breadcrumb"
+      >
+        <ol className="inline-flex items-center space-x-3">
+          <li className="inline-flex items-center">
+            <a
+              href="/"
+              className="inline-flex items-center justify-center font-medium text-gray-100 font-title tracking-wider bg-alt-logo-clr hover:bg-logo-clr transition-linear px-3 py-1 rounded-full"
+            >
+              <IoHome className="text-lg me-2.5 -mt-[5px]" />
+              Home
+            </a>
+          </li>
+          <li aria-current="page">
+            <a
+              href="#"
+              className="inline-flex items-center justify-center font-extrabold text-gray-100 hover:text-custom-white font-title tracking-wider "
+            >
+              <MdKeyboardDoubleArrowRight className="text-lg me-2.5 -mt-[5px]" />
+              {page}
+            </a>
+          </li>
+        </ol>
+      </nav>
+    </>
+  );
+};
+
+export default BreadCrumb;

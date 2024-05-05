@@ -9,6 +9,7 @@ import { HiOutlineMail } from "react-icons/hi";
 import { MdOutlineBed } from "react-icons/md";
 import { MdOutlineBrunchDining } from "react-icons/md";
 import { TbCalendarEvent } from "react-icons/tb";
+import LocationDetails from "./ui/LocationDetails";
 
 const Footer = () => {
   return (
@@ -27,31 +28,7 @@ const Footer = () => {
       <div className="text-white relative overflow-hidden z-30">
         <div className="container pt-20 pb-8 h-full">
           <div className="grid grid-cols-3 place-items-center px-8">
-            <ul className="col-span-1 flex flex-col gap-4">
-              <li className="flex items-center justify-start gap-2 text-custom-white hover:scale-105 hover:text-white transition-linear">
-                <GrLocation className="text-xl" />
-                <a href="#" target="_blank" rel="noopener">
-                  Dasrath Talau, Janakpur Dham, Dhanusha
-                </a>
-              </li>
-
-              <li className="flex items-center justify-start gap-2 text-custom-white hover:scale-105 hover:text-white transition-linear">
-                <TbPhone className="text-xl" />
-                <a href="tel:+97714229996" target="_blank" rel="noopener">
-                  +977-14229996
-                </a>
-              </li>
-              <li className="flex items-center justify-start gap-2 text-custom-white hover:scale-105 hover:text-white transition-linear">
-                <HiOutlineMail className="text-xl" />
-                <a
-                  href="mailto:info@hotelmithilanepal.com"
-                  target="_blank"
-                  rel="noopener"
-                >
-                  info@hotelmithilanepal.com
-                </a>
-              </li>
-            </ul>
+            <LocationDetails />
 
             <div className="col-span-1 flex items-center justify-center flex-col gap-10">
               <a href="/">
