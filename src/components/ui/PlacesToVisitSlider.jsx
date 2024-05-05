@@ -4,7 +4,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { CgArrowLongRight } from "react-icons/cg";
 
-const PlacesToVisitSlider = ({ contents }) => {
+const PlacesToVisitSlider = ({ contents, router }) => {
   const settings = {
     dots: true,
     infinite: false,
@@ -24,7 +24,7 @@ const PlacesToVisitSlider = ({ contents }) => {
   return (
     <>
       <Slider {...settings}>
-        {contents.map(({ id, title, description, icon, router }) => (
+        {contents.map(({ id, title, description, icon }) => (
           <div key={id} className="p-4">
             <div className="rounded-lg overflow-hidden shadow-lg">
               <img

@@ -4,11 +4,13 @@ import Home from "./pages/Home";
 import GalleryPage from "./pages/GalleryPage";
 import Contact from "./pages/Contact";
 import NotFound from "./pages/404";
+import Visit from "./pages/Visit";
 
 export const router = createBrowserRouter([
   { path: "/", element: <Home /> },
   { path: "/accommodation", element: <Accommodation /> },
   { path: "/gallery", element: <GalleryPage /> },
   { path: "/contact", element: <Contact /> },
+  { path: "/places-to-visit", element: <Visit /> },
   { path: "*", element: <NotFound /> },
 ]);

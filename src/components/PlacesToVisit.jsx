@@ -64,7 +64,10 @@ const PlacesToVisit = () => {
             /> */}
         </div>
         <div className="">
-          <PlacesToVisitSlider contents={offersContents} router="#" />
+          <PlacesToVisitSlider
+            contents={offersContents}
+            router="/places-to-visit"
+          />
         </div>
       </section>
     </>
