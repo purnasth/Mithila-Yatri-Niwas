@@ -16,6 +16,13 @@ import "lightgallery/css/lg-thumbnail.css";
 import "lightgallery/css/lg-fullscreen.css";
 import "lightgallery/css/lg-share.css";
 
+import mithilaNight from "../assets/mithila_night.webp";
+import room1 from "../assets/rooms/room1.webp";
+import room2 from "../assets/rooms/room2.webp";
+import room3 from "../assets/rooms/room3.webp";
+import hall1 from "../assets/halls/hall1.webp";
+import exterior1 from "../assets/halls/exterior1.webp";
+
 const GalleryPage = () => {
   const [activeCategory, setActiveCategory] = useState("All");
   const [isTransitioning, setIsTransitioning] = useState(false);
@@ -23,81 +30,87 @@ const GalleryPage = () => {
   const images = [
     {
       id: 1,
-      url: "http://purnadrive.rf.gd/uploads/img1.jpg",
-      alt: "",
-      category: "Mockup",
+      url: mithila,
+      alt: "External View of Mithila Yatri Niwas",
+      category: "Exterior",
     },
     {
       id: 2,
-      url: "http://purnadrive.rf.gd/uploads/img2.jpg",
-      alt: "",
-      category: "Android",
+      url: room1,
+      alt: "A Room in Mithila Yatri Niwas",
+      category: "Rooms",
     },
     {
       id: 3,
-      url: "http://purnadrive.rf.gd/uploads/img3.jpg",
-      alt: "",
-      category: "Mockup",
+      url: mithilaNight,
+      alt: "External View of Mithila Yatri Niwas",
+      category: "Exterior",
     },
     {
       id: 4,
-      url: "http://purnadrive.rf.gd/uploads/img4.jpg",
-      alt: "",
-      category: "Android",
+      url: room2,
+      alt: "A Room in Mithila Yatri Niwas",
+      category: "Rooms",
     },
     {
       id: 5,
-      url: "http://purnadrive.rf.gd/uploads/img5.jpg",
-      alt: "",
-      category: "Android",
+      url: room3,
+      alt: "A Room in Mithila Yatri Niwas",
+      category: "Rooms",
     },
     {
       id: 6,
-      url: "http://purnadrive.rf.gd/uploads/img6.jpg",
-      alt: "",
-      category: "Web",
+      url: hall1,
+      alt: "A Hall in Mithila Yatri Niwas",
+      category: "Halls",
     },
     {
       id: 7,
-      url: "http://purnadrive.rf.gd/uploads/img7.jpg",
-      alt: "",
-      category: "Mockup",
-    },
-    {
-      id: 8,
-      url: "http://purnadrive.rf.gd/uploads/img8.jpg",
-      alt: "",
-      category: "Design",
+      url: "https://cf.bstatic.com/xdata/images/hotel/max1280x900/400872394.jpg?k=3d5fe966b858609f19785203da96a89ae71e046b1440c5eb3f4a225eb5077705&o=&hp=1 ",
+      alt: "External View of Mithila Yatri Niwas",
+      category: "Exterior",
     },
     {
       id: 9,
-      url: "http://purnadrive.rf.gd/uploads/img9.jpg",
-      alt: "",
-      category: "Web",
+      url: "https://cf.bstatic.com/xdata/images/hotel/max1280x900/448009684.jpg?k=608bc2007704b2653474c37e56bb9b3f5385607eec90691e88f4eed09cde0204&o=&hp=1",
+      alt: "External View of Mithila Yatri Niwas",
+      category: "Halls",
     },
     {
       id: 10,
-      url: "http://purnadrive.rf.gd/uploads/img10.jpg",
-      alt: "",
-      category: "Web",
+      url: exterior1,
+      alt: "External View of Mithila Yatri Niwas",
+      category: "Halls",
     },
     {
       id: 11,
-      url: "http://purnadrive.rf.gd/uploads/img11.jpg",
-      alt: "",
-      category: "Android",
+      url: "https://cf.bstatic.com/xdata/images/hotel/max1280x900/384889349.jpg?k=7d4d9b688ad1555ef55d8cc2e31163bfb4bb9f8d71fb6b31f0f6f8410598892e&o=&hp=1",
+      alt: "A Room in Mithila Yatri Niwas",
+      category: "Rooms",
     },
     {
       id: 12,
-      url: "http://purnadrive.rf.gd/uploads/img12.jpg",
-      alt: "",
-      category: "Mockup",
+      url: "https://cf.bstatic.com/xdata/images/hotel/max1280x900/400872398.jpg?k=8b2fd1d79723d3658edd06b335e6c1baad7196c9005ac0b53a6342e0725952ac&o=&hp=1",
+      alt: "External View of Mithila Yatri Niwas",
+      category: "Exterior",
     },
     {
       id: 13,
-      url: "http://purnadrive.rf.gd/uploads/img13.jpg",
-      alt: "",
-      category: "Design",
+      url: "https://cf.bstatic.com/xdata/images/hotel/max1280x900/400673143.jpg?k=7a099a12d9a48157025b95f1ea518247a4014864cfffae120290bc3b80ed03bf&o=&hp=1",
+      alt: "External View of Mithila Yatri Niwas",
+      category: "Halls",
+    },
+    {
+      id: 14,
+      url: "https://cf.bstatic.com/xdata/images/hotel/max1280x900/400872324.jpg?k=175cf774869ef98d7282df2eedb499ccc3d794461d91e69e0b1f0fca0e1639f5&o=&hp=1",
+      alt: "A Room in Mithila Yatri Niwas",
+      category: "Rooms",
+    },
+    {
+      id: 15,
+      url: "https://cf.bstatic.com/xdata/images/hotel/max1280x900/400872318.jpg?k=7fabf9a73030c43eb25cc5d1abc81660338ad00d91a095e1c6820c52a2e91163&o=&hp=1",
+      alt: "A Room in Mithila Yatri Niwas",
+      category: "Rooms",
     },
   ];
 
@@ -172,7 +185,7 @@ const GalleryPage = () => {
               data-src={image.url}
             >
               <img
-                className="w-full h-72 object-cover shadow-md transition duration-700 ease-in-out group-hover:scale-125 cursor-pointer"
+                className="w-full h-72 object-cover transition duration-700 ease-in-out group-hover:scale-125 cursor-pointer shadow-lg"
                 src={image.url}
                 alt={image.alt}
               />
