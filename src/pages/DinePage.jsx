@@ -25,6 +25,7 @@ import SvgWave from "../components/ui/SvgWave";
 import DineComponent from "../components/ui/DineComponent";
 
 import mithila from "../assets/mithila.webp";
+import dine from "../assets/dine/dine.webp";
 
 import { HiMiniUserGroup } from "react-icons/hi2";
 import { GiBowlOfRice } from "react-icons/gi";
@@ -128,10 +129,7 @@ const DinePage = () => {
 
   return (
     <>
-      <Banner
-        banner="https://cf.bstatic.com/xdata/images/hotel/max1280x900/448009684.jpg?k=608bc2007704b2653474c37e56bb9b3f5385607eec90691e88f4eed09cde0204&o=&hp=1"
-        page="Dine"
-      />
+      <Banner banner={dine} page="Dine" />
       <section>
         <SvgWave />
         <div className="text-center mb-16 container max-w-5xl mx-auto">

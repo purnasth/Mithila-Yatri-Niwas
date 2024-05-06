@@ -20,8 +20,20 @@ import mithilaNight from "../assets/mithila_night.webp";
 import room1 from "../assets/rooms/room1.webp";
 import room2 from "../assets/rooms/room2.webp";
 import room3 from "../assets/rooms/room3.webp";
+import room4 from "../assets/rooms/room4.webp";
+import room5 from "../assets/rooms/room5.webp";
+import room6 from "../assets/rooms/room6.webp";
+
 import hall1 from "../assets/halls/hall1.webp";
+import hall2 from "../assets/halls/hall2.webp";
+
+import lobby1 from "../assets/halls/lobby1.webp";
+
 import exterior1 from "../assets/halls/exterior1.webp";
+import dine1 from "../assets/dine/dine.webp";
+
+import mithila2 from "../assets/mithila2.webp";
+import mithila4 from "../assets/mithila4.webp";
 
 const GalleryPage = () => {
   const [activeCategory, setActiveCategory] = useState("All");
@@ -66,13 +78,19 @@ const GalleryPage = () => {
     },
     {
       id: 7,
-      url: "https://cf.bstatic.com/xdata/images/hotel/max1280x900/400872394.jpg?k=3d5fe966b858609f19785203da96a89ae71e046b1440c5eb3f4a225eb5077705&o=&hp=1 ",
+      url: lobby1,
+      alt: "Lobby of Mithila Yatri Niwas",
+      category: "Halls",
+    },
+    {
+      id: 8,
+      url: mithila2,
       alt: "External View of Mithila Yatri Niwas",
       category: "Exterior",
     },
     {
       id: 9,
-      url: "https://cf.bstatic.com/xdata/images/hotel/max1280x900/448009684.jpg?k=608bc2007704b2653474c37e56bb9b3f5385607eec90691e88f4eed09cde0204&o=&hp=1",
+      url: dine1,
       alt: "External View of Mithila Yatri Niwas",
       category: "Halls",
     },
@@ -84,31 +102,31 @@ const GalleryPage = () => {
     },
     {
       id: 11,
-      url: "https://cf.bstatic.com/xdata/images/hotel/max1280x900/384889349.jpg?k=7d4d9b688ad1555ef55d8cc2e31163bfb4bb9f8d71fb6b31f0f6f8410598892e&o=&hp=1",
+      url: room4,
       alt: "A Room in Mithila Yatri Niwas",
       category: "Rooms",
     },
     {
       id: 12,
-      url: "https://cf.bstatic.com/xdata/images/hotel/max1280x900/400872398.jpg?k=8b2fd1d79723d3658edd06b335e6c1baad7196c9005ac0b53a6342e0725952ac&o=&hp=1",
+      url: mithila4,
       alt: "External View of Mithila Yatri Niwas",
       category: "Exterior",
     },
     {
       id: 13,
-      url: "https://cf.bstatic.com/xdata/images/hotel/max1280x900/400673143.jpg?k=7a099a12d9a48157025b95f1ea518247a4014864cfffae120290bc3b80ed03bf&o=&hp=1",
+      url: hall2,
       alt: "External View of Mithila Yatri Niwas",
       category: "Halls",
     },
     {
       id: 14,
-      url: "https://cf.bstatic.com/xdata/images/hotel/max1280x900/400872324.jpg?k=175cf774869ef98d7282df2eedb499ccc3d794461d91e69e0b1f0fca0e1639f5&o=&hp=1",
+      url: room5,
       alt: "A Room in Mithila Yatri Niwas",
       category: "Rooms",
     },
     {
       id: 15,
-      url: "https://cf.bstatic.com/xdata/images/hotel/max1280x900/400872318.jpg?k=7fabf9a73030c43eb25cc5d1abc81660338ad00d91a095e1c6820c52a2e91163&o=&hp=1",
+      url: room6,
       alt: "A Room in Mithila Yatri Niwas",
       category: "Rooms",
     },
