@@ -113,7 +113,7 @@ const Accommodation = () => {
                 secondaryColor="bg-alt-logo-clr"
               /> */}
             </div>
-            <div className="col-span-2 md:col-span-2">
+            <div className="home-accommodation col-span-2 md:col-span-2">
               <RoomSlider contents={roomsCategories} />
             </div>
           </div>
