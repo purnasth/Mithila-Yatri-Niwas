@@ -48,7 +48,7 @@ const Hall = () => {
         {/* <section className="bg-gradient-to-t from-logo-bg to-alt-bg px-10"> */}
         <div className="containe r">
           <div className="grid grid-cols-1 md:grid-cols-3 md:gap-8">
-            <div className="col-span-2 md:col-span-2">
+            <div className="home-accommodation col-span-2 md:col-span-2">
               <RoomSlider contents={hallCategories} />
             </div>
             <div className="col-span-1 md:col-span-1 text-center md:text-left">

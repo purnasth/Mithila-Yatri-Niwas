@@ -171,8 +171,8 @@ const PackageComponent = () => {
               <button
                 className={`font-title px-6 py-2 transition-linear text-base uppercase tracking-wide text-custom-black hover:bg-custom-black/10 rounded-full ${
                   activeRoom === room.title
-                    ? "opacity-100 scale-100 font-semibold"
-                    : "opacity-50 scale-90 hover:opacity-80 font-medium"
+                    ? "opacity-100 scale-100 font-bold"
+                    : "opacity-50 scale-90 hover:opacity-80 font-semibold"
                 } ${isTransitioning ? "transition-linear" : ""}`}
                 key={room.id}
                 onClick={() => handleRoomClick(room.title)}
