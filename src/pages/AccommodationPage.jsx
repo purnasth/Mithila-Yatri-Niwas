@@ -4,18 +4,38 @@ import PackageSlider from "../components/ui/PackageSlider";
 import room1 from "../assets/rooms/room1.webp";
 import room2 from "../assets/rooms/room2.webp";
 import room3 from "../assets/rooms/room3.webp";
-import BreadCrumb from "./ui/BreadCrumb";
-import RoomAmenities from "./ui/RoomAmenities";
-import Reservation from "./ui/Reservation";
+import BreadCrumb from "../components/ui/BreadCrumb";
+import RoomAmenities from "../components/ui/RoomAmenities";
+import Reservation from "../components/ui/Reservation";
 
 import { IoBed, IoPricetagSharp } from "react-icons/io5";
 import { IoMdResize } from "react-icons/io";
 import { GiBowlOfRice } from "react-icons/gi";
 import { IoMdClock } from "react-icons/io";
 
-import PackageList from "./PackageList";
+import PackageList from "../components/PackageList";
 
-const PackageComponent = () => {
+import {
+  FaWifi,
+  FaTv,
+  FaBed,
+  FaBath,
+  FaSwimmingPool,
+  FaUtensils,
+  FaParking,
+  FaAirFreshener,
+  FaCoffee,
+  FaFireAlt,
+  FaChild,
+  FaWheelchair,
+} from "react-icons/fa";
+import { MdTableRestaurant } from "react-icons/md";
+import { GiSlippers } from "react-icons/gi";
+import { TbDeviceLandlinePhone } from "react-icons/tb";
+import { GiTowel } from "react-icons/gi";
+import { FaBottleWater } from "react-icons/fa6";
+
+const AccommodationPage = () => {
   const roomsCategories = [
     {
       id: 1,
@@ -24,13 +44,18 @@ const PackageComponent = () => {
         "Comfortable and homely for relaxation with view of our garden, the lake or the Janaki Temple some distance away. All our 18 Deluxe Rooms are designed keeping in mind your needs but nothing in excess. These rooms are opulently designed and decorated for comfort of our guests.",
       image: room1,
       router: "/accommodation/deluxe-room",
-      informations: {
-        "Total Rooms": { icon: IoBed, value: "18 rooms" },
-        Price: { icon: IoPricetagSharp, value: "Starting USD 40" },
-        "Room Size": { icon: IoMdResize, value: "205 sq. ft." },
-        "Rate plan": { icon: GiBowlOfRice, value: "Bed & Breakfast" },
-        "Check-in/out": { icon: IoMdClock, value: "1pm - 12 noon" },
-      },
+      informations: [
+        {
+          title: "Informations",
+          data: {
+            "Total Rooms": { icon: IoBed, value: "18 rooms" },
+            Price: { icon: IoPricetagSharp, value: "Starting USD 40" },
+            "Room Size": { icon: IoMdResize, value: "205 sq. ft." },
+            "Rate plan": { icon: GiBowlOfRice, value: "Bed & Breakfast" },
+            "Check-in/out": { icon: IoMdClock, value: "1pm - 12 noon" },
+          },
+        },
+      ],
       facilities: [
         {
           title: "Facilities",
@@ -61,13 +86,18 @@ const PackageComponent = () => {
         "Comfortable and homely for relaxation with view of our garden, the lake or the Janaki Temple some distance away. All our 10 Executive Rooms are designed keeping in mind your needs but nothing in excess. These rooms are opulently designed and decorated for comfort of our guests.",
       image: room2,
       router: "/accommodation/executive-suite",
-      informations: {
-        "Total Rooms": { icon: IoBed, value: "10 rooms" },
-        Price: { icon: IoPricetagSharp, value: "Starting USD 50" },
-        "Room Size": { icon: IoMdResize, value: "215 sq. ft." },
-        "Rate plan": { icon: GiBowlOfRice, value: "Bed & Breakfast" },
-        "Check-in/out": { icon: IoMdClock, value: "1pm - 12 noon" },
-      },
+      informations: [
+        {
+          title: "Informations",
+          data: {
+            "Total Rooms": { icon: IoBed, value: "10 rooms" },
+            Price: { icon: IoPricetagSharp, value: "Starting USD 50" },
+            "Room Size": { icon: IoMdResize, value: "215 sq. ft." },
+            "Rate plan": { icon: GiBowlOfRice, value: "Bed & Breakfast" },
+            "Check-in/out": { icon: IoMdClock, value: "1pm - 12 noon" },
+          },
+        },
+      ],
       facilities: [
         {
           title: "Facilities",
@@ -98,13 +128,18 @@ const PackageComponent = () => {
         "Comfortable and homely for relaxation with view of our garden, the lake or the Janaki Temple some distance away. All our 2 Suite Rooms are designed keeping in mind your needs but nothing in excess. These rooms are opulently designed and decorated for comfort of our guests.",
       image: room3,
       router: "/accommodation/suite-room",
-      informations: {
-        "Total Rooms": { icon: IoBed, value: "2 rooms" },
-        Price: { icon: IoPricetagSharp, value: "Starting USD 60" },
-        "Room Size": { icon: IoMdResize, value: "215 sq. ft." },
-        "Rate plan": { icon: GiBowlOfRice, value: "Bed & Breakfast" },
-        "Check-in/out": { icon: IoMdClock, value: "1pm - 12 noon" },
-      },
+      informations: [
+        {
+          title: "Informations",
+          data: {
+            "Total Rooms": { icon: IoBed, value: "2 rooms" },
+            Price: { icon: IoPricetagSharp, value: "Starting USD 60" },
+            "Room Size": { icon: IoMdResize, value: "215 sq. ft." },
+            "Rate plan": { icon: GiBowlOfRice, value: "Bed & Breakfast" },
+            "Check-in/out": { icon: IoMdClock, value: "1pm - 12 noon" },
+          },
+        },
+      ],
       facilities: [
         {
           title: "Facilities",
@@ -129,6 +164,25 @@ const PackageComponent = () => {
         },
       ],
     },
+  ];
+
+  const roomAmenities = [
+    { icon: <FaWifi />, title: "Free Wi-Fi" },
+    { icon: <FaTv />, title: "Flat-screen TV" },
+    { icon: <FaBed />, title: "Comfortable Bed" },
+    { icon: <FaBath />, title: "Private Bathroom" },
+    { icon: <MdTableRestaurant />, title: "Furniture" },
+    { icon: <FaUtensils />, title: "Dining Area" },
+    // { icon: <FaParking />, title: "Free Parking" },
+    { icon: <FaAirFreshener />, title: "Air Conditioning" },
+    { icon: <FaCoffee />, title: "Coffee Maker" },
+    // { icon: <FaFireAlt />, title: "Fireplace" },
+    // { icon: <FaChild />, title: "Kids Play Area" },
+    // { icon: <FaWheelchair />, title: "Wheelchair Accessible" },
+    { icon: <GiSlippers />, title: "Slippers" },
+    { icon: <TbDeviceLandlinePhone />, title: "Telephone" },
+    { icon: <GiTowel />, title: "Towel Service" },
+    { icon: <FaBottleWater />, title: "Water Bottle" },
   ];
 
   return (
@@ -156,7 +210,10 @@ const PackageComponent = () => {
 
         <PackageList contents={roomsCategories} />
 
-        <RoomAmenities />
+        <RoomAmenities
+          amenities={roomAmenities}
+          amenitiesTitle="Room Amenities"
+        />
 
         <Reservation />
       </section>
@@ -164,4 +221,4 @@ const PackageComponent = () => {
   );
 };
 
-export default PackageComponent;
+export default AccommodationPage;

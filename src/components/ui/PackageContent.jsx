@@ -10,31 +10,35 @@ const PackageContent = ({ room }) => {
         </p>
         <hr className="border-custom-black/20 mt-4" />
 
-        <h5 className="text-3xl text-custom-black mt-12 mb-6">Informations</h5>
-        <ul>
-          {room.informations &&
-            Object.entries(room.informations).map(([infoKey, infoValue]) => (
-              <li
-                key={infoKey}
-                className="flex items-left justify-left flex-col py-2"
-              >
-                <span className="flex items-center gap-2 text-gray-600">
-                  {typeof infoValue.icon === "function" ? (
-                    <infoValue.icon className="text-xl mr-2" />
-                  ) : (
-                    <img
-                      src={infoValue.icon}
-                      alt={infoKey}
-                      className="w-12 h-12 mb-2"
-                    />
-                  )}
-                  {/* {infoKey}: {infoValue.value} */}
-                  <span className="font-bold">{infoKey}: </span>
-                  {infoValue.value}
-                </span>
-              </li>
-            ))}
-        </ul>
+        {room.informations.map((infoCategory) => (
+          <div key={infoCategory.title}>
+            <h5 className="text-3xl text-custom-black mt-12 mb-6">
+              {infoCategory.title}
+            </h5>
+            <ul>
+              {Object.entries(infoCategory.data).map(([infoKey, infoValue]) => (
+                <li
+                  key={infoKey}
+                  className="flex items-left justify-left flex-col py-2"
+                >
+                  <span className="flex items-center gap-2 text-gray-600">
+                    {typeof infoValue.icon === "function" ? (
+                      <infoValue.icon className="text-xl mr-2" />
+                    ) : (
+                      <img
+                        src={infoValue.icon}
+                        alt={infoKey}
+                        className="w-8 h-8 mr-2 p-1"
+                      />
+                    )}
+                    <span className="font-bold">{infoKey}: </span>
+                    {infoValue.value}
+                  </span>
+                </li>
+              ))}
+            </ul>
+          </div>
+        ))}
 
         <hr className="border-custom-black/20 mt-4" />
 
@@ -44,9 +48,9 @@ const PackageContent = ({ room }) => {
               {facilityCategory.title}
             </h5>
             <ul className="list-decimal ml-4">
-              {facilityCategory.content.map((policy) => (
-                <li key={policy} className="mb-2 text-gray-600">
-                  {policy}
+              {facilityCategory.content.map((facility) => (
+                <li key={facility} className="mb-2 text-gray-600">
+                  {facility}
                 </li>
               ))}
             </ul>

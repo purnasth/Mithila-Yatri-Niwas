@@ -52,7 +52,7 @@ const Hall = () => {
               <RoomSlider contents={hallCategories} />
             </div>
             <div className="col-span-1 md:col-span-1 text-center md:text-left">
-              <h2 className="text-3xl text-primary">Occassions</h2>
+              <h2 className="text-3xl text-primary">Occasions</h2>
               <p className="text-base text-gray-500 mt-4">
                 With 30 immaculately designed rooms that are carefully planned
                 to ensure soothing modern comfort, they all afford wonderful
