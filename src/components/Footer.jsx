@@ -2,16 +2,59 @@ import React from "react";
 import Socials from "./ui/Socials";
 import logo from "../assets/logo.svg";
 
-import { GrLocation } from "react-icons/gr";
-import { TbPhone } from "react-icons/tb";
-import { HiOutlineMail } from "react-icons/hi";
-
 import { MdOutlineBed } from "react-icons/md";
 import { MdOutlineBrunchDining } from "react-icons/md";
 import { TbCalendarEvent } from "react-icons/tb";
 import LocationDetails from "./ui/LocationDetails";
 
+import expedia from "../assets/ota/expedia.webp";
+import tripadvisor from "../assets/ota/tripadvisor.webp";
+import bookingcom from "../assets/ota/bookingcom.webp";
+import agoda from "../assets/ota/agoda.webp";
+
 const Footer = () => {
+  const menuItems = [
+    { icon: MdOutlineBed, text: "Deluxe", router: "#" },
+    { icon: MdOutlineBed, text: "Executive", router: "#" },
+    { icon: MdOutlineBed, text: "Suite", router: "#" },
+    { icon: MdOutlineBrunchDining, text: "Bhojan Griha", router: "#" },
+    { icon: TbCalendarEvent, text: "Sabha Hall", router: "#" },
+    { icon: TbCalendarEvent, text: "PDR", router: "#" },
+  ];
+
+  const footerTerms = [
+    { text: "Terms & Conditions", router: "#" },
+    { text: "Privacy Policy", router: "#" },
+    { text: "Child Policy", router: "#" },
+  ];
+
+  const sister = "Stream Peak International Pvt. Ltd.";
+  const currentYear = new Date().getFullYear();
+  const author = "Longtail e-media";
+
+  const otaLinks = [
+    {
+      href: "https://www.booking.com/hotel/np/mithila-yatri-niwas.en-gb.html?aid=356980&label=gog235jc-1DCAsoqwFCE21pdGhpbGEteWF0cmktbml3YXNIM1gDaKsBiAEBmAEJuAEXyAEM2AED6AEBiAIBqAIDuAKml9OxBsACAdICJDgzYWY5MGYzLWFmMDAtNDg4ZS1iNDJlLTNhYzdmYjQwMzY1NNgCBOACAQ&sid=92d4f646b70df7ccf9096a36f66af01e&dist=0&keep_landing=1&sb_price_type=total&type=total&",
+      imgSrc: bookingcom,
+      alt: "Booking.com",
+    },
+    {
+      href: "https://www.tripadvisor.com/Hotel_Review-g424939-d24969555-Reviews-Mithila_Yatri_Niwas-Janakpur_Janakpur_Zone_Central_Region.html",
+      imgSrc: tripadvisor,
+      alt: "Tripadvisor",
+    },
+    {
+      href: "https://www.agoda.com/dasrath-talau-janakpur-dham-dhanusha/hotel/janakpur-np.html",
+      imgSrc: agoda,
+      alt: "Agoda",
+    },
+    {
+      href: "https://www.expedia.com/Janakpur-Hotels-Mithila-Yatri-Niwas.h83936278.Hotel-Information?",
+      imgSrc: expedia,
+      alt: "Expedia",
+    },
+  ];
+
   return (
     <footer className="relative overflow-hidden bg-alt-logo-clr z-10">
       {/* <img
@@ -47,143 +90,88 @@ const Footer = () => {
 
             <div className="col-span-1 flex flex-col items-end justify-end gap-4">
               <ul className="flex gap-8">
-                <li>
-                  <a
-                    href="#"
-                    className="relative group text-custom-white hover:text-white hover:scale-110 transition-linear flex items-center gap-2"
-                  >
-                    <MdOutlineBed /> Deluxe
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="#"
-                    className="relative group text-custom-white hover:text-white hover:scale-110 transition-linear flex items-center gap-2"
-                  >
-                    <MdOutlineBed /> Executive
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="#"
-                    className="relative group text-custom-white hover:text-white hover:scale-110 transition-linear flex items-center gap-2"
-                  >
-                    <MdOutlineBed /> Suite
-                  </a>
-                </li>
+                {menuItems.slice(0, 3).map((item, index) => (
+                  <li key={index}>
+                    <a
+                      href={item.router}
+                      className="relative group text-custom-white hover:text-white hover:scale-110 transition-linear flex items-center gap-2"
+                    >
+                      {typeof item.icon === "function" ? (
+                        <item.icon className="text-xl mr-2" />
+                      ) : (
+                        <img
+                          src={item.icon}
+                          alt={item.text}
+                          className="w-12 h-12 mb-2"
+                        />
+                      )}
+
+                      {item.text}
+                    </a>
+                  </li>
+                ))}
               </ul>
               <ul className="flex items-center justify-start gap-8">
-                <li>
-                  <a
-                    href="#"
-                    className="relative group text-custom-white hover:text-white hover:scale-110 transition-linear flex items-center gap-2"
-                  >
-                    <MdOutlineBrunchDining />
-                    Bhojan Griha
-                    {/* <div className="mt-1 absolute h-[2px] rounded-full w-4 bg-custom-white/20 group-hover:bg-custom-white -translate-y-1 origin-left group-hover:w-12 transition-linear" /> */}
-                  </a>
-                </li>
+                {menuItems.slice(3, 5).map((item, index) => (
+                  <li key={index}>
+                    <a
+                      href={item.router}
+                      className="relative group text-custom-white hover:text-white hover:scale-110 transition-linear flex items-center gap-2"
+                    >
+                      <item.icon />
+                      {item.text}
+                    </a>
+                  </li>
+                ))}
               </ul>
               <ul className="flex items-center justify-start gap-8">
-                <li>
-                  <a
-                    href="#"
-                    className="relative group text-custom-white hover:text-white hover:scale-110 transition-linear flex items-center gap-2"
-                  >
-                    <TbCalendarEvent />
-                    Sabha Hall
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="#"
-                    className="relative group text-custom-white hover:text-white hover:scale-110 transition-linear flex items-center gap-2"
-                  >
-                    <TbCalendarEvent />
-                    PDR
-                  </a>
-                </li>
+                {menuItems.slice(5).map((item, index) => (
+                  <li key={index}>
+                    <a
+                      href={item.router}
+                      className="relative group text-custom-white hover:text-white hover:scale-110 transition-linear flex items-center gap-2"
+                    >
+                      <item.icon />
+                      {item.text}
+                    </a>
+                  </li>
+                ))}
               </ul>
             </div>
           </div>
 
           {/* <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 py-16"> */}
           <div className="flex items-center justify-center gap-12 py-16">
-            <a
-              href="https://www.booking.com/hotel/np/mithila-yatri-niwas.en-gb.html?aid=356980&label=gog235jc-1DCAsoqwFCE21pdGhpbGEteWF0cmktbml3YXNIM1gDaKsBiAEBmAEJuAEXyAEM2AED6AEBiAIBqAIDuAKml9OxBsACAdICJDgzYWY5MGYzLWFmMDAtNDg4ZS1iNDJlLTNhYzdmYjQwMzY1NNgCBOACAQ&sid=92d4f646b70df7ccf9096a36f66af01e&dist=0&keep_landing=1&sb_price_type=total&type=total&"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex items-center justify-center"
-              aria-label="Booking.com"
-            >
-              <img
-                src="https://www.purnashrestha.com.np/babermahalvilas/svg/bookingcom.svg"
-                alt="Booking.com"
-                className="w-32 h-8 object-cover bg-white rounded-full shadow-md px-4 py-2"
-              />
-            </a>
-            <a
-              href="https://www.tripadvisor.com/Hotel_Review-g424939-d24969555-Reviews-Mithila_Yatri_Niwas-Janakpur_Janakpur_Zone_Central_Region.html"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="p-2 flex items-center justify-center"
-              aria-label="Tripadvisor Booking"
-            >
-              <img
-                src="https://www.purnashrestha.com.np/babermahalvilas/svg/tripadvisor.svg"
-                alt="Tripadvisor"
-                className="w-32 h-8 object-cover bg-white rounded-full shadow-md px-4 py-2"
-              />
-            </a>
-            <a
-              href="https://www.agoda.com/dasrath-talau-janakpur-dham-dhanusha/hotel/janakpur-np.html"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="p-2 flex items-center justify-center"
-              aria-label="Agoda Booking"
-            >
-              <img
-                src="https://seekvectorlogo.com/wp-content/uploads/2021/12/agoda-vector-logo-2021.png"
-                alt="Agoda"
-                className="w-32 h-8 object-contain bg-white rounded-full shadow-md px-4 py-1"
-              />
-            </a>
-            <a
-              href="https://www.expedia.com/Janakpur-Hotels-Mithila-Yatri-Niwas.h83936278.Hotel-Information?"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="p-2 flex items-center justify-center"
-              aria-label="Expedia Booking"
-            >
-              <img
-                src="https://www.purnashrestha.com.np/babermahalvilas/svg/expedia.svg"
-                alt="Expedia"
-                className="w-32 h-8 object-cover bg-white rounded-full shadow-md px-4 py-2"
-              />
-            </a>
+            {otaLinks.map((link, index) => (
+              <a
+                key={index}
+                href={link.href}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="p-2 flex items-center justify-center"
+                aria-label={link.alt}
+                title={link.alt}
+              >
+                <img
+                  src={link.imgSrc}
+                  alt={link.alt}
+                  className="w-32 h-9 object-contain bg-white rounded-full shadow-md px-4 py-2"
+                />
+              </a>
+            ))}
           </div>
 
-          {/* <div className="flex justify-between mb-12"> */}
           <div className="flex justify-center items-center gap-16 mb-12">
-            <a
-              href="#"
-              className="relative group text-custom-white hover:text-white transition-linear underline hover:scale-105"
-            >
-              Terms & Conditions
-              {/* <div className="mt-1 absolute h-[2px] rounded-full w-4 bg-custom-white/20 group-hover:bg-custom-white -translate-y-1 origin-left group-hover:w-12 transition-linear" /> */}
-            </a>
-            <a
-              href="#"
-              className="relative group text-custom-white hover:text-white transition-linear underline hover:scale-105"
-            >
-              Privacy Policy
-            </a>
-            <a
-              href="#"
-              className="relative group text-custom-white hover:text-white transition-linear underline hover:scale-105"
-            >
-              Child Policy
-            </a>
+            {footerTerms.map((link, index) => (
+              <a
+                key={index}
+                href={link.router}
+                className="relative group text-custom-white hover:text-white underline transition-linear  hover:scale-105"
+              >
+                {link.text}
+                {/* <div className="mt-1 absolute h-[2px] rounded-full w-4 bg-custom-white/20 group-hover:bg-custom-white -translate-y-1 origin-left group-hover:w-12 transition-linear" /> */}
+              </a>
+            ))}
           </div>
 
           <hr className="border-custom-white/50 mb-4" />
@@ -197,13 +185,15 @@ const Footer = () => {
                 rel="noopener noreferrer"
                 className="font-bold"
               >
-                Stream Peak International Ptd. Ltd.
+                {sister}
               </a>
             </p>
           </div>
 
           <div className="flex justify-between">
-            <span>&copy; 2024 Mithila Yatri Niwas | All Rights Reserved </span>
+            <span>
+              &copy; {currentYear} Mithila Yatri Niwas | All Rights Reserved{" "}
+            </span>
             <span>
               Website by: &nbsp;
               <a
@@ -211,7 +201,7 @@ const Footer = () => {
                 target="_blank"
                 className="font-bold"
               >
-                Longtail e-media
+                {author}
               </a>
             </span>
           </div>
