@@ -23,7 +23,7 @@ const PackageComponent = () => {
       title: "Deluxe Room",
       description:
         "Comfortable and homely for relaxation with view of our garden, the lake or the Janaki Temple some distance away. All our 18 Deluxe Rooms are designed keeping in mind your needs but nothing in excess. These rooms are opulently designed and decorated for comfort of our guests.",
-      icon: room1,
+      image: room1,
       router: "/accommodation/deluxe-room",
       informations: {
         "Total Rooms": { icon: IoBed, value: "18 rooms" },
@@ -60,7 +60,7 @@ const PackageComponent = () => {
       title: "Executive Room",
       description:
         "Comfortable and homely for relaxation with view of our garden, the lake or the Janaki Temple some distance away. All our 10 Executive Rooms are designed keeping in mind your needs but nothing in excess. These rooms are opulently designed and decorated for comfort of our guests.",
-      icon: room2,
+      image: room2,
       router: "/accommodation/executive-suite",
     },
     {
@@ -68,7 +68,7 @@ const PackageComponent = () => {
       title: "Suite Room",
       description:
         "Comfortable and homely for relaxation with view of our garden, the lake or the Janaki Temple some distance away. All our 2 Suite Rooms are designed keeping in mind your needs but nothing in excess. These rooms are opulently designed and decorated for comfort of our guests.",
-      icon: room3,
+      image: room3,
       router: "/accommodation/suite-room",
     },
   ];

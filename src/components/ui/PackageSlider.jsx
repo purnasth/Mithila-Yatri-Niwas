@@ -24,19 +24,17 @@ const PackageSlider = ({ contents, sizeClassName }) => {
   };
 
   return (
-    <div className="accmmodation">
       <Slider {...settings}>
-        {contents.map(({ id, title, icon }) => (
+        {contents.map(({ id, title, image }) => (
           <div key={id} className={`overflow-hidden group ${sizeClassName}`}>
             <img
-              src={icon}
+              src={image}
               alt={title}
               className="w-full h-full transition duration-700 ease-in-out transform group-hover:scale-105 object-cover"
             />
           </div>
         ))}
       </Slider>
-    </div>
   );
 };
 
