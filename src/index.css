@@ -38,6 +38,29 @@
   }
 }
 
+::-webkit-scrollbar {
+  width: 0.25em;
+  border-radius: 100vw;
+}
+
+::-webkit-scrollbar:hover {
+  width: 0.35em;
+}
+
+::-webkit-scrollbar-track {
+  background: #edd3c8;
+  border-radius: 100vw;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #be6138;
+  border-radius: 100vw;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #3c596e;
+}
+
 .slick-initialized .slick-slide {
   @apply px-2;
 }

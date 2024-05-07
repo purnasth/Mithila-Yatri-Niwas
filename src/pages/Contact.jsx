@@ -28,7 +28,7 @@ const Contact = () => {
     {
       id: "subject",
       type: "text",
-      label: "Purpose",
+      label: "Subject",
       icon: <TbPencilQuestion />,
     },
     {

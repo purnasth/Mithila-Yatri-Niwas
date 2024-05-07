@@ -44,6 +44,7 @@ const About = () => {
               text="Explore"
               primaryColor="bg-alt-logo-clr"
               secondaryColor="bg-logo-clr"
+              router="/about"
             />
           </div>
         </div>

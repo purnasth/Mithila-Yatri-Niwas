@@ -19,7 +19,7 @@ const Reservation = () => {
             </p>
 
             <a
-              href="/enquiry-form"
+              href="/contact#contact-form"
               className="my-12 font-title flex items-center justify-center gap-2 text-custom-white bg-alt-logo-clr hover:bg-logo-clr px-6 py-3 w-32 mx-auto transition-linear group"
             >
               Enquiry

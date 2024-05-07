@@ -128,10 +128,10 @@ const Dine = () => {
                   <hr className="border-custom-black/20 mt-4" />
 
                   <div className="mt-4 translate-y-2 flex items-center justify-between">
-                    <Button title="Reserve" router="#" />
+                    <Button title="Reserve" router="/enquiry-form#enquiry-form" />
 
                     <a
-                      href=""
+                      href="/dine"
                       className="flex items-center justify-center gap-2 group"
                     >
                       Explore More

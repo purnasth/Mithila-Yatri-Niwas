@@ -14,7 +14,7 @@ const Hall = () => {
       description:
         "Comfortable and homely for relaxation with view of our garden, the lake or the Janaki Temple some distance away. All our 18 Deluxe Rooms are designed keeping in mind your needs but nothing in excess. These rooms are opulently designed and decorated for comfort of our guests.",
       icon: hall1,
-      router: "/hall/sabha-hall",
+      router: "/hall#sabha-hall",
     },
     {
       id: 2,
@@ -22,7 +22,7 @@ const Hall = () => {
       description:
         "Comfortable and homely for relaxation with view of our garden, the lake or the Janaki Temple some distance away. All our 10 Executive Rooms are designed keeping in mind your needs but nothing in excess. These rooms are opulently designed and decorated for comfort of our guests.",
       icon: exterior3,
-      router: "/hall/pdr",
+      router: "/hall#pdr",
     },
   ];
 
@@ -93,7 +93,7 @@ const Hall = () => {
               </div>
 
               <div className="my-8">
-                <Button title="Reserve" router="#" />
+                <Button title="Reserve" router="/enquiry-form#enquiry-form" />
               </div>
             </div>
           </div>

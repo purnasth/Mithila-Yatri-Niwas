@@ -24,7 +24,7 @@ const TestimonialsSlider = ({ contents }) => {
   return (
     <Slider {...settings}>
       {contents.map(({ id, author, location, description, icon }) => (
-        <div key={id} className="p-4 h-96 overflow-x-hidden overflow-y-scroll">
+        <div key={id} className="p-4 h-80 overflow-x-hidden overflow-y-auto">
           <img
             src={icon}
             alt={author}

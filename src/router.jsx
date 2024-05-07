@@ -9,6 +9,7 @@ import AccommodationPage from "./pages/AccommodationPage";
 import HallPage from "./pages/HallPage";
 import DineBackup from "./pages/DineBackup";
 import EnquiryForm from "./components/ui/EnquiryForm";
+import AboutPage from "./pages/AboutPage";
 
 export const router = createBrowserRouter([
   { path: "/", element: <Home /> },
@@ -19,6 +20,7 @@ export const router = createBrowserRouter([
   { path: "/gallery", element: <GalleryPage /> },
   { path: "/contact", element: <Contact /> },
   { path: "/places-to-visit", element: <Visit /> },
-  { path: "/enquiry-form", element: <EnquiryForm />},
+  { path: "/enquiry-form", element: <EnquiryForm /> },
+  { path: "/about", element: <AboutPage /> },
   { path: "*", element: <NotFound /> },
 ]);
