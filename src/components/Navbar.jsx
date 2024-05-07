@@ -1,79 +1,13 @@
 import React, { useState, useEffect } from "react";
-import logo from "../assets/logo.svg";
 import Button from "./ui/Button";
 import { RiArrowDropDownLine } from "react-icons/ri";
 import Socials from "./ui/Socials";
 
+import { navLinks, logo } from "../constants/data";
+
 const Navbar = () => {
   const [openDropdownId, setOpenDropdownId] = useState(null);
-  const [activePage, setActivePage] = useState("");
-
-  const navLinks = [
-    // {
-    //   id: "home",
-    //   title: "Home",
-    //   link: "/home",
-    // },
-    // {
-    //   id: "about",
-    //   title: "About",
-    //   link: "/about",
-    // },
-    {
-      id: "accommodation",
-      title: "Stay",
-      link: "/accommodation",
-      // subLinks: [
-      //   {
-      //     id: "deluxeRoom",
-      //     title: "Deluxe Rooms",
-      //     link: "/accommodation/deluxe",
-      //   },
-      //   {
-      //     id: "executiveSuite",
-      //     title: "Executive Rooms",
-      //     link: "/accommodation/executive-suite",
-      //   },
-      //   {
-      //     id: "suiteRoom",
-      //     title: "Suite Room",
-      //     link: "/accommodation/suite-room",
-      //   },
-      // ],
-    },
-    {
-      id: "dining",
-      title: "Dine",
-      link: "/dine",
-    },
-    {
-      id: "hall",
-      title: "Occasions",
-      link: "/hall",
-      // subLinks: [
-      //   {
-      //     id: "sabhaHall",
-      //     title: "Sabha Hall",
-      //     link: "/hall/sabha-hall",
-      //   },
-      //   {
-      //     id: "pdr",
-      //     title: "PDR",
-      //     link: "/hall/pdr",
-      //   },
-      // ],
-    },
-    {
-      id: "gallery",
-      title: "Gallery",
-      link: "/gallery",
-    },
-    {
-      id: "contact",
-      title: "Contact",
-      link: "/contact",
-    },
-  ];
+  const [activePage, setActivePage] = useState(null);
 
   const toggleDropdown = (id, event) => {
     event.preventDefault();
@@ -81,7 +15,6 @@ const Navbar = () => {
   };
 
   useEffect(() => {
-    // Set active page based on current URL pathname
     const pathname = window.location.pathname;
     const matchedLink = navLinks.find((link) => pathname.startsWith(link.link));
     if (matchedLink) {
@@ -101,7 +34,7 @@ const Navbar = () => {
             <img
               src={logo}
               alt="Mithila Yatri Niwas"
-              className=" w-32 h-24 p-1 object-contain"
+              className=" w-32 h-24 p-1 object-contain transition-linear hover:scale-110 drop-shadow-lg"
             />
           </a>
         </h1>
