@@ -37,6 +37,7 @@ const DinePage = () => {
       title: "Bhojan Griha",
       description:
         "At Mithila Yatri Niwas we curate delicious food dishes made in state-of-art kitchen through experienced chefs, with an attempt to offer the best to all our guests. Serving Continental, Indian, Chinese and Local cuisines, the ingredients are fresh and each dish will embark you on a centuries-old traditional culinary journey.",
+      booking: "#hmm",
       image: [
         {
           src: dine1,

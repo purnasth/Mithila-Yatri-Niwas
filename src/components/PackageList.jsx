@@ -50,7 +50,9 @@ const PackageList = ({ contents }) => {
                 <div className="mt-12 mx-auto flex items-center justify-center">
                   <Button
                     title="Booking"
-                    router="https://www.mithilayatriniwas.com/result.php?hotel_code=gBRaLW"
+                    router={
+                      contents.find((room) => room.title === activeRoom).booking
+                    }
                   />
                 </div>
               </div>

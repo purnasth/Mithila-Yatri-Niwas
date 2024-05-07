@@ -49,6 +49,7 @@ const AccommodationPage = () => {
         },
       ],
       router: "/accommodation/deluxe-room",
+      booking: "https://www.mithilayatriniwas.com/result.php?hotel_code=gBRaLW",
       informations: [
         {
           title: "Informations",
@@ -96,6 +97,7 @@ const AccommodationPage = () => {
         },
       ],
       router: "/accommodation/executive-suite",
+      booking: "https://www.mithilayatriniwas.com/result.php?hotel_code=gBRaLW",
       informations: [
         {
           title: "Informations",
@@ -143,6 +145,7 @@ const AccommodationPage = () => {
         },
       ],
       router: "/accommodation/suite-room",
+      booking: "https://www.mithilayatriniwas.com/result.php?hotel_code=gBRaLW",
       informations: [
         {
           title: "Informations",
