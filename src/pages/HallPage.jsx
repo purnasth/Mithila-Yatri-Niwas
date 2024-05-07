@@ -37,7 +37,12 @@ const HallPage = () => {
       title: "Sabha Hall",
       description:
         "Our Sabha hall is the perfect venue for seminars, workshops, meetings, conferences or any social celebrations. Equipped with all the modern technical requirements such as projectors, sound system etc. our dedicated team re committed to delight you at all times to ensure your every need is met to make your event truly memorable.",
-      image: hall1,
+      image: [
+        {
+          src: hall1,
+          alt: "Sabha Hall",
+        },
+      ],
       informations: [
         {
           title: "Setup Style",
@@ -82,7 +87,12 @@ const HallPage = () => {
       title: "PDR",
       description:
         "Our PDR hall is the perfect venue for seminars, workshops, meetings, conferences or any social celebrations. Equipped with all the modern technical requirements such as projectors, sound system etc. our dedicated team re committed to delight you at all times to ensure your every need is met to make your event truly memorable.",
-      image: lobby1,
+      image: [
+        {
+          src: lobby1,
+          alt: "PDR Hall",
+        },
+      ],
       informations: [
         {
           title: "Setup Style",

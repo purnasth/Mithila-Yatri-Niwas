@@ -15,6 +15,8 @@ import { IoMdClock } from "react-icons/io";
 
 import PackageList from "../components/PackageList";
 
+import dine1 from "../assets/dine/dine.webp";
+
 import {
   FaWifi,
   FaTv,
@@ -44,7 +46,20 @@ const DinePage = () => {
       title: "Bhojan Griha",
       description:
         "At Mithila Yatri Niwas we curate delicious food dishes made in state-of-art kitchen through experienced chefs, with an attempt to offer the best to all our guests. Serving Continental, Indian, Chinese and Local cuisines, the ingredients are fresh and each dish will embark you on a centuries-old traditional culinary journey.",
-      image: room1,
+      image: [
+        {
+          src: dine1,
+          alt: "Dine",
+        },
+        {
+          src: dine1,
+          alt: "Dine",
+        },
+        {
+          src: dine1,
+          alt: "Dine",
+        },
+      ],
       details: [
         {
           capacity: 65,
@@ -69,11 +84,10 @@ const DinePage = () => {
         {
           title: "Facilities",
           content: [
-            "Welcome drink (non-alcoholic) on arrival.",
-            "Tea/Coffee maker in room with sachet.",
-            "Iron and Ironing board in the room on request.",
-            "Free internet access throughout the stay in the room.",
-            "Two mineral water bottles (1000ml) every day in the room.",
+            "Complimentary welcome drink (non-alcoholic) upon arrival at the restaurant.",
+            "Enjoy a selection of tea and coffee during your dining experience.",
+            "Free high-speed internet access available throughout the restaurant.",
+            "Stay hydrated with two 1000ml mineral water bottles provided per table every day.",
           ],
         },
       ],
@@ -81,9 +95,9 @@ const DinePage = () => {
         {
           title: "Policies",
           content: [
-            "Child 0 - 4 yrs. sharing parent's room free of charge on same plan as adults.",
-            "Child age 5 - 10 yrs. sharing parent's room will be charged 50% adult meal rate.",
-            "Breakfast - USD $8/ INR 500.",
+            "Children aged 0 - 4 years dining with parents receive complimentary meals.",
+            "Children aged 5 - 10 years dining with parents receive a 50% discount on meals.",
+            "Breakfast is available at USD $8 or INR 500 per person.",
           ],
         },
       ],
@@ -116,7 +130,7 @@ const DinePage = () => {
           contents={dineCategories}
           sizeClassName="w-full h-screen"
         />
-        <BreadCrumb page="Accommodation" />
+        <BreadCrumb page="Dine" />
       </div>
 
       <section className="bg-custom-white">

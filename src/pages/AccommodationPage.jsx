@@ -42,7 +42,12 @@ const AccommodationPage = () => {
       title: "Deluxe Room",
       description:
         "Comfortable and homely for relaxation with view of our garden, the lake or the Janaki Temple some distance away. All our 18 Deluxe Rooms are designed keeping in mind your needs but nothing in excess. These rooms are opulently designed and decorated for comfort of our guests.",
-      image: room1,
+      image: [
+        {
+          src: room1,
+          alt: "Deluxe Room",
+        },
+      ],
       router: "/accommodation/deluxe-room",
       informations: [
         {
@@ -84,7 +89,12 @@ const AccommodationPage = () => {
       title: "Executive Room",
       description:
         "Comfortable and homely for relaxation with view of our garden, the lake or the Janaki Temple some distance away. All our 10 Executive Rooms are designed keeping in mind your needs but nothing in excess. These rooms are opulently designed and decorated for comfort of our guests.",
-      image: room2,
+      image: [
+        {
+          src: room2,
+          alt: "Deluxe Room",
+        },
+      ],
       router: "/accommodation/executive-suite",
       informations: [
         {
@@ -126,7 +136,12 @@ const AccommodationPage = () => {
       title: "Suite Room",
       description:
         "Comfortable and homely for relaxation with view of our garden, the lake or the Janaki Temple some distance away. All our 2 Suite Rooms are designed keeping in mind your needs but nothing in excess. These rooms are opulently designed and decorated for comfort of our guests.",
-      image: room3,
+      image: [
+        {
+          src: room3,
+          alt: "Deluxe Room",
+        },
+      ],
       router: "/accommodation/suite-room",
       informations: [
         {
