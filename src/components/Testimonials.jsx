@@ -6,7 +6,7 @@ import booking from "../assets/booking.webp";
 import SvgWave from "./ui/SvgWave";
 
 const Testimonials = () => {
-  const roomsCategories = [
+  const testimonialsContent = [
     {
       id: 1,
       author: "Jas Family",
@@ -54,9 +54,8 @@ const Testimonials = () => {
               />
             </div>
             <div className="col-span-2 md:col-span-2">
-              {/* <RoomSlider contents={roomsCategories} /> */}
 
-              <TestimonialsSlider contents={roomsCategories} />
+              <TestimonialsSlider contents={testimonialsContent} />
             </div>
           </div>
         </div>
