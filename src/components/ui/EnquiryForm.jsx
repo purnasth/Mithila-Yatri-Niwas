@@ -14,34 +14,39 @@ const EnquiryForm = () => {
       id: "event",
       type: "text",
       label: "Event Title",
-      icon: <TbCalendarEvent />,
+      icon: TbCalendarEvent,
     },
-    { id: "event-date", type: "date", label: "Event Date", icon: "" },
-    { id: "name", type: "text", label: "Full Name", icon: <FiUser /> },
+    {
+      id: "event-date",
+      type: "date",
+      label: "Event Date",
+      icon: TbCalendarEvent,
+    },
+    { id: "name", type: "text", label: "Full Name", icon: FiUser },
     {
       id: "email",
       type: "email",
       label: "Email address",
-      icon: <MdAlternateEmail />,
+      icon: MdAlternateEmail,
     },
-    { id: "phone", type: "tel", label: "Phone Number", icon: <TbPhone /> },
-    { id: "address", type: "text", label: "Address", icon: <GrLocation /> },
+    { id: "phone", type: "tel", label: "Phone Number", icon: TbPhone },
+    { id: "address", type: "text", label: "Address", icon: GrLocation },
     {
       id: "subject",
       type: "text",
       label: "Subject",
-      icon: <TbPencilQuestion />,
+      icon: TbPencilQuestion,
     },
     {
       id: "message",
       type: "textarea",
       label: "Message",
-      icon: <HiOutlineMail />,
+      icon: HiOutlineMail,
     },
   ];
   return (
     <>
-      <section id="enquiry-form" className="-mt-36">
+      <section id="enquiry-form" className="-mt-36 bg-alt-bg">
         <div
           className={`absolute inset-0 h-full w-full bg-[url('/src/assets/graphics/pattern-mandala.avif')] bg-repeat -z-10 mix-blend-multiply opacity-30`}
         />
@@ -73,10 +78,16 @@ const EnquiryForm = () => {
                 >
                   {field.label}
                 </label>
-                {field.icon && (
-                  <span className="absolute right-1 text-xl text-custom-black/70">
-                    {field.icon}
+                {typeof field.icon === "function" ? (
+                  <span className="absolute right-0 text-custom-black/90 text-xl p-1 bg-alt-bg pointer-events-none">
+                    <field.icon />
                   </span>
+                ) : (
+                  <img
+                    src={field.icon}
+                    alt={field.id}
+                    className="absolute right-3 w-8 h-8 p-1"
+                  />
                 )}
               </div>
             ))}

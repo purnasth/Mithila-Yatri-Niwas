@@ -24,7 +24,7 @@ const Dine = () => {
           description:
             "At Mithila Yatri Niwas we curate delicious food dishes made in state-of-art kitchen through experienced chefs, with an attempt to offer the best to all our guests. Serving Continental, Indian, Chinese and Local cuisines, the ingredients are fresh and each dish will embark you on a centuries-old traditional culinary journey.",
           image: "",
-          router: "/dine/bhojan-griha",
+          router: "/dine#bhojan-griha",
           details: [
             {
               capacity: 65,
@@ -33,6 +33,16 @@ const Dine = () => {
               capacityIcon: <HiMiniUserGroup />,
               cuisineIcon: <GiBowlOfRice />,
               timingIcon: <IoMdClock />,
+            },
+          ],
+          informations: [
+            {
+              title: "Informations",
+              data: {
+                Occupancy: { icon: HiMiniUserGroup, value: "65 pax" },
+                Cuisine: { icon: GiBowlOfRice, value: "Multicuisine" },
+                Timing: { icon: IoMdClock, value: "7:00 AM - 10:30 PM" },
+              },
             },
           ],
         },
@@ -99,28 +109,33 @@ const Dine = () => {
                   <p className="text-base text-gray-600 mt-4 text-justify">
                     {child.description}
                   </p>
+
                   <ul>
-                    {child.details.map((detail, index) => (
+                    {child.informations.map((infoCategory, index) => (
                       <li
-                        key={`${detail.type}-${index}`}
-                        className="flex items-center justify-between mt-8"
+                        key={index}
+                        className="flex items-center justify-between mt-6 py-2"
                       >
-                        {[
-                          {
-                            icon: detail.capacityIcon,
-                            text: `${detail.capacity} pax`,
-                          },
-                          { icon: detail.cuisineIcon, text: detail.cuisine },
-                          { icon: detail.timingIcon, text: detail.timing },
-                        ].map((item, innerIndex) => (
-                          <span
-                            key={`${detail.type}-${innerIndex}`}
-                            className="flex items-center justify-center gap-2"
-                          >
-                            {item.icon}
-                            {item.text}
-                          </span>
-                        ))}
+                        {Object.entries(infoCategory.data).map(
+                          ([infoKey, infoValue]) => (
+                            <span
+                              className="flex items-center gap-1"
+                              key={infoKey}
+                            >
+                              {typeof infoValue.icon === "function" ? (
+                                <infoValue.icon className="text-xl mr-2" />
+                              ) : (
+                                <img
+                                  src={infoValue.icon}
+                                  alt={infoKey}
+                                  className="w-8 h-8 mr-2 p-1"
+                                />
+                              )}
+                              {/* <span className="font-bold">{infoKey}: </span> */}
+                              {infoValue.value}
+                            </span>
+                          )
+                        )}
                       </li>
                     ))}
                   </ul>
@@ -128,7 +143,10 @@ const Dine = () => {
                   <hr className="border-custom-black/20 mt-4" />
 
                   <div className="mt-4 translate-y-2 flex items-center justify-between">
-                    <Button title="Reserve" router="/enquiry-form#enquiry-form" />
+                    <Button
+                      title="Reserve"
+                      router="/enquiry-form#enquiry-form"
+                    />
 
                     <a
                       href="/dine"

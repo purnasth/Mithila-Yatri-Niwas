@@ -37,7 +37,7 @@ const HallPage = () => {
       title: "Sabha Hall",
       description:
         "Our Sabha hall is the perfect venue for seminars, workshops, meetings, conferences or any social celebrations. Equipped with all the modern technical requirements such as projectors, sound system etc. our dedicated team re committed to delight you at all times to ensure your every need is met to make your event truly memorable.",
-      booking: "#hmm",
+      booking: "/enquiry-form",
       image: [
         {
           src: hall1,
@@ -88,7 +88,7 @@ const HallPage = () => {
       title: "PDR",
       description:
         "Our PDR hall is the perfect venue for seminars, workshops, meetings, conferences or any social celebrations. Equipped with all the modern technical requirements such as projectors, sound system etc. our dedicated team re committed to delight you at all times to ensure your every need is met to make your event truly memorable.",
-      booking: "#hmm",
+      booking: "/enquiry-form",
       image: [
         {
           src: lobby1,
@@ -138,18 +138,18 @@ const HallPage = () => {
   ];
 
   const hallAmenities = [
-    { icon: <FaWifi />, title: "Wifi" },
-    { icon: <MdSpeaker />, title: "PA System" },
-    { icon: <FaMicrophone />, title: "Microphone" },
-    { icon: <FaVideo />, title: "Video Conferencing" },
-    { icon: <MdTableRestaurant />, title: "Furniture" },
-    { icon: <FaTv />, title: "Computer/ Laptop" },
-    { icon: <FaAirFreshener />, title: "Air Conditioner" },
-    { icon: <PiProjectorScreenFill />, title: "Flip chart" },
-    { icon: <FaMapPin />, title: "Soft (pin) board" },
-    { icon: <FaPrint />, title: "Printing Service" },
-    { icon: <GiTowel />, title: "Projector" },
-    { icon: <BsFillProjectorFill />, title: "White Board" },
+    { icon: FaWifi, title: "Wifi" },
+    { icon: MdSpeaker, title: "PA System" },
+    { icon: FaMicrophone, title: "Microphone" },
+    { icon: FaVideo, title: "Video Conferencing" },
+    { icon: MdTableRestaurant, title: "Furniture" },
+    { icon: FaTv, title: "Computer/ Laptop" },
+    { icon: FaAirFreshener, title: "Air Conditioner" },
+    { icon: PiProjectorScreenFill, title: "Flip chart" },
+    { icon: FaMapPin, title: "Soft (pin) board" },
+    { icon: FaPrint, title: "Printing Service" },
+    { icon: GiTowel, title: "Projector" },
+    { icon: BsFillProjectorFill, title: "White Board" },
   ];
 
   return (

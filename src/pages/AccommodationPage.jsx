@@ -185,22 +185,18 @@ const AccommodationPage = () => {
   ];
 
   const roomAmenities = [
-    { icon: <FaWifi />, title: "Free Wi-Fi" },
-    { icon: <FaTv />, title: "Flat-screen TV" },
-    { icon: <FaBed />, title: "Comfortable Bed" },
-    { icon: <FaBath />, title: "Private Bathroom" },
-    { icon: <MdTableRestaurant />, title: "Furniture" },
-    { icon: <FaUtensils />, title: "Dining Area" },
-    // { icon: <FaParking />, title: "Free Parking" },
-    { icon: <FaAirFreshener />, title: "Air Conditioning" },
-    { icon: <FaCoffee />, title: "Coffee Maker" },
-    // { icon: <FaFireAlt />, title: "Fireplace" },
-    // { icon: <FaChild />, title: "Kids Play Area" },
-    // { icon: <FaWheelchair />, title: "Wheelchair Accessible" },
-    { icon: <GiSlippers />, title: "Slippers" },
-    { icon: <TbDeviceLandlinePhone />, title: "Telephone" },
-    { icon: <GiTowel />, title: "Towel Service" },
-    { icon: <FaBottleWater />, title: "Water Bottle" },
+    { icon: FaWifi, title: "Free Wi-Fi" },
+    { icon: FaTv, title: "Flat-screen TV" },
+    { icon: FaBed, title: "Comfortable Bed" },
+    { icon: FaBath, title: "Private Bathroom" },
+    { icon: MdTableRestaurant, title: "Furniture" },
+    { icon: FaUtensils, title: "Dining Area" },
+    { icon: FaAirFreshener, title: "Air Conditioning" },
+    { icon: FaCoffee, title: "Coffee Maker" },
+    { icon: GiSlippers, title: "Slippers" },
+    { icon: TbDeviceLandlinePhone, title: "Telephone" },
+    { icon: GiTowel, title: "Towel Service" },
+    { icon: FaBottleWater, title: "Water Bottle" },
   ];
 
   return (

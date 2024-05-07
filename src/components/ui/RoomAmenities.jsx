@@ -7,7 +7,15 @@ const RoomAmenities = ({ amenities, amenitiesTitle }) => {
       <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-12 mt-24">
         {amenities.map((amenity, index) => (
           <div key={index} className="flex items-center flex-col gap-4 p-4">
-            <span className="text-2xl text-alt-logo-clr">{amenity.icon}</span>
+            {typeof amenity.icon === "function" ? (
+              <amenity.icon className="text-2xl text-alt-logo-clr" />
+            ) : (
+              <img
+                src={amenity.icon}
+                alt={amenity.title}
+                className="w-8 h-8 text-alt-logo-clr"
+              />
+            )}
             <p>{amenity.title}</p>
           </div>
         ))}

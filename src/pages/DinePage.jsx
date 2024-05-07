@@ -37,7 +37,7 @@ const DinePage = () => {
       title: "Bhojan Griha",
       description:
         "At Mithila Yatri Niwas we curate delicious food dishes made in state-of-art kitchen through experienced chefs, with an attempt to offer the best to all our guests. Serving Continental, Indian, Chinese and Local cuisines, the ingredients are fresh and each dish will embark you on a centuries-old traditional culinary journey.",
-      booking: "#hmm",
+      booking: "/enquiry-form",
       image: [
         {
           src: dine1,
@@ -50,16 +50,6 @@ const DinePage = () => {
         {
           src: dine1,
           alt: "Dine",
-        },
-      ],
-      details: [
-        {
-          capacity: 65,
-          cuisine: "Multi-Cuisine",
-          timing: "7:00 AM - 10:30 PM",
-          capacityIcon: <HiMiniUserGroup />,
-          cuisineIcon: <GiBowlOfRice />,
-          timingIcon: <IoMdClock />,
         },
       ],
       informations: [
@@ -97,18 +87,18 @@ const DinePage = () => {
   ];
 
   const dineAmenities = [
-    { icon: <MdTableChart />, title: "Ample Seating" },
-    { icon: <FaUtensils />, title: "Cutlery Provided" },
-    { icon: <FaGlassCheers />, title: "Beverage Service" },
-    { icon: <FaChalkboardTeacher />, title: "Menu Display" },
-    { icon: <FaMusic />, title: "Background Music" },
-    { icon: <FaCoffee />, title: "Coffee Station" },
-    { icon: <FaWineBottle />, title: "Wine Selection" },
-    { icon: <FaBeer />, title: "Beer on Tap" },
-    { icon: <GiCandleLight />, title: "Ambiance Lighting" },
-    { icon: <FaTemperatureHigh />, title: "Air Conditioner" },
-    { icon: <GiCookingPot />, title: "Live Cooking" },
-    { icon: <GiHotMeal />, title: "Hot Meal Counter" },
+    { icon: MdTableChart, title: "Ample Seating" },
+    { icon: FaUtensils, title: "Cutlery Provided" },
+    { icon: FaGlassCheers, title: "Beverage Service" },
+    { icon: FaChalkboardTeacher, title: "Menu Display" },
+    { icon: FaMusic, title: "Background Music" },
+    { icon: FaCoffee, title: "Coffee Station" },
+    { icon: FaWineBottle, title: "Wine Selection" },
+    { icon: FaBeer, title: "Beer on Tap" },
+    { icon: GiCandleLight, title: "Ambiance Lighting" },
+    { icon: FaTemperatureHigh, title: "Air Conditioner" },
+    { icon: GiCookingPot, title: "Live Cooking" },
+    { icon: GiHotMeal, title: "Hot Meal Counter" },
   ];
 
   return (

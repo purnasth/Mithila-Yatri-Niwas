@@ -72,6 +72,7 @@ const Accommodation = () => {
                 service and perfect thematic ambience that complements our
                 sacred surroundings.
               </p>
+              
               <h5 className="text-3xl mt-8 mb-6">Amenities</h5>
               <div className="flex items-start gap-20">
                 <ul className="flex items-start justify-center flex-col gap-4">

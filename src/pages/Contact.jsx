@@ -16,26 +16,26 @@ import LocationDetails from "../components/ui/LocationDetails";
 
 const Contact = () => {
   const formFields = [
-    { id: "name", type: "text", label: "Full Name", icon: <FiUser /> },
+    { id: "name", type: "text", label: "Full Name", icon: FiUser },
     {
       id: "email",
       type: "email",
       label: "Email address",
-      icon: <MdAlternateEmail />,
+      icon: MdAlternateEmail,
     },
-    { id: "phone", type: "tel", label: "Phone Number", icon: <TbPhone /> },
-    { id: "address", type: "text", label: "Address", icon: <GrLocation /> },
+    { id: "phone", type: "tel", label: "Phone Number", icon: TbPhone },
+    { id: "address", type: "text", label: "Address", icon: GrLocation },
     {
       id: "subject",
       type: "text",
       label: "Subject",
-      icon: <TbPencilQuestion />,
+      icon: TbPencilQuestion,
     },
     {
       id: "message",
       type: "textarea",
       label: "Message",
-      icon: <HiOutlineMail />,
+      icon: HiOutlineMail,
     },
   ];
   return (
@@ -177,10 +177,16 @@ const Contact = () => {
                       >
                         {field.label}
                       </label>
-                      {field.icon && (
+                      {typeof field.icon === "function" ? (
                         <span className="absolute right-3 text-gray-500">
-                          {field.icon}
+                          <field.icon />
                         </span>
+                      ) : (
+                        <img
+                          src={field.icon}
+                          alt={field.id}
+                          className="absolute right-3 w-8 h-8 p-1"
+                        />
                       )}
                     </div>
                   ))}
