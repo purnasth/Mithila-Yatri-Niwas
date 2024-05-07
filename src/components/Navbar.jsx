@@ -1,9 +1,7 @@
 import React, { useState, useEffect } from "react";
-import Button from "./ui/Button";
 import { RiArrowDropDownLine } from "react-icons/ri";
-import Socials from "./ui/Socials";
 
-import { navLinks, logo } from "../constants/data";
+import { navLinks, logo, Button, Socials } from "../constants/data";
 
 const Navbar = () => {
   const [openDropdownId, setOpenDropdownId] = useState(null);

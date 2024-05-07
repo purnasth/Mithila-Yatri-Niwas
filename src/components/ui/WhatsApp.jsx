@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { FaWhatsapp } from "react-icons/fa";
+import { FaWhatsapp } from "../../constants/data";
 
 const WhatsApp = () => {
   const [showButton, setShowButton] = useState(false);

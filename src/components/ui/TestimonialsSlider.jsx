@@ -1,7 +1,5 @@
 import React from "react";
-import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
+import { Slider } from "../../constants/library";
 
 const TestimonialsSlider = ({ contents }) => {
   const settings = {
@@ -28,7 +26,7 @@ const TestimonialsSlider = ({ contents }) => {
           <img
             src={icon}
             alt={author}
-            className="size-20 rounded-full object-cover mx-auto"
+            className="w-32 h-8 rounded-full object-contain mx-auto"
           />
           <div className="mt-4 text-center space-y-3">
             <p className="text-sm text-gray-600">{description}</p>

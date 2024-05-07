@@ -1,35 +1,8 @@
 import React from "react";
-import OffersSlider from "./ui/OffersSlider";
-import SvgWave from "./ui/SvgWave";
-import room1 from "../assets/rooms/room1.webp";
-import room2 from "../assets/rooms/room2.webp";
-import room3 from "../assets/rooms/room3.webp";
+
+import { offersContents, SvgWave, OffersSlider } from "../constants/data";
 
 const Offers = () => {
-  const offersContents = [
-    {
-      id: 1,
-      title: "For Couple",
-      description: "1 night Package MAP plan",
-      icon: room1,
-      price: "7500",
-    },
-    {
-      id: 2,
-      title: "For Couple",
-      description: "1 night Package MAP plan",
-      icon: room2,
-      price: "7500",
-    },
-    {
-      id: 3,
-      title: "For Couple",
-      description: "1 night Package MAP plan",
-      icon: room3,
-      price: "7500",
-    },
-  ];
-
   return (
     <>
       {/* <section className="bg-gradient-to-b from-logo-bg to-alt-bg px-10"> */}

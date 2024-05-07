@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { CgArrowLongRight } from "react-icons/cg";
+import { CgArrowLongRight } from "../../constants/data";
 
 const BackToTop = () => {
   const [showButton, setShowButton] = useState(false);

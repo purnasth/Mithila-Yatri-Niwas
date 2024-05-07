@@ -22,7 +22,6 @@ import "lightgallery/css/lg-thumbnail.css";
 import "lightgallery/css/lg-fullscreen.css";
 import "lightgallery/css/lg-share.css";
 import SvgWave from "../components/ui/SvgWave";
-import DineComponent from "../components/ui/DineComponent";
 
 import mithila from "../assets/mithila.webp";
 import dine from "../assets/dine/dine.webp";
@@ -144,8 +143,6 @@ const DineBackup = () => {
           </p>
         </div>
 
-        <DineComponent dineCategories={dineCategories} />
-
         <div className="filter-buttons flex items-center justify-center gap-8 p-8">
           {categories.map((category) => (
             <button
@@ -166,7 +163,6 @@ const DineBackup = () => {
             isTransitioning ? "translate-y-1/2" : "translate-y-0"
           }`}
         >
-          <DineComponent dineCategories={dineCategories} />
           {filteredImages.map((image) => (
             <div
               key={image.id}
