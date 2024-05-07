@@ -18,9 +18,12 @@ const Reservation = () => {
               hesitate to contact us.
             </p>
 
-            <button className="my-12 font-title flex items-center justify-center gap-2 text-custom-white bg-alt-logo-clr hover:bg-logo-clr px-6 py-3 w-32 mx-auto transition-linear group">
+            <a
+              href="/enquiry-form"
+              className="my-12 font-title flex items-center justify-center gap-2 text-custom-white bg-alt-logo-clr hover:bg-logo-clr px-6 py-3 w-32 mx-auto transition-linear group"
+            >
               Enquiry
-            </button>
+            </a>
 
             <div className="flex items-center justify-center flex-col gap-2">
               <span className="text-gray-600">
