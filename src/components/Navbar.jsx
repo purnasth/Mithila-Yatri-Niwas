@@ -23,23 +23,23 @@ const Navbar = () => {
       id: "accommodation",
       title: "Stay",
       link: "/accommodation",
-      subLinks: [
-        {
-          id: "deluxeRoom",
-          title: "Deluxe Rooms",
-          link: "/accommodation/deluxe",
-        },
-        {
-          id: "executiveSuite",
-          title: "Executive Rooms",
-          link: "/accommodation/executive-suite",
-        },
-        {
-          id: "suiteRoom",
-          title: "Suite Room",
-          link: "/accommodation/suite-room",
-        },
-      ],
+      // subLinks: [
+      //   {
+      //     id: "deluxeRoom",
+      //     title: "Deluxe Rooms",
+      //     link: "/accommodation/deluxe",
+      //   },
+      //   {
+      //     id: "executiveSuite",
+      //     title: "Executive Rooms",
+      //     link: "/accommodation/executive-suite",
+      //   },
+      //   {
+      //     id: "suiteRoom",
+      //     title: "Suite Room",
+      //     link: "/accommodation/suite-room",
+      //   },
+      // ],
     },
     {
       id: "dining",
@@ -50,18 +50,18 @@ const Navbar = () => {
       id: "hall",
       title: "Occasions",
       link: "/hall",
-      subLinks: [
-        {
-          id: "sabhaHall",
-          title: "Sabha Hall",
-          link: "/hall/sabha-hall",
-        },
-        {
-          id: "pdr",
-          title: "PDR",
-          link: "/hall/pdr",
-        },
-      ],
+      // subLinks: [
+      //   {
+      //     id: "sabhaHall",
+      //     title: "Sabha Hall",
+      //     link: "/hall/sabha-hall",
+      //   },
+      //   {
+      //     id: "pdr",
+      //     title: "PDR",
+      //     link: "/hall/pdr",
+      //   },
+      // ],
     },
     {
       id: "gallery",
