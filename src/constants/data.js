@@ -1,4 +1,5 @@
 import logo from "../assets/logo.svg";
+
 import SvgWave from "../components/ui/SvgWave";
 import AboutGallery from "../components/ui/AboutGallery";
 import LearnMore from "../components/ui/LearnMore";
@@ -11,9 +12,12 @@ import PackageContent from "../components/ui/PackageContent";
 import PackageSlider from "../components/ui/PackageSlider";
 import PlacesToVisitSlider from "../components/ui/PlacesToVisitSlider";
 import TestimonialsSlider from "../components/ui/TestimonialsSlider";
-import Direction from "../components/Direction";
 import Banner from "../components/ui/Banner";
+import RoomAmenities from "../components/ui/RoomAmenities";
+import MithilaThali from "../components/ui/MithilaThali";
+import Reservation from "../components/ui/Reservation";
 
+import Direction from "../components/Direction";
 import Hero from "../components/Hero";
 import Accommodation from "../components/Accommodation";
 import About from "../components/About";
@@ -22,7 +26,7 @@ import Testimonials from "../components/Testimonials";
 import Hall from "../components/Hall";
 import History from "../components/History";
 import PlacesToVisit from "../components/PlacesToVisit";
-import MithilaThali from "../components/ui/MithilaThali";
+import PackageList from "../components/PackageList";
 
 import mithila from "../assets/mithila.webp";
 import mithilaNight from "../assets/mithila_night.webp";
@@ -43,6 +47,11 @@ import exterior3 from "../assets/halls/exterior3.webp";
 import lobby1 from "../assets/halls/lobby1.webp";
 import dine1 from "../assets/dine/dine.webp";
 
+import ushape from "../assets/setup/ushape.webp";
+import classroom from "../assets/setup/classroom.webp";
+import theatre from "../assets/setup/theatre.webp";
+import round from "../assets/setup/round.webp";
+
 export {
   logo,
   About,
@@ -61,25 +70,42 @@ export {
   MithilaThali,
   OffersSlider,
   PackageContent,
+  PackageList,
   PackageSlider,
   PlacesToVisit,
   PlacesToVisitSlider,
+  Reservation,
+  RoomAmenities,
   Socials,
   SvgWave,
   Testimonials,
   TestimonialsSlider,
   mithila,
   mithilaNight,
-  room1,
-  room2,
-  room3,
-  hall1,
-  exterior1,
-  exterior2,
-  exterior3,
 };
 
-import { FaInstagram, FaTripadvisor, FaWhatsapp } from "react-icons/fa";
+import {
+  FaInstagram,
+  FaTripadvisor,
+  FaWhatsapp,
+  FaUtensils,
+  FaCoffee,
+  FaGlassCheers,
+  FaChalkboardTeacher,
+  FaMusic,
+  FaWineBottle,
+  FaBeer,
+  FaTemperatureHigh,
+  FaClock,
+  FaWater,
+  FaWifi,
+  FaTv,
+  FaAirFreshener,
+  FaMicrophone,
+  FaVideo,
+  FaMapPin,
+  FaPrint,
+} from "react-icons/fa";
 import {
   TbPhone,
   TbBrandFacebook,
@@ -93,8 +119,22 @@ import {
   MdAlternateEmail,
   MdOutlineBed,
   MdOutlineBrunchDining,
+  MdTableChart,
+  MdTableRestaurant,
+  MdSpeaker,
 } from "react-icons/md";
 import { GrLocation } from "react-icons/gr";
+import {
+  GiBowlOfRice,
+  GiCandleLight,
+  GiCookingPot,
+  GiHotMeal,
+  GiTowel,
+} from "react-icons/gi";
+import { IoMdClock } from "react-icons/io";
+import { HiMiniUserGroup } from "react-icons/hi2";
+import { PiProjectorScreenFill } from "react-icons/pi";
+import { BsFillProjectorFill } from "react-icons/bs";
 
 import expedia from "../assets/ota/expedia.webp";
 import tripadvisor from "../assets/ota/tripadvisor.webp";
@@ -241,6 +281,211 @@ export const aboutContents = {
     },
   ],
 };
+
+export const dineContents = [
+  {
+    title: "Fine Dine Experience",
+    subheading: "",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. In pariatur odit reiciendis quae quod, accusamus quos, consectetur ipsum cum excepturi rem ea labore perspiciatis animi qui nesciunt a deserunt voluptas alias aliquam vero expedita enim ab assumenda! Beatae, mollitia qui unde temporibus dolorum architecto maiores, ut corrupti nemo facilis quos?",
+    dineCategories: [
+      {
+        id: 1,
+        title: "Bhojan Griha",
+        description:
+          "At Mithila Yatri Niwas we curate delicious food dishes made in state-of-art kitchen through experienced chefs, with an attempt to offer the best to all our guests. Serving Continental, Indian, Chinese and Local cuisines, the ingredients are fresh and each dish will embark you on a centuries-old traditional culinary journey.",
+        booking: "/enquiry-form",
+        image: [
+          {
+            src: dine1,
+            alt: "Dine",
+          },
+          {
+            src: dine1,
+            alt: "Dine",
+          },
+          {
+            src: dine1,
+            alt: "Dine",
+          },
+        ],
+        informations: [
+          {
+            title: "Informations",
+            data: {
+              Occupancy: { icon: HiMiniUserGroup, value: "65 pax" },
+              Cuisine: { icon: GiBowlOfRice, value: "Multicuisine" },
+              Timing: { icon: IoMdClock, value: "7:00 AM - 10:30 PM" },
+            },
+          },
+        ],
+        facilities: [
+          {
+            title: "Facilities",
+            content: [
+              "Complimentary welcome drink (non-alcoholic) upon arrival at the restaurant.",
+              "Enjoy a selection of tea and coffee during your dining experience.",
+              "Free high-speed internet access available throughout the restaurant.",
+              "Stay hydrated with two 1000ml mineral water bottles provided per table every day.",
+            ],
+          },
+        ],
+        policies: [
+          {
+            title: "Policies",
+            content: [
+              "Children aged 0 - 4 years dining with parents receive complimentary meals.",
+              "Children aged 5 - 10 years dining with parents receive a 50% discount on meals.",
+              "Breakfast is available at USD $8 or INR 500 per person.",
+            ],
+          },
+        ],
+        dineAmenities: [
+          { icon: MdTableChart, title: "Ample Seating" },
+          { icon: FaUtensils, title: "Cutlery Provided" },
+          { icon: FaGlassCheers, title: "Beverage Service" },
+          { icon: FaChalkboardTeacher, title: "Menu Display" },
+          { icon: FaMusic, title: "Background Music" },
+          { icon: FaCoffee, title: "Coffee Station" },
+          { icon: FaWineBottle, title: "Wine Selection" },
+          { icon: FaBeer, title: "Beer on Tap" },
+          { icon: GiCandleLight, title: "Ambiance Lighting" },
+          { icon: FaTemperatureHigh, title: "Air Conditioner" },
+          { icon: GiCookingPot, title: "Live Cooking" },
+          { icon: GiHotMeal, title: "Hot Meal Counter" },
+        ],
+      },
+    ],
+  },
+];
+
+export const hallContents = [
+  {
+    title: "Occasions",
+    subheading: "",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. In pariatur odit reiciendis quae quod, accusamus quos, consectetur ipsum cum excepturi rem ea labore perspiciatis animi qui nesciunt a deserunt voluptas alias aliquam vero expedita enim ab assumenda! Beatae, mollitia qui unde temporibus dolorum architecto maiores, ut corrupti nemo facilis quos?",
+    hallCategories: [
+      {
+        id: 1,
+        title: "Sabha Hall",
+        description:
+          "Our Sabha hall is the perfect venue for seminars, workshops, meetings, conferences or any social celebrations. Equipped with all the modern technical requirements such as projectors, sound system etc. our dedicated team re committed to delight you at all times to ensure your every need is met to make your event truly memorable.",
+        booking: "/enquiry-form",
+        image: [
+          {
+            src: hall1,
+            alt: "Sabha Hall",
+          },
+        ],
+        informations: [
+          {
+            title: "Setup Style",
+            data: {
+              "U shape": { icon: ushape, value: "45 pax" },
+              Classroom: {
+                icon: classroom,
+                value: "150 pax",
+              },
+              Theatre: { icon: theatre, value: "400 pax" },
+              "Round Table": { icon: round, value: "180 pax" },
+            },
+          },
+        ],
+        facilities: [
+          {
+            title: "Facilities",
+            content: [
+              "Advanced audiovisual equipment including projectors and sound systems.",
+              "Flexible seating arrangements to accommodate various event sizes and styles.",
+              "Dedicated event management team to assist with all your requirements.",
+              "High-speed internet access throughout the hall.",
+              "Comfortable seating and climate control for all-season comfort.",
+            ],
+          },
+        ],
+        policies: [
+          {
+            title: "Policies",
+            content: [
+              "Reservation required in advance to secure the hall for your event.",
+              "Cancellation policy: Please refer to our cancellation terms for details.",
+              "Additional charges may apply for extra services requested beyond standard facilities.",
+              "All event attendees must adhere to the venue rules and regulations.",
+              "Damages to the hall or equipment will incur additional charges.",
+            ],
+          },
+        ],
+        hallAmenities: [
+          { icon: FaWifi, title: "Wifi" },
+          { icon: MdSpeaker, title: "PA System" },
+          { icon: FaMicrophone, title: "Microphone" },
+          { icon: FaVideo, title: "Video Conferencing" },
+          { icon: MdTableRestaurant, title: "Furniture" },
+          { icon: FaTv, title: "Computer/ Laptop" },
+          { icon: FaAirFreshener, title: "Air Conditioner" },
+          { icon: PiProjectorScreenFill, title: "Flip chart" },
+          { icon: FaMapPin, title: "Soft (pin) board" },
+          { icon: FaPrint, title: "Printing Service" },
+          { icon: GiTowel, title: "Projector" },
+          { icon: BsFillProjectorFill, title: "White Board" },
+        ],
+      },
+      {
+        id: 2,
+        title: "PDR",
+        description:
+          "Our PDR hall is the perfect venue for seminars, workshops, meetings, conferences or any social celebrations. Equipped with all the modern technical requirements such as projectors, sound system etc. our dedicated team re committed to delight you at all times to ensure your every need is met to make your event truly memorable.",
+        booking: "/enquiry-form",
+        image: [
+          {
+            src: lobby1,
+            alt: "PDR Hall",
+          },
+        ],
+        informations: [
+          {
+            title: "Setup Style",
+
+            data: {
+              "U shape": { icon: ushape, value: "N/A pax" },
+              Classroom: {
+                icon: classroom,
+                value: "12 pax",
+              },
+              Theatre: { icon: theatre, value: "24 pax" },
+              "Round Table": { icon: round, value: "N/A pax" },
+            },
+          },
+        ],
+        facilities: [
+          {
+            title: "Facilities",
+            content: [
+              "Modern audiovisual equipment for presentations and meetings.",
+              "Flexible seating arrangements suitable for small group discussions or presentations.",
+              "Complimentary high-speed internet access for all attendees.",
+              "Professional event coordination and support throughout your event.",
+              "Comfortable and well-lit environment for productive meetings.",
+            ],
+          },
+        ],
+        policies: [
+          {
+            title: "Policies",
+            content: [
+              "Advance booking is recommended to secure the hall for your event.",
+              "Any damages to the hall or equipment will be charged to the organizer.",
+              "Outside catering may be permitted with prior approval and additional charges.",
+              "Smoking and alcohol consumption may be restricted based on venue policies.",
+              "Please adhere to the designated capacity limits for safety and comfort.",
+            ],
+          },
+        ],
+      },
+    ],
+  },
+];
 
 export const locationDetails = [
   {
