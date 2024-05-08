@@ -7,7 +7,6 @@ import Visit from "./pages/Visit";
 import DinePage from "./pages/DinePage";
 import AccommodationPage from "./pages/AccommodationPage";
 import HallPage from "./pages/HallPage";
-import DineBackup from "./pages/DineBackup";
 import EnquiryForm from "./components/ui/EnquiryForm";
 import AboutPage from "./pages/AboutPage";
 
@@ -16,7 +15,6 @@ export const router = createBrowserRouter([
   { path: "/accommodation", element: <AccommodationPage /> },
   { path: "/hall", element: <HallPage /> },
   { path: "/dine", element: <DinePage /> },
-  { path: "/dining", element: <DineBackup /> },
   { path: "/gallery", element: <GalleryPage /> },
   { path: "/contact", element: <Contact /> },
   { path: "/places-to-visit", element: <Visit /> },

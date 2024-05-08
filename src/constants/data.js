@@ -136,9 +136,8 @@ import {
   GiTowel,
   GiSlippers,
 } from "react-icons/gi";
-import { IoMdClock, IoMdResize } from "react-icons/io";
+import { IoMdClock, IoMdResize, IoIosPeople } from "react-icons/io";
 import { IoBed, IoPricetagSharp } from "react-icons/io5";
-import { HiMiniUserGroup } from "react-icons/hi2";
 import { PiProjectorScreenFill } from "react-icons/pi";
 import { BsFillProjectorFill } from "react-icons/bs";
 
@@ -321,7 +320,7 @@ export const dineContents = [
           {
             title: "Informations",
             data: {
-              Occupancy: { icon: HiMiniUserGroup, value: "65 pax" },
+              Occupancy: { icon: IoIosPeople, value: "65 pax" },
               Cuisine: { icon: GiBowlOfRice, value: "Multicuisine" },
               Timing: { icon: IoMdClock, value: "7:00 AM - 10:30 PM" },
             },
