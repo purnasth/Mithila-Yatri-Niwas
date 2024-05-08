@@ -16,6 +16,7 @@ import Banner from "../components/ui/Banner";
 import RoomAmenities from "../components/ui/RoomAmenities";
 import MithilaThali from "../components/ui/MithilaThali";
 import Reservation from "../components/ui/Reservation";
+import RoomSlider from "../components/ui/RoomSlider";
 
 import Direction from "../components/Direction";
 import Hero from "../components/Hero";
@@ -76,6 +77,7 @@ export {
   PlacesToVisitSlider,
   Reservation,
   RoomAmenities,
+  RoomSlider,
   Socials,
   SvgWave,
   Testimonials,
@@ -508,6 +510,9 @@ export const accommodationContents = [
         id: 1,
         title: "Deluxe Room",
         router: "/accommodation#deluxe-room",
+        description:
+          "Comfortable and homely for relaxation with view of our garden, the lake or the Janaki Temple some distance away. All our 10 Executive Rooms are designed keeping in mind your needs but nothing in excess. These rooms are opulently designed and decorated for comfort of our guests.",
+
         booking:
           "https://www.mithilayatriniwas.com/result.php?hotel_code=gBRaLW",
         image: [
