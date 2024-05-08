@@ -11,29 +11,65 @@ import PackageContent from "../components/ui/PackageContent";
 import PackageSlider from "../components/ui/PackageSlider";
 import PlacesToVisitSlider from "../components/ui/PlacesToVisitSlider";
 import TestimonialsSlider from "../components/ui/TestimonialsSlider";
+import Direction from "../components/Direction";
+import Banner from "../components/ui/Banner";
+
+import Hero from "../components/Hero";
+import Accommodation from "../components/Accommodation";
+import About from "../components/About";
+import Dine from "../components/Dine";
+import Testimonials from "../components/Testimonials";
+import Hall from "../components/Hall";
+import History from "../components/History";
+import PlacesToVisit from "../components/PlacesToVisit";
+import MithilaThali from "../components/ui/MithilaThali";
+
+import mithila from "../assets/mithila.webp";
+import mithilaNight from "../assets/mithila_night.webp";
+import mithila2 from "../assets/mithila2.webp";
+import mithila4 from "../assets/mithila4.webp";
 
 import room1 from "../assets/rooms/room1.webp";
 import room2 from "../assets/rooms/room2.webp";
 import room3 from "../assets/rooms/room3.webp";
+import room4 from "../assets/rooms/room4.webp";
+import room5 from "../assets/rooms/room5.webp";
+import room6 from "../assets/rooms/room6.webp";
 import hall1 from "../assets/halls/hall1.webp";
+import hall2 from "../assets/halls/hall2.webp";
 import exterior1 from "../assets/halls/exterior1.webp";
 import exterior2 from "../assets/halls/exterior2.webp";
 import exterior3 from "../assets/halls/exterior3.webp";
+import lobby1 from "../assets/halls/lobby1.webp";
+import dine1 from "../assets/dine/dine.webp";
 
 export {
   logo,
-  SvgWave,
+  About,
   AboutGallery,
-  LearnMore,
+  Accommodation,
+  Banner,
   BreadCrumb,
   Button,
+  Dine,
+  Direction,
+  Hall,
+  Hero,
+  History,
+  LearnMore,
   LocationDetails,
-  Socials,
+  MithilaThali,
   OffersSlider,
   PackageContent,
   PackageSlider,
+  PlacesToVisit,
   PlacesToVisitSlider,
+  Socials,
+  SvgWave,
+  Testimonials,
   TestimonialsSlider,
+  mithila,
+  mithilaNight,
   room1,
   room2,
   room3,
@@ -166,6 +202,7 @@ export const socialLinks = [
 
 export const aboutContents = {
   text: {
+    title: "About Mithila Yatri Niwas",
     heading:
       "Mithila Yatri Niwas a luxurious hotel property in Janakpur is set at just 10 min walking distance from the famous Janakai Temple along the banks of Dashrath Lake.",
     paragraph:
@@ -344,35 +381,35 @@ export const offersContents = [
 
 export const placesToVistContents = [
   {
-    id: 1,
+    id: "janaki",
     title: "Janaki Mandir",
     description:
-      "Dedicated to Goddess Sita, Janaki Mandir is the biggest temple in Nepal located in Janakpur. It is constructed at the place where Goddess Sita was born. The attraction is now considered as a religiously important monument and a heritage site but is still an active temple for devotees. Anybody seeking a slice of the legend of Ramayana must visit the divine Janaki Temple. ",
+      "Dedicated to Goddess Sita, Janaki Mandir is the biggest temple in Nepal located in Janakpur. It is constructed at the place where Goddess Sita was born. The attraction is now considered as a religiously important monument and a heritage site but is still an active temple for devotees. Anybody seeking a slice of the legend of Ramayana must visit the divine Janaki Temple. <br/> The Janaki Mandir is an examplar of Hindu-Koiri Nepali architecture having a stunning white facade. The 3 storied temple is built entirely of stones and marbles, while the 60 rooms inside are adorned with Nepali flag, engravings, paintings, beautiful lattice windows and turrets. The Janaki temple is predominantly thronged by devotees during auspicious occasions and festivals like the Ram Navami, Vivah Panchami, Dashain, Deepavali, and Holi. Pilgrims come in from all around Nepal, Sri Lanka and India to worship the Goddess who is deemed an epitome of courage, purity, selflessness, dedication, loyalty and feminine virtues.",
     icon: "https://www.holidify.com/images/cmsuploads/compressed/Ram_Janaki_Temple,_Dhanusha_20181001160947.jpg",
   },
   {
-    id: 2,
+    id: "ram-mandir",
     title: "Ram Mandir, Janakpur",
     description:
-      "Ram Mandir is one of the oldest temples in Janakpur built in the late 1700s by Amar Singh Thapa, a Gorkhali General. The architecture of the temple is traditional pagoda-style like the other shrines in the region. The modestly quaint temple is flocked by pilgrims during the occasion of Ram Navami and Dashain which are sacred and important annual festivals dedicated to Lord Rama. The opulent temple is a perfect attraction for those interested in exploring ancient cultures and experiencing its divine vibe.",
+      "Ram Mandir is one of the oldest temples in Janakpur built in the late 1700s by Amar Singh Thapa, a Gorkhali General. The architecture of the temple is traditional pagoda-style like the other shrines in the region. The modestly quaint temple is flocked by pilgrims during the occasion of Ram Navami and Dashain which are sacred and important annual festivals dedicated to Lord Rama. The opulent temple is a perfect attraction for those interested in exploring ancient cultures and experiencing its divine vibe. <br/> The temple is a beautiful structure with a white facade and a golden pinnacle. The temple is dedicated to Lord Rama and is a popular pilgrimage site for Hindus. The temple is a part of the Ramayana Circuit and is visited by thousands of devotees every year. The temple is a must-visit for those interested in exploring the rich culture and heritage of Nepal.",
     icon: "https://www.holidify.com/images/cmsuploads/compressed/Ram_Mandir,_Janakpur-September_22,_2016-IMG_7648_20181001175901_20181001175919.jpg",
   },
   {
-    id: 3,
+    id: "rolwaling-valley",
     title: "Rolwaling Valley",
     description:
       "Rolwaling Valley, between the Everest and Langtang Himalaya ranges, is the toughest and most thrilling trekking trail in Nepal. The valley has an abundance of alpine lakes, hanging glaciers, moraines, high pastures, waterfalls and imminent view of snowy peaks. Rich in varying flora and fauna, it is home to many endangered and globally threatened animals.",
     icon: "https://www.holidify.com/images/foreign/compressed/attr_123742.jpg",
   },
   {
-    id: 4,
+    id: "ram-sita-vivah-mandap",
     title: "Ram Sita Vivah Mandap",
     description:
       "The place where Ram and Sita got married, Ram Janaki Vivah Mandap is visited by thousands of pilgrims to pay homage to Sita at the time of Vivah Panchami. The marriage day of Sita and Ram usually celebrated on the fifth day of the Shukla Paksha or waxing phase of moon in November/December. The mandap is a gorgeous structure made of marble located in the southwest region of the Janaki Mandir. It resembles a part of a palace with sturdy pillars, elegant arches and stunning domes. <br/> At the centre of the mandap, the legendary wedding ceremony is depicted. One can see idols of the couple, Goddess Sita and Lord Rama, sitting on a raised pedestal in the centre while some sages and their parents are seen seated on parallel pedestals facing each other. The idols are draped in colourful attires and give a sense of the ancient royal celebration. Devotees can offer their prayers and sit in complete silence to soak in the tranquil vibe of the temple. Those interested in getting a sneak peek into this epic union must visit the Ram Sita Vivah Mandap.",
     icon: "https://www.holidify.com/images/cmsuploads/compressed/Vivah_Mandap,_Janakpur-September_22,_2016-IMG_7419_20181001182754_20181001182810.jpg",
   },
   {
-    id: 5,
+    id: "jaleshwar",
     title: "Jaleshwar",
     description:
       "Jaleswar is a small municipality in Nepal, named after the holy temple of Jaleshwarnath Mahadev, dedicated to Lord Shiva. The small-town borders India with Bihar. During the months of Shravan that is July and August, devotees from all over the world flock here to pay their respects to the Lord and his Consort, Parvati. From historical sites and cultural attractions to parks and beaches, the city has something to offer to all its visitors. <br/> Since Jaleshwar revolves only around the Jaleshwarnath Temple, the transport facilities withing the temple are also quite functional and comprehensive. Visiting the temple is a hassle-free experience as the buses also go to big cities like Kathmandu and Birgunj and connect to the main Janakpur city regularly. There are also many small eateries in the town and vegetarian restaurants are a majority in this little temple town. ",
@@ -407,7 +444,124 @@ export const testimonialsContent = [
   },
 ];
 
-export const formFields = [
+export const galleryImages = [
+  {
+    id: 1,
+    url: mithila,
+    alt: "External View of Mithila Yatri Niwas",
+    category: "Exterior",
+  },
+  {
+    id: 2,
+    url: room1,
+    alt: "A Room in Mithila Yatri Niwas",
+    category: "Rooms",
+  },
+  {
+    id: 3,
+    url: mithilaNight,
+    alt: "External View of Mithila Yatri Niwas",
+    category: "Exterior",
+  },
+  {
+    id: 4,
+    url: room2,
+    alt: "A Room in Mithila Yatri Niwas",
+    category: "Rooms",
+  },
+  {
+    id: 5,
+    url: room3,
+    alt: "A Room in Mithila Yatri Niwas",
+    category: "Rooms",
+  },
+  {
+    id: 6,
+    url: hall1,
+    alt: "A Hall in Mithila Yatri Niwas",
+    category: "Halls",
+  },
+  {
+    id: 7,
+    url: lobby1,
+    alt: "Lobby of Mithila Yatri Niwas",
+    category: "Halls",
+  },
+  {
+    id: 8,
+    url: mithila2,
+    alt: "External View of Mithila Yatri Niwas",
+    category: "Exterior",
+  },
+  {
+    id: 9,
+    url: dine1,
+    alt: "External View of Mithila Yatri Niwas",
+    category: "Halls",
+  },
+  {
+    id: 10,
+    url: exterior1,
+    alt: "External View of Mithila Yatri Niwas",
+    category: "Halls",
+  },
+  {
+    id: 11,
+    url: room4,
+    alt: "A Room in Mithila Yatri Niwas",
+    category: "Rooms",
+  },
+  {
+    id: 12,
+    url: mithila4,
+    alt: "External View of Mithila Yatri Niwas",
+    category: "Exterior",
+  },
+  {
+    id: 13,
+    url: hall2,
+    alt: "External View of Mithila Yatri Niwas",
+    category: "Halls",
+  },
+  {
+    id: 14,
+    url: room5,
+    alt: "A Room in Mithila Yatri Niwas",
+    category: "Rooms",
+  },
+  {
+    id: 15,
+    url: room6,
+    alt: "A Room in Mithila Yatri Niwas",
+    category: "Rooms",
+  },
+];
+
+export const contactFormFields = [
+  { id: "name", type: "text", label: "Full Name", icon: FiUser },
+  {
+    id: "email",
+    type: "email",
+    label: "Email address",
+    icon: MdAlternateEmail,
+  },
+  { id: "phone", type: "tel", label: "Phone Number", icon: TbPhone },
+  { id: "address", type: "text", label: "Address", icon: GrLocation },
+  {
+    id: "subject",
+    type: "text",
+    label: "Subject",
+    icon: TbPencilQuestion,
+  },
+  {
+    id: "message",
+    type: "textarea",
+    label: "Message",
+    icon: HiOutlineMail,
+  },
+];
+
+export const enquiryFormFields = [
   {
     id: "event",
     type: "text",

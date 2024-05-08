@@ -1,5 +1,5 @@
 import React from "react";
-import { formFields, Button } from "../../constants/data";
+import { enquiryFormFields, Button } from "../../constants/data";
 
 const EnquiryForm = () => {
   return (
@@ -18,7 +18,7 @@ const EnquiryForm = () => {
         </div>
         <form className="container max-w-3xl mt-8">
           <div className="grid sm:grid-cols-2 gap-8">
-            {formFields.map((field) => (
+            {enquiryFormFields.map((field) => (
               <div
                 key={field.id}
                 className="relative z-0 flex items-center justify-between group"
