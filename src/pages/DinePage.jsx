@@ -13,7 +13,7 @@ const DinePage = () => {
 
   return (
     <>
-      <div className="-mt-36">
+      <div className="responsive-banner">
         <PackageSlider
           contents={dineCategories}
           sizeClassName="w-full h-screen"

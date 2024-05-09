@@ -4,7 +4,7 @@ import { placesToVistContents, Direction } from "../constants/data";
 const Visit = () => {
   return (
     <>
-      <section className="bg-logo-bg -mt-36">
+      <section className="bg-logo-bg responsive-banner">
         <div
           className={`absolute inset-0 h-full w-full bg-[url('/src/assets/graphics/pattern-mandala.avif')] bg-repeat -z-10 mix-blend-multiply opacity-20`}
         />

@@ -14,7 +14,7 @@ const HallPage = () => {
 
   return (
     <>
-      <div className="-mt-36">
+      <div className="responsive-banner">
         <PackageSlider
           contents={hallCategories}
           sizeClassName="w-full h-screen"

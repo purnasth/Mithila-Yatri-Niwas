@@ -4,7 +4,7 @@ import { enquiryFormFields, Button } from "../../constants/data";
 const EnquiryForm = () => {
   return (
     <>
-      <section id="enquiry-form" className="-mt-36 bg-alt-bg">
+      <section id="enquiry-form" className="responsive-banner bg-alt-bg">
         <div
           className={`absolute inset-0 h-full w-full bg-[url('/src/assets/graphics/pattern-mandala.avif')] bg-repeat -z-10 mix-blend-multiply opacity-30`}
         />

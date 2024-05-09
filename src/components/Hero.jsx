@@ -11,7 +11,7 @@ const Hero = () => {
   }
 
   return (
-    <div className="relative top-0 w-full h-full lg:h-screen overflow-hidden -mt-36">
+    <div className="relative top-0 w-full h-full lg:h-screen overflow-hidden responsive-banner">
       {/* <div className="overlay absolute top-0 left-0 w-screen h-screen bg-[rgba(0,0,0,0.25)]"></div> */}
       <video
         ref={videoRef}
