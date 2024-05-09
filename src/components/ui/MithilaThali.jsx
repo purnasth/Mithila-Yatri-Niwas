@@ -3,14 +3,14 @@ import React from "react";
 const MithilaThali = () => {
   return (
     <>
-      <section className="bg-logo-bg relative">
+      <section className="bg-logo-bg relative pt-1 sm:py-32 md:py-48">
         {/* <div className="absolute inset-0 bg-[url('https://www.dwarikas.com/wp-content/uploads/2021/08/c3.png.webp')] size-full bg-cover bg-no-repeat opacity-100" /> */}
         <div className="absolute inset-0 bg-[url('/src/assets/graphics/mithila_thali.webp')] size-full bg-cover bg-no-repeat mix-blend-multiply -z-10 opacity-10" />
         <div className="text-center max-w-4xl mx-auto mt-8">
-          <h2 className="text-3xl text-custom-black capitalize">
+          <h2 className="text-2xl md:text-3xl text-custom-black capitalize">
             Mithila Thali to Your Table
           </h2>
-          <p className="text-base text-gray-600 mt-4">
+          <p className="text-sm md:text-sm lg:text-base text-gray-600 mt-4 text-justify md:text-center">
             Lorem ipsum, dolor sit amet consectetur adipisicing elit.
             Reprehenderit quo neque exercitationem aspernatur, animi voluptate
             velit omnis blanditiis obcaecati, unde sint enim officiis architecto
