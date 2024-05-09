@@ -6,12 +6,14 @@ const History = () => {
       <div
         // className={`relative min-h-screen bg-[url('https://3.bp.blogspot.com/_dFHgYO4fOVk/S4LXrpqQ-JI/AAAAAAAAAA0/-Nh2V4Xv0dE/s1600/FILE0561.JPG')] bg-cover bg-top bg-fixed`}
         // className={`relative min-h-screen bg-[url('/src/assets/hmmm.jpg')] bg-cover bg-center bg-fixed`}
-        className="relative min-h-screen bg-logo-bg"
+        className="relative h-auto bg-logo-bg"
       >
         {/* <div className="absolute bg-black/40 inset-0 z-0" /> */}
-        <section className="z-10 text-custom-black pt-[8rem] pb-[20rem]">
-          <div className="text-center mb-12 container max-w-7xl mx-auto space-y-4 text-custom-black">
-            <h3 className="text-3xl ">Cultural Legacy of Mithila</h3>
+        <section className="z-10 text-custom-black pt-24 pb-48 md:pt-32 md:pb-96">
+          <div className="text-justify sm:text-center mb-12 container max-w-7xl mx-auto space-y-4 text-custom-black">
+            <h3 className="text-center text-2xl md:text-3xl mb-6">
+              Cultural Legacy of Mithila
+            </h3>
             <p className="text-base text-gray-600">
               The Janaki Temple is a Hindu temple in Janakpur, Nepal, dedicated
               to the Hindu goddess Sita. It is an example of mixed Islam and
