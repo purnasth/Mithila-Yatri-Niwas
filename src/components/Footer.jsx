@@ -13,7 +13,7 @@ import {
 
 const Footer = () => {
   return (
-    <footer className="relative overflow-hidden bg-alt-logo-clr z-10">
+    <footer className="relative overflow-hidden bg-alt-logo-clr z-10 px-4">
       {/* <img
         src={mithila}
         alt="Mithila Yatri Niwas"
@@ -26,16 +26,18 @@ const Footer = () => {
       <div className="absolute inset-0 size-full bg-[url('/src/assets/graphics/flowers.png')] bg-contain bg-repeat mix-blend-multiply opacity-10 -z-20" />
 
       <div className="text-white relative overflow-hidden z-30">
-        <div className="container pt-20 pb-8 h-full">
+        <div className="container pt-20 pb-8">
           <div className="grid grid-cols-3 place-items-center px-8">
-            <LocationDetails />
+            <div className="mt-10 md:m-0 col-span-3 md:col-span-1 order-2 md:order-1">
+              <LocationDetails alignClassName="justify-center md:justify-start" />
+            </div>
 
-            <div className="col-span-1 flex items-center justify-center flex-col gap-10">
+            <div className="col-span-3 md:col-span-1 flex items-center justify-center flex-col gap-10 order-1 md:order-2">
               <a href="/">
                 <img
                   src={logo}
                   alt="Mithila Yatri Niwas"
-                  className=" w-full h-48 p-1 object-contain rounded-xl"
+                  className="w-full h-32 lg:h-48 md:p-1 object-contain rounded-xl"
                   style={{
                     filter:
                       "brightness(0) saturate(100%) invert(100%) sepia(100%) saturate(38%) hue-rotate(254deg) brightness(110%) contrast(110%)",
@@ -45,16 +47,16 @@ const Footer = () => {
               <Socials />
             </div>
 
-            <div className="col-span-1 flex flex-col items-end justify-end gap-4">
+            <div className="col-span-3 md:col-span-1 hidden md:flex flex-col items-end justify-end gap-4 order-3">
               <ul className="flex gap-8">
                 {footerMenuItems.slice(0, 3).map((item, index) => (
                   <li key={index}>
                     <a
                       href={item.router}
-                      className="relative group text-custom-white hover:text-white hover:scale-110 transition-linear flex items-center gap-2"
+                      className="text-xs md:text-sm lg:text-base relative group text-custom-white hover:text-white hover:scale-110 transition-linear flex items-center gap-2"
                     >
                       {typeof item.icon === "function" ? (
-                        <item.icon className="text-xl mr-2" />
+                        <item.icon className="text-sm md:text-sm lg:text-base lg:mr-1" />
                       ) : (
                         <img
                           src={item.icon}
@@ -73,9 +75,9 @@ const Footer = () => {
                   <li key={index}>
                     <a
                       href={item.router}
-                      className="relative group text-custom-white hover:text-white hover:scale-110 transition-linear flex items-center gap-2"
+                      className="text-xs md:text-sm lg:text-base relative group text-custom-white hover:text-white hover:scale-110 transition-linear flex items-center gap-2"
                     >
-                      <item.icon />
+                      <item.icon className="text-sm md:text-sm lg:text-base lg:mr-1" />
                       {item.text}
                     </a>
                   </li>
@@ -86,9 +88,9 @@ const Footer = () => {
                   <li key={index}>
                     <a
                       href={item.router}
-                      className="relative group text-custom-white hover:text-white hover:scale-110 transition-linear flex items-center gap-2"
+                      className="text-xs md:text-sm lg:text-base relative group text-custom-white hover:text-white hover:scale-110 transition-linear flex items-center gap-2"
                     >
-                      <item.icon />
+                      <item.icon className="text-sm md:text-sm lg:text-base lg:mr-1" />
                       {item.text}
                     </a>
                   </li>
@@ -98,7 +100,7 @@ const Footer = () => {
           </div>
 
           {/* <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 py-16"> */}
-          <div className="flex items-center justify-center gap-12 py-16">
+          <div className="flex items-center justify-center py-8 md:gap-12 md:py-16 flex-wrap">
             {otaLinks.map((link, index) => (
               <a
                 key={index}
@@ -118,12 +120,12 @@ const Footer = () => {
             ))}
           </div>
 
-          <div className="flex justify-center items-center gap-16 mb-12">
+          <div className="flex justify-center items-center gap-8 md:gap-16 mb-12">
             {footerTerms.map((link, index) => (
               <a
                 key={index}
                 href={link.router}
-                className="relative group text-custom-white hover:text-white underline transition-linear  hover:scale-105"
+                className="text-xs md:text-base relative group text-custom-white hover:text-white underline transition-linear  hover:scale-105"
               >
                 {link.text}
                 {/* <div className="mt-1 absolute h-[2px] rounded-full w-4 bg-custom-white/20 group-hover:bg-custom-white -translate-y-1 origin-left group-hover:w-12 transition-linear" /> */}
@@ -134,7 +136,7 @@ const Footer = () => {
           <hr className="border-custom-white/50 mb-4" />
 
           <div className="text-center mb-8">
-            <p>
+            <p className="text-sm md:text-base">
               Our Affiliations / Sister concerns: &nbsp;
               <a
                 href="https://streampeak.com.sg/"
@@ -147,7 +149,7 @@ const Footer = () => {
             </p>
           </div>
 
-          <div className="flex justify-between">
+          <div className="flex items-center justify-center flex-col md:flex-row md:justify-between gap-2 text-sm md:text-base">
             <span>
               &copy; {currentYear} Mithila Yatri Niwas | All Rights Reserved{" "}
             </span>

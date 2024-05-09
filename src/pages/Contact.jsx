@@ -121,7 +121,7 @@ const Contact = () => {
               </p>
 
               <div className="my-6">
-                <LocationDetails />
+                <LocationDetails alignClassName="justify-center md:justify-start" />
               </div>
 
               <div className="mt-8">
