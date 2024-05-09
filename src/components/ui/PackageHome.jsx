@@ -21,7 +21,7 @@ const PackageHome = ({
       <div className="absolute right-0 top-64 w-80 h-96 bg-[url('/src/assets/graphics/ram.svg')] bg-contain bg-no-repeat mix-blend-overlay -z-10 opacity-70 -rotate-90" />
 
       <div className="">
-        <div className="grid grid-cols-1 md:grid-cols-3 md:gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-3 gap-8">
           <div className={`col-span-1 md:col-span-1 ${contentClassName}`}>
             <h2 className="text-3xl">{title}</h2>
             <p className="text-base text-gray-500 mt-4">{description}</p>
@@ -55,7 +55,7 @@ const PackageHome = ({
           </div>
 
           <div
-            className={`home-accommodation col-span-1 md:col-span-2 mx-4 md:mx-0 ${sliderClassName}`}
+            className={`home-accommodation col-span-1 lg:col-span-2 mx-4 md:mx-0 ${sliderClassName}`}
           >
             <RoomSlider contents={sliderContents} />
           </div>

@@ -29,7 +29,7 @@ const TestimonialsSlider = ({ contents }) => {
             className="w-32 h-8 rounded-full object-contain mx-auto"
           />
           <div className="mt-4 text-center space-y-3">
-            <p className="text-sm text-gray-600">{description}</p>
+            <p className="text-sm text-gray-600 text-justify">{description}</p>
             <h3 className="text-lg font-medium">{author}</h3>
             <p className="text-sm text-gray-600">{location}</p>
           </div>

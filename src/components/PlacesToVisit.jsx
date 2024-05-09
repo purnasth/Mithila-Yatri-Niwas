@@ -9,7 +9,7 @@ const PlacesToVisit = () => {
   return (
     <>
       {/* <section className="bg-gradient-to-b from-logo-bg to-alt-bg px-10"> */}
-      <section className="bg-alt-bg px-10">
+      <section className="bg-alt-bg md:px-10">
         <SvgWave />
         <div className="absolute left-0 bottom-0 w-full h-16 bg-[url('/src/assets/logo-graphics.svg')] bg-contain bg-repeat-x mix-blend-luminosity opacity-80 -z-20" />
         <div className="text-center mb-12 container max-w-6xl mx-auto">
@@ -28,7 +28,7 @@ const PlacesToVisit = () => {
               secondaryColor="bg-alt-logo-clr"
             /> */}
         </div>
-        <div className="">
+        <div className="px-3">
           <PlacesToVisitSlider
             contents={placesToVistContents}
             router="/places-to-visit"

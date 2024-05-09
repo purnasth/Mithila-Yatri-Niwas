@@ -24,7 +24,7 @@
   }
 
   section {
-    @apply py-20 px-4 md:px-12 md:pt-[10rem] md:pb-[7.5rem] lg:pt-[12rem] lg:pb-[9rem] relative z-10;
+    @apply py-20 px-4 sm:py-36 md:px-12 md:pt-[10rem] md:pb-[7.5rem] lg:pt-[12rem] lg:pb-[9rem] relative z-10;
   }
 
   .transition-linear {

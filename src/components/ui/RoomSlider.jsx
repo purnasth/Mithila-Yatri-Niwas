@@ -25,7 +25,7 @@ const RoomSlider = ({ contents }) => {
       {contents.map(({ id, title, description, image, router }) => (
         <div
           key={id}
-          className="relative overflow-hidden h-96 md:h-[80vh] group shadow-lg"
+          className="relative overflow-hidden h-96 lg:h-[80vh] group shadow-lg"
         >
           <img
             key={id}
