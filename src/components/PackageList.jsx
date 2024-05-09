@@ -1,7 +1,5 @@
 import React, { useState } from "react";
-import PackageSlider from "../components/ui/PackageSlider";
-import PackageContent from "./ui/PackageContent";
-import Button from "./ui/Button";
+import { PackageSlider, PackageContent, Button } from "../constants/data";
 
 const PackageList = ({ contents }) => {
   const [activeRoom, setActiveRoom] = useState(contents[0].title);

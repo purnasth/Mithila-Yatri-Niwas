@@ -1,49 +1,7 @@
 import React from "react";
-import { FiUser } from "react-icons/fi";
-import { MdAlternateEmail } from "react-icons/md";
-import { GrLocation } from "react-icons/gr";
-import { TbPhone } from "react-icons/tb";
-import { HiOutlineMail } from "react-icons/hi";
-import { TbPencilQuestion } from "react-icons/tb";
-import { TbCalendarEvent } from "react-icons/tb";
-import Button from "./Button";
+import { enquiryFormFields, Button } from "../../constants/data";
 
 const EnquiryForm = () => {
-  const formFields = [
-    {
-      id: "event",
-      type: "text",
-      label: "Event Title",
-      icon: TbCalendarEvent,
-    },
-    {
-      id: "event-date",
-      type: "date",
-      label: "Event Date",
-      icon: TbCalendarEvent,
-    },
-    { id: "name", type: "text", label: "Full Name", icon: FiUser },
-    {
-      id: "email",
-      type: "email",
-      label: "Email address",
-      icon: MdAlternateEmail,
-    },
-    { id: "phone", type: "tel", label: "Phone Number", icon: TbPhone },
-    { id: "address", type: "text", label: "Address", icon: GrLocation },
-    {
-      id: "subject",
-      type: "text",
-      label: "Subject",
-      icon: TbPencilQuestion,
-    },
-    {
-      id: "message",
-      type: "textarea",
-      label: "Message",
-      icon: HiOutlineMail,
-    },
-  ];
   return (
     <>
       <section id="enquiry-form" className="-mt-36 bg-alt-bg">
@@ -60,7 +18,7 @@ const EnquiryForm = () => {
         </div>
         <form className="container max-w-3xl mt-8">
           <div className="grid sm:grid-cols-2 gap-8">
-            {formFields.map((field) => (
+            {enquiryFormFields.map((field) => (
               <div
                 key={field.id}
                 className="relative z-0 flex items-center justify-between group"

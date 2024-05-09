@@ -1,60 +1,17 @@
 import React from "react";
-import Socials from "./ui/Socials";
-import logo from "../assets/logo.svg";
-
-import { MdOutlineBed } from "react-icons/md";
-import { MdOutlineBrunchDining } from "react-icons/md";
-import { TbCalendarEvent } from "react-icons/tb";
-import LocationDetails from "./ui/LocationDetails";
-
-import expedia from "../assets/ota/expedia.webp";
-import tripadvisor from "../assets/ota/tripadvisor.webp";
-import bookingcom from "../assets/ota/bookingcom.webp";
-import agoda from "../assets/ota/agoda.webp";
+import {
+  footerMenuItems,
+  logo,
+  LocationDetails,
+  Socials,
+  otaLinks,
+  footerTerms,
+  sister,
+  author,
+  currentYear,
+} from "../constants/data";
 
 const Footer = () => {
-  const menuItems = [
-    { icon: MdOutlineBed, text: "Deluxe", router: "#" },
-    { icon: MdOutlineBed, text: "Executive", router: "#" },
-    { icon: MdOutlineBed, text: "Suite", router: "#" },
-    { icon: MdOutlineBrunchDining, text: "Bhojan Griha", router: "#" },
-    { icon: TbCalendarEvent, text: "Sabha Hall", router: "#" },
-    { icon: TbCalendarEvent, text: "PDR", router: "#" },
-  ];
-
-  const footerTerms = [
-    { text: "Terms & Conditions", router: "#" },
-    { text: "Privacy Policy", router: "#" },
-    { text: "Child Policy", router: "#" },
-  ];
-
-  const sister = "Stream Peak International Pvt. Ltd.";
-  const currentYear = new Date().getFullYear();
-  const author = "Longtail e-media";
-
-  const otaLinks = [
-    {
-      href: "https://www.booking.com/hotel/np/mithila-yatri-niwas.en-gb.html?aid=356980&label=gog235jc-1DCAsoqwFCE21pdGhpbGEteWF0cmktbml3YXNIM1gDaKsBiAEBmAEJuAEXyAEM2AED6AEBiAIBqAIDuAKml9OxBsACAdICJDgzYWY5MGYzLWFmMDAtNDg4ZS1iNDJlLTNhYzdmYjQwMzY1NNgCBOACAQ&sid=92d4f646b70df7ccf9096a36f66af01e&dist=0&keep_landing=1&sb_price_type=total&type=total&",
-      imgSrc: bookingcom,
-      alt: "Booking.com",
-    },
-    {
-      href: "https://www.tripadvisor.com/Hotel_Review-g424939-d24969555-Reviews-Mithila_Yatri_Niwas-Janakpur_Janakpur_Zone_Central_Region.html",
-      imgSrc: tripadvisor,
-      alt: "Tripadvisor",
-    },
-    {
-      href: "https://www.agoda.com/dasrath-talau-janakpur-dham-dhanusha/hotel/janakpur-np.html",
-      imgSrc: agoda,
-      alt: "Agoda",
-    },
-    {
-      href: "https://www.expedia.com/Janakpur-Hotels-Mithila-Yatri-Niwas.h83936278.Hotel-Information?",
-      imgSrc: expedia,
-      alt: "Expedia",
-    },
-  ];
-
   return (
     <footer className="relative overflow-hidden bg-alt-logo-clr z-10">
       {/* <img
@@ -90,7 +47,7 @@ const Footer = () => {
 
             <div className="col-span-1 flex flex-col items-end justify-end gap-4">
               <ul className="flex gap-8">
-                {menuItems.slice(0, 3).map((item, index) => (
+                {footerMenuItems.slice(0, 3).map((item, index) => (
                   <li key={index}>
                     <a
                       href={item.router}
@@ -112,7 +69,7 @@ const Footer = () => {
                 ))}
               </ul>
               <ul className="flex items-center justify-start gap-8">
-                {menuItems.slice(3, 5).map((item, index) => (
+                {footerMenuItems.slice(3, 4).map((item, index) => (
                   <li key={index}>
                     <a
                       href={item.router}
@@ -125,7 +82,7 @@ const Footer = () => {
                 ))}
               </ul>
               <ul className="flex items-center justify-start gap-8">
-                {menuItems.slice(5).map((item, index) => (
+                {footerMenuItems.slice(4, 6).map((item, index) => (
                   <li key={index}>
                     <a
                       href={item.router}

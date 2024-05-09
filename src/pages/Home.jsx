@@ -1,13 +1,15 @@
 import React from "react";
-import Hero from "../components/Hero";
-import Accommodation from "../components/Accommodation";
-import About from "../components/About";
-import Dine from "../components/Dine";
-import Testimonials from "../components/Testimonials";
-import Hall from "../components/Hall";
-import History from "../components/History";
-import PlacesToVisit from "../components/PlacesToVisit";
-import MithilaThali from "../components/ui/MithilaThali";
+import {
+  Hero,
+  About,
+  History,
+  Accommodation,
+  Dine,
+  MithilaThali,
+  Hall,
+  Testimonials,
+  PlacesToVisit,
+} from "../constants/data";
 
 const Home = () => {
   return (

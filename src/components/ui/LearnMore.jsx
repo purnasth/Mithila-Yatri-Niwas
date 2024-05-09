@@ -1,5 +1,5 @@
 import React from "react";
-import { CgArrowLongRight } from "react-icons/cg";
+import { CgArrowLongRight } from "../../constants/data";
 
 const Button = ({ text, primaryColor, secondaryColor, router }) => {
   return (

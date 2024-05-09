@@ -1,43 +1,16 @@
 import React from "react";
-import Banner from "../components/ui/Banner";
-import Direction from "../components/Direction";
-import mithilaNight from "../assets/mithila_night.webp";
-import Socials from "../components/ui/Socials";
-import SvgWave from "../components/ui/SvgWave";
-
-import { GrLocation } from "react-icons/gr";
-import { TbPhone } from "react-icons/tb";
-import { MdAlternateEmail } from "react-icons/md";
-import { HiOutlineMail } from "react-icons/hi";
-import { TbPencilQuestion } from "react-icons/tb";
-import { FiUser } from "react-icons/fi";
-import Button from "../components/ui/Button";
-import LocationDetails from "../components/ui/LocationDetails";
+import {
+  contactFormFields,
+  Banner,
+  Direction,
+  Socials,
+  SvgWave,
+  LocationDetails,
+  Button,
+  mithilaNight,
+} from "../constants/data";
 
 const Contact = () => {
-  const formFields = [
-    { id: "name", type: "text", label: "Full Name", icon: FiUser },
-    {
-      id: "email",
-      type: "email",
-      label: "Email address",
-      icon: MdAlternateEmail,
-    },
-    { id: "phone", type: "tel", label: "Phone Number", icon: TbPhone },
-    { id: "address", type: "text", label: "Address", icon: GrLocation },
-    {
-      id: "subject",
-      type: "text",
-      label: "Subject",
-      icon: TbPencilQuestion,
-    },
-    {
-      id: "message",
-      type: "textarea",
-      label: "Message",
-      icon: HiOutlineMail,
-    },
-  ];
   return (
     <>
       <Banner banner={mithilaNight} page="Contact" />
@@ -159,7 +132,7 @@ const Contact = () => {
             <div className="p-6 rounded-xl lg:col-span-2">
               <form>
                 <div className="grid sm:grid-cols-2 gap-8">
-                  {formFields.map((field) => (
+                  {contactFormFields.map((field) => (
                     <div
                       key={field.id}
                       className="relative z-0 flex items-center justify-between group"

@@ -1,143 +1,28 @@
 import React, { useState } from "react";
-import Banner from "../components/ui/Banner";
-import mithila from "../assets/mithila.webp";
-import SvgWave from "../components/ui/SvgWave";
+import { mithila, galleryImages, Banner, SvgWave } from "../constants/data";
 
-import LightGallery from "lightgallery/react";
-import lgZoom from "lightgallery/plugins/zoom";
-import lgVideo from "lightgallery/plugins/video";
-import lgThumbnail from "lightgallery/plugins/thumbnail";
-import lgFullscreen from "lightgallery/plugins/fullscreen";
-import lgShare from "lightgallery/plugins/share";
-import "lightgallery/css/lightgallery.css";
-import "lightgallery/css/lg-zoom.css";
-import "lightgallery/css/lg-video.css";
-import "lightgallery/css/lg-thumbnail.css";
-import "lightgallery/css/lg-fullscreen.css";
-import "lightgallery/css/lg-share.css";
-
-import mithilaNight from "../assets/mithila_night.webp";
-import room1 from "../assets/rooms/room1.webp";
-import room2 from "../assets/rooms/room2.webp";
-import room3 from "../assets/rooms/room3.webp";
-import room4 from "../assets/rooms/room4.webp";
-import room5 from "../assets/rooms/room5.webp";
-import room6 from "../assets/rooms/room6.webp";
-
-import hall1 from "../assets/halls/hall1.webp";
-import hall2 from "../assets/halls/hall2.webp";
-
-import lobby1 from "../assets/halls/lobby1.webp";
-
-import exterior1 from "../assets/halls/exterior1.webp";
-import dine1 from "../assets/dine/dine.webp";
-
-import mithila2 from "../assets/mithila2.webp";
-import mithila4 from "../assets/mithila4.webp";
+import {
+  LightGallery,
+  lgZoom,
+  lgVideo,
+  lgThumbnail,
+  lgFullscreen,
+  lgShare,
+} from "../constants/library";
 
 const GalleryPage = () => {
   const [activeCategory, setActiveCategory] = useState("All");
   const [isTransitioning, setIsTransitioning] = useState(false);
 
-  const images = [
-    {
-      id: 1,
-      url: mithila,
-      alt: "External View of Mithila Yatri Niwas",
-      category: "Exterior",
-    },
-    {
-      id: 2,
-      url: room1,
-      alt: "A Room in Mithila Yatri Niwas",
-      category: "Rooms",
-    },
-    {
-      id: 3,
-      url: mithilaNight,
-      alt: "External View of Mithila Yatri Niwas",
-      category: "Exterior",
-    },
-    {
-      id: 4,
-      url: room2,
-      alt: "A Room in Mithila Yatri Niwas",
-      category: "Rooms",
-    },
-    {
-      id: 5,
-      url: room3,
-      alt: "A Room in Mithila Yatri Niwas",
-      category: "Rooms",
-    },
-    {
-      id: 6,
-      url: hall1,
-      alt: "A Hall in Mithila Yatri Niwas",
-      category: "Halls",
-    },
-    {
-      id: 7,
-      url: lobby1,
-      alt: "Lobby of Mithila Yatri Niwas",
-      category: "Halls",
-    },
-    {
-      id: 8,
-      url: mithila2,
-      alt: "External View of Mithila Yatri Niwas",
-      category: "Exterior",
-    },
-    {
-      id: 9,
-      url: dine1,
-      alt: "External View of Mithila Yatri Niwas",
-      category: "Halls",
-    },
-    {
-      id: 10,
-      url: exterior1,
-      alt: "External View of Mithila Yatri Niwas",
-      category: "Halls",
-    },
-    {
-      id: 11,
-      url: room4,
-      alt: "A Room in Mithila Yatri Niwas",
-      category: "Rooms",
-    },
-    {
-      id: 12,
-      url: mithila4,
-      alt: "External View of Mithila Yatri Niwas",
-      category: "Exterior",
-    },
-    {
-      id: 13,
-      url: hall2,
-      alt: "External View of Mithila Yatri Niwas",
-      category: "Halls",
-    },
-    {
-      id: 14,
-      url: room5,
-      alt: "A Room in Mithila Yatri Niwas",
-      category: "Rooms",
-    },
-    {
-      id: 15,
-      url: room6,
-      alt: "A Room in Mithila Yatri Niwas",
-      category: "Rooms",
-    },
-  ];
-
   const filteredImages =
     activeCategory === "All"
-      ? images
-      : images.filter((image) => image.category === activeCategory);
+      ? galleryImages
+      : galleryImages.filter((image) => image.category === activeCategory);
 
-  const categories = ["All", ...new Set(images.map((image) => image.category))];
+  const categories = [
+    "All",
+    ...new Set(galleryImages.map((image) => image.category)),
+  ];
 
   const handleCategoryClick = (category) => {
     setIsTransitioning(true);

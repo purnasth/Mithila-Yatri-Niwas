@@ -1,38 +1,13 @@
 import React from "react";
-import TestimonialsSlider from "./ui/TestimonialsSlider";
-import LearnMore from "./ui/LearnMore";
-import tripadvisor from "../assets/tripadvisor.webp";
-import booking from "../assets/booking.webp";
-import SvgWave from "./ui/SvgWave";
+
+import {
+  testimonialsContent,
+  SvgWave,
+  LearnMore,
+  TestimonialsSlider,
+} from "../constants/data";
 
 const Testimonials = () => {
-  const testimonialsContent = [
-    {
-      id: 1,
-      author: "Jas Family",
-      location: "Chigwell, United Kingdom",
-      description:
-        "Best place to stay in Janakpur   Best hotel in Janakpur to stay while visiting alone or with family. Very nice room at reasonable price with good view of town and naturally built ponds in its surrounding. Peaceful colour of the structure enhanced our mind for calmness and pleasure. Food is served at the best quality in the restaurant. Very attentive and helpful staffs everywhere, specially the manager at the front Desk Mr Bishan, who is very friendly, welcoming and professional. Thank you Mithila Yatri Niwas for making our stay like at our own home.",
-      icon: tripadvisor,
-    },
-    {
-      id: 2,
-      author: "Anna-Maria",
-      location: "Finland",
-      description:
-        "Buffet breakfast was available, also a lot of good options on the dinner. Location was good. The room was clean, spacious and room service was working fine. AC worked well and the bathroom was clean. The view from my big window was really lovely.",
-      icon: booking,
-    },
-    {
-      id: 3,
-      author: "Jas Family",
-      location: "Chigwell, United Kingdom",
-      description:
-        "Best place to stay in Janakpur   Best hotel in Janakpur to stay while visiting alone or with family. Very nice room at reasonable price with good view of town and naturally built ponds in its surrounding. Peaceful colour of the structure enhanced our mind for calmness and pleasure. Food is served at the best quality in the restaurant. Very attentive and helpful staffs everywhere, specially the manager at the front Desk Mr Bishan, who is very friendly, welcoming and professional. Thank you Mithila Yatri Niwas for making our stay like at our own home.",
-      icon: tripadvisor,
-    },
-  ];
-
   return (
     <>
       {/* <section className="bg-gradient-to-b from-logo-bg to-alt-bg px-10"> */}
@@ -54,7 +29,6 @@ const Testimonials = () => {
               />
             </div>
             <div className="col-span-2 md:col-span-2">
-
               <TestimonialsSlider contents={testimonialsContent} />
             </div>
           </div>

@@ -1,8 +1,6 @@
 import React from "react";
-import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
-import { CgArrowLongRight } from "react-icons/cg";
+import { Slider } from "../../constants/library";
+import { CgArrowLongRight } from "../../constants/data";
 
 const RoomSlider = ({ contents }) => {
   const settings = {
@@ -24,13 +22,14 @@ const RoomSlider = ({ contents }) => {
 
   return (
     <Slider {...settings}>
-      {contents.map(({ id, title, description, icon, router }) => (
+      {contents.map(({ id, title, description, image, router }) => (
         <div
           key={id}
           className="relative overflow-hidden h-[80vh] group shadow-lg"
         >
           <img
-            src={icon}
+            key={id}
+            src={image[0].src}
             alt={title}
             className="w-full h-full transition duration-700 ease-in-out transform group-hover:scale-150 object-cover"
           />
