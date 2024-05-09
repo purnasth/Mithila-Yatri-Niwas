@@ -17,7 +17,7 @@ const AboutGallery = () => {
       <LightGallery
         plugins={[lgZoom, lgVideo, lgThumbnail, lgFullscreen, lgShare]}
         mode="lg-fade"
-        elementClassNames="p-5 columns-1 gap-5 sm:columns-2 lg:columns-3 xl:columns-4 [&img:not(:first-child)]:mt-5 lg:[&img:not(:first-child)]:mt-8"
+        elementClassNames="columns-1 gap-5 sm:columns-2 lg:columns-3 xl:columns-4 [&img:not(:first-child)]:mt-5 lg:[&img:not(:first-child)]:mt-8"
         options={{
           thumbnail: true,
           autoplay: true,
@@ -32,7 +32,7 @@ const AboutGallery = () => {
             <img
               src={image.url}
               alt={image.alt}
-              className="h-full mb-5 object-cover shadow-md cursor-pointer"
+              className="w-full h-56 md:h-full mb-5 object-cover shadow-md cursor-pointer"
             />
           </div>
         ))}
