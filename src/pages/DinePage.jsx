@@ -7,6 +7,7 @@ import {
   Reservation,
   PackageList,
 } from "../constants/data";
+import { Link } from "react-router-dom";
 
 const DinePage = () => {
   const { title, description, dineCategories } = dineContents[0];
@@ -28,12 +29,12 @@ const DinePage = () => {
             {description}
           </p>
           <div className="mt-8 w-full">
-            <a
-              href="#menu"
+            <Link
+              to="#menu"
               className="font-title text-custom-white bg-alt-logo-clr hover:bg-logo-clr px-6 py-2 rounded-full transition-linear group"
             >
               View Menu
-            </a>
+            </Link>
           </div>
         </div>
 

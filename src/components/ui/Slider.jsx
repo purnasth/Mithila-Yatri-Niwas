@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Slider = ({ contents }) => {
   return (
@@ -18,12 +19,12 @@ const Slider = ({ contents }) => {
                   {title}
                 </h3>
                 <p className="text-ivory my-4">{description}</p>
-                <a
-                  href={router}
+                <Link
+                  to={router}
                   className="text-ivory bg-transparent border border-solid border-white px-4 py-2 mt-2 hover:bg-white hover:text-black transition duration-300 ease-in-out"
                 >
                   View More
-                </a>
+                </Link>
               </div>
             </div>
           </div>

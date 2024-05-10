@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Reservation = () => {
   return (
@@ -18,34 +19,34 @@ const Reservation = () => {
               hesitate to contact us.
             </p>
 
-            <a
-              href="/contact#contact-form"
+            <Link
+              to="/contact#contact-form"
               className="my-12 font-title flex items-center justify-center gap-2 text-custom-white bg-alt-logo-clr hover:bg-logo-clr px-6 py-3 w-32 mx-auto transition-linear group"
             >
               Enquiry
-            </a>
+            </Link>
 
             <div className="flex items-center justify-center flex-col gap-2">
               <span className="text-gray-600">
                 or call us directly
-                <a
-                  href="tel:+9779820113410"
+                <Link
+                  to="tel:+9779820113410"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="ml-2 text-custom-black/90 text-xl font-semibold hover:text-alt-logo-clr transition-linear"
                 >
                   +977-9820113410
-                </a>
+                </Link>
               </span>
 
-              <a
-                href="mailto:info@hotelmithilanepal.com"
+              <Link
+                to="mailto:info@hotelmithilanepal.com"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-custom-black/90 text-lg font-semibold hover:text-alt-logo-clr transition-linear"
               >
                 info@hotelmithilanepal.com
-              </a>
+              </Link>
             </div>
           </div>
         </div>

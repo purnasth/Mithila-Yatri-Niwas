@@ -1,11 +1,12 @@
 import React from "react";
 import { CgArrowLongRight } from "../../constants/data";
+import { Link } from "react-router-dom";
 
 const Button = ({ text, primaryColor, secondaryColor, router }) => {
   return (
     <>
-      <a
-        href={router}
+      <Link
+        to={router}
         className={`overflow-hidden rounded-full relative w-36 h-10 cursor-pointer flex items-center ${primaryColor} group hover:${secondaryColor} active:${primaryColor} transition-linear`}
       >
         <span className="text-custom-white font-semibold ml-8 transform group-hover:translate-x-20 transition-linear">
@@ -16,7 +17,7 @@ const Button = ({ text, primaryColor, secondaryColor, router }) => {
         >
           <CgArrowLongRight className="text-custom-white -ml-6 group-hover:ml-0 text-xl group-hover:text-2xl transition-linear" />
         </span>
-      </a>
+      </Link>
     </>
   );
 };

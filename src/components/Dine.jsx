@@ -7,6 +7,7 @@ import {
   Button,
   CgArrowLongRight,
 } from "../constants/data";
+import { Link } from "react-router-dom";
 
 const Dine = () => {
   return (
@@ -79,13 +80,13 @@ const Dine = () => {
                       router="/enquiry-form#enquiry-form"
                     />
 
-                    <a
-                      href="/dine"
+                    <Link
+                      to="/dine"
                       className="text-sm md:text-base flex items-center justify-center gap-2 group"
                     >
                       Explore More
                       <CgArrowLongRight className="text-custom-black text-2xl group-hover:text-xl transition-linear" />
-                    </a>
+                    </Link>
                   </div>
                 </div>
               </div>

@@ -80,7 +80,7 @@ const GalleryPage = () => {
           }}
         >
           {filteredImages.map((image) => (
-            <a
+            <div
               key={image.id}
               className={`group gallery-item overflow-hidden transition-all duration-200 ease-linear ${
                 isTransitioning ? "scale-0" : "scale-100"
@@ -88,11 +88,11 @@ const GalleryPage = () => {
               data-src={image.url}
             >
               <img
-                className="w-full h-full object-cover transition duration-700 ease-in-out group-hover:scale-125 cursor-pointer shadow-lg"
+                className="w-full h-full  object-cover transition duration-700 ease-in-out group-hover:scale-125 cursor-pointer shadow-lg"
                 src={image.url}
                 alt={image.alt}
               />
-            </a>
+            </div>
           ))}
         </LightGallery>
       </section>

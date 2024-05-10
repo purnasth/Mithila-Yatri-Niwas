@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { nearbyLocations } from "../../constants/data";
+import { Link } from "react-router-dom";
 
 const NearbyMapComponent = () => {
   const [isMapOpen, setIsMapOpen] = useState(true);
@@ -48,8 +49,7 @@ const NearbyMapComponent = () => {
               <span className="font-bold">{location.name}</span>
               <span className="ml-2">{location.distance}</span>
               <br />
-              <a
-                href="#"
+              <button
                 className="font-body font-bold text-logo-clr"
                 onClick={(e) => {
                   e.preventDefault();
@@ -57,7 +57,7 @@ const NearbyMapComponent = () => {
                 }}
               >
                 Get Direction
-              </a>
+              </button>
             </li>
           ))}
         </ul>

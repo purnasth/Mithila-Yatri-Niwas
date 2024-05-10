@@ -1,6 +1,7 @@
 import React from "react";
 import { Slider } from "../../constants/library";
 import { CgArrowLongRight } from "../../constants/data";
+import { Link } from "react-router-dom";
 
 const RoomSlider = ({ contents }) => {
   const settings = {
@@ -42,13 +43,13 @@ const RoomSlider = ({ contents }) => {
               <p className="text-custom-white my-8 text-sm md:text-base line-clamp-3 md:line-clamp-4">
                 {description}
               </p>
-              <a
-                href={router}
+              <Link
+                to={router}
                 className="font-title flex items-center justify-center gap-2 bg-alt-logo-clr hover:bg-logo-clr px-6 py-3 w-32 mx-auto rounded-full transition-linear group"
               >
                 More
                 <CgArrowLongRight />
-              </a>
+              </Link>
             </div>
           </div>
         </div>
