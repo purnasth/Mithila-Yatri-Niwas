@@ -16,7 +16,7 @@ const PackageHome = ({
       <SvgWave />
 
       <div
-        className={`absolute inset-0 h-full w-full bg-[url('/src/assets/graphics/pattern-mandala.avif')] bg-repeat -z-10 mix-blend-multiply opacity-20`}
+        className={`absolute inset-0 h-full w-full bg-[url('/src/assets/graphics/pattern-mandala.avif')] bg-repeat -z-20 mix-blend-multiply opacity-20`}
       />
       <div className="absolute right-0 top-64 w-80 h-96 bg-[url('/src/assets/graphics/ram.svg')] bg-contain bg-no-repeat mix-blend-overlay -z-10 opacity-70 -rotate-90" />
 
