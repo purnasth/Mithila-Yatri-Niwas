@@ -32,37 +32,33 @@
   }
 
   .responsive-banner {
-    @apply -mt-[calc(0rem+3rem)] md:-mt-[calc(6rem+3rem)];
+    @apply -mt-[calc(0rem+0rem)] sm:-mt-[calc(0rem+3rem)] md:-mt-[calc(6rem+3rem)];
   }
 
-  html {
-    scroll-behavior: smooth;
-    max-width: 100vw;
-    overflow-x: hidden;
+
+}
+
+@layer utilities {
+  ::-webkit-scrollbar {
+    @apply w-1;
   }
-}
 
-::-webkit-scrollbar {
-  width: 0.25em;
-  border-radius: 100vw;
-}
+  ::-webkit-scrollbar:hover {
+    @apply w-2;
+  }
 
-::-webkit-scrollbar:hover {
-  width: 0.35em;
-}
+  ::-webkit-scrollbar-track {
+    @apply bg-logo-bg rounded-full;
+  }
 
-::-webkit-scrollbar-track {
-  background: #edd3c8;
-  border-radius: 100vw;
-}
+  ::-webkit-scrollbar-thumb {
+    /* @apply bg-logo-clr rounded-full border-2 border-solid border-alt-logo-clr; */
+    @apply bg-logo-clr rounded-full;
+  }
 
-::-webkit-scrollbar-thumb {
-  background: #be6138;
-  border-radius: 100vw;
-}
-
-::-webkit-scrollbar-thumb:hover {
-  background: #3c596e;
+  ::-webkit-scrollbar-thumb:hover {
+    @apply bg-alt-logo-clr;
+  }
 }
 
 .slick-initialized .slick-slide {
@@ -70,14 +66,11 @@
 }
 
 .slick-dots li {
-  margin: 0 5px;
-  cursor: pointer;
-  /* transform: scale(0.75); */
+  @apply cursor-pointer;
 }
 
 .slick-dots li.slick-active button:before {
-  color: #be6138;
-  transform: scale(1.5);
+  @apply text-logo-clr scale-150;
 }
 
 .slick-initialized .slick-slide {

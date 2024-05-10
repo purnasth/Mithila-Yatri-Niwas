@@ -2,7 +2,7 @@ import React from "react";
 
 const RoomAmenities = ({ amenities, amenitiesTitle }) => {
   return (
-    <div className="container py-12 my-32 p-0">
+    <div className="container py-12 md:my-32 p-0">
       <h4 className="text-3xl text-center my-8">{amenitiesTitle}</h4>
       <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-12 mt-24">
         {amenities.map((amenity, index) => (
@@ -16,7 +16,7 @@ const RoomAmenities = ({ amenities, amenitiesTitle }) => {
                 className="w-8 h-8 text-alt-logo-clr"
               />
             )}
-            <p>{amenity.title}</p>
+            <p className="text-xs md:text-xs xl:text-base">{amenity.title}</p>
           </div>
         ))}
       </div>
