@@ -36,13 +36,13 @@ const NearbyMapComponent = () => {
   const rightLocations = nearbyLocations.slice(halfLocations);
 
   return (
-    <div className="flex justify-between items-center mt-20">
-      <div className="w-1/5">
+    <div className="flex justify-between items-center flex-col lg:flex-row mt-20">
+      <div className="w-full lg:w-1/5 order-1">
         <ul>
           {leftLocations.map((location) => (
             <li
               key={location.name}
-              className="mb-4 cursor-pointer text-left"
+              className="mb-4 cursor-pointer text-left text-sm lg:text-base "
               onClick={() => handleLocationClick(location)}
             >
               <span className="font-bold">{location.name}</span>
@@ -62,7 +62,7 @@ const NearbyMapComponent = () => {
           ))}
         </ul>
       </div>
-      <div className="w-4/5 p-8">
+      <div className="w-full lg:w-4/5 my-8 lg:m-0 lg:p-8 order-3 lg:order-2">
         {/* Embedded Google Map */}
         {isMapOpen && (
           <div className="relative bg-ivory w-full rounded-lg">
@@ -75,18 +75,18 @@ const NearbyMapComponent = () => {
             <iframe
               title="Map"
               src={mapUrl}
-              className="w-full h-[60vh] rounded-lg shadow-lg"
+              className="w-full h-64 md:h-96 lg:h-[60vh] rounded-lg shadow-lg"
               frameBorder="0"
             ></iframe>
           </div>
         )}
       </div>
-      <div className="w-1/5">
+      <div className="w-full lg:w-1/5 order-2 lg:order-3">
         <ul>
           {rightLocations.map((location) => (
             <li
               key={location.name}
-              className="mb-4 cursor-pointer text-right"
+              className="mb-4 cursor-pointer lg:text-right text-sm lg:text-base"
               onClick={() => handleLocationClick(location)}
             >
               <span className="font-bold">{location.name}</span>

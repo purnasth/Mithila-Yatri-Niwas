@@ -166,7 +166,7 @@ const PackageComponent = () => {
 
   return (
     <>
-      <div className="-mt-36">
+      <div className="responsive-banner">
         <PackageSlider
           contents={roomsCategories}
           sizeClassName="w-full h-screen"

@@ -4,7 +4,7 @@ import { placesToVistContents, Direction } from "../constants/data";
 const Visit = () => {
   return (
     <>
-      <section className="bg-logo-bg -mt-36">
+      <section className="bg-logo-bg responsive-banner">
         <div
           className={`absolute inset-0 h-full w-full bg-[url('/src/assets/graphics/pattern-mandala.avif')] bg-repeat -z-10 mix-blend-multiply opacity-20`}
         />
@@ -26,23 +26,26 @@ const Visit = () => {
               <div
                 key={offer.id}
                 id={offer.id}
-                className={`flex items-center justify-center gap-16 ${
-                  index % 2 !== 0 ? "lg:flex-row-reverse" : ""
+                className={`flex flex-col md:flex-row items-center justify-center md:gap-16 ${
+                  index % 2 !== 0 ? "md:flex-row-reverse" : ""
                 }`}
               >
-                <div className="flex-1">
+                <div className="flex-1 p-2 md:p-0">
                   <img
                     src={offer.icon}
                     alt={offer.title}
-                    className="w-full h-80 object-cover"
+                    className="w-full h-64 lg:h-80 object-cover"
                   />
                 </div>
-                <div className="flex-1 px-4 h-80 overflow-y-auto">
-                  <h3 className="text-xl font-medium mb-2 sticky top-0 pt-4 pb-2 bg-logo-bg">
+                <div className="md:flex-1 px-4 h-64 lg:h-80 overflow-y-auto">
+                  <h3 className="text-xl font-medium mb-2 sticky top-0 pt-8 md:pt-4  pb-2 bg-logo-bg">
                     {offer.title}
                   </h3>
                   {offer.description.split("<br/>").map((paragraph, index) => (
-                    <p key={index} className="text-gray-600">
+                    <p
+                      key={index}
+                      className="text-sm md:text-base text-gray-600"
+                    >
                       {paragraph}
                     </p>
                   ))}

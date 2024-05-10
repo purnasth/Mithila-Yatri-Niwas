@@ -28,7 +28,7 @@ const PlacesToVisitSlider = ({ contents, router }) => {
               <img
                 src={icon}
                 alt={title}
-                className="w-full h-64 object-cover"
+                className="w-full h-48 sm:h-72 md:h-48 xl:h-72 object-cover"
               />
             </div>
             <div className="mt-4 text-center">

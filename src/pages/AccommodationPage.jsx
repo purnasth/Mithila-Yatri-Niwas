@@ -14,18 +14,20 @@ const AccommodationPage = () => {
 
   return (
     <>
-      <div className="-mt-36">
+      <div className="responsive-banner relative overflow-hidden">
         <PackageSlider
           contents={roomsCategories}
-          sizeClassName="w-full h-screen"
+          sizeClassName="w-full h-full lg:h-screen"
         />
         <BreadCrumb page="Accommodation" />
       </div>
 
       <section className="bg-custom-white">
         <div className="text-center mb-16 container max-w-5xl mx-auto">
-          <h2 className="text-3xl">{title}</h2>
-          <p className="text-base text-gray-500 mt-4">{description}</p>
+          <h2 className="text-2xl sm:text-3xl">{title}</h2>
+          <p className="text-sm md:text-base text-gray-500 mt-4">
+            {description}
+          </p>
         </div>
 
         <PackageList contents={roomsCategories} />

@@ -15,10 +15,10 @@ const PackageList = ({ contents }) => {
   return (
     <>
       <div className="wrapper">
-        <div className="sticky top-12 py-2 backdrop-blur-md filter-buttons flex items-center justify-center gap-8 mb-24 z-50">
+        <div className="sticky top-12 py-2 backdrop-blur-md filter-buttons flex items-center justify-center md:gap-8 mb-12 md:mb-24 z-50">
           {contents.map((room) => (
             <button
-              className={`font-title px-6 py-2 transition-linear text-base uppercase tracking-wide text-custom-black hover:bg-custom-black/10 rounded-full ${
+              className={`font-title px-6 py-2 transition-linear text-xs md:text-base uppercase tracking-wide text-custom-black hover:bg-custom-black/10 rounded-full ${
                 activeRoom === room.title
                   ? "opacity-100 scale-100 font-bold"
                   : "opacity-50 scale-90 hover:opacity-80 font-semibold"
@@ -36,13 +36,13 @@ const PackageList = ({ contents }) => {
           }`}
         >
           <div className="grid grid-cols-5 gap-16">
-            <div className="col-span-2">
+            <div className="col-span-5 lg:col-span-2 order-2 lg:order-1">
               <PackageContent
                 room={contents.find((room) => room.title === activeRoom)}
               />
             </div>
-            <div className="col-span-3">
-              <div className="sticky top-32">
+            <div className="col-span-5 lg:col-span-3 order-1 lg:order-2">
+              <div className="sticky top-32 mx-3">
                 <PackageSlider contents={contents} sizeClassName="size-full" />
 
                 <div className="mt-12 mx-auto flex items-center justify-center">

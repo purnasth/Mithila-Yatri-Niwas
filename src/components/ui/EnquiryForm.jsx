@@ -4,13 +4,13 @@ import { enquiryFormFields, Button } from "../../constants/data";
 const EnquiryForm = () => {
   return (
     <>
-      <section id="enquiry-form" className="-mt-36 bg-alt-bg">
+      <section id="enquiry-form" className="responsive-banner bg-alt-bg">
         <div
           className={`absolute inset-0 h-full w-full bg-[url('/src/assets/graphics/pattern-mandala.avif')] bg-repeat -z-10 mix-blend-multiply opacity-30`}
         />
-        <div className="text-center mb-16 container max-w-lg mx-auto">
-          <h2 className="text-3xl">Make a Reservation</h2>
-          <p className="text-base text-gray-500 mt-4">
+        <div className="text-center mt-12 mb-16 container max-w-lg mx-auto">
+          <h2 className="text-2xl md:text-3xl">Make a Reservation</h2>
+          <p className="text-sm md:text-base text-gray-500 mt-4">
             Can't find the contact and information you're looking for? If you
             have any queries or would like to make a reservation, please don't
             hesitate to contact us.
@@ -26,7 +26,7 @@ const EnquiryForm = () => {
                 <input
                   type={field.type}
                   name={`floating_${field.id}`}
-                  className="text-xl block px-0 py-3 w-full text-custom-black bg-transparent border-0 border-b-2 appearance-none focus:outline-none focus:ring-0 focus:border-logo-clr peer"
+                  className="text-xl block px-0 py-5 w-full text-custom-black bg-transparent border-0 border-b-2 appearance-none focus:outline-none focus:ring-0 focus:border-logo-clr peer rounded-none"
                   placeholder=""
                   required={field.id !== "message"}
                 />

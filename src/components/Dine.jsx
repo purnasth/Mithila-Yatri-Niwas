@@ -11,7 +11,7 @@ import {
 const Dine = () => {
   return (
     <>
-      <section className="bg-logo-bg px-10 pb-8">
+      <section className="bg-logo-bg md:px-10 pb-8">
         <SvgWave />
         <div>
           {dineContents.map((dine) => (
@@ -23,20 +23,22 @@ const Dine = () => {
               <p className="text-base text-gray-600 mt-4">{dine.description}</p>
             </div>
           ))}
-          <div className="container mt-28">
+          <div className="container mt-16 lg:mt-28">
             {dineContents[0].dineCategories.map((child) => (
               <div
                 key={child.title}
-                className="grid grid-cols-2 gap-0 translate-x-8"
+                className="grid grid-cols-1 lg:grid-cols-2 gap-0 lg:translate-x-8 lg:px-8"
               >
                 <img
                   src={mithila}
                   alt="Mithila Yatri Niwas"
-                  className="w-full h-[28rem] object-cover rounded-xl shadow-md scale-110"
+                  className="w-full h-64 md:h-96 lg:h-[28rem] object-cover rounded-xl shadow-md lg:scale-110"
                 />
-                <div className="my-auto h-auto bg-custom-white p-12 rounded-xl shadow-md -translate-x-8">
-                  <h3 className="text-3xl text-custom-black">{child.title}</h3>
-                  <p className="text-base text-gray-600 mt-4 text-justify">
+                <div className="scale-90 lg:scale-100 my-auto h-auto bg-custom-white px-4 py-8 md:p-10 lg:p-12 rounded-xl shadow-md -translate-y-12 lg:translate-y-0 lg:-translate-x-8">
+                  <h3 className="text-2xl md:text-3xl text-custom-black">
+                    {child.title}
+                  </h3>
+                  <p className="text-sm md:text-sm lg:text-base text-gray-600 mt-4 text-justify line-clamp-4">
                     {child.description}
                   </p>
                   <ul>
@@ -48,11 +50,11 @@ const Dine = () => {
                         {Object.entries(infoCategory.data).map(
                           ([infoKey, infoValue]) => (
                             <span
-                              className="flex items-center gap-1"
+                              className="flex items-center md:gap-1 text-xs md:text-base"
                               key={infoKey}
                             >
                               {typeof infoValue.icon === "function" ? (
-                                <infoValue.icon className="text-xl mr-2" />
+                                <infoValue.icon className="text-sm md:text-xl mr-2" />
                               ) : (
                                 <img
                                   src={infoValue.icon}
@@ -79,7 +81,7 @@ const Dine = () => {
 
                     <a
                       href="/dine"
-                      className="flex items-center justify-center gap-2 group"
+                      className="text-sm md:text-base flex items-center justify-center gap-2 group"
                     >
                       Explore More
                       <CgArrowLongRight className="text-custom-black text-2xl group-hover:text-xl transition-linear" />

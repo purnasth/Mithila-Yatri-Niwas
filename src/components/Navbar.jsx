@@ -1,11 +1,19 @@
 import React, { useState, useEffect } from "react";
 import { RiArrowDropDownLine } from "react-icons/ri";
-
-import { navLinks, logo, Button, Socials } from "../constants/data";
+import { IoIosMenu, IoMdClose } from "react-icons/io";
+import {
+  navLinks,
+  logo,
+  Button,
+  footerMenuItems,
+  LocationDetails,
+  Socials,
+} from "../constants/data";
 
 const Navbar = () => {
   const [openDropdownId, setOpenDropdownId] = useState(null);
   const [activePage, setActivePage] = useState(null);
+  const [isMenuOpen, setIsMenuOpen] = useState(true);
 
   const toggleDropdown = (id, event) => {
     event.preventDefault();
@@ -22,9 +30,13 @@ const Navbar = () => {
     }
   }, [navLinks]);
 
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
+
   return (
     <>
-      <header className="relative h-24 w-full flex items-center justify-between px-6 z-50 bg-custom-black/20 backdrop-blur-sm bg-gradient-to-t from-custom-white/40 to-transparent">
+      <header className="hidden relative h-12 md:h-24 w-full md:flex items-center justify-between px-2 md:px-6 z-50 bg-custom-black/20 backdrop-blur-sm bg-gradient-to-t from-custom-white/40 to-transparent">
         <Socials />
 
         <h1>
@@ -32,7 +44,7 @@ const Navbar = () => {
             <img
               src={logo}
               alt="Mithila Yatri Niwas"
-              className=" w-32 h-24 p-1 object-contain transition-linear hover:scale-110 drop-shadow-lg"
+              className="w-20 h-12 md:w-32 md:h-24 p-1 object-contain transition-linear hover:scale-110 drop-shadow-lg"
             />
           </a>
         </h1>
@@ -43,8 +55,36 @@ const Navbar = () => {
         />
       </header>
 
-      <nav className="sticky top-0 h-12 bg-custom-black/30 backdrop-blur-sm border-t border-b border-custom-white/50 text-custom-white  drop-shadow-lg z-50">
-        <ul className="flex items-center flex-wrap justify-center gap-12 h-full font-medium cursor-pointer tracking-wider">
+      <nav className="sticky top-0 h-12 bg-logo-bg/70 md:bg-custom-black/30 backdrop-blur-sm md:border-t border-b border-custom-white/50 text-custom-white drop-shadow-lg z-50">
+        <div className="flex md:hidden items-center justify-between pr-4">
+          <a href="/">
+            <img
+              src={logo}
+              alt="Mithila Yatri Niwas"
+              className="w-20 h-12 p-1 object-contain transition-linear hover:scale-110 drop-shadow-sm"
+            />
+          </a>
+          <button className="relative p-2 " onClick={toggleMenu}>
+            <IoIosMenu
+              className={`text-2xl absolute inset-1/2 -translate-x-1/2 -translate-y-1/2 transition-linear duration-300 text-logo-clr drop-shadow-md ${
+                isMenuOpen ? "scale-100" : "scale-0"
+              }`}
+            />
+            <IoMdClose
+              className={`text-2xl absolute inset-1/2 -translate-x-1/2 -translate-y-1/2 transition-linear duration-300 text-logo-clr drop-shadow-md ${
+                isMenuOpen ? "scale-0" : "scale-100"
+              }`}
+            />
+          </button>
+        </div>
+
+        <ul
+          className={`py-6 md:p-0 bg-alt-logo-clr md:bg-transparent flex flex-wrap md:flex-nowrap md:flex-row items-center justify-center gap-6 md:gap-12 h-auto md:h-full font-medium cursor-pointer tracking-wider transition-linear ${
+            isMenuOpen ? "scale-x-0 md:scale-x-100" : "scale-x-100"
+          }`}
+        >
+          <div className="md:hidden absolute inset-0 size-full bg-[url('/src/assets/graphics/flowers.png')] bg-contain bg-repeat mix-blend-multiply opacity-20 -z-20" />
+
           {navLinks.map((link) => (
             <li
               key={link.id}
@@ -89,6 +129,35 @@ const Navbar = () => {
               )}
             </li>
           ))}
+
+          <div className="flex items-center justify-center flex-col md:hidden">
+            <div className="grid grid-cols-3 place-items-center px-8">
+              <div className="mt-10 md:m-0 col-span-3 md:col-span-1 order-2 md:order-1">
+                <LocationDetails alignClassName="justify-center md:justify-start" />
+              </div>
+
+              <div className="col-span-3 md:col-span-1 flex items-center justify-center flex-col gap-10 order-1 md:order-2">
+                <a href="/">
+                  <img
+                    src={logo}
+                    alt="Mithila Yatri Niwas"
+                    className="w-full h-32 lg:h-48 md:p-1 object-contain rounded-xl"
+                    style={{
+                      filter:
+                        "brightness(0) saturate(100%) invert(100%) sepia(100%) saturate(38%) hue-rotate(254deg) brightness(110%) contrast(110%)",
+                    }}
+                  />
+                </a>
+                <Socials />
+              </div>
+            </div>
+            <Button
+              title="Booking"
+              router="https://www.mithilayatriniwas.com/result.php?hotel_code=gBRaLW"
+              // navClassName="block md:hidden border-2 border-solid border-red-600"
+              navClassName="mt-16 block md:hidden outline outline-2 outline-offset-0 "
+            />
+          </div>
         </ul>
       </nav>
     </>

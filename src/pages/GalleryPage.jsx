@@ -39,7 +39,7 @@ const GalleryPage = () => {
       <section className="bg-logo-bg">
         <SvgWave />
         <div className="text-center mb-16 container max-w-5xl mx-auto">
-          <h2 className="text-3xl">Glimpse of Memory</h2>
+          <h2 className="text-2xl md:text-3xl">Glimpse of Memory</h2>
           <p className="text-base text-gray-500 mt-4">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. In
             pariatur odit reiciendis quae quod, accusamus quos, consectetur
@@ -50,7 +50,7 @@ const GalleryPage = () => {
           </p>
         </div>
 
-        <div className="p-8 flex flex-wrap gap-4 justify-center">
+        <div className="p-4 md:p-8 flex flex-wrap gap-4 justify-center">
           {categories.map((category) => (
             <button
               key={category}
@@ -61,7 +61,7 @@ const GalleryPage = () => {
                     // : "bg-transparent text-gray-700"
                     "text-custom-black"
                   : "text-custom-black/50"
-              } font-title font-bold text-base py-2 px-4 rounded-md uppercase transition-linear hover:text-custom-black hover:bg-custom-black/5`}
+              } font-title font-bold text-xs md:text-sm lg:text-base py-2 px-1 md:py-2 md:px-4 rounded-md uppercase transition-linear hover:text-custom-black hover:bg-custom-black/5`}
             >
               {category}
             </button>
@@ -88,7 +88,7 @@ const GalleryPage = () => {
               data-src={image.url}
             >
               <img
-                className="w-full h-72 object-cover transition duration-700 ease-in-out group-hover:scale-125 cursor-pointer shadow-lg"
+                className="w-full h-full object-cover transition duration-700 ease-in-out group-hover:scale-125 cursor-pointer shadow-lg"
                 src={image.url}
                 alt={image.alt}
               />
