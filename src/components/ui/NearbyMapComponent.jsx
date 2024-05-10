@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { nearbyLocations } from "../../constants/data";
 import { Link } from "react-router-dom";
 
@@ -8,15 +8,18 @@ const NearbyMapComponent = () => {
   const [selectedLocation, setSelectedLocation] = useState(
     nearbyLocations[0] || null
   );
+  const mapRef = useRef(null);
 
   const openMapModal = (url, location) => {
     setMapUrl(url);
     setSelectedLocation(location);
     setIsMapOpen(true);
-  };
-
-  const closeMapModal = () => {
-    setIsMapOpen(false);
+    const mapSection = document.getElementById("mapSection");
+    mapSection.scrollIntoView({
+      behavior: "smooth",
+      block: "start",
+      inline: "nearest",
+    });
   };
 
   const handleLocationClick = (location) => {
@@ -62,16 +65,15 @@ const NearbyMapComponent = () => {
           ))}
         </ul>
       </div>
-      <div className="w-full lg:w-4/5 my-8 lg:m-0 lg:p-8 order-3 lg:order-2">
-        {/* Embedded Google Map */}
+      <div
+        className="w-full lg:w-4/5 my-8 lg:m-0 lg:p-8 order-3 lg:order-2"
+        ref={mapRef}
+      >
         {isMapOpen && (
-          <div className="relative bg-ivory w-full rounded-lg">
-            {/* <span
-                  className="absolute top-0 right-0 m-4 text-2xl cursor-pointer"
-                  onClick={closeMapModal}
-                >
-                  &times;
-                </span> */}
+          <div
+            id="mapSection"
+            className="relative bg-ivory w-full rounded-lg scroll-mt-32"
+          >
             <iframe
               title="Map"
               src={mapUrl}
