@@ -3,6 +3,9 @@
 @tailwind utilities;
 
 @layer components {
+  html {
+    @apply scroll-smooth;
+  }
 
   h1,
   h2,
@@ -34,8 +37,6 @@
   .responsive-banner {
     @apply -mt-[calc(0rem+0rem)] sm:-mt-[calc(0rem+3rem)] md:-mt-[calc(6rem+3rem)];
   }
-
-
 }
 
 @layer utilities {
@@ -73,7 +74,10 @@
     @apply bg-logo-bg text-logo-clr;
 
   }
+
+
 }
+
 
 .slick-initialized .slick-slide {
   @apply px-2;
