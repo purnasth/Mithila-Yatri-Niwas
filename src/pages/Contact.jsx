@@ -113,7 +113,7 @@ const Contact = () => {
               <h2 className="text-xl font-bold text-white">
                 Mithila Yatri Niwas
               </h2>
-              <p className="text-sm text-gray-300 mt-3">
+              <p className="text-sm text-pretty text-gray-300 mt-3">
                 Mithila Yatri Niwas a luxurious hotel property in Janakpur. Our
                 Hotel is conveniently located,which allows a hassle free easy
                 access by road, domestic airport and railway connectivity to
@@ -121,10 +121,10 @@ const Contact = () => {
               </p>
 
               <div className="my-6">
-                <LocationDetails alignClassName="justify-center md:justify-start" />
+                <LocationDetails alignClassName="justify-center lg:justify-start" />
               </div>
 
-              <div className="mt-8">
+              <div className="mt-8 flex items-center justify-center lg:justify-start">
                 <Socials />
               </div>
             </div>
@@ -140,7 +140,7 @@ const Contact = () => {
                       <input
                         type={field.type}
                         name={`floating_${field.id}`}
-                        className="block px-0 py-3 w-full text-gray-900 bg-transparent border-0 border-b-2 appearance-none focus:outline-none focus:ring-0 focus:border-logo-clr peer"
+                        className="block px-0 py-3 w-full text-gray-900 bg-transparent border-0 border-b-2 appearance-none focus:outline-none focus:ring-0 focus:border-logo-clr peer rounded-none "
                         placeholder=""
                         required={field.id !== "message"}
                       />
