@@ -34,11 +34,11 @@ const Dine = () => {
                   alt="Mithila Yatri Niwas"
                   className="w-full h-64 md:h-96 lg:h-[28rem] object-cover rounded-xl shadow-md lg:scale-110"
                 />
-                <div className="scale-90 lg:scale-100 my-auto h-auto bg-custom-white px-4 py-8 md:p-10 lg:p-12 rounded-xl shadow-md -translate-y-8 lg:translate-y-0 lg:-translate-x-8">
+                <div className="scale-90 lg:scale-100 my-auto h-auto bg-custom-white px-4 py-8 md:p-10 lg:p-12 rounded-xl shadow-md -translate-y-12 lg:translate-y-0 lg:-translate-x-8">
                   <h3 className="text-2xl md:text-3xl text-custom-black">
                     {child.title}
                   </h3>
-                  <p className="text-sm md:text-sm lg:text-base text-gray-600 mt-4 text-justify">
+                  <p className="text-sm md:text-sm lg:text-base text-gray-600 mt-4 text-justify line-clamp-4">
                     {child.description}
                   </p>
                   <ul>

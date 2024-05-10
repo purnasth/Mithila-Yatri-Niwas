@@ -59,6 +59,20 @@
   ::-webkit-scrollbar-thumb:hover {
     @apply bg-alt-logo-clr;
   }
+
+  ::selection {
+    @apply bg-logo-clr text-custom-white;
+  }
+
+  h1::selection,
+  h2::selection,
+  h3::selection,
+  h4::selection,
+  h5::selection,
+  a::selection {
+    @apply bg-logo-bg text-logo-clr;
+
+  }
 }
 
 .slick-initialized .slick-slide {

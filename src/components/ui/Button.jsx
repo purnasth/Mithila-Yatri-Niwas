@@ -1,13 +1,13 @@
 import React from "react";
 import { TbBookmarkPlus } from "react-icons/tb";
 
-const Button = ({ title, router }) => {
+const Button = ({ title, router, navClassName }) => {
   return (
     <>
       <a
         href={router}
         target="_blank"
-        className="overflow-hidden rounded-full relative w-36 h-10 cursor-pointer flex items-center bg-alt-logo-clr group hover:bg-logo-clr active:bg-alt-logo-clr transition-linear"
+        className={`overflow-hidden rounded-full relative w-36 h-10 cursor-pointer flex items-center bg-alt-logo-clr group hover:bg-logo-clr active:bg-alt-logo-clr transition-linear ${navClassName}`}
       >
         <span className="text-custom-white font-semibold ml-8 transform group-hover:translate-x-20 transition-linear">
           {title}
