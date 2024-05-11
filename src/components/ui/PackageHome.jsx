@@ -24,15 +24,15 @@ const PackageHome = ({
         <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-3 gap-8">
           <div className={`col-span-1 md:col-span-1 ${contentClassName}`}>
             <h2 className="text-3xl">{title}</h2>
-            <p className="text-base text-gray-500 mt-4">{description}</p>
-            <h5 className="text-3xl mt-8 mb-6">Amenities</h5>
+            <p className="text-base text-gray-600 mt-4">{description}</p>
+            <h3 className="text-3xl mt-8 mb-6">Amenities</h3>
             <div className="flex items-start gap-20 h-60 overflow-y-auto ">
               <ul className="flex items-start justify-center flex-col gap-4">
                 {amenities &&
                   amenities.map(({ icon: Icon, title }) => (
                     <li
                       key={title}
-                      className="flex items-center gap-4 text-gray-500 capitalize"
+                      className="flex items-center gap-4 text-gray-600 capitalize"
                     >
                       {typeof Icon === "function" ? (
                         <Icon className="text-xl mr-2" />

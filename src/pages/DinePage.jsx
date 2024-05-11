@@ -25,7 +25,7 @@ const DinePage = () => {
       <section className="bg-custom-white">
         <div className="text-center mb-16 container max-w-5xl mx-auto">
           <h2 className="text-2xl sm:text-3xl">{title}</h2>
-          <p className="text-sm md:text-base text-gray-500 mt-4">
+          <p className="text-sm md:text-base text-gray-600 mt-4">
             {description}
           </p>
           <div className="mt-8 w-full">

@@ -13,7 +13,7 @@ const Reservation = () => {
         <div className="contents">
           <div className="text-center my-16 container max-w-xl mx-auto">
             <h2 className="text-3xl">Write a message</h2>
-            <p className="text-base text-gray-500 mt-4">
+            <p className="text-base text-gray-600 mt-4">
               Can't find the contact and information you're looking for? If you
               have any queries or would like to make a reservation, please don't
               hesitate to contact us.

@@ -92,7 +92,7 @@ const Contact = () => {
         <SvgWave />
         <div className="text-center mb-24 container max-w-5xl mx-auto">
           <h2 className="text-3xl">Contact Form</h2>
-          <p className="text-base text-gray-500 mt-4">
+          <p className="text-base text-gray-600 mt-4">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. In
             pariatur odit reiciendis quae quod, accusamus quos, consectetur
             ipsum cum excepturi rem ea labore perspiciatis animi qui nesciunt a
@@ -146,12 +146,12 @@ const Contact = () => {
                       />
                       <label
                         htmlFor={`floating_${field.id}`}
-                        className="absolute text-sm text-gray-500 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-logo-clr peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+                        className="absolute text-sm text-gray-600 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-logo-clr peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
                       >
                         {field.label}
                       </label>
                       {typeof field.icon === "function" ? (
-                        <span className="absolute right-3 text-gray-500">
+                        <span className="absolute right-3 text-gray-600">
                           <field.icon />
                         </span>
                       ) : (

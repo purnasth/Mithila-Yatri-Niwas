@@ -11,7 +11,7 @@ const Visit = () => {
         <div className="container">
           <div className="text-center my-16 max-w-5xl mx-auto">
             <h2 className="text-3xl">Places To Visit</h2>
-            <p className="text-base text-gray-500 mt-4">
+            <p className="text-base text-gray-600 mt-4">
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. In
               pariatur odit reiciendis quae quod, accusamus quos, consectetur
               ipsum cum excepturi rem ea labore perspiciatis animi qui nesciunt

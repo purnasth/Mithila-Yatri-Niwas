@@ -27,6 +27,12 @@ const Hero = () => {
           src="https://www.mithilayatriniwas.com/template/cms/images/video.mp4"
           type="video/mp4"
         />
+        <track
+          src="#"
+          kind="captions"
+          srcLang="en"
+          label="english_captions"
+        ></track>
         A video of Mithila Yatri Niwas where you can see the beautiful
         infrastructure of the resort and the heritage of Janaki Temple.
       </video>
