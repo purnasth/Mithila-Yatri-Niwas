@@ -167,19 +167,19 @@ export const navLinks = [
     link: "/accommodation",
     // subLinks: [
     //   {
-    //     id: "deluxeRoom",
+    //     id: "deluxe-room",
     //     title: "Deluxe Rooms",
-    //     link: "/accommodation/deluxe",
+    //     link: "/accommodation#deluxe-room",
     //   },
     //   {
-    //     id: "executiveSuite",
+    //     id: "executive-room",
     //     title: "Executive Rooms",
-    //     link: "/accommodation/executive-suite",
+    //     link: "/accommodation#executive-room",
     //   },
     //   {
-    //     id: "suiteRoom",
+    //     id: "suite-room",
     //     title: "Suite Room",
-    //     link: "/accommodation/suite-room",
+    //     link: "/accommodation#suite-room",
     //   },
     // ],
   },
@@ -187,6 +187,13 @@ export const navLinks = [
     id: "dining",
     title: "Dine",
     link: "/dine",
+    // subLinks: [
+    //   {
+    //     id: "bhojan-griha",
+    //     title: "Bhojan Griha",
+    //     link: "/hall#bhojan-griha",
+    //   },
+    // ],
   },
   {
     id: "hall",
@@ -194,14 +201,14 @@ export const navLinks = [
     link: "/hall",
     // subLinks: [
     //   {
-    //     id: "sabhaHall",
+    //     id: "sabha-hall",
     //     title: "Sabha Hall",
-    //     link: "/hall/sabha-hall",
+    //     link: "/hall#sabha-hall",
     //   },
     //   {
-    //     id: "pdr",
+    //     id: "pdr-hall",
     //     title: "PDR",
-    //     link: "/hall/pdr",
+    //     link: "/hall#pdr-hall",
     //   },
     // ],
   },
@@ -296,7 +303,7 @@ export const dineContents = [
     router: "/dine",
     dineCategories: [
       {
-        id: 1,
+        id: "bhojan-griha",
         title: "Bhojan Griha",
         description:
           "At Mithila Yatri Niwas we curate delicious food dishes made in state-of-art kitchen through experienced chefs, with an attempt to offer the best to all our guests. Serving Continental, Indian, Chinese and Local cuisines, the ingredients are fresh and each dish will embark you on a centuries-old traditional culinary journey.",
@@ -375,7 +382,7 @@ export const hallContents = [
     router: "/hall",
     hallCategories: [
       {
-        id: 1,
+        id: "sabha-hall",
         title: "Sabha Hall",
         description:
           "Our Sabha hall is the perfect venue for seminars, workshops, meetings, conferences or any social celebrations. Equipped with all the modern technical requirements such as projectors, sound system etc. our dedicated team re committed to delight you at all times to ensure your every need is met to make your event truly memorable.",
@@ -441,12 +448,12 @@ export const hallContents = [
         ],
       },
       {
-        id: 2,
+        id: "pdr-hall",
         title: "PDR",
         description:
           "Our PDR hall is the perfect venue for seminars, workshops, meetings, conferences or any social celebrations. Equipped with all the modern technical requirements such as projectors, sound system etc. our dedicated team re committed to delight you at all times to ensure your every need is met to make your event truly memorable.",
         booking: "/enquiry-form",
-        router: "/hall#pdr",
+        router: "/hall#pdr-hall",
         image: [
           {
             src: lobby1,
@@ -506,7 +513,7 @@ export const accommodationContents = [
     router: "/accommodation",
     roomsCategories: [
       {
-        id: 1,
+        id: "deluxe-room",
         title: "Deluxe Room",
         router: "/accommodation#deluxe-room",
         description:
@@ -570,11 +577,11 @@ export const accommodationContents = [
         ],
       },
       {
-        id: 2,
+        id: "executive-room",
         title: "Executive Room",
         description:
           "Comfortable and homely for relaxation with view of our garden, the lake or the Janaki Temple some distance away. All our 10 Executive Rooms are designed keeping in mind your needs but nothing in excess. These rooms are opulently designed and decorated for comfort of our guests.",
-        router: "/accommodation#executive-suite",
+        router: "/accommodation#executive-room",
         booking:
           "https://www.mithilayatriniwas.com/result.php?hotel_code=gBRaLW",
         image: [
@@ -633,7 +640,7 @@ export const accommodationContents = [
         ],
       },
       {
-        id: 3,
+        id: "suite-room",
         title: "Suite Room",
         description:
           "Comfortable and homely for relaxation with view of our garden, the lake or the Janaki Temple some distance away. All our 2 Suite Rooms are designed keeping in mind your needs but nothing in excess. These rooms are opulently designed and decorated for comfort of our guests.",
@@ -772,12 +779,20 @@ export const nearbyLocations = [
 ];
 
 export const footerMenuItems = [
-  { icon: MdOutlineBed, text: "Deluxe", router: "#" },
-  { icon: MdOutlineBed, text: "Executive", router: "#" },
-  { icon: MdOutlineBed, text: "Suite", router: "#" },
-  { icon: MdOutlineBrunchDining, text: "Bhojan Griha", router: "#" },
-  { icon: TbCalendarEvent, text: "Sabha Hall", router: "#" },
-  { icon: TbCalendarEvent, text: "PDR", router: "#" },
+  { icon: MdOutlineBed, text: "Deluxe", router: "/accommodation#deluxe-room" },
+  {
+    icon: MdOutlineBed,
+    text: "Executive",
+    router: "/accommodation#executive-room",
+  },
+  { icon: MdOutlineBed, text: "Suite", router: "/accommodation#suite-room" },
+  {
+    icon: MdOutlineBrunchDining,
+    text: "Bhojan Griha",
+    router: "/dine#bhojan-griha",
+  },
+  { icon: TbCalendarEvent, text: "Sabha Hall", router: "/hall#sabha-hall" },
+  { icon: TbCalendarEvent, text: "PDR", router: "/hall#pdr-hall" },
 ];
 
 export const footerTerms = [

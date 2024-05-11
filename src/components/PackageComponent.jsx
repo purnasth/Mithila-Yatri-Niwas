@@ -76,7 +76,7 @@ const PackageComponent = () => {
           alt: "Deluxe Room",
         },
       ],
-      router: "/accommodation/executive-suite",
+      router: "/accommodation/executive-room",
       booking: "https://www.mithilayatriniwas.com/result.php?hotel_code=gBRaLW",
       informations: [
         {
