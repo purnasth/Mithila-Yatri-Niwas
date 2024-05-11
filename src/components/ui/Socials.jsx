@@ -12,6 +12,8 @@ const Socials = () => {
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center justify-center"
+            aria-label={link.title}
+            title={link.title}
           >
             {typeof link.icon === "function" ? (
               <link.icon className="text-xl text-custom-white transition-linear hover:scale-125 drop-shadow-lg" />

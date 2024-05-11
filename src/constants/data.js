@@ -237,7 +237,7 @@ export const socialLinks = [
   },
   {
     icon: TbPhone,
-    title: "Contact Number",
+    title: "Number",
     url: "tel:+9779820113410",
   },
   // {

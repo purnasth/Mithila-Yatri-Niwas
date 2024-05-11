@@ -64,7 +64,12 @@ const Navbar = () => {
               className="w-20 h-12 p-1 object-contain transition-linear hover:scale-110 drop-shadow-sm"
             />
           </a>
-          <button className="relative p-2 " onClick={toggleMenu}>
+          <button
+            className="relative p-2 "
+            onClick={toggleMenu}
+            aria-label="Menu"
+            title="Menu"
+          >
             <IoIosMenu
               className={`text-2xl absolute inset-1/2 -translate-x-1/2 -translate-y-1/2 transition-linear duration-300 text-logo-clr drop-shadow-md ${
                 isMenuOpen ? "scale-100" : "scale-0"
