@@ -23,7 +23,7 @@ const Footer = () => {
 
       {/* <div className="text-white relative overflow-hidden backdrop-blur-sm z-30"> */}
       {/* <div className="absolute inset-0 size-full bg-[url('https://as2.ftcdn.net/v2/jpg/03/75/84/95/1000_F_375849552_wcE7DBipdqataw3aNPUDRdUSmW3kI6p5.jpg')] bg-contain bg-repeat mix-blend-darken opacity-80 -z-20" /> */}
-      <div className="absolute inset-0 size-full bg-[url('/src/assets/graphics/flowers.png')] bg-contain bg-repeat mix-blend-multiply opacity-10 -z-20" />
+      <div className="absolute inset-0 size-full bg-[url('/src/assets/graphics/flowers.webp')] bg-contain bg-repeat mix-blend-multiply opacity-10 -z-20" />
 
       <div className="text-white relative overflow-hidden z-30">
         <div className="container pt-20 pb-8">

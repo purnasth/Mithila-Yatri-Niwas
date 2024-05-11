@@ -18,7 +18,7 @@ const Janaki = () => {
           className={`absolute inset-0 h-full w-full bg-[url('/src/assets/graphics/test1.png')] bg-fixed bg-cover bg-center bg-no-repeat z-0 mix-blend-darken opacity-50`}
         />
         {/* <div
-          className={`absolute bottom-0 h-full w-full bg-[url('/src/assets/janaki_art.png')] bg-fixed bg-contain bg-bottom bg-repeat-x z-0 mix-blend-multiply`}
+          className={`absolute bottom-0 h-full w-full bg-[url('/src/assets/janaki_art.webp')] bg-fixed bg-contain bg-bottom bg-repeat-x z-0 mix-blend-multiply`}
         /> */}
         {/* <div className="absolute bg-black/40 inset-0 z-0" /> */}
         <section className="z-10 text-custom-black">

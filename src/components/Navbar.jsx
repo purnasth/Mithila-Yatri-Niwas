@@ -83,59 +83,61 @@ const Navbar = () => {
           </button>
         </div>
 
-        <ul
-          className={`py-6 md:p-0 bg-alt-logo-clr md:bg-transparent flex flex-wrap md:flex-nowrap md:flex-row items-center justify-center gap-6 md:gap-12 h-auto md:h-full font-medium cursor-pointer tracking-wider transition-linear ${
+        <div
+          className={`py-6 md:p-0 bg-alt-logo-clr md:bg-transparent h-auto md:h-full transition-linear ${
             isMenuOpen ? "scale-x-0 md:scale-x-100" : "scale-x-100"
           }`}
         >
-          <div className="md:hidden absolute inset-0 size-full bg-[url('/src/assets/graphics/flowers.png')] bg-contain bg-repeat mix-blend-multiply opacity-20 -z-20" />
+          <div className="md:hidden absolute inset-0 size-full bg-[url('/src/assets/graphics/flowers.webp')] bg-contain bg-repeat mix-blend-multiply opacity-20 -z-20" />
 
-          {navLinks.map((link) => (
-            <li
-              key={link.id}
-              className={`relative ${activePage === link.id ? "active" : ""}`}
-            >
-              {link.subLinks ? (
-                <div className="dropdown">
+          <ul className="h-auto md:h-full flex flex-wrap md:flex-nowrap md:flex-row items-center justify-center gap-6 md:gap-12 font-medium cursor-pointer tracking-wider">
+            {navLinks.map((link) => (
+              <li
+                key={link.id}
+                className={`relative ${activePage === link.id ? "active" : ""}`}
+              >
+                {link.subLinks ? (
+                  <div className="dropdown">
+                    <a
+                      href={link.link}
+                      className={`font-title flex items-center transition-linear drop-shadow-lg hover:scale-110 px-3 py-1 rounded-full ${
+                        activePage === link.id ? "bg-custom-black/40" : ""
+                      }`}
+                      onClick={(e) => toggleDropdown(link.id, e)}
+                    >
+                      {link.title}
+                      <RiArrowDropDownLine className="text-2xl" />
+                    </a>
+                    {openDropdownId === link.id && (
+                      <ul className="bg-custom-black/50 backdrop-blur-sm absolute -left-1 mt-3 whitespace-nowrap overflow-hidden">
+                        {link.subLinks.map((subLink) => (
+                          <li key={subLink.id}>
+                            <a
+                              href={subLink.link}
+                              className="font-title inline-block hover:bg-custom-black/50 text-sm w-full h-full px-4 py-3 transition-linear drop-shadow-lg hover:scale-110 border-t border-b border-custom-white/50"
+                            >
+                              {subLink.title}
+                            </a>
+                          </li>
+                        ))}
+                      </ul>
+                    )}
+                  </div>
+                ) : (
                   <a
                     href={link.link}
-                    className={`font-title flex items-center transition-linear drop-shadow-lg hover:scale-110 px-3 py-1 rounded-full ${
+                    className={`font-title inline-block transition-linear drop-shadow-lg hover:scale-110 px-3 py-1 rounded-full ${
                       activePage === link.id ? "bg-custom-black/40" : ""
                     }`}
-                    onClick={(e) => toggleDropdown(link.id, e)}
                   >
                     {link.title}
-                    <RiArrowDropDownLine className="text-2xl" />
                   </a>
-                  {openDropdownId === link.id && (
-                    <ul className="bg-custom-black/50 backdrop-blur-sm absolute -left-1 mt-3 whitespace-nowrap overflow-hidden">
-                      {link.subLinks.map((subLink) => (
-                        <li key={subLink.id}>
-                          <a
-                            href={subLink.link}
-                            className="font-title inline-block hover:bg-custom-black/50 text-sm w-full h-full px-4 py-3 transition-linear drop-shadow-lg hover:scale-110 border-t border-b border-custom-white/50"
-                          >
-                            {subLink.title}
-                          </a>
-                        </li>
-                      ))}
-                    </ul>
-                  )}
-                </div>
-              ) : (
-                <a
-                  href={link.link}
-                  className={`font-title inline-block transition-linear drop-shadow-lg hover:scale-110 px-3 py-1 rounded-full ${
-                    activePage === link.id ? "bg-custom-black/40" : ""
-                  }`}
-                >
-                  {link.title}
-                </a>
-              )}
-            </li>
-          ))}
+                )}
+              </li>
+            ))}
+          </ul>
 
-          <div className="flex items-center justify-center flex-col md:hidden">
+          <div className="my-6 flex items-center justify-center flex-col md:hidden">
             <div className="grid grid-cols-3 place-items-center px-8">
               <div className="mt-10 md:m-0 col-span-3 md:col-span-1 order-2 md:order-1">
                 <LocationDetails alignClassName="justify-center md:justify-start" />
@@ -163,7 +165,7 @@ const Navbar = () => {
               navClassName="mt-16 block md:hidden outline outline-2 outline-offset-0 "
             />
           </div>
-        </ul>
+        </div>
       </nav>
     </>
   );
