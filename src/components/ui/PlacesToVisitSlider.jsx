@@ -30,6 +30,7 @@ const PlacesToVisitSlider = ({ contents, router }) => {
                 src={icon}
                 alt={title}
                 className="w-full h-48 sm:h-72 md:h-48 xl:h-72 object-cover"
+                loading="lazy"
               />
             </div>
             <div className="mt-4 text-center">

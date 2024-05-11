@@ -90,6 +90,7 @@ const GalleryPage = () => {
                 className="w-full h-full  object-cover transition duration-700 ease-in-out group-hover:scale-125 cursor-pointer shadow-lg"
                 src={image.url}
                 alt={image.alt}
+                loading="lazy"
               />
             </div>
           ))}
