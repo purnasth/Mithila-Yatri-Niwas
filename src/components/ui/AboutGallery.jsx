@@ -6,7 +6,6 @@ import {
   lgVideo,
   lgThumbnail,
   lgFullscreen,
-  lgShare,
 } from "../../constants/library";
 
 const AboutGallery = () => {
@@ -15,7 +14,7 @@ const AboutGallery = () => {
   return (
     <>
       <LightGallery
-        plugins={[lgZoom, lgVideo, lgThumbnail, lgFullscreen, lgShare]}
+        plugins={[lgZoom, lgVideo, lgThumbnail, lgFullscreen]}
         mode="lg-fade"
         elementClassNames="columns-1 gap-5 sm:columns-2 lg:columns-3 xl:columns-4 [&img:not(:first-child)]:mt-5 lg:[&img:not(:first-child)]:mt-8"
         options={{

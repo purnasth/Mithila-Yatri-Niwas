@@ -41,7 +41,7 @@ const PlacesToVisitSlider = ({ contents, router }) => {
                 to={router}
                 className="my-4 flex items-center justify-center gap-2 bg-alt-logo-clr hover:bg-logo-clr px-6 py-1 w-32 mx-auto rounded-full transition-linear group text-custom-white"
               >
-                More
+                Explore
                 <CgArrowLongRight />
               </Link>
             </div>

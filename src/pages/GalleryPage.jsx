@@ -7,7 +7,6 @@ import {
   lgVideo,
   lgThumbnail,
   lgFullscreen,
-  lgShare,
 } from "../constants/library";
 
 const GalleryPage = () => {
@@ -69,7 +68,7 @@ const GalleryPage = () => {
         </div>
 
         <LightGallery
-          plugins={[lgZoom, lgVideo, lgThumbnail, lgFullscreen, lgShare]}
+          plugins={[lgZoom, lgVideo, lgThumbnail, lgFullscreen]}
           mode="lg-fade"
           elementClassNames={`w-full grid grid-cols-2 lg:grid-cols-4 gap-4 transition-linear ${
             isTransitioning ? "translate-y-1/2" : "translate-y-0"

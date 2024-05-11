@@ -47,7 +47,7 @@ const RoomSlider = ({ contents }) => {
                 to={router}
                 className="font-title flex items-center justify-center gap-2 bg-alt-logo-clr hover:bg-logo-clr px-6 py-3 w-32 mx-auto rounded-full transition-linear group"
               >
-                More
+                Explore
                 <CgArrowLongRight />
               </Link>
             </div>
