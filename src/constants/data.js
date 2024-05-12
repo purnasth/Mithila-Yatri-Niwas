@@ -1081,3 +1081,107 @@ export const enquiryFormFields = [
     icon: HiOutlineMail,
   },
 ];
+
+// export const articlePageContents = {
+//   "our-team": {
+//     title: "Our Team",
+//     description:
+//       "Our team is dedicated to providing you with the best possible service. We are committed to ensuring that your stay with us is as comfortable and enjoyable as possible. Our team is always ready to assist you with any questions or concerns you may have. We look forward to welcoming you to Mithila Yatri Niwas and making your stay a memorable one.",
+//     image: mithila,
+//   },
+//   "about-us": {
+//     title: "About Us",
+//     description:
+//       "Mithila Yatri Niwas is a luxury hotel located in the heart of Janakpur, Nepal. We offer a range of services and amenities to make your stay as comfortable and enjoyable as possible. Our hotel is the perfect choice for business travelers, families, and tourists looking for a relaxing and enjoyable stay in Janakpur. We look forward to welcoming you to Mithila Yatri Niwas and making your stay a memorable one.",
+//     image: mithila,
+//   },
+//   "contact-us": {
+//     title: "Contact Us",
+//     description:
+//       "If you have any questions or concerns, please do not hesitate to contact us. Our team is always ready to assist you with any questions or concerns you may have. We look forward to welcoming you to Mithila Yatri Niwas and making your stay a memorable one.",
+//     image: mithila,
+//   },
+//   "privacy-policy": {
+//     title: "Privacy Policy",
+//     description:
+//       "At Mithila Yatri Niwas, we are committed to protecting your privacy. We will never share your personal information with third parties without your consent. We use the information you provide to us to improve our services and provide you with a better experience. If you have any questions or concerns about our privacy policy, please do not hesitate to contact us.",
+//     image: mithila,
+//   },
+//   "terms-and-conditions": {
+//     title: "Terms and Conditions",
+//     description:
+//       "By using this website, you agree to be bound by these terms and conditions. If you do not agree to these terms and conditions, please do not use this website. We reserve the right to change these terms and conditions at any time without notice. Please check this page regularly for updates.",
+//     image: mithila,
+//   },
+// };
+
+export const articlePageContents = {
+  "our-team": {
+    html: `
+    <section class="responsive-banner bg-logo-bg">
+    <div class="text-center md:my-8 container space-y-6 mb-16">
+      <h2 class="text-2xl md:text-3xl">Our Team</h2>
+      <h3 class="text-base md:text-xl leading-relaxed md:px-20">Meet Our Dedicated Team at Mithila Yatri Niwas</h3>
+      <p class="text-sm md:text-base text-justify md:text-center text-custom-black/80">
+        Our team at Mithila Yatri Niwas is dedicated to providing you with the best possible service. Located in the heart of Janakpur, our luxurious hotel property is set at just a 10-minute walking distance from the famous Janaki Temple along the banks of Dashrath Lake. We pride ourselves on being conveniently located, allowing hassle-free access by road, domestic airport, and railway connectivity to the Indian border.
+      </p>
+      <p class="text-sm md:text-base text-justify md:text-center text-custom-black/80">
+        Our hotel is the only one in Janakpur equipped with ultramodern amenities, including Meetings and Events Venue and spacious parking, along with a well-deserved peaceful and spiritual ambiance. Experience and immerse yourself in Nepal's religious, cultural, and historical heritage while enjoying modern comforts and amenities. Our in-house restaurant offers the finest local, Indian, and Continental cuisines to enhance your taste buds.
+      </p>
+      <p class="text-sm md:text-base text-justify md:text-center text-custom-black/80">
+        Book your stay with confidence as we assure an enhanced spiritual experience with the most comfortable and memorable stay at the most beautiful property in Janakpur.
+      </p>
+      <img src="https://mithila-yatri.pages.dev/assets/mithila-BauZmQvB.webp" alt="Our Team" class="w-full rounded-lg mb-6" />
+    </div>
+  </section>
+  
+    `,
+  },
+  "about-us": {
+    html: `
+    <section class="responsive-banner bg-logo-bg">
+    <div class="text-center md:my-8 container space-y-6 mb-16">
+      <h2 class="text-2xl md:text-3xl">About Us</h2>
+      <h3 class="text-base md:text-xl leading-relaxed md:px-20">Mithila Yatri Niwas a luxurious hotel property in Janakpur is set at just 10 min walking distance from the famous Janakai Temple along the banks of Dashrath Lake.</h3>
+      <p class="text-sm md:text-base text-justify md:text-center text-custom-black/80">
+        Our Hotel is conveniently located, which allows a hassle-free easy access by road, domestic airport, and railway connectivity to the Indian border. It is the only Hotel in Janakpur well-equipped with ultramodern Amenities, Meetings and Events Venue, Spacious Parking along with a well-deserved peaceful & spiritual ambiance. Experience and immerse in Nepal's religious, cultural, and historical heritage, with all the modern comforts and amenities while avoiding the hustle and bustle of Janakpur. The in-house restaurant located at the ground floor of the hotel, offers finest Local, Indian and Continental cuisines to enhance your taste buds. Book your stay with confidence as we assure an enhanced spiritual experience with a most comfortable and memorable stay at the most beautiful property in Janakpur.
+      </p>
+      <img src="https://mithila-yatri.pages.dev/assets/mithila-BauZmQvB.webp" alt="About Us" class="w-full rounded-lg mb-6" />
+    </div>
+  </section>
+    `,
+  },
+  "privacy-policy": {
+    html: `
+  
+    <section class="responsive-banner bg-logo-bg">
+    <div class="text-center md:my-8 container space-y-6 mb-16">
+      <h2 class="text-2xl md:text-3xl">Privacy Policy</h2>
+      <h3 class="text-base md:text-xl leading-relaxed md:px-20">Welcome to Our Privacy Policy</h3>
+      <p class="text-sm md:text-base text-justify md:text-center text-custom-black/80">
+        Your privacy is important to us. It is Mithila Yatri Niwas's policy to respect your privacy regarding any information we may collect from you across our website, <a href="https://mithilayatriniwas.com" class="underline">https://mithilayatriniwas.com</a>, and other sites we own and operate.
+      </p>
+      <p class="text-sm md:text-base text-justify md:text-center text-custom-black/80">
+        We only ask for personal information when we truly need it to provide a service to you. We collect it by fair and lawful means, with your knowledge and consent. We also let you know why we’re collecting it and how it will be used.
+      </p>
+      <!-- Add more paragraphs as needed -->
+    </div>
+  </section>
+  
+  
+    `,
+  },
+  "terms-and-conditions": {
+    html: `
+    <section class="responsive-banner bg-logo-bg">
+    <div class="text-center md:my-8 container space-y-6 mb-16">
+      <h2 class="text-2xl md:text-3xl">Terms and Conditions</h2>
+      <ul class="list-disc text-sm md:text-base text-justify md:text-pretty text-custom-black/80 space-y-8">
+        <li>These terms and conditions outline the rules and regulations for the use of Mithila Yatri Niwas's Website. By accessing this website we assume you accept these terms and conditions. Do not continue to use Mithila Yatri Niwas's website if you do not agree to take all of the terms and conditions stated on this page.</li>
+        <li>The following terminology applies to these Terms and Conditions, Privacy Statement and Disclaimer Notice and all Agreements: "Client", "You" and "Your" refers to you, the person log on this website and compliant to the Company’s terms and conditions. "The Company", "Ourselves", "We", "Our" and "Us", refers to our Company. "Party", "Parties", or "Us", refers to both the Client and ourselves. All terms refer to the offer, acceptance and consideration of payment necessary to undertake the process of our assistance to the Client in the most appropriate manner for the express purpose of meeting the Client’s needs in respect of provision of the Company’s stated services, in accordance with and subject to, prevailing law of Nepal. Any use of the above terminology or other words in the singular, plural, capitalisation and/or he/she or they, are taken as interchangeable and therefore as referring to same.</li>
+      </ul>
+    </div>
+  </section>
+    `,
+  },
+};
