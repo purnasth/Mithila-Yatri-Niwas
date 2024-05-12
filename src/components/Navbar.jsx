@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { RiArrowDropDownLine } from "react-icons/ri";
 import { IoIosMenu, IoMdClose } from "react-icons/io";
+import { Link, NavLink, useLocation } from "react-router-dom";
 import {
   navLinks,
   logo,
@@ -9,12 +10,12 @@ import {
   LocationDetails,
   Socials,
 } from "../constants/data";
-import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [openDropdownId, setOpenDropdownId] = useState(null);
   const [activePage, setActivePage] = useState(null);
   const [isMenuOpen, setIsMenuOpen] = useState(true);
+  const location = useLocation();
 
   const toggleDropdown = (id, event) => {
     event.preventDefault();
@@ -22,14 +23,14 @@ const Navbar = () => {
   };
 
   useEffect(() => {
-    const pathname = window.location.pathname;
+    const pathname = location.pathname;
     const matchedLink = navLinks.find((link) => pathname.startsWith(link.link));
     if (matchedLink) {
       setActivePage(matchedLink.id);
     } else {
       setActivePage("");
     }
-  }, [navLinks]);
+  }, [location.pathname, navLinks]);
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -99,7 +100,7 @@ const Navbar = () => {
               >
                 {link.subLinks ? (
                   <div className="dropdown">
-                    <Link
+                    <NavLink
                       to={link.link}
                       className={`font-title flex items-center transition-linear drop-shadow-lg hover:scale-110 px-3 py-1 rounded-full ${
                         activePage === link.id ? "bg-custom-black/40" : ""
@@ -108,31 +109,31 @@ const Navbar = () => {
                     >
                       {link.title}
                       <RiArrowDropDownLine className="text-2xl" />
-                    </Link>
+                    </NavLink>
                     {openDropdownId === link.id && (
                       <ul className="bg-custom-black/50 backdrop-blur-sm absolute -left-1 mt-3 whitespace-nowrap overflow-hidden">
                         {link.subLinks.map((subLink) => (
                           <li key={subLink.id}>
-                            <Link
+                            <NavLink
                               to={subLink.link}
                               className="font-title inline-block hover:bg-custom-black/50 text-sm w-full h-full px-4 py-3 transition-linear drop-shadow-lg hover:scale-110 border-t border-b border-custom-white/50"
                             >
                               {subLink.title}
-                            </Link>
+                            </NavLink>
                           </li>
                         ))}
                       </ul>
                     )}
                   </div>
                 ) : (
-                  <Link
+                  <NavLink
                     to={link.link}
                     className={`font-title inline-block transition-linear drop-shadow-lg hover:scale-110 px-3 py-1 rounded-full ${
                       activePage === link.id ? "bg-custom-black/40" : ""
                     }`}
                   >
                     {link.title}
-                  </Link>
+                  </NavLink>
                 )}
               </li>
             ))}
