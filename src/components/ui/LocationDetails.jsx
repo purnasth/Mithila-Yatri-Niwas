@@ -1,5 +1,6 @@
 import React from "react";
 import { locationDetails } from "../../constants/data";
+import { Link } from "react-router-dom";
 
 const LocationDetails = ({ alignClassName }) => {
   return (
@@ -15,9 +16,9 @@ const LocationDetails = ({ alignClassName }) => {
             ) : (
               <img src={link.icon} alt={link.title} className="w-8 h-8" />
             )}
-            <a href={link.url} target="_blank" rel="noopener">
+            <Link to={link.url} target="_blank" rel="noopener">
               {link.title}
-            </a>
+            </Link>
           </li>
         ))}
       </ul>

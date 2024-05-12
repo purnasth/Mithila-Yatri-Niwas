@@ -9,6 +9,7 @@ import {
   LocationDetails,
   Socials,
 } from "../constants/data";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [openDropdownId, setOpenDropdownId] = useState(null);
@@ -40,13 +41,13 @@ const Navbar = () => {
         <Socials />
 
         <h1>
-          <a href="/">
+          <Link to="/">
             <img
               src={logo}
               alt="Mithila Yatri Niwas"
               className="w-20 h-12 md:w-32 md:h-24 p-1 object-contain transition-linear hover:scale-110 drop-shadow-lg"
             />
-          </a>
+          </Link>
         </h1>
 
         <Button
@@ -57,13 +58,13 @@ const Navbar = () => {
 
       <nav className="sticky top-0 h-12 bg-logo-bg/70 md:bg-custom-black/30 backdrop-blur-sm md:border-t border-b border-custom-white/50 text-custom-white drop-shadow-lg z-50">
         <div className="flex md:hidden items-center justify-between pr-4">
-          <a href="/">
+          <Link to="/">
             <img
               src={logo}
               alt="Mithila Yatri Niwas"
               className="w-20 h-12 p-1 object-contain transition-linear hover:scale-110 drop-shadow-sm"
             />
-          </a>
+          </Link>
           <button
             className="relative p-2 "
             onClick={toggleMenu}
@@ -98,8 +99,8 @@ const Navbar = () => {
               >
                 {link.subLinks ? (
                   <div className="dropdown">
-                    <a
-                      href={link.link}
+                    <Link
+                      to={link.link}
                       className={`font-title flex items-center transition-linear drop-shadow-lg hover:scale-110 px-3 py-1 rounded-full ${
                         activePage === link.id ? "bg-custom-black/40" : ""
                       }`}
@@ -107,31 +108,31 @@ const Navbar = () => {
                     >
                       {link.title}
                       <RiArrowDropDownLine className="text-2xl" />
-                    </a>
+                    </Link>
                     {openDropdownId === link.id && (
                       <ul className="bg-custom-black/50 backdrop-blur-sm absolute -left-1 mt-3 whitespace-nowrap overflow-hidden">
                         {link.subLinks.map((subLink) => (
                           <li key={subLink.id}>
-                            <a
-                              href={subLink.link}
+                            <Link
+                              to={subLink.link}
                               className="font-title inline-block hover:bg-custom-black/50 text-sm w-full h-full px-4 py-3 transition-linear drop-shadow-lg hover:scale-110 border-t border-b border-custom-white/50"
                             >
                               {subLink.title}
-                            </a>
+                            </Link>
                           </li>
                         ))}
                       </ul>
                     )}
                   </div>
                 ) : (
-                  <a
-                    href={link.link}
+                  <Link
+                    to={link.link}
                     className={`font-title inline-block transition-linear drop-shadow-lg hover:scale-110 px-3 py-1 rounded-full ${
                       activePage === link.id ? "bg-custom-black/40" : ""
                     }`}
                   >
                     {link.title}
-                  </a>
+                  </Link>
                 )}
               </li>
             ))}
@@ -144,7 +145,7 @@ const Navbar = () => {
               </div>
 
               <div className="col-span-3 md:col-span-1 flex items-center justify-center flex-col gap-10 order-1 md:order-2">
-                <a href="/">
+                <Link to="/">
                   <img
                     src={logo}
                     alt="Mithila Yatri Niwas"
@@ -154,7 +155,7 @@ const Navbar = () => {
                         "brightness(0) saturate(100%) invert(100%) sepia(100%) saturate(38%) hue-rotate(254deg) brightness(110%) contrast(110%)",
                     }}
                   />
-                </a>
+                </Link>
                 <Socials />
               </div>
             </div>

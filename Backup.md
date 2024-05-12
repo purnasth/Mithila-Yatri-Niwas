@@ -35,13 +35,13 @@ const TestimonialsSlider = ({ contents }) => {
           <div className="mt-4 text-center">
             <h3 className="text-lg font-medium mb-2">{title}</h3>
             <p className="text-sm text-gray-600">{description}</p>
-            <a
+            <Link
               href={router}
               className="my-4 flex items-center justify-center gap-2 bg-alt-logo-clr hover:bg-logo-clr px-6 py-1 w-32 mx-auto rounded-full transition-linear group text-custom-white"
             >
               More
               <CgArrowLongRight />
-            </a>
+            </Link>
           </div>
         </div>
       ))}

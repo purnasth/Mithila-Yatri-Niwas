@@ -10,6 +10,7 @@ import {
   author,
   currentYear,
 } from "../constants/data";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -33,7 +34,7 @@ const Footer = () => {
             </div>
 
             <div className="col-span-3 md:col-span-1 flex items-center justify-center flex-col gap-10 order-1 md:order-2">
-              <a href="/">
+              <Link to="/">
                 <img
                   src={logo}
                   alt="Mithila Yatri Niwas"
@@ -43,7 +44,7 @@ const Footer = () => {
                       "brightness(0) saturate(100%) invert(100%) sepia(100%) saturate(38%) hue-rotate(254deg) brightness(110%) contrast(110%)",
                   }}
                 />
-              </a>
+              </Link>
               <Socials />
             </div>
 
@@ -51,8 +52,8 @@ const Footer = () => {
               <ul className="flex gap-8">
                 {footerMenuItems.slice(0, 3).map((item, index) => (
                   <li key={index}>
-                    <a
-                      href={item.router}
+                    <Link
+                      to={item.router}
                       className="text-xs md:text-sm lg:text-base relative group text-custom-white hover:text-white hover:scale-110 transition-linear flex items-center gap-2"
                     >
                       {typeof item.icon === "function" ? (
@@ -66,33 +67,33 @@ const Footer = () => {
                       )}
 
                       {item.text}
-                    </a>
+                    </Link>
                   </li>
                 ))}
               </ul>
               <ul className="flex items-center justify-start gap-8">
                 {footerMenuItems.slice(3, 4).map((item, index) => (
                   <li key={index}>
-                    <a
-                      href={item.router}
+                    <Link
+                      to={item.router}
                       className="text-xs md:text-sm lg:text-base relative group text-custom-white hover:text-white hover:scale-110 transition-linear flex items-center gap-2"
                     >
                       <item.icon className="text-sm md:text-sm lg:text-base lg:mr-1" />
                       {item.text}
-                    </a>
+                    </Link>
                   </li>
                 ))}
               </ul>
               <ul className="flex items-center justify-start gap-8">
                 {footerMenuItems.slice(4, 6).map((item, index) => (
                   <li key={index}>
-                    <a
-                      href={item.router}
+                    <Link
+                      to={item.router}
                       className="text-xs md:text-sm lg:text-base relative group text-custom-white hover:text-white hover:scale-110 transition-linear flex items-center gap-2"
                     >
                       <item.icon className="text-sm md:text-sm lg:text-base lg:mr-1" />
                       {item.text}
-                    </a>
+                    </Link>
                   </li>
                 ))}
               </ul>
@@ -102,9 +103,9 @@ const Footer = () => {
           {/* <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 py-16"> */}
           <div className="flex items-center justify-center py-8 md:gap-12 md:py-16 flex-wrap">
             {otaLinks.map((link, index) => (
-              <a
+              <Link
                 key={index}
-                href={link.href}
+                to={link.to}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="p-2 flex items-center justify-center"
@@ -116,20 +117,20 @@ const Footer = () => {
                   alt={link.alt}
                   className="w-32 h-9 object-contain bg-white rounded-full shadow-md px-4 py-2"
                 />
-              </a>
+              </Link>
             ))}
           </div>
 
           <div className="flex justify-center items-center gap-8 md:gap-16 mb-12">
             {footerTerms.map((link, index) => (
-              <a
+              <Link
                 key={index}
-                href={link.router}
+                to={link.router}
                 className="text-xs md:text-base relative group text-custom-white hover:text-white underline transition-linear  hover:scale-105"
               >
                 {link.text}
                 {/* <div className="mt-1 absolute h-[2px] rounded-full w-4 bg-custom-white/20 group-hover:bg-custom-white -translate-y-1 origin-left group-hover:w-12 transition-linear" /> */}
-              </a>
+              </Link>
             ))}
           </div>
 
@@ -138,14 +139,14 @@ const Footer = () => {
           <div className="text-center mb-8">
             <p className="text-sm md:text-base">
               Our Affiliations / Sister concerns: &nbsp;
-              <a
-                href="https://streampeak.com.sg/"
+              <Link
+                to="https://streampeak.com.sg/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="font-bold"
               >
                 {sister}
-              </a>
+              </Link>
             </p>
           </div>
 
@@ -155,13 +156,13 @@ const Footer = () => {
             </span>
             <span>
               Website by: &nbsp;
-              <a
-                href="https://www.longtail.info/"
+              <Link
+                to="https://www.longtail.info/"
                 target="_blank"
                 className="font-bold"
               >
                 {author}
-              </a>
+              </Link>
             </span>
           </div>
         </div>

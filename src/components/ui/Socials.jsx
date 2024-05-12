@@ -1,14 +1,15 @@
 import React from "react";
 import { socialLinks } from "../../constants/data";
+import { Link } from "react-router-dom";
 
 const Socials = () => {
   return (
     <>
       <div className="flex gap-4">
         {socialLinks.map((link, index) => (
-          <a
+          <Link
             key={index}
-            href={link.url}
+            to={link.url}
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center justify-center"
@@ -24,7 +25,7 @@ const Socials = () => {
                 className="size-8 p-1 transition-linear hover:scale-125 drop-shadow-lg"
               />
             )}
-          </a>
+          </Link>
         ))}
       </div>
     </>

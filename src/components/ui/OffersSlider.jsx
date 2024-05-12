@@ -4,6 +4,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { CgArrowLongRight } from "react-icons/cg";
 import { MdAttachMoney } from "react-icons/md";
+import { Link } from "react-router-dom";
 
 const OffersSlider = ({ contents }) => {
   const settings = {
@@ -49,8 +50,8 @@ const OffersSlider = ({ contents }) => {
           </div>
           {/* <MdAttachMoney className="text-lg" />
             Price: &nbsp; &nbsp; Rs. {price} /- */}
-          <a
-            href="https://www.mithilayatriniwas.com/result.php?hotel_code=gBRaLW"
+          <Link
+            to="https://www.mithilayatriniwas.com/result.php?hotel_code=gBRaLW"
             className="overflow-hidden mt-2 group-hover:mt-0 absolute left-1/2 -translate-x-1/2 w-40 z-10 flex items-center justify-center gap-2 bg-alt-logo-clr hover:bg-alt-logo-clr group-hover:bg-logo-clr px-6 text-custom-white py-3 group-hover:py-2 mx-auto rounded-full transition-linear group"
           >
             <span className="font-title group-hover:hidden transition-linear">
@@ -60,7 +61,7 @@ const OffersSlider = ({ contents }) => {
               Book
             </span>
             <CgArrowLongRight className="hidden group-hover:block transition-linear" />
-          </a>
+          </Link>
 
           <img
             src={icon}
