@@ -1,3 +1,5 @@
+// This is a router based routing.
+
 import { createBrowserRouter } from "react-router-dom";
 import Home from "./pages/Home";
 import GalleryPage from "./pages/GalleryPage";
