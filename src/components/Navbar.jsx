@@ -1,7 +1,7 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { RiArrowDropDownLine } from "react-icons/ri";
 import { IoIosMenu, IoMdClose } from "react-icons/io";
-import { Link, NavLink, useLocation } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import {
   navLinks,
   logo,
@@ -13,24 +13,12 @@ import {
 
 const Navbar = () => {
   const [openDropdownId, setOpenDropdownId] = useState(null);
-  const [activePage, setActivePage] = useState(null);
   const [isMenuOpen, setIsMenuOpen] = useState(true);
-  const location = useLocation();
 
   const toggleDropdown = (id, event) => {
     event.preventDefault();
     setOpenDropdownId(openDropdownId === id ? null : id);
   };
-
-  useEffect(() => {
-    const pathname = location.pathname;
-    const matchedLink = navLinks.find((link) => pathname.startsWith(link.link));
-    if (matchedLink) {
-      setActivePage(matchedLink.id);
-    } else {
-      setActivePage("");
-    }
-  }, [location.pathname, navLinks]);
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -94,17 +82,16 @@ const Navbar = () => {
 
           <ul className="h-auto md:h-full flex flex-wrap md:flex-nowrap md:flex-row items-center justify-center gap-6 md:gap-12 font-medium cursor-pointer tracking-wider">
             {navLinks.map((link) => (
-              <li
-                key={link.id}
-                className={`relative ${activePage === link.id ? "active" : ""}`}
-              >
+              <li key={link.id} className={`relative`}>
                 {link.subLinks ? (
                   <div className="dropdown">
                     <NavLink
                       to={link.link}
-                      className={`font-title flex items-center transition-linear drop-shadow-lg hover:scale-110 px-3 py-1 rounded-full ${
-                        activePage === link.id ? "bg-custom-black/40" : ""
-                      }`}
+                      className={({ isActive }) =>
+                        `font-title inline-block transition-linear drop-shadow-lg hover:scale-110 px-3 py-1 rounded-full ${
+                          isActive ? "bg-custom-black/40" : ""
+                        }`
+                      }
                       onClick={(e) => toggleDropdown(link.id, e)}
                     >
                       {link.title}
@@ -116,7 +103,11 @@ const Navbar = () => {
                           <li key={subLink.id}>
                             <NavLink
                               to={subLink.link}
-                              className="font-title inline-block hover:bg-custom-black/50 text-sm w-full h-full px-4 py-3 transition-linear drop-shadow-lg hover:scale-110 border-t border-b border-custom-white/50"
+                              className={({ isActive }) =>
+                                `font-title inline-block hover:bg-custom-black/50 text-sm w-full h-full px-4 py-3 transition-linear drop-shadow-lg hover:scale-110 border-t border-b border-custom-white/50 ${
+                                  isActive ? "bg-custom-black/40" : ""
+                                }`
+                              }
                             >
                               {subLink.title}
                             </NavLink>
@@ -128,9 +119,11 @@ const Navbar = () => {
                 ) : (
                   <NavLink
                     to={link.link}
-                    className={`font-title inline-block transition-linear drop-shadow-lg hover:scale-110 px-3 py-1 rounded-full ${
-                      activePage === link.id ? "bg-custom-black/40" : ""
-                    }`}
+                    className={({ isActive }) =>
+                      `font-title inline-block transition-linear drop-shadow-lg hover:scale-110 px-3 py-1 rounded-full ${
+                        isActive ? "bg-custom-black/40" : ""
+                      }`
+                    }
                   >
                     {link.title}
                   </NavLink>
