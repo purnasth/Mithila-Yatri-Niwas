@@ -285,7 +285,7 @@ export const aboutContents = {
     {
       id: 4,
       url: exterior2,
-      alt: "",
+      alt: "Exterior",
     },
     {
       id: 5,

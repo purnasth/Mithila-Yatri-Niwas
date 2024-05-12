@@ -75,6 +75,10 @@
 
   }
 
+  div[aria-hidden=true] {
+    display: none;
+  }
+
 
 }
 
