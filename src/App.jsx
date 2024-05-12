@@ -21,6 +21,7 @@ const AccommodationPage = lazy(() => import("./pages/AccommodationPage"));
 const HallPage = lazy(() => import("./pages/HallPage"));
 const EnquiryForm = lazy(() => import("./components/ui/EnquiryForm"));
 const AboutPage = lazy(() => import("./pages/AboutPage"));
+const ArticlePage = lazy(() => import("./pages/ArticlePage"));
 
 const App = () => {
   return (
@@ -40,6 +41,7 @@ const App = () => {
             <Route path="/enquiry-form" element={<EnquiryForm />} />
             <Route path="/about" element={<AboutPage />} />
             <Route path="*" element={<NotFound />} />
+            <Route path="/article/:slug" element={<ArticlePage />} />
           </Routes>
         </Suspense>
         <Footer />
