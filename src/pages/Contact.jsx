@@ -112,7 +112,7 @@ const Contact = () => {
               </h2>
               <p className="text-sm text-pretty text-gray-300 mt-3">
                 Mithila Yatri Niwas a luxurious hotel property in Janakpur. Our
-                Hotel is conveniently located,which allows a hassle free easy
+                Hotel is conveniently located, which allows a hassle free easy
                 access by road, domestic airport and railway connectivity to
                 Indian border.
               </p>

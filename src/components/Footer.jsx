@@ -105,7 +105,7 @@ const Footer = () => {
             {otaLinks.map((link, index) => (
               <Link
                 key={index}
-                to={link.to}
+                to={link.router}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="p-2 flex items-center justify-center"

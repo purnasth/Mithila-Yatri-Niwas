@@ -346,8 +346,8 @@ export const dineContents = [
           {
             title: "Facilities",
             content: [
-              "Complimentary welcome drink (non-alcoholic) upon arrival at the restaurant.",
-              "Enjoy a selection of tea and coffee during your dining experience.",
+              "Quite Space for a peaceful dining experience.",
+              "Enjoy a selection of multicuisine during your dining experience.",
               "Free high-speed internet access available throughout the restaurant.",
               "Stay hydrated with two 1000ml mineral water bottles provided per table every day.",
             ],
@@ -518,7 +518,7 @@ export const accommodationContents = [
     title: "Accommodation",
     subheading: "",
     description:
-      "At Mithila Yatri Niwas, we offer a collection of 30 beautifully appointed rooms, each a sanctuary of peace and cultural charm. Our accommodations are thoughtfully designed with environmentally friendly practices, adorned with the region's renowned Mithila art, and furnished with locally sourced materials. Just a leisurely walk from the sacred Janaki Temple and the serene Dashrath Lake, our rooms provide the perfect blend of modern amenities and traditional elegance. ",
+      "At Mithila Yatri Niwas, we offer a collection of 30 beautifully appointed rooms, a sanctuary of peace and cultural charm. Our accommodations are thoughtfully designed with environmentally friendly practices, adorned with the region's renowned Mithila art, and furnished with locally sourced materials. Just a leisurely walk from the sacred Janaki Temple and the serene Dashrath Lake, our rooms provide the perfect blend of modern amenities and traditional elegance. ",
     router: "/accommodation",
     roomsCategories: [
       {
@@ -815,22 +815,22 @@ export const author = "Longtail e-media";
 
 export const otaLinks = [
   {
-    href: "https://www.booking.com/hotel/np/mithila-yatri-niwas.en-gb.html?aid=356980&label=gog235jc-1DCAsoqwFCE21pdGhpbGEteWF0cmktbml3YXNIM1gDaKsBiAEBmAEJuAEXyAEM2AED6AEBiAIBqAIDuAKml9OxBsACAdICJDgzYWY5MGYzLWFmMDAtNDg4ZS1iNDJlLTNhYzdmYjQwMzY1NNgCBOACAQ&sid=92d4f646b70df7ccf9096a36f66af01e&dist=0&keep_landing=1&sb_price_type=total&type=total&",
+    router: "https://www.booking.com/hotel/np/mithila-yatri-niwas.en-gb.html?aid=356980&label=gog235jc-1DCAsoqwFCE21pdGhpbGEteWF0cmktbml3YXNIM1gDaKsBiAEBmAEJuAEXyAEM2AED6AEBiAIBqAIDuAKml9OxBsACAdICJDgzYWY5MGYzLWFmMDAtNDg4ZS1iNDJlLTNhYzdmYjQwMzY1NNgCBOACAQ&sid=92d4f646b70df7ccf9096a36f66af01e&dist=0&keep_landing=1&sb_price_type=total&type=total&",
     imgSrc: bookingcom,
     alt: "Booking.com",
   },
   {
-    href: "https://www.tripadvisor.com/Hotel_Review-g424939-d24969555-Reviews-Mithila_Yatri_Niwas-Janakpur_Janakpur_Zone_Central_Region.html",
+    router: "https://www.tripadvisor.com/Hotel_Review-g424939-d24969555-Reviews-Mithila_Yatri_Niwas-Janakpur_Janakpur_Zone_Central_Region.html",
     imgSrc: tripadvisor,
     alt: "Tripadvisor",
   },
   {
-    href: "https://www.agoda.com/dasrath-talau-janakpur-dham-dhanusha/hotel/janakpur-np.html",
+    router: "https://www.agoda.com/dasrath-talau-janakpur-dham-dhanusha/hotel/janakpur-np.html",
     imgSrc: agoda,
     alt: "Agoda",
   },
   {
-    href: "https://www.expedia.com/Janakpur-Hotels-Mithila-Yatri-Niwas.h83936278.Hotel-Information?",
+    router: "https://www.expedia.com/Janakpur-Hotels-Mithila-Yatri-Niwas.h83936278.Hotel-Information?",
     imgSrc: expedia,
     alt: "Expedia",
   },
