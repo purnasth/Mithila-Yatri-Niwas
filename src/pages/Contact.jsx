@@ -126,7 +126,7 @@ const Contact = () => {
               </div>
             </div>
 
-            <div className="p-6 rounded-xl lg:col-span-2">
+            <div className="p-6 rounded-xl lg:col-span-2" id="contact-form">
               <form>
                 <div className="grid sm:grid-cols-2 gap-8">
                   {contactFormFields.map((field) => (

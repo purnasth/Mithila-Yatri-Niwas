@@ -6,6 +6,7 @@ import {
   SvgWave,
   Button,
   CgArrowLongRight,
+  ScrollToTopOnNavigate,
 } from "../constants/data";
 import { Link } from "react-router-dom";
 
@@ -80,13 +81,15 @@ const Dine = () => {
                       router="/enquiry-form#enquiry-form"
                     />
 
-                    <Link
-                      to="/dine"
-                      className="text-sm md:text-base flex items-center justify-center gap-2 group"
-                    >
-                      Explore More
-                      <CgArrowLongRight className="text-custom-black text-2xl group-hover:text-xl transition-linear" />
-                    </Link>
+                    <ScrollToTopOnNavigate>
+                      <Link
+                        to="/dine"
+                        className="text-sm md:text-base flex items-center justify-center gap-2 group"
+                      >
+                        Explore More
+                        <CgArrowLongRight className="text-custom-black text-2xl group-hover:text-xl transition-linear" />
+                      </Link>
+                    </ScrollToTopOnNavigate>
                   </div>
                 </div>
               </div>

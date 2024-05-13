@@ -9,6 +9,7 @@ import {
   footerMenuItems,
   LocationDetails,
   Socials,
+  ScrollToTopOnNavigate,
 } from "../constants/data";
 
 const Navbar = () => {
@@ -74,7 +75,7 @@ const Navbar = () => {
         </div>
 
         <div
-          className={`py-6 md:p-0 bg-alt-logo-clr md:bg-transparent h-auto md:h-full transition-linear ${
+          className={`py-6 md:p-0 bg-alt-logo-clr md:bg-transparent h-auto md:h-full transition-all duration-300 ease-out ${
             isMenuOpen ? "scale-x-0 md:scale-x-100" : "scale-x-100"
           }`}
         >
@@ -117,16 +118,19 @@ const Navbar = () => {
                     )}
                   </div>
                 ) : (
-                  <NavLink
-                    to={link.link}
-                    className={({ isActive }) =>
-                      `font-title inline-block transition-linear drop-shadow-lg hover:scale-110 px-3 py-1 rounded-full ${
-                        isActive ? "bg-custom-black/40" : ""
-                      }`
-                    }
-                  >
-                    {link.title}
-                  </NavLink>
+                  <ScrollToTopOnNavigate>
+                    <NavLink
+                      to={link.link}
+                      className={({ isActive }) =>
+                        `font-title inline-block transition-linear drop-shadow-lg hover:scale-110 px-3 py-1 rounded-full ${
+                          isActive ? "bg-custom-black/40" : ""
+                        }`
+                      }
+                      onClick={toggleMenu}
+                    >
+                      {link.title}
+                    </NavLink>
+                  </ScrollToTopOnNavigate>
                 )}
               </li>
             ))}

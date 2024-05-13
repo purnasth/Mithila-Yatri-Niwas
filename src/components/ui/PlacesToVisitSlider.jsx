@@ -1,6 +1,6 @@
 import React from "react";
 import { Slider } from "../../constants/library";
-import { CgArrowLongRight } from "../../constants/data";
+import { CgArrowLongRight, ScrollToTopOnNavigate } from "../../constants/data";
 import { Link } from "react-router-dom";
 
 const PlacesToVisitSlider = ({ contents, router }) => {
@@ -38,13 +38,15 @@ const PlacesToVisitSlider = ({ contents, router }) => {
               <p className="text-sm text-gray-600 text-justify line-clamp-3">
                 {description}
               </p>
-              <Link
-                to={router}
-                className="my-4 flex items-center justify-center gap-2 bg-alt-logo-clr hover:bg-logo-clr px-6 py-1 w-32 mx-auto rounded-full transition-linear group text-custom-white"
-              >
-                Explore
-                <CgArrowLongRight />
-              </Link>
+              <ScrollToTopOnNavigate>
+                <Link
+                  to={router}
+                  className="my-4 flex items-center justify-center gap-2 bg-alt-logo-clr hover:bg-logo-clr px-6 py-1 w-32 mx-auto rounded-full transition-linear group text-custom-white"
+                >
+                  Explore
+                  <CgArrowLongRight />
+                </Link>
+              </ScrollToTopOnNavigate>
             </div>
           </div>
         ))}

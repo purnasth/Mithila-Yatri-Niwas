@@ -29,6 +29,8 @@ import History from "../components/History";
 import PlacesToVisit from "../components/PlacesToVisit";
 import PackageList from "../components/PackageList";
 
+import ScrollToTopOnNavigate from "../hooks/ScrollToTopOnNavigate";
+
 import mithila from "../assets/mithila.webp";
 import mithilaNight from "../assets/mithila_night.webp";
 import mithila2 from "../assets/mithila2.webp";
@@ -90,6 +92,7 @@ export {
   TestimonialsSlider,
   mithila,
   mithilaNight,
+  ScrollToTopOnNavigate,
 };
 
 import {
