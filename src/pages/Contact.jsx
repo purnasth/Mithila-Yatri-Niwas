@@ -93,12 +93,9 @@ const Contact = () => {
         <div className="text-center mb-24 container max-w-5xl mx-auto">
           <h2 className="text-3xl">Contact Form</h2>
           <p className="text-base text-gray-600 mt-4">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. In
-            pariatur odit reiciendis quae quod, accusamus quos, consectetur
-            ipsum cum excepturi rem ea labore perspiciatis animi qui nesciunt a
-            deserunt voluptas alias aliquam vero expedita enim ab assumenda!
-            Beatae, mollitia qui unde temporibus dolorum architecto maiores, ut
-            corrupti nemo facilis quos?
+            Connect with ease using our Contact Form. A simple, direct line for
+            your inquiries and feedback. Quick, responsive, and always here to
+            listen.
           </p>
         </div>
         <div className="container relative scroll-mt-32">

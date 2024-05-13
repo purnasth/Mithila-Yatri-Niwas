@@ -15,12 +15,10 @@ const PlacesToVisit = () => {
         <div className="text-center mb-12 container max-w-6xl mx-auto">
           <h2 className="text-3xl text-primary">Places to Visit</h2>
           <p className="text-base text-gray-600 mt-4">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. In
-            pariatur odit reiciendis quae quod, accusamus quos, consectetur
-            ipsum cum excepturi rem ea labore perspiciatis animi qui nesciunt a
-            deserunt voluptas alias aliquam vero expedita enim ab assumenda!
-            Beatae, mollitia qui unde temporibus dolorum architecto maiores, ut
-            corrupti nemo facilis quos?
+            Discover the charm of proximity with Nearby Location, your gateway
+            to local treasures. Uncover hidden gems and popular spots, all just
+            a stone’s throw away. It’s your personal compass for adventure,
+            leisure, and everything in between.
           </p>
           {/* <LearnMore
               text="Explore"

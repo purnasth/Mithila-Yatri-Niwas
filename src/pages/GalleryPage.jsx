@@ -40,12 +40,9 @@ const GalleryPage = () => {
         <div className="text-center mb-16 container max-w-5xl mx-auto">
           <h2 className="text-2xl md:text-3xl">Glimpse of Memory</h2>
           <p className="text-base text-gray-600 mt-4">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. In
-            pariatur odit reiciendis quae quod, accusamus quos, consectetur
-            ipsum cum excepturi rem ea labore perspiciatis animi qui nesciunt a
-            deserunt voluptas alias aliquam vero expedita enim ab assumenda!
-            Beatae, mollitia qui unde temporibus dolorum architecto maiores, ut
-            corrupti nemo facilis quos?
+            Where fleeting moments are captured and cherished. It's a sanctuary
+            for the past, holding echoes of laughter and whispers of dreams.
+            Here, each memory is a precious thread in the tapestry of our lives.
           </p>
         </div>
 

@@ -15,30 +15,28 @@ const History = () => {
               Cultural Legacy of Mithila
             </h3>
             <p className="text-base text-gray-600">
-              The Janaki Temple is a Hindu temple in Janakpur, Nepal, dedicated
-              to the Hindu goddess Sita. It is an example of mixed Islam and
-              Hindu Nepali architecture. It is often considered the most
-              important model of Mughal architecture in Nepal. The Mandir
-              (Temple) is popularly known as the Nau Lakha Mandir (meaning "nine
-              lakhs"). The cost for the construction of the temple was about the
-              same amount of money: rupees nine lakhs or nine hundred thousand,
-              hence the name. Queen Vrisha Bhanu of Tikamgarh built the temple
-              in 1910 AD. The site was designated as a UNESCO tentative site in
-              2008.
+              The Janaki Temple, a revered Hindu sanctuary in Janakpur, Nepal,
+              stands as a testament to the divine Sita. Showcasing a unique
+              blend of Islamic and traditional Nepali architectural styles, it
+              is celebrated as a prime example of Mughal influence in Nepalese
+              design. Known affectionately as the Nau Lakha Mandir, its name
+              reflects the nine hundred thousand rupees spent on its creation by
+              Queen Vrisha Bhanu of Tikamgarh in 1910 AD. Recognized for its
+              cultural significance, the temple was honored as a UNESCO
+              tentative site in 2008.
             </p>
             <p className="text-base text-gray-600">
-              This important Hindu pilgrimage spot is one of the most visited
-              spots in Nepal and attracts thousands of Hindu pilgrims from India
-              and across the world due to its religious importance. The temple
-              is even more resplendent on religious feats and special occasions
-              Ram Nawami, Vivaha Panchami, Dashain and Tihar when people flock
-              here in even greater number.
+              As a pivotal Hindu pilgrimage destination, the Janaki Temple draws
+              countless devotees from India and around the globe, especially
+              during the auspicious occasions of Ram Nawami, Vivaha Panchami,
+              Dashain, and Tihar. Its grandeur is magnified manifold during
+              these festivals.
             </p>
             <p className="text-base text-gray-600">
-              In the shadow of this magnificent temple complex and along the
-              banks of the lakes Hotel Mithila a 3-star spiritual theme hotel
-              came into existence to offer the finest hospitality and an
-              experience of a lifetime.
+              Nestled near this architectural marvel and the serene lakeside,
+              the Hotel Mithila emerges as a three-star abode infused with
+              spiritual themes, promising unparalleled hospitality and a
+              transformative experience for all who visit.
             </p>
           </div>
         </section>

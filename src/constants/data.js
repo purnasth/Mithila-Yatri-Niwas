@@ -264,7 +264,7 @@ export const aboutContents = {
     heading:
       "Mithila Yatri Niwas a luxurious hotel property in Janakpur is set at just 10 min walking distance from the famous Janakai Temple along the banks of Dashrath Lake.",
     paragraph:
-      "Our Hotel is conveniently located, which allows a hassle-free easy access by road, domestic airport, and railway connectivity to the Indian border. It is the only Hotel in Janakpur well-equipped with ultramodern Amenities, Meetings and Events Venue, Spacious Parking along with a well-deserved peaceful & spiritual ambiance. Experience and immerse in Nepal's religious, cultural, and historical heritage, with all the modern comforts and amenities while avoiding the hustle and bustle of Janakpur. The in-house restaurant located at the ground floor of the hotel, offers finest Local, Indian and Continental cuisines to enhance your taste buds. Book your stay with confidence as we assure an enhanced spiritual experience with a most comfortable and memorable stay at the most beautiful property in Janakpur.",
+      "Positioned in the heart of Janakpur, our hotel is a beacon of convenience, offering effortless access by road, air, and rail, with seamless connectivity to the Indian border. As the premier hotel in the area, we pride ourselves on our ultra-modern amenities, versatile venues for meetings and events, and ample parking space, all enveloped in a tranquil and spiritual atmosphere. Delve into the essence of Nepal's rich religious, cultural, and historical legacy, all while enjoying the contemporary luxuries and serene environment that stand apart from Janakpur's lively tempo. Our ground-floor restaurant is a culinary delight, serving an exquisite selection of local, Indian, and Continental dishes designed to tantalize your taste buds. Confidently book your journey with us for a spiritually enriching, supremely comfortable, and truly unforgettable experience at Janakpur's most distinguished property.",
   },
   galleryImages: [
     {
@@ -305,14 +305,14 @@ export const dineContents = [
     title: "Fine Dine Experience",
     subheading: "",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. In pariatur odit reiciendis quae quod, accusamus quos, consectetur ipsum cum excepturi rem ea labore perspiciatis animi qui nesciunt a deserunt voluptas alias aliquam vero expedita enim ab assumenda! Beatae, mollitia qui unde temporibus dolorum architecto maiores, ut corrupti nemo facilis quos?",
+      "Immerse in the divine serenity of Mithila Yatri Niwas, where culinary art meets the cultural heart. Savor the fusion of local and global flavors, crafted by experienced chefs in a state-of-the-art kitchen. Relish the fresh ingredients and traditional recipes that echo the spiritual essence of Janakpur. Experience fine dining that's a harmonious blend of Nepal's rich heritage and modern elegance",
     router: "/dine",
     dineCategories: [
       {
         id: "bhojan-griha",
         title: "Bhojan Griha",
         description:
-          "At Mithila Yatri Niwas we curate delicious food dishes made in state-of-art kitchen through experienced chefs, with an attempt to offer the best to all our guests. Serving Continental, Indian, Chinese and Local cuisines, the ingredients are fresh and each dish will embark you on a centuries-old traditional culinary journey.",
+          "At Mithila Yatri Niwas, we craft a feast for the senses. Our skilled chefs blend tradition with innovation in our modern kitchen, creating a menu that traverses continents. From the heart of India to the soul of China, and embracing local Nepalese flavors, each dish is a fresh, vibrant journey through time-honored culinary landscapes.",
         booking: "/enquiry-form",
         router: "/dine#bhojan-griha",
         image: [
@@ -384,14 +384,14 @@ export const hallContents = [
     title: "Occasions",
     subheading: "",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. In pariatur odit reiciendis quae quod, accusamus quos, consectetur ipsum cum excepturi rem ea labore perspiciatis animi qui nesciunt a deserunt voluptas alias aliquam vero expedita enim ab assumenda! Beatae, mollitia qui unde temporibus dolorum architecto maiores, ut corrupti nemo facilis quos?",
+      "Mithila Yatri Niwas: where sacred occasions meet serene luxury. Celebrate life's milestones amidst the spiritual aura of Janakpur, with views of the majestic Janaki Temple. From vibrant weddings to tranquil retreats, our haven offers the perfect backdrop for every cherished moment. Here, tradition and comfort converge to create unforgettable experiences",
     router: "/hall",
     hallCategories: [
       {
         id: "sabha-hall",
         title: "Sabha Hall",
         description:
-          "Our Sabha hall is the perfect venue for seminars, workshops, meetings, conferences or any social celebrations. Equipped with all the modern technical requirements such as projectors, sound system etc. our dedicated team re committed to delight you at all times to ensure your every need is met to make your event truly memorable.",
+          "A sanctuary of celebration, where joyous echoes meet the elegance of tradition. Here, each event unfolds like a classic tale, set against a backdrop of timeless grace. From intimate gatherings to grand festivities, Subha Hall is the canvas for your most cherished memories. Embrace the splendor, the service, the sublime – welcome to the heart of celebration, welcome to Subha Hall.",
         booking: "/enquiry-form",
         router: "/hall#sabha-hall",
         image: [
@@ -457,7 +457,7 @@ export const hallContents = [
         id: "pdr-hall",
         title: "PDR",
         description:
-          "Our PDR hall is the perfect venue for seminars, workshops, meetings, conferences or any social celebrations. Equipped with all the modern technical requirements such as projectors, sound system etc. our dedicated team re committed to delight you at all times to ensure your every need is met to make your event truly memorable.",
+          "Step into PDR Hall, where elegance and sophistication converge in a tapestry of celebration. Here, every event is a masterpiece, framed by the hall's grandeur and attention to detail. From the sparkle of crystal to the whisper of silk, PDR Hall is the epitome of refined festivity. It's not just a venue; it's the beginning of a legacy, where memories are etched in the annals of time.",
         booking: "/enquiry-form",
         router: "/hall#pdr-hall",
         image: [
@@ -515,7 +515,7 @@ export const accommodationContents = [
     title: "Accommodation",
     subheading: "",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. In pariatur odit reiciendis quae quod, accusamus quos, consectetur ipsum cum excepturi rem ea labore perspiciatis animi qui nesciunt a deserunt voluptas alias aliquam vero expedita enim ab assumenda! Beatae, mollitia qui unde temporibus dolorum architecto maiores, ut corrupti nemo facilis quos?",
+      "At Mithila Yatri Niwas, we offer a collection of 30 beautifully appointed rooms, each a sanctuary of peace and cultural charm. Our accommodations are thoughtfully designed with environmentally friendly practices, adorned with the region's renowned Mithila art, and furnished with locally sourced materials. Just a leisurely walk from the sacred Janaki Temple and the serene Dashrath Lake, our rooms provide the perfect blend of modern amenities and traditional elegance. ",
     router: "/accommodation",
     roomsCategories: [
       {
@@ -523,8 +523,7 @@ export const accommodationContents = [
         title: "Deluxe Room",
         router: "/accommodation#deluxe-room",
         description:
-          "Comfortable and homely for relaxation with view of our garden, the lake or the Janaki Temple some distance away. All our 10 Executive Rooms are designed keeping in mind your needs but nothing in excess. These rooms are opulently designed and decorated for comfort of our guests.",
-
+          "Escape to our Deluxe Room, where comfort meets chic. Wrapped in warmth and luxury, it's a retreat that promises restful nights and serene mornings. Experience the perfect blend of elegance and homely charm, all in one exquisite space.",
         booking:
           "https://www.mithilayatriniwas.com/result.php?hotel_code=gBRaLW",
         image: [
@@ -586,7 +585,7 @@ export const accommodationContents = [
         id: "executive-room",
         title: "Executive Room",
         description:
-          "Comfortable and homely for relaxation with view of our garden, the lake or the Janaki Temple some distance away. All our 10 Executive Rooms are designed keeping in mind your needs but nothing in excess. These rooms are opulently designed and decorated for comfort of our guests.",
+          "Step into the realm of refined luxury with our Executive Room, a sanctuary designed for the discerning. Here, elegance is in every detail, from the tailored services to the panoramic vistas that await. It's an exclusive retreat where comfort meets sophistication, crafted just for you.",
         router: "/accommodation#executive-room",
         booking:
           "https://www.mithilayatriniwas.com/result.php?hotel_code=gBRaLW",
@@ -649,7 +648,7 @@ export const accommodationContents = [
         id: "suite-room",
         title: "Suite Room",
         description:
-          "Comfortable and homely for relaxation with view of our garden, the lake or the Janaki Temple some distance away. All our 2 Suite Rooms are designed keeping in mind your needs but nothing in excess. These rooms are opulently designed and decorated for comfort of our guests.",
+          "Discover unparalleled luxury in our Suite Room, a sanctuary of opulence and comfort. Each suite is a masterpiece of design, offering expansive spaces, exquisite furnishings, and breathtaking views. Surrender to the allure of exclusivity and personalized service, where every detail caters to your utmost well-being.",
         router: "/accommodation#suite-room",
         booking:
           "https://www.mithilayatriniwas.com/result.php?hotel_code=gBRaLW",
@@ -1162,7 +1161,7 @@ export const articlePageContents = {
         Your privacy is important to us. It is Mithila Yatri Niwas's policy to respect your privacy regarding any information we may collect from you across our website, <a href="https://mithilayatriniwas.com" class="underline">https://mithilayatriniwas.com</a>, and other sites we own and operate.
       </p>
       <p class="text-sm md:text-base text-justify md:text-center text-custom-black/80">
-        We only ask for personal information when we truly need it to provide a service to you. We collect it by fair and lawful means, with your knowledge and consent. We also let you know why we’re collecting it and how it will be used.
+        We only ask for personal information when we truly need it to provide a service to you. We collect it by fair and lawful means, with your knowledge and consent. We also let you know why we're collecting it and how it will be used.
       </p>
       <!-- Add more paragraphs as needed -->
     </div>
@@ -1178,7 +1177,7 @@ export const articlePageContents = {
       <h2 class="text-2xl md:text-3xl">Terms and Conditions</h2>
       <ul class="list-disc text-sm md:text-base text-justify md:text-pretty text-custom-black/80 space-y-8">
         <li>These terms and conditions outline the rules and regulations for the use of Mithila Yatri Niwas's Website. By accessing this website we assume you accept these terms and conditions. Do not continue to use Mithila Yatri Niwas's website if you do not agree to take all of the terms and conditions stated on this page.</li>
-        <li>The following terminology applies to these Terms and Conditions, Privacy Statement and Disclaimer Notice and all Agreements: "Client", "You" and "Your" refers to you, the person log on this website and compliant to the Company’s terms and conditions. "The Company", "Ourselves", "We", "Our" and "Us", refers to our Company. "Party", "Parties", or "Us", refers to both the Client and ourselves. All terms refer to the offer, acceptance and consideration of payment necessary to undertake the process of our assistance to the Client in the most appropriate manner for the express purpose of meeting the Client’s needs in respect of provision of the Company’s stated services, in accordance with and subject to, prevailing law of Nepal. Any use of the above terminology or other words in the singular, plural, capitalisation and/or he/she or they, are taken as interchangeable and therefore as referring to same.</li>
+        <li>The following terminology applies to these Terms and Conditions, Privacy Statement and Disclaimer Notice and all Agreements: "Client", "You" and "Your" refers to you, the person log on this website and compliant to the Company's terms and conditions. "The Company", "Ourselves", "We", "Our" and "Us", refers to our Company. "Party", "Parties", or "Us", refers to both the Client and ourselves. All terms refer to the offer, acceptance and consideration of payment necessary to undertake the process of our assistance to the Client in the most appropriate manner for the express purpose of meeting the Client's needs in respect of provision of the Company's stated services, in accordance with and subject to, prevailing law of Nepal. Any use of the above terminology or other words in the singular, plural, capitalisation and/or he/she or they, are taken as interchangeable and therefore as referring to same.</li>
       </ul>
     </div>
   </section>
