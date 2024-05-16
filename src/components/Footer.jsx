@@ -27,7 +27,7 @@ const Footer = () => {
       {/* <div className="bg-fixed absolute inset-0 size-full bg-[url('/src/assets/graphics/flowers.webp')] bg-contain bg-repeat mix-blend-multiply opacity-10 -z-20" /> */}
 
       <div
-        className={`absolute inset-0 h-full w-full bg-[url('/src/assets/graphics/pattern-mandala.avif')] bg-repeat -z-20 mix-blend-multiply opacity-50`}
+        className={`absolute inset-0 h-full w-full bg-[url('/src/assets/graphics/pattern-mandala.avif')] bg-repeat -z-20 mix-blend-multiply opacity-40`}
       />
 
       <div className="text-white relative overflow-hidden z-30">
