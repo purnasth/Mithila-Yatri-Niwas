@@ -1,12 +1,11 @@
 import React from "react";
 import NearbyMapComponent from "./ui/NearbyMapComponent";
-import SvgWave from "./ui/SvgWave";
 
 const Direction = () => {
   return (
     <>
       <section className="bg-alt-bg">
-        <SvgWave />
+        {/* <SvgWave /> */}
         <div className="text-center mb-12 container max-w-6xl mx-auto">
           <h2 className="text-2xl md:text-3xl">Nearby Location</h2>
           <p className="text-sm md:text-base text-justify md:text-center text-gray-600 mt-4">

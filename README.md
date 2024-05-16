@@ -1,6 +1,6 @@
 <img src="https://mithila-yatri.pages.dev/assets/logo-vMhoXRF9.svg" alt="Mithila Yatri Niwas" width="300"/>
 
-**Mithila Yatri Niwas** a luxurious hotel property in Janakpur is set at just 10 min walking distance from the famous Janakai Temple along the banks of Dashrath Lake.
+**Mithila Yatri Niwas** a luxurious hotel property in Janakpur is set at just 10 min walking distance from the famous Janaki Temple along the banks of Dashrath Lake.
 
 ## Contact
 

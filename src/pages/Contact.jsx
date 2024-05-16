@@ -4,7 +4,6 @@ import {
   Banner,
   Direction,
   Socials,
-  SvgWave,
   LocationDetails,
   Button,
   mithilaNight,
@@ -89,7 +88,7 @@ const Contact = () => {
       <Direction />
 
       <section className="bg-logo-bg">
-        <SvgWave />
+        {/* <SvgWave /> */}
         <div className="text-center mb-24 container max-w-5xl mx-auto">
           <h2 className="text-3xl">Contact Form</h2>
           <p className="text-base text-gray-600 mt-4">

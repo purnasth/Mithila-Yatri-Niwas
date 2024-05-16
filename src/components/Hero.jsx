@@ -1,5 +1,6 @@
 import React, { useRef } from "react";
 // import bgVideo from "https://www.mithilayatriniwas.com/template/cms/images/video.mp4";
+import { mithilaNight } from "../constants/data";
 
 const Hero = () => {
   const videoRef = useRef(null);
@@ -20,7 +21,7 @@ const Hero = () => {
         loop
         muted
         playsInline
-        poster=""
+        poster={mithilaNight}
         onClick={startVideo}
       >
         <source

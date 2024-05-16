@@ -35,6 +35,7 @@ import mithila from "../assets/mithila.webp";
 import mithilaNight from "../assets/mithila_night.webp";
 import mithila2 from "../assets/mithila2.webp";
 import mithila4 from "../assets/mithila4.webp";
+import namaste from "../assets/graphics/namaste.webp";
 
 import room1 from "../assets/rooms/room1.webp";
 import room2 from "../assets/rooms/room2.webp";
@@ -91,7 +92,9 @@ export {
   Testimonials,
   TestimonialsSlider,
   mithila,
+  mithila2,
   mithilaNight,
+  namaste,
   ScrollToTopOnNavigate,
 };
 
@@ -265,7 +268,8 @@ export const aboutContents = {
   text: {
     title: "About Mithila Yatri Niwas",
     heading:
-      "Mithila Yatri Niwas a luxurious hotel property in Janakpur is set at just 10 min walking distance from the famous Janakai Temple along the banks of Dashrath Lake.",
+      // "Mithila Yatri Niwas a luxurious hotel property in Janakpur is set at just 10 min walking distance from the famous Janaki Temple along the banks of Dashrath Lake.",
+      "Mithila Yatri Niwas, an embodiment of luxury in Janakpur, is conveniently situated a mere 10-minute stroll from the revered Janaki Temple, nestled by the tranquil shores of Dashrath Lake.",
     paragraph:
       "Positioned in the heart of Janakpur, our hotel is a beacon of convenience, offering effortless access by road, air, and rail, with seamless connectivity to the Indian border. As the premier hotel in the area, we pride ourselves on our ultra-modern amenities, versatile venues for meetings and events, and ample parking space, all enveloped in a tranquil and spiritual atmosphere. Delve into the essence of Nepal's rich religious, cultural, and historical legacy, all while enjoying the contemporary luxuries and serene environment that stand apart from Janakpur's lively tempo. Our ground-floor restaurant is a culinary delight, serving an exquisite selection of local, Indian, and Continental dishes designed to tantalize your taste buds. Confidently book your journey with us for a spiritually enriching, supremely comfortable, and truly unforgettable experience at Janakpur's most distinguished property.",
   },
@@ -815,22 +819,26 @@ export const author = "Longtail e-media";
 
 export const otaLinks = [
   {
-    router: "https://www.booking.com/hotel/np/mithila-yatri-niwas.en-gb.html?aid=356980&label=gog235jc-1DCAsoqwFCE21pdGhpbGEteWF0cmktbml3YXNIM1gDaKsBiAEBmAEJuAEXyAEM2AED6AEBiAIBqAIDuAKml9OxBsACAdICJDgzYWY5MGYzLWFmMDAtNDg4ZS1iNDJlLTNhYzdmYjQwMzY1NNgCBOACAQ&sid=92d4f646b70df7ccf9096a36f66af01e&dist=0&keep_landing=1&sb_price_type=total&type=total&",
+    router:
+      "https://www.booking.com/hotel/np/mithila-yatri-niwas.en-gb.html?aid=356980&label=gog235jc-1DCAsoqwFCE21pdGhpbGEteWF0cmktbml3YXNIM1gDaKsBiAEBmAEJuAEXyAEM2AED6AEBiAIBqAIDuAKml9OxBsACAdICJDgzYWY5MGYzLWFmMDAtNDg4ZS1iNDJlLTNhYzdmYjQwMzY1NNgCBOACAQ&sid=92d4f646b70df7ccf9096a36f66af01e&dist=0&keep_landing=1&sb_price_type=total&type=total&",
     imgSrc: bookingcom,
     alt: "Booking.com",
   },
   {
-    router: "https://www.tripadvisor.com/Hotel_Review-g424939-d24969555-Reviews-Mithila_Yatri_Niwas-Janakpur_Janakpur_Zone_Central_Region.html",
+    router:
+      "https://www.tripadvisor.com/Hotel_Review-g424939-d24969555-Reviews-Mithila_Yatri_Niwas-Janakpur_Janakpur_Zone_Central_Region.html",
     imgSrc: tripadvisor,
     alt: "Tripadvisor",
   },
   {
-    router: "https://www.agoda.com/dasrath-talau-janakpur-dham-dhanusha/hotel/janakpur-np.html",
+    router:
+      "https://www.agoda.com/dasrath-talau-janakpur-dham-dhanusha/hotel/janakpur-np.html",
     imgSrc: agoda,
     alt: "Agoda",
   },
   {
-    router: "https://www.expedia.com/Janakpur-Hotels-Mithila-Yatri-Niwas.h83936278.Hotel-Information?",
+    router:
+      "https://www.expedia.com/Janakpur-Hotels-Mithila-Yatri-Niwas.h83936278.Hotel-Information?",
     imgSrc: expedia,
     alt: "Expedia",
   },
@@ -1144,7 +1152,7 @@ export const articlePageContents = {
     <section class="responsive-banner bg-logo-bg">
     <div class="text-center md:my-8 container space-y-6 mb-16">
       <h2 class="text-2xl md:text-3xl">About Us</h2>
-      <h3 class="text-base md:text-xl leading-relaxed md:px-20">Mithila Yatri Niwas a luxurious hotel property in Janakpur is set at just 10 min walking distance from the famous Janakai Temple along the banks of Dashrath Lake.</h3>
+      <h3 class="text-base md:text-xl leading-relaxed md:px-20">Mithila Yatri Niwas a luxurious hotel property in Janakpur is set at just 10 min walking distance from the famous Janaki Temple along the banks of Dashrath Lake.</h3>
       <p class="text-sm md:text-base text-justify md:text-center text-custom-black/80">
         Our Hotel is conveniently located, which allows a hassle-free easy access by road, domestic airport, and railway connectivity to the Indian border. It is the only Hotel in Janakpur well-equipped with ultramodern Amenities, Meetings and Events Venue, Spacious Parking along with a well-deserved peaceful & spiritual ambiance. Experience and immerse in Nepal's religious, cultural, and historical heritage, with all the modern comforts and amenities while avoiding the hustle and bustle of Janakpur. The in-house restaurant located at the ground floor of the hotel, offers finest Local, Indian and Continental cuisines to enhance your taste buds. Book your stay with confidence as we assure an enhanced spiritual experience with a most comfortable and memorable stay at the most beautiful property in Janakpur.
       </p>

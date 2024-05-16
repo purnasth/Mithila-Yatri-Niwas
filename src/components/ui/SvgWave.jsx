@@ -116,7 +116,7 @@ import React from "react";
 const SvgWave = () => {
   return (
     <>
-      <div className="absolute left-0 top-0 z-10 w-full overflow-hidden group opacity-50">
+      {/* <div className="absolute left-0 top-0 z-10 w-full overflow-hidden group opacity-50">
         <svg
           version="1.2"
           xmlns="http://www.w3.org/2000/svg"
@@ -192,7 +192,12 @@ const SvgWave = () => {
             <g id="Layer"></g>
           </g>
         </svg>
-      </div>
+      </div> */}
+
+      {/* <div className="w-full h-96 bg-[url('https://img.freepik.com/premium-photo/indian-raakhi-illustration-raksha-bandhan-greetings-with-copy-space-text_244157-5930.jpg?w=1060')] bg-contain bg-repeat-x opacity-40 -z-20" /> */}
+      {/* <div className="w-full h-12 md:h-32 bg-[url('https://img.freepik.com/free-vector/tribal-seamless-pattern-background-vector_53876-154429.jpg?t=st=1715837664~exp=1715841264~hmac=8f85a675a00a6df192e474cc9dce953846ddb5024d2882a2f28b2275d3cb3688&w=1060')] bg-contain bg-repeat-x opacity-40 -z-20" /> */}
+      {/* <div className="w-full h-12 md:h-32 bg-[url('https://img.freepik.com/free-vector/vintage-flourish-ornament-illustration_53876-59370.jpg?t=st=1715837736~exp=1715841336~hmac=3dbb53ee25d99bb7ff889403c8340c22ac778445c99aafa2f98d67416a70e63c&w=1060')] bg-contain bg-repeat-x opacity-40 -z-20" /> */}
+      <div className="absolute top-0 inset-0 w-full h-12 md:h-24 bg-[url('/src/assets/graphics/floral-pattern.avif')] bg-contain bg-repeat-x opacity-30 -z-20 mix-blend-darken" />
     </>
   );
 };

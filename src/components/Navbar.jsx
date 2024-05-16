@@ -47,6 +47,8 @@ const Navbar = () => {
       </header>
 
       <nav className="sticky top-0 h-12 bg-logo-bg/70 md:bg-custom-black/30 backdrop-blur-sm md:border-t border-b border-custom-white/50 text-custom-white drop-shadow-lg z-50">
+        <div className="absolute top-0 inset-0 w-full h-12 bg-[url('/src/assets/graphics/floral-pattern.avif')] bg-contain bg-repeat-x opacity-10 -z-20 mix-blend-darken" />
+
         <div className="flex md:hidden items-center justify-between pr-4">
           <Link to="/">
             <img

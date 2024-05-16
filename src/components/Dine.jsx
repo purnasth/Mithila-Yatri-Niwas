@@ -7,6 +7,7 @@ import {
   Button,
   CgArrowLongRight,
   ScrollToTopOnNavigate,
+  MithilaThali,
 } from "../constants/data";
 import { Link } from "react-router-dom";
 
@@ -15,6 +16,14 @@ const Dine = () => {
     <>
       <section className="bg-logo-bg md:px-10 pb-8">
         <SvgWave />
+
+        {/* <div
+          className={`absolute inset-0 h-full w-full bg-[url('/src/assets/graphics/foods.webp')] bg-repeat -z-20 mix-blend-multiply opacity-5`}
+        /> */}
+        {/* <div
+          className={`absolute inset-0 h-full w-full bg-[url('/src/assets/graphics/dine_mithila.webp')] bg-repeat -z-0 mix-blend- opacity-10`}
+        /> */}
+
         <div>
           {dineContents.map((dine) => (
             <div

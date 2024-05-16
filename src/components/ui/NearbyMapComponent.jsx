@@ -1,6 +1,5 @@
 import React, { useState, useEffect, useRef } from "react";
 import { nearbyLocations } from "../../constants/data";
-import { Link } from "react-router-dom";
 
 const NearbyMapComponent = () => {
   const [isMapOpen, setIsMapOpen] = useState(true);
