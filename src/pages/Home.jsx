@@ -10,10 +10,12 @@ import {
   Testimonials,
   PlacesToVisit,
 } from "../constants/data";
+import EmailForm from "../components/ui/EmailForm";
 
 const Home = () => {
   return (
     <>
+      <EmailForm />
       <Hero />
       <About />
       {/* <Direction /> */}

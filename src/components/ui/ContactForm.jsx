@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import ReCAPTCHA from "react-google-recaptcha";
+import emailjs from "emailjs-com";
+import "../../styles__ltr.css";
 
 const ContactForm = ({ contactFormFields }) => {
   const [recaptchaToken, setRecaptchaToken] = useState(null);
@@ -10,6 +12,7 @@ const ContactForm = ({ contactFormFields }) => {
     }, {})
   );
   const [formErrors, setFormErrors] = useState({});
+  const [submissionStatus, setSubmissionStatus] = useState(null);
 
   const handleRecaptchaChange = (token) => {
     setRecaptchaToken(token);
@@ -46,16 +49,33 @@ const ContactForm = ({ contactFormFields }) => {
       return;
     }
 
-    // Form submission logic here
-    console.log("Form submitted", formData);
-
-    // Reset form
-    setFormData(contactFormFields.reduce((acc, field) => {
-      acc[field.id] = "";
-      return acc;
-    }, {}));
-    setRecaptchaToken(null);
-    setFormErrors({});
+    // EmailJS service call
+    emailjs
+      .send(
+        "YOUR_SERVICE_ID", // replace with your EmailJS service ID
+        "YOUR_TEMPLATE_ID", // replace with your EmailJS template ID
+        {
+          ...formData,
+          "g-recaptcha-response": recaptchaToken, // Ensure the recaptcha response is included
+        },
+        "YOUR_USER_ID" // replace with your EmailJS user ID
+      )
+      .then(
+        (response) => {
+          setSubmissionStatus("Email sent successfully!");
+          setFormData(
+            contactFormFields.reduce((acc, field) => {
+              acc[field.id] = "";
+              return acc;
+            }, {})
+          );
+          setRecaptchaToken(null);
+          setFormErrors({});
+        },
+        (error) => {
+          setSubmissionStatus("Failed to send email. Please try again.");
+        }
+      );
   };
 
   return (
@@ -63,10 +83,7 @@ const ContactForm = ({ contactFormFields }) => {
       <form onSubmit={handleSubmit}>
         <div className="grid sm:grid-cols-2 gap-8">
           {contactFormFields.map((field) => (
-            <div
-              key={field.id}
-              className="relative z-0 flex flex-col group"
-            >
+            <div key={field.id} className="relative z-0 flex flex-col group">
               <input
                 type={field.type}
                 name={`floating_${field.id}`}
@@ -105,9 +122,11 @@ const ContactForm = ({ contactFormFields }) => {
         </div>
         <div className="mt-8 flex items-center justify-between flex-col md:flex-row gap-12">
           <ReCAPTCHA
-            sitekey="6LcsfeEpAAAAAEq9Yyl0jxseAXX3rAO0LGIc2_Qu"
+            // sitekey="6LcsfeEpAAAAAEq9Yyl0jxseAXX3rAO0LGIc2_Qu"
+            sitekey="6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI" //test captcha key
             onChange={handleRecaptchaChange}
           />
+          {/* <div className="absolute w-[18.5rem] h-5 bg-[#f9f9f9] -translate-y-7 translate-x-[2px]"></div> */}
           <button
             type="submit"
             className="bg-alt-logo-clr text-white font-semibold rounded-full text-sm px-8 py-3 w-full md:w-auto hover:bg-logo-clr transition duration-300 ease-in-out"
@@ -115,6 +134,11 @@ const ContactForm = ({ contactFormFields }) => {
             Submit
           </button>
         </div>
+        {submissionStatus && (
+          <div className="mt-4 text-center">
+            <p>{submissionStatus}</p>
+          </div>
+        )}
       </form>
     </>
   );
