@@ -99,7 +99,7 @@ const Contact = () => {
           </p>
         </div>
         <div className="container relative scroll-mt-32">
-          <div className="grid lg:grid-cols-3 items-center gap-4 p-2 shadow-lg rounded-xl mt-8 bg-custom-white">
+          <div className="grid grid-cols-1 lg:grid-cols-3 items-center gap-4 p-2 shadow-lg rounded-xl mt-8 bg-custom-white">
             <div className="bg-[#011c2b] rounded-xl max-lg:text-center px-6 py-12 relative z-10">
               <img
                 src={mithilaNight}
