@@ -264,8 +264,8 @@ const ContactForm = ({ contactFormFields }) => {
         </div>
 
         <div className="mt-16 flex items-center justify-between gap-8">
-          <div className="captcha flex items-center gap-4">
-            <div>
+          {/* <div className="captcha flex items-center gap-4">
+            <div className="relative">
               <input
                 type="checkbox"
                 id="cbx"
@@ -283,8 +283,8 @@ const ContactForm = ({ contactFormFields }) => {
             <span className="select-none pointer-events-none">
               I am not a robot.
             </span>
-          </div>
-          {/* <div className="mt-8 flex items-center gap-4">
+          </div> */}
+          <div className="mt-8 flex items-center gap-4">
             <label className="flex items-center gap-2 text-gray-600">
               <input
                 type="checkbox"
@@ -292,12 +292,14 @@ const ContactForm = ({ contactFormFields }) => {
                 onChange={handleCheckboxChange}
                 className="form-checkbox h-5 w-5 text-blue-600"
               />
-              I am not a robot
+              <span className="select-none pointer-events-none">
+                I am not a robot.
+              </span>
             </label>
-          </div> */}
+          </div>
           <button
             type="submit"
-            className="bg-alt-logo-clr text-white py-2 px-6 rounded-full hover:bg-opacity-80 transition duration-300 ease-in-out"
+            className="select-none bg-alt-logo-clr text-white py-2 px-6 rounded-full hover:bg-opacity-80 transition duration-300 ease-in-out"
           >
             Submit
           </button>
