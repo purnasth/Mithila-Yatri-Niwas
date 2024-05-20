@@ -17,6 +17,7 @@ import RoomAmenities from "../components/ui/RoomAmenities";
 import MithilaThali from "../components/ui/MithilaThali";
 import Reservation from "../components/ui/Reservation";
 import RoomSlider from "../components/ui/RoomSlider";
+import FormButton from "../components/ui/FormButton";
 
 import Direction from "../components/Direction";
 import Hero from "../components/Hero";
@@ -72,6 +73,7 @@ export {
   Button,
   Dine,
   Direction,
+  FormButton,
   Hall,
   Hero,
   History,

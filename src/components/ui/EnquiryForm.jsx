@@ -1,5 +1,5 @@
 import React from "react";
-import { enquiryFormFields, Button } from "../../constants/data";
+import { enquiryFormFields, FormButton } from "../../constants/data";
 
 const EnquiryForm = () => {
   return (
@@ -51,7 +51,7 @@ const EnquiryForm = () => {
             ))}
           </div>
           <div className="mt-16 flex items-center justify-center">
-            <Button title="Submit" router="#" />
+            <FormButton title="Submit" />
           </div>
         </form>
       </section>
