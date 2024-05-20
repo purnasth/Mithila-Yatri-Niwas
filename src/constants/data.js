@@ -269,9 +269,9 @@ export const aboutContents = {
     title: "About Mithila Yatri Niwas",
     heading:
       // "Mithila Yatri Niwas a luxurious hotel property in Janakpur is set at just 10 min walking distance from the famous Janaki Temple along the banks of Dashrath Lake.",
-      "Mithila Yatri Niwas, an embodiment of luxury in Janakpur, is conveniently situated a mere 10-minute stroll from the revered Janaki Temple, nestled by the tranquil shores of Dashrath Lake.",
+      "Mithila Yatri Niwas - A luxurious retreat in Janakpur, just a 10-minute walk from the sacred Janaki Temple.",
     paragraph:
-      "Positioned in the heart of Janakpur, our hotel is a beacon of convenience, offering effortless access by road, air, and rail, with seamless connectivity to the Indian border. As the premier hotel in the area, we pride ourselves on our ultra-modern amenities, versatile venues for meetings and events, and ample parking space, all enveloped in a tranquil and spiritual atmosphere. Delve into the essence of Nepal's rich religious, cultural, and historical legacy, all while enjoying the contemporary luxuries and serene environment that stand apart from Janakpur's lively tempo. Our ground-floor restaurant is a culinary delight, serving an exquisite selection of local, Indian, and Continental dishes designed to tantalize your taste buds. Confidently book your journey with us for a spiritually enriching, supremely comfortable, and truly unforgettable experience at Janakpur's most distinguished property.",
+      "Discover the allure of Janakpur at Mithila Yatri Niwas, where luxury meets legacy just steps away from the divine Janaki Temple and the peaceful Dashrath Lake. Nestled in the city’s vibrant heart, our hotel is a sanctuary of modern comforts, offering unparalleled access to sacred sites and cultural treasures. Book your stay and be captivated by the seamless blend of Janakpur’s spiritual heritage and our hotel’s elegant charm.",
   },
   galleryImages: [
     {
@@ -391,14 +391,14 @@ export const hallContents = [
     title: "Occasions",
     subheading: "",
     description:
-      "Mithila Yatri Niwas: where sacred occasions meet serene luxury. Celebrate life's milestones amidst the spiritual aura of Janakpur, with views of the majestic Janaki Temple. From vibrant weddings to tranquil retreats, our haven offers the perfect backdrop for every cherished moment. Here, tradition and comfort converge to create unforgettable experiences",
+      "Mithila Yatri Niwas: where sacred occasions meet serene luxury. Celebrate life's milestones amidst the spiritual aura of Janakpur, with views of the majestic Janaki Temple. From vibrant weddings to tranquil retreats, our haven offers the perfect backdrop for every cherished moment.",
     router: "/hall",
     hallCategories: [
       {
         id: "sabha-hall",
         title: "Sabha Hall",
         description:
-          "A sanctuary of celebration, where joyous echoes meet the elegance of tradition. Here, each event unfolds like a classic tale, set against a backdrop of timeless grace. From intimate gatherings to grand festivities, Subha Hall is the canvas for your most cherished memories. Embrace the splendor, the service, the sublime – welcome to the heart of celebration, welcome to Subha Hall.",
+          "Where traditions shine and celebrations come alive in a timeless embrace of elegance and joy.",
         booking: "/enquiry-form",
         router: "/hall#sabha-hall",
         image: [
@@ -464,7 +464,7 @@ export const hallContents = [
         id: "pdr-hall",
         title: "PDR",
         description:
-          "Step into PDR Hall, where elegance and sophistication converge in a tapestry of celebration. Here, every event is a masterpiece, framed by the hall's grandeur and attention to detail. From the sparkle of crystal to the whisper of silk, PDR Hall is the epitome of refined festivity. It's not just a venue; it's the beginning of a legacy, where memories are etched in the annals of time.",
+          "A grand stage for life’s celebrations, where every detail weaves together to create a legacy of unforgettable moments.",
         booking: "/enquiry-form",
         router: "/hall#pdr-hall",
         image: [
@@ -522,7 +522,7 @@ export const accommodationContents = [
     title: "Accommodation",
     subheading: "",
     description:
-      "At Mithila Yatri Niwas, we offer a collection of 30 beautifully appointed rooms, a sanctuary of peace and cultural charm. Our accommodations are thoughtfully designed with environmentally friendly practices, adorned with the region's renowned Mithila art, and furnished with locally sourced materials. Just a leisurely walk from the sacred Janaki Temple and the serene Dashrath Lake, our rooms provide the perfect blend of modern amenities and traditional elegance. ",
+      "Unwind in one of our 30 eco-friendly rooms, each a haven of peace, adorned with the region’s exquisite Mithila art. Located just a stroll away from the Janaki Temple and Dashrath Lake, our accommodations offer a harmonious fusion of modern luxury and cultural elegance.",
     router: "/accommodation",
     roomsCategories: [
       {
@@ -530,7 +530,8 @@ export const accommodationContents = [
         title: "Deluxe Room",
         router: "/accommodation#deluxe-room",
         description:
-          "Escape to our Deluxe Room, where comfort meets chic. Wrapped in warmth and luxury, it's a retreat that promises restful nights and serene mornings. Experience the perfect blend of elegance and homely charm, all in one exquisite space.",
+          // "Escape to our Deluxe Room, where comfort meets chic. Wrapped in warmth and luxury, it's a retreat that promises restful nights and serene mornings. Experience the perfect blend of elegance and homely charm, all in one exquisite space.",
+          "A cozy retreat blending chic style with the comforts of home for your peaceful stay.",
         booking:
           "https://www.mithilayatriniwas.com/result.php?hotel_code=gBRaLW",
         image: [
@@ -592,7 +593,8 @@ export const accommodationContents = [
         id: "executive-room",
         title: "Executive Room",
         description:
-          "Step into the realm of refined luxury with our Executive Room, a sanctuary designed for the discerning. Here, elegance is in every detail, from the tailored services to the panoramic vistas that await. It's an exclusive retreat where comfort meets sophistication, crafted just for you.",
+          // "Step into the realm of refined luxury with our Executive Room, a sanctuary designed for the discerning. Here, elegance is in every detail, from the tailored services to the panoramic vistas that await. It's an exclusive retreat where comfort meets sophistication, crafted just for you.",
+          "A haven of sophistication with panoramic views, where every detail exudes elegance for the discerning traveler.",
         router: "/accommodation#executive-room",
         booking:
           "https://www.mithilayatriniwas.com/result.php?hotel_code=gBRaLW",
@@ -655,7 +657,8 @@ export const accommodationContents = [
         id: "suite-room",
         title: "Suite Room",
         description:
-          "Discover unparalleled luxury in our Suite Room, a sanctuary of opulence and comfort. Each suite is a masterpiece of design, offering expansive spaces, exquisite furnishings, and breathtaking views. Surrender to the allure of exclusivity and personalized service, where every detail caters to your utmost well-being.",
+          // "Discover unparalleled luxury in our Suite Room, a sanctuary of opulence and comfort. Each suite is a masterpiece of design, offering expansive spaces, exquisite furnishings, and breathtaking views. Surrender to the allure of exclusivity and personalized service, where every detail caters to your utmost well-being.",
+          "Each suite is a masterpiece of design, offering expansive spaces, exquisite furnishings, and breathtaking views.",
         router: "/accommodation#suite-room",
         booking:
           "https://www.mithilayatriniwas.com/result.php?hotel_code=gBRaLW",

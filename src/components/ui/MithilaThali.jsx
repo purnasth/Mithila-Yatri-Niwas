@@ -11,14 +11,11 @@ const MithilaThali = () => {
             Mithila Thali to Your Table
           </h2>
           <p className="text-sm md:text-sm lg:text-base text-gray-600 mt-4 text-justify md:text-center">
-            Experience the essence of Mithila on a platter with our signature
-            Mithila Thali at Mithila Yatri Niwas. Each dish is a homage to the
-            rich culinary heritage, meticulously prepared to offer you an
-            authentic taste of Janakpur. Relish the blend of traditional spices
-            and fresh ingredients, served with warmth and hospitality. Our
-            Mithila Thali is not just a meal; it's a celebration of culture
-            brought to your table. Savor the flavors that have been cherished
-            through generations, right here at Mithila Yatri Niwas.
+            A culinary journey through Janakpur's heritage, each dish in our
+            Mithila Thali is crafted with care, offering a symphony of
+            traditional spices and fresh ingredients. It's more than a meal;
+            it's a cultural feast, served with heartfelt hospitality,
+            celebrating flavors passed down through generations.
           </p>
         </div>
       </section>
