@@ -52,6 +52,7 @@ import exterior1 from "../assets/halls/exterior1.webp";
 import exterior2 from "../assets/halls/exterior2.webp";
 import exterior3 from "../assets/halls/exterior3.webp";
 import lobby1 from "../assets/halls/lobby1.webp";
+import lobby2 from "../assets/halls/lobby2.webp";
 import dine1 from "../assets/dine/dine.webp";
 
 import ushape from "../assets/setup/ushape.webp";
@@ -325,7 +326,7 @@ export const dineContents = [
         id: "bhojan-griha",
         title: "Bhojan Griha",
         description:
-          "At Mithila Yatri Niwas, we craft a feast for the senses. Our skilled chefs blend tradition with innovation in our modern kitchen, creating a menu that traverses continents. From the heart of India to the soul of China, and embracing local Nepalese flavors, each dish is a fresh, vibrant journey through time-honored culinary landscapes.",
+          "At Mithila Yatri Niwas, we craft a feast for the senses. Our skilled chefs blend tradition with innovation in our modern kitchen, creating a menu that traverses continents with a symphony of dishes, offering a multicuisine variety that marries the essence of Mithila with the zest of international fare.",
         booking: "/enquiry-form",
         router: "/dine#bhojan-griha",
         image: [
@@ -1038,6 +1039,12 @@ export const galleryImages = [
     url: room6,
     alt: "A Room in Mithila Yatri Niwas",
     category: "Rooms",
+  },
+  {
+    id: 16,
+    url: lobby2,
+    alt: "Lobby of Mithila Yatri Niwas",
+    category: "Halls",
   },
 ];
 
