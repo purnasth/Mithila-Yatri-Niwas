@@ -19,9 +19,9 @@ const Visit = lazy(() => import("./pages/Visit"));
 const DinePage = lazy(() => import("./pages/DinePage"));
 const AccommodationPage = lazy(() => import("./pages/AccommodationPage"));
 const HallPage = lazy(() => import("./pages/HallPage"));
-const EnquiryForm = lazy(() => import("./components/ui/EnquiryForm"));
 const AboutPage = lazy(() => import("./pages/AboutPage"));
 const ArticlePage = lazy(() => import("./pages/ArticlePage"));
+const Enquiry = lazy(() => import("./pages/Enquiry"));
 
 const App = () => {
   return (
@@ -38,7 +38,7 @@ const App = () => {
             <Route path="/gallery" element={<GalleryPage />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/places-to-visit" element={<Visit />} />
-            <Route path="/enquiry-form" element={<EnquiryForm />} />
+            <Route path="/enquiry-form" element={<Enquiry />} />
             <Route path="/about" element={<AboutPage />} />
             <Route path="*" element={<NotFound />} />
             <Route path="/article/:slug" element={<ArticlePage />} />
