@@ -35,7 +35,7 @@ const RoomSlider = ({ contents }) => {
             className="w-full h-full transition duration-700 ease-in-out transform group-hover:scale-150 object-cover"
           />
           <div className="absolute bottom-0 overlay bg-gradient-to-b from-[rgba(0,0,0,0)] to-[rgba(0,0,0,0.6)] w-full h-1/2 transition-linear group-hover:h-full" />
-          <div className="group absolute inset-0 flex flex-col items-center justify-center bg-gradient-to-b from-[rgba(0,0,0,0)] to-[rgba(0,0,0,0.6)] text-custom-white text-center transition-all duration-700 ease-in-out transform translate-y-3/4 group-hover:translate-y-0">
+          <div className="group absolute inset-0 flex flex-col items-center justify-center bg-gradient-to-b from-[rgba(0,0,0,0)] to-[rgba(0,0,0,0.6)] text-custom-white text-center transition-all duration-700 ease-in-out transform translate-y-2/3 group-hover:translate-y-0">
             <div className="p-4">
               <h3 className="text-2xl md:text-3xl font-medium mb-32 md:mb-64 group-hover:mb-0 transition-all duration-300">
                 {title}
