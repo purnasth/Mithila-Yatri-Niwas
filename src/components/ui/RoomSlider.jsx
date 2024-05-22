@@ -1,9 +1,11 @@
 import React from "react";
 import { Slider } from "../../constants/library";
 import { CgArrowLongRight } from "../../constants/data";
-import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 const RoomSlider = ({ contents }) => {
+  const navigate = useNavigate();
+
   const settings = {
     dots: true,
     infinite: false,
@@ -21,6 +23,10 @@ const RoomSlider = ({ contents }) => {
     ],
   };
 
+  const handleLinkClick = (router) => {
+    navigate(router);
+  };
+
   return (
     <Slider {...settings}>
       {contents.map(({ id, title, description, image, router }) => (
@@ -29,7 +35,6 @@ const RoomSlider = ({ contents }) => {
           className="relative overflow-hidden h-96 lg:h-[80vh] group shadow-lg"
         >
           <img
-            key={id}
             src={image[0].src}
             alt={title}
             className="w-full h-full transition duration-700 ease-in-out transform group-hover:scale-150 object-cover"
@@ -43,13 +48,13 @@ const RoomSlider = ({ contents }) => {
               <p className="text-custom-white my-8 text-sm md:text-base line-clamp-3 md:line-clamp-4">
                 {description}
               </p>
-              <Link
-                to={router}
+              <button
+                onClick={() => handleLinkClick(router)}
                 className="flex items-center justify-center gap-2 bg-alt-logo-clr hover:bg-logo-clr px-6 py-3 w-32 mx-auto rounded-full transition-linear group"
               >
                 Explore
                 <CgArrowLongRight />
-              </Link>
+              </button>
             </div>
           </div>
         </div>
