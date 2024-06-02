@@ -818,8 +818,8 @@ export const footerMenuItems = [
 ];
 
 export const footerTerms = [
-  { text: "Terms & Conditions", router: "#" },
-  { text: "Privacy Policy", router: "#" },
+  { text: "Terms & Conditions", router: "/article/terms-and-conditions" },
+  { text: "Privacy Policy", router: "/article/privacy-policy" },
   { text: "Child Policy", router: "#" },
 ];
 
