@@ -1,7 +1,7 @@
 import React from "react";
 import { TbBookmarkPlus } from "react-icons/tb";
 import { Link } from "react-router-dom";
-import { ScrollToTopOnNavigate } from "../constants/data";
+import { ScrollToTopOnNavigate } from "../../constants/data";
 
 const Button = ({ title, router, navClassName }) => {
   return (

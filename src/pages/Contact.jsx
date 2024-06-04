@@ -86,8 +86,6 @@ const Contact = () => {
         </div>
       </section> */}
 
-      <Direction />
-
       <section className="bg-logo-bg">
         <SvgWave />
         <div className="text-center mb-24 container max-w-5xl mx-auto">
@@ -132,6 +130,8 @@ const Contact = () => {
           </div>
         </div>
       </section>
+
+      <Direction />
     </>
   );
 };

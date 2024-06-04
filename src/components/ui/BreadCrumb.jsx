@@ -2,7 +2,7 @@ import React from "react";
 import { IoHome } from "react-icons/io5";
 import { MdKeyboardDoubleArrowRight } from "react-icons/md";
 import { Link } from "react-router-dom";
-import { ScrollToTopOnNavigate } from "../constants/data";
+import { ScrollToTopOnNavigate } from "../../constants/data";
 
 const BreadCrumb = ({ page }) => {
   return (

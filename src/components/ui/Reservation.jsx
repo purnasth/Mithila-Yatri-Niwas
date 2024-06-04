@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { ScrollToTopOnNavigate } from "../constants/data";
+import { ScrollToTopOnNavigate } from "../../constants/data";
 
 const Reservation = () => {
   return (

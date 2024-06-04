@@ -31,6 +31,11 @@ const About = () => {
             <p className="w-full md:w-11/12 mx-auto text-sm md:text-lg text-justify md:text-center text-custom-black/80">
               {text.paragraph}
             </p>
+
+            <h3 className="capitalize text-2xl tracking-wide [word-spacing:3px]">
+              {/* Book Your Stay & Be Captivated */}
+              {text.subheading}
+            </h3>
           </div>
 
           <div className="mt-16">

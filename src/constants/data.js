@@ -109,31 +109,34 @@ import {
   FaInstagram,
   // FaTripadvisor,
   FaWhatsapp,
-  FaUtensils,
   FaCoffee,
   FaGlassCheers,
   FaChalkboardTeacher,
-  FaMusic,
   FaWineBottle,
-  FaBeer,
-  FaTemperatureHigh,
-  FaWifi,
   FaTv,
-  FaAirFreshener,
-  FaMicrophone,
-  FaVideo,
-  FaMapPin,
-  FaPrint,
   FaBed,
   FaBath,
 } from "react-icons/fa";
-import { FaBottleWater } from "react-icons/fa6";
 import {
   TbPhone,
   TbBrandFacebook,
   TbPencilQuestion,
   TbCalendarEvent,
   TbDeviceLandlinePhone,
+  TbAirConditioning,
+  TbToiletPaper,
+  TbChalkboard,
+  TbVideo,
+  TbMicrophone,
+  TbPrinter,
+  TbDeviceProjector,
+  TbDeviceSpeaker,
+  TbPinned,
+  TbDesk,
+  TbWifi,
+  TbChefHat,
+  TbMusic,
+  TbCoffee,
 } from "react-icons/tb";
 import { HiOutlineMail } from "react-icons/hi";
 
@@ -143,22 +146,22 @@ import {
   MdOutlineBed,
   MdOutlineBrunchDining,
   MdTableChart,
-  MdTableRestaurant,
-  MdSpeaker,
+  // MdTableRestaurant,
+  MdOutlineCoffeeMaker,
 } from "react-icons/md";
 import { GrLocation } from "react-icons/gr";
 import {
   GiBowlOfRice,
   GiCandleLight,
-  GiCookingPot,
   GiHotMeal,
-  GiTowel,
   GiSlippers,
+  GiVacuumCleaner,
+  GiKnifeFork,
 } from "react-icons/gi";
+
 import { IoMdClock, IoMdResize, IoIosPeople } from "react-icons/io";
-import { IoBed, IoPricetagSharp } from "react-icons/io5";
-import { PiProjectorScreenFill } from "react-icons/pi";
-import { BsFillProjectorFill } from "react-icons/bs";
+import { IoBed, IoPricetagSharp, IoAlarmOutline } from "react-icons/io5";
+import { PiProjectorScreenBold, PiToilet } from "react-icons/pi";
 
 import expedia from "../assets/ota/expedia.webp";
 import tripadvisor from "../assets/ota/tripadvisor.webp";
@@ -278,7 +281,8 @@ export const aboutContents = {
       // "Mithila Yatri Niwas a luxurious hotel property in Janakpur is set at just 10 min walking distance from the famous Janaki Temple along the banks of Dashrath Lake.",
       "Mithila Yatri Niwas - A luxurious retreat in Janakpur, just a 10-minute walk from the sacred Janaki Temple.",
     paragraph:
-      "Discover the allure of Janakpur at Mithila Yatri Niwas, where luxury meets legacy just steps away from the divine Janaki Temple and the peaceful Dashrath Lake. Nestled in the city’s vibrant heart, our hotel is a sanctuary of modern comforts, offering unparalleled access to sacred sites and cultural treasures. Book your stay and be captivated by the seamless blend of Janakpur’s spiritual heritage and our hotel’s elegant charm.",
+      "Discover the allure of Janakpur at Mithila Yatri Niwas, where luxury meets legacy just steps away from the divine Janaki Temple and the peaceful Dashrath Lake. Nestled in the city’s vibrant heart, our hotel is a sanctuary of modern comforts, offering unparalleled access to sacred sites and cultural treasures.",
+    subheading: "Book your stay & be captivated",
   },
   galleryImages: [
     {
@@ -364,28 +368,28 @@ export const dineContents = [
             ],
           },
         ],
-        policies: [
-          {
-            title: "Policies",
-            content: [
-              "Children aged 0 - 4 years dining with parents receive complimentary meals.",
-              "Children aged 5 - 10 years dining with parents receive a 50% discount on meals.",
-              "Breakfast is available at USD $8 or INR 500 per person.",
-            ],
-          },
-        ],
+        // policies: [
+        //   {
+        //     title: "Policies",
+        //     content: [
+        //       "Children aged 0 - 4 years dining with parents receive complimentary meals.",
+        //       "Children aged 5 - 10 years dining with parents receive a 50% discount on meals.",
+        //       "Breakfast is available at USD $8 or INR 500 per person.",
+        //     ],
+        //   },
+        // ],
         dineAmenities: [
           { icon: MdTableChart, title: "Ample Seating" },
-          { icon: FaUtensils, title: "Cutlery Provided" },
+          { icon: GiKnifeFork, title: "Cutlery Provided" },
           { icon: FaGlassCheers, title: "Beverage Service" },
           { icon: FaChalkboardTeacher, title: "Menu Display" },
-          { icon: FaMusic, title: "Background Music" },
-          { icon: FaCoffee, title: "Coffee Station" },
+          { icon: TbMusic, title: "Background Music" },
+          { icon: TbCoffee, title: "Coffee Station" },
           { icon: FaWineBottle, title: "Wine Selection" },
-          { icon: FaBeer, title: "Beer on Tap" },
+          { icon: GiBowlOfRice, title: "Multicuisine" },
           { icon: GiCandleLight, title: "Ambiance Lighting" },
-          { icon: FaTemperatureHigh, title: "Air Conditioner" },
-          { icon: GiCookingPot, title: "Live Cooking" },
+          { icon: TbAirConditioning, title: "Air Conditioner" },
+          { icon: TbChefHat, title: "Experienced Chef" },
           { icon: GiHotMeal, title: "Hot Meal Counter" },
         ],
       },
@@ -453,18 +457,18 @@ export const hallContents = [
           },
         ],
         hallAmenities: [
-          { icon: FaWifi, title: "Wifi" },
-          { icon: MdSpeaker, title: "PA System" },
-          { icon: FaMicrophone, title: "Microphone" },
-          { icon: FaVideo, title: "Video Conferencing" },
-          { icon: MdTableRestaurant, title: "Furniture" },
+          { icon: TbWifi, title: "Wifi" },
+          { icon: TbDeviceSpeaker, title: "PA System" },
+          { icon: TbMicrophone, title: "Microphone" },
+          { icon: TbVideo, title: "Video Conferencing" },
+          { icon: TbDesk, title: "Work Desk" },
           { icon: FaTv, title: "Computer/ Laptop" },
-          { icon: FaAirFreshener, title: "Air Conditioner" },
-          { icon: PiProjectorScreenFill, title: "Flip chart" },
-          { icon: FaMapPin, title: "Soft (pin) board" },
-          { icon: FaPrint, title: "Printing Service" },
-          { icon: GiTowel, title: "Projector" },
-          { icon: BsFillProjectorFill, title: "White Board" },
+          { icon: TbAirConditioning, title: "Air Conditioner" },
+          { icon: PiProjectorScreenBold, title: "Flip chart" },
+          { icon: TbPinned, title: "Soft (pin) board" },
+          { icon: TbPrinter, title: "Printing Service" },
+          { icon: TbDeviceProjector, title: "Projector" },
+          { icon: TbChalkboard, title: "White Board" },
         ],
       },
       {
@@ -551,7 +555,7 @@ export const accommodationContents = [
           {
             title: "Informations",
             data: {
-              "Total Rooms": { icon: IoBed, value: "18 rooms" },
+              "Total Rooms": { icon: IoBed, value: "22 rooms" },
               Price: { icon: IoPricetagSharp, value: "Starting USD 40" },
               "Room Size": { icon: IoMdResize, value: "205 sq. ft." },
               "Rate plan": { icon: GiBowlOfRice, value: "Bed & Breakfast" },
@@ -582,18 +586,18 @@ export const accommodationContents = [
           },
         ],
         roomAmenities: [
-          { icon: FaWifi, title: "Free Wi-Fi" },
+          { icon: TbWifi, title: "Free Wi-Fi" },
           { icon: FaTv, title: "Flat-screen TV" },
           { icon: FaBed, title: "Comfortable Bed" },
           { icon: FaBath, title: "Private Bathroom" },
-          { icon: MdTableRestaurant, title: "Furniture" },
-          { icon: FaUtensils, title: "Dining Area" },
-          { icon: FaAirFreshener, title: "Air Conditioning" },
-          { icon: FaCoffee, title: "Coffee Maker" },
+          { icon: TbDesk, title: "Work Desk" },
+          { icon: GiVacuumCleaner, title: "Room Service" },
+          { icon: TbAirConditioning, title: "Air Conditioner" },
+          { icon: MdOutlineCoffeeMaker, title: "Coffee Maker" },
           { icon: GiSlippers, title: "Slippers" },
           { icon: TbDeviceLandlinePhone, title: "Telephone" },
-          { icon: GiTowel, title: "Towel Service" },
-          { icon: FaBottleWater, title: "Water Bottle" },
+          { icon: TbToiletPaper, title: "Toiletries" },
+          { icon: IoAlarmOutline, title: "Wake Up Call" },
         ],
       },
       {
@@ -615,7 +619,7 @@ export const accommodationContents = [
           {
             title: "Informations",
             data: {
-              "Total Rooms": { icon: IoBed, value: "10 rooms" },
+              "Total Rooms": { icon: IoBed, value: "6 rooms" },
               Price: { icon: IoPricetagSharp, value: "Starting USD 50" },
               "Room Size": { icon: IoMdResize, value: "215 sq. ft." },
               "Rate plan": { icon: GiBowlOfRice, value: "Bed & Breakfast" },
@@ -646,18 +650,18 @@ export const accommodationContents = [
           },
         ],
         roomAmenities: [
-          { icon: FaWifi, title: "Free Wi-Fi" },
+          { icon: TbWifi, title: "Free Wi-Fi" },
           { icon: FaTv, title: "Flat-screen TV" },
           { icon: FaBed, title: "Comfortable Bed" },
           { icon: FaBath, title: "Private Bathroom" },
-          { icon: MdTableRestaurant, title: "Furniture" },
-          { icon: FaUtensils, title: "Dining Area" },
-          { icon: FaAirFreshener, title: "Air Conditioning" },
-          { icon: FaCoffee, title: "Coffee Maker" },
+          { icon: TbDesk, title: "Work Desk" },
+          { icon: GiVacuumCleaner, title: "Room Service" },
+          { icon: TbAirConditioning, title: "Air Conditioner" },
+          { icon: MdOutlineCoffeeMaker, title: "Coffee Maker" },
           { icon: GiSlippers, title: "Slippers" },
           { icon: TbDeviceLandlinePhone, title: "Telephone" },
-          { icon: GiTowel, title: "Towel Service" },
-          { icon: FaBottleWater, title: "Water Bottle" },
+          { icon: TbToiletPaper, title: "Toiletries" },
+          { icon: IoAlarmOutline, title: "Wake Up Call" },
         ],
       },
       {
@@ -711,18 +715,18 @@ export const accommodationContents = [
           },
         ],
         roomAmenities: [
-          { icon: FaWifi, title: "Free Wi-Fi" },
+          { icon: TbWifi, title: "Free Wi-Fi" },
           { icon: FaTv, title: "Flat-screen TV" },
           { icon: FaBed, title: "Comfortable Bed" },
           { icon: FaBath, title: "Private Bathroom" },
-          { icon: MdTableRestaurant, title: "Furniture" },
-          { icon: FaUtensils, title: "Dining Area" },
-          { icon: FaAirFreshener, title: "Air Conditioning" },
-          { icon: FaCoffee, title: "Coffee Maker" },
+          { icon: TbDesk, title: "Work Desk" },
+          { icon: GiVacuumCleaner, title: "Room Service" },
+          { icon: TbAirConditioning, title: "Air Conditioner" },
+          { icon: MdOutlineCoffeeMaker, title: "Coffee Maker" },
           { icon: GiSlippers, title: "Slippers" },
           { icon: TbDeviceLandlinePhone, title: "Telephone" },
-          { icon: GiTowel, title: "Towel Service" },
-          { icon: FaBottleWater, title: "Water Bottle" },
+          { icon: TbToiletPaper, title: "Toiletries" },
+          { icon: IoAlarmOutline, title: "Wake Up Call" },
         ],
       },
     ],
