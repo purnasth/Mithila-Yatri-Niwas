@@ -124,4 +124,62 @@ return (
 
 export default GalleryPage;
 
-//! Start Gallery API
+//! End Gallery API
+
+
+//! Start History API
+
+import React, { useEffect, useState } from "react";
+
+const History = () => {
+  const [historyData, setHistoryData] = useState([]);
+
+  useEffect(() => {
+    fetch("https://mithilayatriniwas.com/api_article.php")
+      .then((response) => response.text())
+      .then((data) => {
+        try {
+          // Create a function to safely evaluate the script
+          const safeEval = (code) => {
+            const func = new Function(code + "; return historyData;");
+            return func();
+          };
+          // Get the evaluated data
+          const fetchedData = safeEval(data);
+          setHistoryData(fetchedData);
+        } catch (error) {
+          console.error("Error evaluating the script:", error);
+        }
+      })
+      .catch((error) => console.error("Error fetching data:", error));
+  }, []);
+
+  return (
+    <div className="relative h-auto bg-logo-bg">
+      <section className="z-10 text-custom-black pt-24 pb-48 md:pt-32 md:pb-96">
+        <div className="text-justify sm:text-center mb-12 container max-w-7xl mx-auto space-y-4 text-custom-black">
+          {historyData.length > 0 ? (
+            historyData.map((item) => (
+              <div key={item.id}>
+                <h3 className="text-center text-2xl md:text-3xl mb-6">
+                  {item.title}
+                </h3>
+                <p className="text-base text-gray-600 whitespace-pre-line leading-relaxed">
+                  {item.content}
+                </p>
+              </div>
+            ))
+          ) : (
+            <p>Loading...</p>
+          )}
+        </div>
+      </section>
+      <div className="absolute inset-0 h-full w-full bg-[url('/src/assets/graphics/texture.avif')] bg-cover bg-center bg-no-repeat z-0 mix-blend-darken opacity-50" />
+      <div className="absolute bottom-0 h-96 w-full bg-[url('/src/assets/sketch.webp')] bg-contain bg-bottom bg-repeat-x z-0 mix-blend-multiply" />
+    </div>
+  );
+};
+
+export default History;
+
+//! End History API
