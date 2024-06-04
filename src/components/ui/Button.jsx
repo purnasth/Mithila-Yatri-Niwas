@@ -9,7 +9,7 @@ const Button = ({ title, router, navClassName }) => {
       <ScrollToTopOnNavigate>
         <Link
           to={router}
-          target="_blank"
+          // target="_blank"
           className={`overflow-hidden rounded-full relative w-36 h-10 cursor-pointer flex items-center bg-alt-logo-clr group hover:bg-logo-clr active:bg-alt-logo-clr transition-linear ${navClassName}`}
         >
           <span className="text-custom-white font-semibold ml-8 transform group-hover:translate-x-20 transition-linear">
