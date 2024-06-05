@@ -109,13 +109,10 @@ import {
   FaInstagram,
   // FaTripadvisor,
   FaWhatsapp,
-  FaCoffee,
   FaGlassCheers,
   FaChalkboardTeacher,
   FaWineBottle,
   FaTv,
-  FaBed,
-  FaBath,
 } from "react-icons/fa";
 import {
   TbPhone,
@@ -148,6 +145,9 @@ import {
   MdTableChart,
   // MdTableRestaurant,
   MdOutlineCoffeeMaker,
+  MdOutlineRoomService,
+  MdOutlineBathtub,
+  MdOutlineHotel,
 } from "react-icons/md";
 import { GrLocation } from "react-icons/gr";
 import {
@@ -155,9 +155,10 @@ import {
   GiCandleLight,
   GiHotMeal,
   GiSlippers,
-  GiVacuumCleaner,
   GiKnifeFork,
 } from "react-icons/gi";
+
+import { LiaShoePrintsSolid } from "react-icons/lia";
 
 import { IoMdClock, IoMdResize, IoIosPeople } from "react-icons/io";
 import { IoBed, IoPricetagSharp, IoAlarmOutline } from "react-icons/io5";
@@ -282,7 +283,7 @@ export const aboutContents = {
       "Mithila Yatri Niwas - A luxurious retreat in Janakpur, just a 10-minute walk from the sacred Janaki Temple.",
     paragraph:
       "Discover the allure of Janakpur at Mithila Yatri Niwas, where luxury meets legacy just steps away from the divine Janaki Temple and the peaceful Dashrath Lake. Nestled in the city’s vibrant heart, our hotel is a sanctuary of modern comforts, offering unparalleled access to sacred sites and cultural treasures.",
-    subheading: "Book your stay & be captivated",
+    subheading: "Unlock Unforgettable Memories - Book Your Stay",
   },
   galleryImages: [
     {
@@ -588,13 +589,13 @@ export const accommodationContents = [
         roomAmenities: [
           { icon: TbWifi, title: "Free Wi-Fi" },
           { icon: FaTv, title: "Flat-screen TV" },
-          { icon: FaBed, title: "Comfortable Bed" },
-          { icon: FaBath, title: "Private Bathroom" },
+          { icon: MdOutlineHotel, title: "Comfortable Bed" },
+          { icon: MdOutlineBathtub, title: "Private Bathroom" },
           { icon: TbDesk, title: "Work Desk" },
-          { icon: GiVacuumCleaner, title: "Room Service" },
+          { icon: MdOutlineRoomService, title: "Room Service" },
           { icon: TbAirConditioning, title: "Air Conditioner" },
           { icon: MdOutlineCoffeeMaker, title: "Coffee Maker" },
-          { icon: GiSlippers, title: "Slippers" },
+          { icon: LiaShoePrintsSolid, title: "Slippers" },
           { icon: TbDeviceLandlinePhone, title: "Telephone" },
           { icon: TbToiletPaper, title: "Toiletries" },
           { icon: IoAlarmOutline, title: "Wake Up Call" },
@@ -652,13 +653,13 @@ export const accommodationContents = [
         roomAmenities: [
           { icon: TbWifi, title: "Free Wi-Fi" },
           { icon: FaTv, title: "Flat-screen TV" },
-          { icon: FaBed, title: "Comfortable Bed" },
-          { icon: FaBath, title: "Private Bathroom" },
+          { icon: MdOutlineHotel, title: "Comfortable Bed" },
+          { icon: MdOutlineBathtub, title: "Private Bathroom" },
           { icon: TbDesk, title: "Work Desk" },
-          { icon: GiVacuumCleaner, title: "Room Service" },
+          { icon: MdOutlineRoomService, title: "Room Service" },
           { icon: TbAirConditioning, title: "Air Conditioner" },
           { icon: MdOutlineCoffeeMaker, title: "Coffee Maker" },
-          { icon: GiSlippers, title: "Slippers" },
+          { icon: LiaShoePrintsSolid, title: "Slippers" },
           { icon: TbDeviceLandlinePhone, title: "Telephone" },
           { icon: TbToiletPaper, title: "Toiletries" },
           { icon: IoAlarmOutline, title: "Wake Up Call" },
@@ -717,13 +718,13 @@ export const accommodationContents = [
         roomAmenities: [
           { icon: TbWifi, title: "Free Wi-Fi" },
           { icon: FaTv, title: "Flat-screen TV" },
-          { icon: FaBed, title: "Comfortable Bed" },
-          { icon: FaBath, title: "Private Bathroom" },
+          { icon: MdOutlineHotel, title: "Comfortable Bed" },
+          { icon: MdOutlineBathtub, title: "Private Bathroom" },
           { icon: TbDesk, title: "Work Desk" },
-          { icon: GiVacuumCleaner, title: "Room Service" },
+          { icon: MdOutlineRoomService, title: "Room Service" },
           { icon: TbAirConditioning, title: "Air Conditioner" },
           { icon: MdOutlineCoffeeMaker, title: "Coffee Maker" },
-          { icon: GiSlippers, title: "Slippers" },
+          { icon: LiaShoePrintsSolid, title: "Slippers" },
           { icon: TbDeviceLandlinePhone, title: "Telephone" },
           { icon: TbToiletPaper, title: "Toiletries" },
           { icon: IoAlarmOutline, title: "Wake Up Call" },

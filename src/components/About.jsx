@@ -32,8 +32,7 @@ const About = () => {
               {text.paragraph}
             </p>
 
-            <h3 className="capitalize text-2xl tracking-wide [word-spacing:3px]">
-              {/* Book Your Stay & Be Captivated */}
+            <h3 className="capitalize text-sm sm:text-base md:text-xl font-bold tracking-wider [word-spacing:3px]">
               {text.subheading}
             </h3>
           </div>
