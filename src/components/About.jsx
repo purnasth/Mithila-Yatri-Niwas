@@ -9,6 +9,9 @@ import {
 
 const About = () => {
   const { text, galleryImages } = aboutContents;
+
+  const { heading, paragraph, subheading } = text;
+  
   return (
     <>
       <section className="bg-logo-bg overflow-hidden">
@@ -26,14 +29,14 @@ const About = () => {
           />
           <div className="space-y-6 text-center text-custom-black">
             <h2 className="w-full md:px-32 mx-auto text-lg md:text-[2.25rem] leading-snug">
-              {text.heading}
+              {heading}
             </h2>
             <p className="w-full md:w-11/12 mx-auto text-sm md:text-lg text-justify md:text-center text-custom-black/80">
-              {text.paragraph}
+              {paragraph}
             </p>
 
             <h3 className="capitalize text-sm sm:text-base md:text-xl font-bold tracking-wider [word-spacing:3px]">
-              {text.subheading}
+              {subheading}
             </h3>
           </div>
 
