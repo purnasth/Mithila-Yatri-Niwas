@@ -134,6 +134,7 @@ import {
   TbChefHat,
   TbMusic,
   TbCoffee,
+  TbPencil,
 } from "react-icons/tb";
 import { HiOutlineMail } from "react-icons/hi";
 
@@ -148,6 +149,7 @@ import {
   MdOutlineRoomService,
   MdOutlineBathtub,
   MdOutlineHotel,
+  MdChairAlt,
 } from "react-icons/md";
 import { GrLocation } from "react-icons/gr";
 import {
@@ -161,7 +163,12 @@ import {
 import { LiaShoePrintsSolid } from "react-icons/lia";
 
 import { IoMdClock, IoMdResize, IoIosPeople } from "react-icons/io";
-import { IoBed, IoPricetagSharp, IoAlarmOutline } from "react-icons/io5";
+import {
+  IoBed,
+  IoPricetagSharp,
+  IoAlarmOutline,
+  IoDocumentOutline,
+} from "react-icons/io5";
 import { PiProjectorScreenBold, PiToilet } from "react-icons/pi";
 
 import expedia from "../assets/ota/expedia.webp";
@@ -526,17 +533,19 @@ export const hallContents = [
         ],
         hallAmenities: [
           { icon: TbWifi, title: "Wifi" },
-          { icon: TbDeviceProjector, title: "Projector" },
-          { icon: TbDeviceSpeaker, title: "PA System" },
-          { icon: TbMicrophone, title: "Microphone" },
-          { icon: FaTv, title: "Computer/ Laptop" },
+          // { icon: TbDeviceProjector, title: "Projector" },
+          // { icon: TbDeviceSpeaker, title: "PA System" },
+          // { icon: TbMicrophone, title: "Microphone" },
+          // { icon: FaTv, title: "Computer/ Laptop" },
           { icon: TbDesk, title: "Work Desk" },
-          { icon: TbChalkboard, title: "White Board" },
+          // { icon: TbChalkboard, title: "White Board" },
           { icon: TbAirConditioning, title: "Air Conditioner" },
-          { icon: PiProjectorScreenBold, title: "Flip chart" },
-          { icon: TbPinned, title: "Soft (pin) board" },
-          { icon: TbPrinter, title: "Printing Service" },
-          { icon: TbVideo, title: "Video Conferencing" },
+          { icon: MdChairAlt, title: "Chair" },
+          { icon: TbPencil, title: "Pen & Pencil" },
+          { icon: IoDocumentOutline, title: "Paper" },
+          // { icon: TbPinned, title: "Soft (pin) board" },
+          // { icon: TbPrinter, title: "Printing Service" },
+          // { icon: TbVideo, title: "Video Conferencing" },
         ],
       },
     ],

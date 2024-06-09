@@ -1,6 +1,8 @@
 import React from "react";
 
 const PackageContent = ({ room }) => {
+  if (!room) return null; // Handle undefined room
+
   return (
     <>
       <div className="">
@@ -78,8 +80,6 @@ const PackageContent = ({ room }) => {
               </ul>
             </div>
           ))}
-
-        {/* <hr className="border-custom-black/20 mt-4" /> */}
       </div>
     </>
   );
