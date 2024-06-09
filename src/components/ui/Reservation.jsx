@@ -43,12 +43,12 @@ const Reservation = () => {
               </span>
 
               <Link
-                to="mailto:info@hotelmithilanepal.com"
+                to="mailto:fo@mithilayatriniwas.com"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-custom-black/90 text-lg font-semibold hover:text-alt-logo-clr transition-linear"
               >
-                info@hotelmithilanepal.com
+                fo@mithilayatriniwas.com
               </Link>
             </div>
           </div>
