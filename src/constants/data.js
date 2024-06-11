@@ -949,7 +949,7 @@ export const footerMenuItems = [
 export const footerTerms = [
   { text: "Terms & Conditions", router: "/article/terms-and-conditions" },
   { text: "Privacy Policy", router: "/article/privacy-policy" },
-  { text: "Child Policy", router: "#" },
+  { text: "Cancellation Policy", router: "/article/cancellation-policy" },
 ];
 
 export const sister = "Stream Peak International Pvt. Ltd.";
@@ -1328,8 +1328,15 @@ export const articlePageContents = {
       <!-- Add more paragraphs as needed -->
     </div>
   </section>
-  
-  
+    `,
+  },
+  "cancellation-policy": {
+    html: `
+    <section class="responsive-banner bg-logo-bg">
+    <div class="text-center md:my-8 container space-y-6 mb-16">
+      <h2 class="text-2xl md:text-3xl">Cancellation Policy</h2>
+    </div>
+  </section>
     `,
   },
   "terms-and-conditions": {
