@@ -66,6 +66,8 @@ import rolwalingValley from "../assets/places/rolwaling-valley.webp";
 import vivahMandap from "../assets/places/vivah-mandap.webp";
 import jaleshwar from "../assets/places/jaleshwar.webp";
 
+import hairdryer from "../assets/graphics/hairdryer.webp";
+
 export {
   logo,
   About,
@@ -135,6 +137,7 @@ import {
   TbMusic,
   TbCoffee,
   TbPencil,
+  TbIroning,
 } from "react-icons/tb";
 import { HiOutlineMail } from "react-icons/hi";
 
@@ -150,6 +153,7 @@ import {
   MdOutlineBathtub,
   MdOutlineHotel,
   MdChairAlt,
+  MdRoomService,
 } from "react-icons/md";
 import { GrLocation } from "react-icons/gr";
 import {
@@ -175,10 +179,14 @@ import expedia from "../assets/ota/expedia.webp";
 import tripadvisor from "../assets/ota/tripadvisor.webp";
 import bookingcom from "../assets/ota/bookingcom.webp";
 import agoda from "../assets/ota/agoda.webp";
+import makemytrip from "../assets/ota/makemytrip.webp";
 
 import { CgArrowLongRight } from "react-icons/cg";
 
 export { CgArrowLongRight, FaWhatsapp };
+
+export const rojai =
+  "https://www.mithilayatriniwas.com/result.php?hotel_code=gBRaLW";
 
 export const navLinks = [
   // {
@@ -290,7 +298,8 @@ export const aboutContents = {
       "Mithila Yatri Niwas - A luxurious retreat in Janakpur, just a 10-minute walk from the sacred Janaki Temple.",
     paragraph:
       "Discover the allure of Janakpur at Mithila Yatri Niwas, where luxury meets legacy just steps away from the divine Janaki Temple and the peaceful Dashrath Lake. Nestled in the city’s vibrant heart, our hotel is a sanctuary of modern comforts, offering unparalleled access to sacred sites and cultural treasures.",
-    subheading: "Unlock Unforgettable Memories - Book Your Stay",
+    subheading: "Unlock Unforgettable Memories - ",
+    book: "Book Your Stay",
   },
   galleryImages: [
     {
@@ -361,6 +370,7 @@ export const dineContents = [
             data: {
               Occupancy: { icon: IoIosPeople, value: "65 - 70 pax" },
               Cuisine: { icon: GiBowlOfRice, value: "Multicuisine" },
+              Service: { icon: MdRoomService, value: "24 hour room service" },
               Timing: { icon: IoMdClock, value: "06:30 AM - 10:00 PM" },
             },
           },
@@ -548,6 +558,73 @@ export const hallContents = [
           // { icon: TbVideo, title: "Video Conferencing" },
         ],
       },
+      {
+        id: "bhojan-griha",
+        title: "Bhojan Griha",
+        description:
+          "The perfect venue for intimate as well as group gatherings and celebrations, where every detail is crafted to perfection.",
+        booking: "/enquiry-form",
+        router: "/hall#bhojan-griha",
+        image: [
+          {
+            src: lobby1,
+            alt: "PDR Hall",
+          },
+        ],
+        informations: [
+          {
+            title: "Setup Style",
+
+            data: {
+              "U shape": { icon: ushape, value: "60-65 pax" },
+              Classroom: {
+                icon: classroom,
+                value: "40-45 pax",
+              },
+              Theatre: { icon: theatre, value: "85-95 pax" },
+              "Round Table": { icon: round, value: "60 pax" },
+            },
+          },
+        ],
+        facilities: [
+          {
+            title: "Facilities",
+            content: [
+              "Modern audiovisual equipment for presentations and meetings.",
+              "Flexible seating arrangements suitable for small group discussions or presentations.",
+              "Complimentary high-speed internet access for all attendees.",
+              "Professional event coordination and support throughout your event.",
+              "Comfortable and well-lit environment for productive meetings.",
+            ],
+          },
+        ],
+        policies: [
+          {
+            title: "Policies",
+            content: [
+              "Advance booking is recommended to secure the hall for your event.",
+              "Any damages to the hall or equipment will be charged to the organizer.",
+              "Outside catering may be permitted with prior approval and additional charges.",
+              "Smoking and alcohol consumption may be restricted based on venue policies.",
+              "Please adhere to the designated capacity limits for safety and comfort.",
+            ],
+          },
+        ],
+        hallAmenities: [
+          { icon: TbWifi, title: "Wifi" },
+          { icon: TbDeviceProjector, title: "Projector" },
+          { icon: TbDeviceSpeaker, title: "PA System" },
+          { icon: TbMicrophone, title: "Microphone" },
+          { icon: FaTv, title: "Computer/ Laptop" },
+          { icon: TbDesk, title: "Work Desk" },
+          { icon: TbChalkboard, title: "White Board" },
+          { icon: TbAirConditioning, title: "Air Conditioner" },
+          { icon: PiProjectorScreenBold, title: "Flip chart" },
+          { icon: TbPinned, title: "Soft (pin) board" },
+          { icon: TbPrinter, title: "Printing Service" },
+          { icon: TbVideo, title: "Video Conferencing" },
+        ],
+      },
     ],
   },
 ];
@@ -567,8 +644,7 @@ export const accommodationContents = [
         description:
           // "Escape to our Deluxe Room, where comfort meets chic. Wrapped in warmth and luxury, it's a retreat that promises restful nights and serene mornings. Experience the perfect blend of elegance and homely charm, all in one exquisite space.",
           "A cozy retreat blending chic style with the comforts of home for your peaceful stay.",
-        booking:
-          "https://www.mithilayatriniwas.com/result.php?hotel_code=gBRaLW",
+        booking: rojai,
         image: [
           {
             src: room1,
@@ -612,16 +688,21 @@ export const accommodationContents = [
         roomAmenities: [
           { icon: TbWifi, title: "Free Wi-Fi" },
           { icon: FaTv, title: "Flat-screen TV" },
-          { icon: MdOutlineHotel, title: "Comfortable Bed" },
+          // { icon: MdOutlineHotel, title: "Comfortable Bed" },
           { icon: MdOutlineBathtub, title: "Private Bathroom" },
           { icon: TbDesk, title: "Work Desk" },
           { icon: MdOutlineRoomService, title: "Room Service" },
           { icon: TbAirConditioning, title: "Air Conditioner" },
-          { icon: MdOutlineCoffeeMaker, title: "Coffee Maker" },
-          { icon: LiaShoePrintsSolid, title: "Slippers" },
+          { icon: MdOutlineCoffeeMaker, title: "Tea / Coffee Maker" },
+          // { icon: LiaShoePrintsSolid, title: "Slippers" },
           { icon: TbDeviceLandlinePhone, title: "Telephone" },
           { icon: TbToiletPaper, title: "Toiletries" },
           { icon: IoAlarmOutline, title: "Wake Up Call" },
+          { icon: TbIroning, title: "Iron (on request)" },
+          {
+            icon: hairdryer,
+            title: "Dryer (on request)",
+          },
         ],
       },
       {
@@ -631,8 +712,7 @@ export const accommodationContents = [
           // "Step into the realm of refined luxury with our Executive Room, a sanctuary designed for the discerning. Here, elegance is in every detail, from the tailored services to the panoramic vistas that await. It's an exclusive retreat where comfort meets sophistication, crafted just for you.",
           "A haven of sophistication with panoramic views, where every detail exudes elegance for the discerning traveler.",
         router: "/accommodation#executive-room",
-        booking:
-          "https://www.mithilayatriniwas.com/result.php?hotel_code=gBRaLW",
+        booking: rojai,
         image: [
           {
             src: room2,
@@ -676,16 +756,21 @@ export const accommodationContents = [
         roomAmenities: [
           { icon: TbWifi, title: "Free Wi-Fi" },
           { icon: FaTv, title: "Flat-screen TV" },
-          { icon: MdOutlineHotel, title: "Comfortable Bed" },
+          // { icon: MdOutlineHotel, title: "Comfortable Bed" },
           { icon: MdOutlineBathtub, title: "Private Bathroom" },
           { icon: TbDesk, title: "Work Desk" },
           { icon: MdOutlineRoomService, title: "Room Service" },
           { icon: TbAirConditioning, title: "Air Conditioner" },
-          { icon: MdOutlineCoffeeMaker, title: "Coffee Maker" },
-          { icon: LiaShoePrintsSolid, title: "Slippers" },
+          { icon: MdOutlineCoffeeMaker, title: "Tea / Coffee Maker" },
+          // { icon: LiaShoePrintsSolid, title: "Slippers" },
           { icon: TbDeviceLandlinePhone, title: "Telephone" },
           { icon: TbToiletPaper, title: "Toiletries" },
           { icon: IoAlarmOutline, title: "Wake Up Call" },
+          { icon: TbIroning, title: "Iron (on request)" },
+          {
+            icon: hairdryer,
+            title: "Dryer (on request)",
+          },
         ],
       },
       {
@@ -695,8 +780,7 @@ export const accommodationContents = [
           // "Discover unparalleled luxury in our Suite Room, a sanctuary of opulence and comfort. Each suite is a masterpiece of design, offering expansive spaces, exquisite furnishings, and breathtaking views. Surrender to the allure of exclusivity and personalized service, where every detail caters to your utmost well-being.",
           "Each suite is a masterpiece of design, offering expansive spaces, exquisite furnishings, and breathtaking views.",
         router: "/accommodation#suite-room",
-        booking:
-          "https://www.mithilayatriniwas.com/result.php?hotel_code=gBRaLW",
+        booking: rojai,
         image: [
           {
             src: room3,
@@ -741,16 +825,21 @@ export const accommodationContents = [
         roomAmenities: [
           { icon: TbWifi, title: "Free Wi-Fi" },
           { icon: FaTv, title: "Flat-screen TV" },
-          { icon: MdOutlineHotel, title: "Comfortable Bed" },
+          // { icon: MdOutlineHotel, title: "Comfortable Bed" },
           { icon: MdOutlineBathtub, title: "Private Bathroom" },
           { icon: TbDesk, title: "Work Desk" },
           { icon: MdOutlineRoomService, title: "Room Service" },
           { icon: TbAirConditioning, title: "Air Conditioner" },
-          { icon: MdOutlineCoffeeMaker, title: "Coffee Maker" },
-          { icon: LiaShoePrintsSolid, title: "Slippers" },
+          { icon: MdOutlineCoffeeMaker, title: "Tea / Coffee Maker" },
+          // { icon: LiaShoePrintsSolid, title: "Slippers" },
           { icon: TbDeviceLandlinePhone, title: "Telephone" },
           { icon: TbToiletPaper, title: "Toiletries" },
           { icon: IoAlarmOutline, title: "Wake Up Call" },
+          { icon: TbIroning, title: "Iron (on request)" },
+          {
+            icon: hairdryer,
+            title: "Dryer (on request)",
+          },
         ],
       },
     ],
@@ -759,7 +848,7 @@ export const accommodationContents = [
 
 export const locationDetails = [
   {
-    title: "Dasrath Talau, Janakpur Dham, Dhanusha",
+    title: "Maharaj Sagar - 6, Janakpurdham",
     icon: GrLocation,
     url: "https://maps.app.goo.gl/aaeWHF1y7NZuPC7J8",
   },
@@ -879,6 +968,12 @@ export const otaLinks = [
       "https://www.expedia.com/Janakpur-Hotels-Mithila-Yatri-Niwas.h83936278.Hotel-Information?",
     imgSrc: expedia,
     alt: "Expedia",
+  },
+  {
+    router:
+      "https://www.makemytrip.com/hotels-international/nepal/janakpur-hotels/mithila_yatri_niwas-details.html",
+    imgSrc: makemytrip,
+    alt: "Make my trip",
   },
 ];
 
