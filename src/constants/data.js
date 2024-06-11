@@ -1214,7 +1214,7 @@ export const contactFormFields = [
 
 export const enquiryFormFields = [
   {
-    id: "event-vanue",
+    id: "event-venue",
     type: "text",
     label: "Event Venue",
     icon: TbCurrentLocation,
