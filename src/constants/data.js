@@ -952,9 +952,9 @@ export const footerMenuItems = [
 ];
 
 export const footerTerms = [
-  { text: "Terms & Conditions", router: "/article/terms-and-conditions" },
-  { text: "Privacy Policy", router: "/article/privacy-policy" },
-  { text: "Cancellation Policy", router: "/article/cancellation-policy" },
+  { text: "Terms & Conditions", router: "/terms-and-conditions" },
+  { text: "Privacy Policy", router: "/privacy-policy" },
+  { text: "Cancellation Policy", router: "/cancellation-policy" },
 ];
 
 export const sister = "Stream Peak International Pvt. Ltd.";
