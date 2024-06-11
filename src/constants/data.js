@@ -138,8 +138,11 @@ import {
   TbCoffee,
   TbPencil,
   TbIroning,
+  TbCurrentLocation,
 } from "react-icons/tb";
 import { HiOutlineMail } from "react-icons/hi";
+
+import { LiaShoePrintsSolid } from "react-icons/lia";
 
 import { FiUser } from "react-icons/fi";
 import {
@@ -151,20 +154,17 @@ import {
   MdOutlineCoffeeMaker,
   MdOutlineRoomService,
   MdOutlineBathtub,
-  MdOutlineHotel,
   MdChairAlt,
   MdRoomService,
+  MdOutlineHotel,
 } from "react-icons/md";
 import { GrLocation } from "react-icons/gr";
 import {
   GiBowlOfRice,
   GiCandleLight,
   GiHotMeal,
-  GiSlippers,
   GiKnifeFork,
 } from "react-icons/gi";
-
-import { LiaShoePrintsSolid } from "react-icons/lia";
 
 import { IoMdClock, IoMdResize, IoIosPeople } from "react-icons/io";
 import {
@@ -173,7 +173,7 @@ import {
   IoAlarmOutline,
   IoDocumentOutline,
 } from "react-icons/io5";
-import { PiProjectorScreenBold, PiToilet } from "react-icons/pi";
+import { PiProjectorScreenBold } from "react-icons/pi";
 
 import expedia from "../assets/ota/expedia.webp";
 import tripadvisor from "../assets/ota/tripadvisor.webp";
@@ -688,13 +688,13 @@ export const accommodationContents = [
         roomAmenities: [
           { icon: TbWifi, title: "Free Wi-Fi" },
           { icon: FaTv, title: "Flat-screen TV" },
-          // { icon: MdOutlineHotel, title: "Comfortable Bed" },
+          { icon: MdOutlineHotel, title: "Comfortable Bed" },
           { icon: MdOutlineBathtub, title: "Private Bathroom" },
           { icon: TbDesk, title: "Work Desk" },
           { icon: MdOutlineRoomService, title: "Room Service" },
           { icon: TbAirConditioning, title: "Air Conditioner" },
           { icon: MdOutlineCoffeeMaker, title: "Tea / Coffee Maker" },
-          // { icon: LiaShoePrintsSolid, title: "Slippers" },
+          { icon: LiaShoePrintsSolid, title: "Slippers" },
           { icon: TbDeviceLandlinePhone, title: "Telephone" },
           { icon: TbToiletPaper, title: "Toiletries" },
           { icon: IoAlarmOutline, title: "Wake Up Call" },
@@ -756,13 +756,13 @@ export const accommodationContents = [
         roomAmenities: [
           { icon: TbWifi, title: "Free Wi-Fi" },
           { icon: FaTv, title: "Flat-screen TV" },
-          // { icon: MdOutlineHotel, title: "Comfortable Bed" },
+          { icon: MdOutlineHotel, title: "Comfortable Bed" },
           { icon: MdOutlineBathtub, title: "Private Bathroom" },
           { icon: TbDesk, title: "Work Desk" },
           { icon: MdOutlineRoomService, title: "Room Service" },
           { icon: TbAirConditioning, title: "Air Conditioner" },
           { icon: MdOutlineCoffeeMaker, title: "Tea / Coffee Maker" },
-          // { icon: LiaShoePrintsSolid, title: "Slippers" },
+          { icon: LiaShoePrintsSolid, title: "Slippers" },
           { icon: TbDeviceLandlinePhone, title: "Telephone" },
           { icon: TbToiletPaper, title: "Toiletries" },
           { icon: IoAlarmOutline, title: "Wake Up Call" },
@@ -825,13 +825,13 @@ export const accommodationContents = [
         roomAmenities: [
           { icon: TbWifi, title: "Free Wi-Fi" },
           { icon: FaTv, title: "Flat-screen TV" },
-          // { icon: MdOutlineHotel, title: "Comfortable Bed" },
+          { icon: MdOutlineHotel, title: "Comfortable Bed" },
           { icon: MdOutlineBathtub, title: "Private Bathroom" },
           { icon: TbDesk, title: "Work Desk" },
           { icon: MdOutlineRoomService, title: "Room Service" },
           { icon: TbAirConditioning, title: "Air Conditioner" },
           { icon: MdOutlineCoffeeMaker, title: "Tea / Coffee Maker" },
-          // { icon: LiaShoePrintsSolid, title: "Slippers" },
+          { icon: LiaShoePrintsSolid, title: "Slippers" },
           { icon: TbDeviceLandlinePhone, title: "Telephone" },
           { icon: TbToiletPaper, title: "Toiletries" },
           { icon: IoAlarmOutline, title: "Wake Up Call" },
@@ -1197,15 +1197,21 @@ export const contactFormFields = [
 
 export const enquiryFormFields = [
   {
-    id: "event",
+    id: "event-vanue",
     type: "text",
-    label: "Event Title",
-    icon: TbCalendarEvent,
+    label: "Event Venue",
+    icon: TbCurrentLocation,
   },
   {
     id: "event-date",
     type: "date",
     label: "Event Date",
+    icon: TbCalendarEvent,
+  },
+  {
+    id: "event-title",
+    type: "text",
+    label: "Event Title",
     icon: TbCalendarEvent,
   },
   { id: "name", type: "text", label: "Full Name", icon: FiUser },
@@ -1217,12 +1223,6 @@ export const enquiryFormFields = [
   },
   { id: "phone", type: "tel", label: "Phone Number", icon: TbPhone },
   { id: "address", type: "text", label: "Address", icon: GrLocation },
-  {
-    id: "subject",
-    type: "text",
-    label: "Subject",
-    icon: TbPencilQuestion,
-  },
   {
     id: "message",
     type: "textarea",
