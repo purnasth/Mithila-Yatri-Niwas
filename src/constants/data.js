@@ -168,6 +168,7 @@ import {
   GiCandleLight,
   GiHotMeal,
   GiKnifeFork,
+  GiTowel,
 } from "react-icons/gi";
 
 import { IoMdClock, IoMdResize, IoIosPeople } from "react-icons/io";
@@ -177,7 +178,7 @@ import {
   IoAlarmOutline,
   IoDocumentOutline,
 } from "react-icons/io5";
-import { PiProjectorScreenBold } from "react-icons/pi";
+import { PiProjectorScreenBold, PiLockersBold } from "react-icons/pi";
 
 import expedia from "../assets/ota/expedia.webp";
 import tripadvisor from "../assets/ota/tripadvisor.webp";
@@ -699,8 +700,10 @@ export const accommodationContents = [
           { icon: TbAirConditioning, title: "Air Conditioner" },
           { icon: MdOutlineCoffeeMaker, title: "Tea / Coffee Maker" },
           { icon: TbPaperBag, title: "Sachet" },
+          { icon: PiLockersBold, title: "Wardrobe" },
           { icon: LiaShoePrintsSolid, title: "Slippers" },
           { icon: TbDeviceLandlinePhone, title: "Telephone" },
+          { icon: GiTowel, title: "Towel" },
           { icon: TbToiletPaper, title: "Toiletries" },
           { icon: IoAlarmOutline, title: "Wake Up Call" },
           { icon: TbIroning, title: "Iron (on request)" },
@@ -769,8 +772,10 @@ export const accommodationContents = [
           { icon: TbAirConditioning, title: "Air Conditioner" },
           { icon: MdOutlineCoffeeMaker, title: "Tea / Coffee Maker" },
           { icon: TbPaperBag, title: "Sachet" },
+          { icon: PiLockersBold, title: "Wardrobe" },
           { icon: LiaShoePrintsSolid, title: "Slippers" },
           { icon: TbDeviceLandlinePhone, title: "Telephone" },
+          { icon: GiTowel, title: "Towel" },
           { icon: TbToiletPaper, title: "Toiletries" },
           { icon: IoAlarmOutline, title: "Wake Up Call" },
           { icon: TbIroning, title: "Iron (on request)" },
@@ -841,7 +846,7 @@ export const accommodationContents = [
           { icon: MdOutlineRoomService, title: "Room Service" },
           { icon: TbAirConditioning, title: "Air Conditioner" },
           { icon: MdOutlineCoffeeMaker, title: "Tea / Coffee Maker" },
-          { icon: TbPaperBag, title: "Sachet" },
+          { icon: PiLockersBold, title: "Wardrobe" },
           { icon: LiaShoePrintsSolid, title: "Slippers" },
           { icon: TbDeviceLandlinePhone, title: "Telephone" },
           { icon: TbToiletPaper, title: "Toiletries" },
