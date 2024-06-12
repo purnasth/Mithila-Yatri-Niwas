@@ -39,7 +39,7 @@ const AccommodationPage = () => {
         <PackageList
           contents={roomsCategories}
           onItemClick={handleRoomClick}
-          type="room"
+          type="accommodation"
         />
 
         <RoomAmenities
