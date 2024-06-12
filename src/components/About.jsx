@@ -37,7 +37,7 @@ const About = () => {
               {paragraph}
             </p>
 
-            <h3 className="capitalize text-sm sm:text-base md:text-xl font-bold tracking-wider [word-spacing:3px]">
+            <h3 className="capitalize text-base sm:text-base md:text-xl font-bold tracking-wider [word-spacing:3px]">
               {subheading}
               <Link
                 to={rojai}

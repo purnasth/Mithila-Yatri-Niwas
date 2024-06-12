@@ -1,4 +1,5 @@
 import logo from "../assets/logo.svg";
+import mithilaVideo from "../assets/mithila.mp4";
 
 import SvgWave from "../components/ui/SvgWave";
 import AboutGallery from "../components/ui/AboutGallery";
@@ -70,6 +71,7 @@ import hairdryer from "../assets/graphics/hairdryer.webp";
 
 export {
   logo,
+  mithilaVideo,
   About,
   AboutGallery,
   Accommodation,
