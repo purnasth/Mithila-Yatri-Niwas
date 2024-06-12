@@ -1,3 +1,5 @@
+// PackageList.jsx
+
 import React, { useState, useEffect, useRef } from "react";
 import { PackageSlider, Button, PackageContent } from "../constants/data";
 
@@ -102,7 +104,16 @@ const PackageList = ({ contents, onItemClick, type }) => {
             <div className="sticky top-32 mx-3">
               <PackageSlider contents={contents} sizeClassName="size-full" />
               <div className="mt-12 mx-auto flex items-center justify-center">
-                <Button title="Booking" router={activeItem.booking} />
+                <Button
+                  title="Booking"
+                  router={
+                    type === "accommodation"
+                      ? activeItem.booking
+                      : "/enquiry-form#enquiry-form"
+                  }
+                  venue={activeItem.title}
+                  type={type}
+                />
               </div>
             </div>
           </div>
