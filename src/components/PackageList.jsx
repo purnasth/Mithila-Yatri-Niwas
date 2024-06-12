@@ -1,5 +1,3 @@
-// PackageList.jsx
-
 import React, { useState, useEffect, useRef } from "react";
 import { PackageSlider, Button, PackageContent } from "../constants/data";
 
