@@ -145,6 +145,7 @@ import {
   TbBottle,
   TbBasket,
   TbVip,
+  TbUsersGroup,
 } from "react-icons/tb";
 import { HiOutlineMail } from "react-icons/hi";
 
@@ -1233,6 +1234,7 @@ export const enquiryFormFields = [
     label: "Event Title",
     icon: TbCalendarEvent,
   },
+  { id: "pax", type: "number", label: "No. of pax", icon: TbUsersGroup },
   { id: "name", type: "text", label: "Full Name", icon: FiUser },
   {
     id: "email",
@@ -1241,7 +1243,6 @@ export const enquiryFormFields = [
     icon: MdAlternateEmail,
   },
   { id: "phone", type: "tel", label: "Phone Number", icon: TbPhone },
-  { id: "address", type: "text", label: "Address", icon: GrLocation },
   {
     id: "message",
     type: "textarea",
