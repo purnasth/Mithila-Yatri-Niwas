@@ -1,6 +1,5 @@
-import React, { useState, useEffect } from "react";
-import { mithila, Banner, SvgWave } from "../constants/data";
-
+import React, { useState } from "react";
+import { withDataFetching, mithila, Banner, SvgWave } from "../constants/data";
 import {
   LightGallery,
   lgZoom,
@@ -9,31 +8,9 @@ import {
   lgFullscreen,
 } from "../constants/library";
 
-const GalleryPage = () => {
+const GalleryPage = ({ data: galleryImages }) => {
   const [activeCategory, setActiveCategory] = useState("All");
   const [isTransitioning, setIsTransitioning] = useState(false);
-  const [galleryImages, setGalleryImages] = useState([]);
-  const [loading, setLoading] = useState(true);
-
-  useEffect(() => {
-    fetch("https://mithilayatriniwas.com/api/api_gallery.php")
-      .then((response) => response.text())
-      .then((data) => {
-        try {
-          const safeData = (code) => {
-            const func = new Function(code + "return galleryImages;");
-            return func();
-          };
-          const images = safeData(data);
-          setGalleryImages(images);
-        } catch (error) {
-          console.error(error);
-        }
-      })
-      .catch((error) => {
-        console.error("Error fetching data: ", error);
-      });
-  }, []);
 
   const filteredImages =
     activeCategory === "All"
@@ -75,9 +52,7 @@ const GalleryPage = () => {
               onClick={() => handleCategoryClick(category)}
               className={`${
                 activeCategory === category
-                  ? // ? "bg-blue-200 text-blue-600"
-                    // : "bg-transparent text-gray-700"
-                    "text-custom-black"
+                  ? "text-custom-black"
                   : "text-custom-black/50"
               } font-title font-bold text-xs md:text-sm lg:text-base py-2 px-1 md:py-2 md:px-4 rounded-md uppercase transition-linear hover:text-custom-black hover:bg-custom-black/5`}
             >
@@ -106,7 +81,7 @@ const GalleryPage = () => {
               data-src={image.url}
             >
               <img
-                className="w-full h-full  object-cover transition duration-700 ease-in-out group-hover:scale-125 cursor-pointer shadow-lg"
+                className="w-full h-full object-cover transition duration-700 ease-in-out group-hover:scale-125 cursor-pointer shadow-lg"
                 src={image.url}
                 alt={image.alt}
                 loading="lazy"
@@ -119,4 +94,15 @@ const GalleryPage = () => {
   );
 };
 
-export default GalleryPage;
+const transformGalleryData = (data) => {
+  const safeData = (code) => {
+    const func = new Function(code + "return galleryImages;");
+    return func();
+  };
+  return safeData(data);
+};
+
+export default withDataFetching(
+  "https://mithilayatriniwas.com/api/api_gallery.php",
+  transformGalleryData
+)(GalleryPage);

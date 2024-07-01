@@ -35,6 +35,10 @@ import PackageList from "../components/PackageList";
 
 import ScrollToTopOnNavigate from "../hooks/ScrollToTopOnNavigate";
 
+// hoc
+import withDataFetching from "../hoc/withDataFetching";
+export { withDataFetching };
+
 import mithila from "../assets/mithila.webp";
 import mithilaNight from "../assets/mithila_night.webp";
 import mithila2 from "../assets/mithila2.webp";
