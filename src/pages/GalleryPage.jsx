@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-import { mithila, galleryImages, Banner, SvgWave } from "../constants/data";
+import React, { useState, useEffect } from "react";
+import { mithila, Banner, SvgWave } from "../constants/data";
 
 import {
   LightGallery,
@@ -12,6 +12,28 @@ import {
 const GalleryPage = () => {
   const [activeCategory, setActiveCategory] = useState("All");
   const [isTransitioning, setIsTransitioning] = useState(false);
+  const [galleryImages, setGalleryImages] = useState([]);
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    fetch("https://mithilayatriniwas.com/api/api_gallery.php")
+      .then((response) => response.text())
+      .then((data) => {
+        try {
+          const safeData = (code) => {
+            const func = new Function(code + "return galleryImages;");
+            return func();
+          };
+          const images = safeData(data);
+          setGalleryImages(images);
+        } catch (error) {
+          console.error(error);
+        }
+      })
+      .catch((error) => {
+        console.error("Error fetching data: ", error);
+      });
+  }, []);
 
   const filteredImages =
     activeCategory === "All"
