@@ -1,6 +1,10 @@
 import logo from "../assets/logo.svg";
 import mithilaVideo from "../assets/mithila.mp4";
 
+// hoc
+import withDataFetching from "../hoc/withDataFetching";
+export { withDataFetching };
+
 import SvgWave from "../components/ui/SvgWave";
 import AboutGallery from "../components/ui/AboutGallery";
 import LearnMore from "../components/ui/LearnMore";
@@ -34,10 +38,6 @@ import PlacesToVisit from "../components/PlacesToVisit";
 import PackageList from "../components/PackageList";
 
 import ScrollToTopOnNavigate from "../hooks/ScrollToTopOnNavigate";
-
-// hoc
-import withDataFetching from "../hoc/withDataFetching";
-export { withDataFetching };
 
 import mithila from "../assets/mithila.webp";
 import mithilaNight from "../assets/mithila_night.webp";
