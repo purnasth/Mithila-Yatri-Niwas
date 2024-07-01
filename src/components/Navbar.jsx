@@ -90,7 +90,7 @@ const Navbar = ({ data: navLinks }) => {
                     <NavLink
                       to={link.link}
                       className={({ isActive }) =>
-                        `capitalize font-title inline-block transition-linear drop-shadow-lg hover:scale-110 px-3 py-1 rounded-full ${
+                        `capitalize font-title inline-flex transition-linear drop-shadow-lg hover:scale-110 px-3 py-1 rounded-full ${
                           isActive ? "bg-custom-black/40" : ""
                         }`
                       }

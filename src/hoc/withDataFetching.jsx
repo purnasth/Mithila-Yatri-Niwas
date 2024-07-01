@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from "react";
 
+import { Loading } from "../constants/data";
+
 const withDataFetching =
   (url, transformData = (data) => data) =>
   (WrappedComponent) => {
@@ -27,7 +29,7 @@ const withDataFetching =
           });
       }, [url, transformData]);
 
-      if (loading) return <p>Loading...</p>;
+      if (loading) return <Loading />;
       if (error) return <p>Error loading data: {error.message}</p>;
 
       return <WrappedComponent data={data} {...props} />;

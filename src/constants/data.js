@@ -25,6 +25,7 @@ import RoomSlider from "../components/ui/RoomSlider";
 import FormButton from "../components/ui/FormButton";
 import ReCaptcha from "../components/ui/ReCaptcha";
 import Toast from "../components/ui/Toast";
+import Loading from "../components/Loading";
 
 import Direction from "../components/Direction";
 import Hero from "../components/Hero";
@@ -89,6 +90,7 @@ export {
   Hero,
   History,
   LearnMore,
+  Loading,
   LocationDetails,
   MithilaThali,
   OffersSlider,
