@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-import { withDataFetching, mithila, Banner, SvgWave } from "../constants/data";
+import { mithila, galleryImages, Banner, SvgWave } from "../constants/data";
+
 import {
   LightGallery,
   lgZoom,
@@ -8,7 +9,7 @@ import {
   lgFullscreen,
 } from "../constants/library";
 
-const GalleryPage = ({ data: galleryImages }) => {
+const GalleryPage = () => {
   const [activeCategory, setActiveCategory] = useState("All");
   const [isTransitioning, setIsTransitioning] = useState(false);
 
@@ -52,7 +53,9 @@ const GalleryPage = ({ data: galleryImages }) => {
               onClick={() => handleCategoryClick(category)}
               className={`${
                 activeCategory === category
-                  ? "text-custom-black"
+                  ? // ? "bg-blue-200 text-blue-600"
+                    // : "bg-transparent text-gray-700"
+                    "text-custom-black"
                   : "text-custom-black/50"
               } font-title font-bold text-xs md:text-sm lg:text-base py-2 px-1 md:py-2 md:px-4 rounded-md uppercase transition-linear hover:text-custom-black hover:bg-custom-black/5`}
             >
@@ -81,7 +84,7 @@ const GalleryPage = ({ data: galleryImages }) => {
               data-src={image.url}
             >
               <img
-                className="w-full h-full object-cover transition duration-700 ease-in-out group-hover:scale-125 cursor-pointer shadow-lg"
+                className="w-full h-full  object-cover transition duration-700 ease-in-out group-hover:scale-125 cursor-pointer shadow-lg"
                 src={image.url}
                 alt={image.alt}
                 loading="lazy"
@@ -94,15 +97,4 @@ const GalleryPage = ({ data: galleryImages }) => {
   );
 };
 
-const transformGalleryData = (data) => {
-  const safeData = (code) => {
-    const func = new Function(code + "return galleryImages;");
-    return func();
-  };
-  return safeData(data);
-};
-
-export default withDataFetching(
-  "https://mithilayatriniwas.com/api/api_gallery.php",
-  transformGalleryData
-)(GalleryPage);
+export default GalleryPage;
