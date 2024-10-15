@@ -10,8 +10,6 @@ import {
 } from "../constants/data";
 
 const AccommodationPage = ({ data: accommodationContents }) => {
-  console.log(accommodationContents);
-
   const { title, description, roomsCategories } = accommodationContents[0];
   const [activeRoom, setActiveRoom] = React.useState(roomsCategories[0]);
 

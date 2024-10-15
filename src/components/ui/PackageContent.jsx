@@ -1,4 +1,5 @@
 import React from "react";
+import IconRenderer from "./IconRenderer";
 
 const PackageContent = ({ room }) => {
   if (!room) return null;
@@ -25,7 +26,7 @@ const PackageContent = ({ room }) => {
                   className="flex items-left justify-left flex-col py-2"
                 >
                   <span className="flex items-center gap-2 text-gray-600">
-                    {typeof infoValue.icon === "function" ? (
+                    {/* {typeof infoValue.icon === "function" ? (
                       <infoValue.icon className="text-xl mr-2" />
                     ) : (
                       <img
@@ -33,7 +34,17 @@ const PackageContent = ({ room }) => {
                         alt={infoKey}
                         className="w-8 h-8 mr-2 p-1"
                       />
-                    )}
+                    )} */}
+                    <IconRenderer
+                      iconName={
+                        infoValue.icon.includes("http") ? null : infoValue.icon
+                      }
+                      iconPath={
+                        infoValue.icon.includes("http") ? infoValue.icon : null
+                      }
+                      className="text-xl mr-2"
+                      alt={infoValue}
+                    />
                     <span className="font-bold">{infoKey}: </span>
                     {infoValue.value}
                   </span>
