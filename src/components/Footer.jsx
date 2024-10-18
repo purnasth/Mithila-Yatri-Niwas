@@ -2,10 +2,11 @@ import React from "react";
 import { withDataFetching, LocationDetails, Socials } from "../constants/data";
 import { Link } from "react-router-dom";
 import IconRenderer from "./ui/IconRenderer";
+import Logo from "./ui/Logo";
 
 const Footer = ({ data: footerContents }) => {
   const {
-    logo,
+    // logo,
     footerMenuItems,
     footerTerms,
     sister,
@@ -15,6 +16,7 @@ const Footer = ({ data: footerContents }) => {
     currentYear,
     otaLinks,
   } = footerContents;
+
   return (
     <footer className="relative overflow-hidden bg-alt-logo-clr z-10 px-4">
       {/* <img
@@ -40,17 +42,7 @@ const Footer = ({ data: footerContents }) => {
             </div>
 
             <div className="col-span-3 md:col-span-1 flex items-center justify-center flex-col gap-10 order-1 md:order-2">
-              <Link to="/">
-                <img
-                  src={logo}
-                  alt="Mithila Yatri Niwas"
-                  className="w-full h-32 lg:h-48 md:p-1 object-contain rounded-xl"
-                  style={{
-                    filter:
-                      "brightness(0) saturate(100%) invert(100%) sepia(100%) saturate(38%) hue-rotate(254deg) brightness(110%) contrast(110%)",
-                  }}
-                />
-              </Link>
+              <Logo styles="filter-white w-full h-32 lg:h-48 md:p-1 object-contain rounded-xl" />
               <Socials />
             </div>
 
