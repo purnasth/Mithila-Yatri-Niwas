@@ -10,13 +10,15 @@ import {
 import { Link } from "react-router-dom";
 
 const DinePage = ({ data: dineContents }) => {
-  const { title, description, dineCategories } = dineContents[0];
+  const { title, description, menuPdf, dineCategories } = dineContents[0];
   const [activeDine, setActiveDine] = React.useState(dineCategories[0]);
 
   const handleDineClick = (dineId) => {
     const selectedDine = dineCategories.find((dine) => dine.id === dineId);
     setActiveDine(selectedDine);
   };
+
+  console.log(menuPdf);
 
   return (
     <>
@@ -36,8 +38,10 @@ const DinePage = ({ data: dineContents }) => {
           </p>
           <div className="mt-8 w-full">
             <Link
-              to="#menu"
+              to={menuPdf}
               className="font-title text-custom-white bg-alt-logo-clr hover:bg-logo-clr px-6 py-2 rounded-full transition-linear group"
+              target="_blank"
+              download
             >
               View Menu
             </Link>
