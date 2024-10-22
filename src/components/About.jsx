@@ -12,7 +12,7 @@ import { Link } from "react-router-dom";
 const About = ({ data: aboutContents }) => {
   const { text } = aboutContents;
 
-  const { heading, paragraph } = text;
+  const { heading, paragraph, booking } = text;
 
   return (
     <>
@@ -40,7 +40,7 @@ const About = ({ data: aboutContents }) => {
             <h3 className="capitalize text-base sm:text-base md:text-xl font-bold tracking-wider [word-spacing:3px]">
               Unlock Unforgettable Memories -
               <Link
-                to={rojai}
+                to={booking}
                 target="_blank"
                 className="underline underline-offset-4 hover:underline-offset-2 font-title text-logo-clr hover:underline duration-300 transition-linear"
               >
