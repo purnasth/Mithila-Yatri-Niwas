@@ -6,8 +6,6 @@ const Accommodation = ({ data: accommodationContents }) => {
   const { title, description, roomsCategories } = accommodationContents[0];
   const roomAmenities = roomsCategories[0].roomAmenities;
 
-  console.log(title, description, roomsCategories);
-
   return (
     <PackageHome
       title={title}

@@ -54,25 +54,17 @@ const Footer = ({ data: footerContents }) => {
                       to={item.router}
                       className="text-xs md:text-sm lg:text-base relative group text-custom-white hover:text-white hover:scale-110 transition-linear flex items-center gap-2"
                     >
-                      {/* {typeof item.icon === "function" ? (
-                        <item.icon className="text-sm md:text-sm lg:text-base lg:mr-1" />
-                      ) : (
-                        <img
-                          src={item.icon}
-                          alt={item.text}
-                          className="w-12 h-12 mb-2"
-                        />
-                      )} */}
                       <IconRenderer
                         iconName={item.icon}
                         className="text-sm md:text-sm lg:text-base lg:mr-1"
                       />
 
-                      {item.text}
+                      {item.text.split(" ")[0]}
                     </Link>
                   </li>
                 ))}
               </ul>
+
               <ul className="flex items-center justify-start gap-8">
                 {footerMenuItems.slice(3, 4).map((item, index) => (
                   <li key={index}>
@@ -115,7 +107,7 @@ const Footer = ({ data: footerContents }) => {
             {otaLinks.map((link, index) => (
               <Link
                 key={index}
-                to={link.router}
+                to={link.url}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="p-2 flex items-center justify-center"
@@ -123,7 +115,7 @@ const Footer = ({ data: footerContents }) => {
                 title={link.alt}
               >
                 <img
-                  src={link.imgSrc}
+                  src={link.icon}
                   alt={link.alt}
                   className="w-32 h-9 object-contain bg-white rounded-full shadow-md px-4 py-2"
                 />
@@ -161,7 +153,6 @@ const Footer = ({ data: footerContents }) => {
               </Link>
             </p>
           </div>
-
           <div className="flex items-center justify-center flex-col md:flex-row md:justify-between gap-2 text-sm md:text-base">
             <span>
               &copy; {currentYear} {owner} | All Rights Reserved{" "}
