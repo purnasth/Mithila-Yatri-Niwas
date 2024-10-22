@@ -3,12 +3,11 @@ import {
   contactFormFields,
   Banner,
   Direction,
-  Socials,
-  LocationDetails,
   mithilaNight,
   SvgWave,
 } from "../constants/data";
 import ContactForm from "../components/ui/ContactForm";
+import ContactLocation from "../components/ui/ContactLocation";
 
 const Contact = () => {
   return (
@@ -98,31 +97,7 @@ const Contact = () => {
         </div>
         <div className="container relative scroll-mt-32">
           <div className="grid lg:grid-cols-3 items-center gap-4 p-2 shadow-lg rounded-xl mt-8 bg-custom-white">
-            <div className="bg-[#011c2b] rounded-xl max-lg:text-center px-6 py-12 relative z-10">
-              <img
-                src={mithilaNight}
-                alt="Mithila Yatri Niwas"
-                className="w-full h-full absolute inset-0 object-cover -z-10 rounded-xl"
-              />
-              <div className="w-full h-full absolute inset-0 -z-10 bg-black/80 rounded-xl" />
-              <h2 className="text-xl font-bold text-white">
-                Mithila Yatri Niwas
-              </h2>
-              <p className="text-sm text-pretty text-gray-300 mt-3">
-                Mithila Yatri Niwas a luxurious hotel property in Janakpur. Our
-                Hotel is conveniently located, which allows a hassle free easy
-                access by road, domestic airport and railway connectivity to
-                Indian border.
-              </p>
-
-              <div className="my-6">
-                <LocationDetails alignClassName="justify-center lg:justify-start" />
-              </div>
-
-              <div className="mt-8 flex items-center justify-center lg:justify-start">
-                <Socials />
-              </div>
-            </div>
+            <ContactLocation />
 
             <div className="p-6 rounded-xl lg:col-span-2" id="contact-form">
               <ContactForm contactFormFields={contactFormFields} />

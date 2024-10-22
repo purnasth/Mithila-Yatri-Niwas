@@ -4,6 +4,7 @@ import PackageHome from "./ui/PackageHome";
 
 const Accommodation = ({ data: accommodationContents }) => {
   const { title, description, roomsCategories } = accommodationContents[0];
+  const { booking } = roomsCategories[0];
   const roomAmenities = roomsCategories[0].roomAmenities;
 
   return (
@@ -13,7 +14,7 @@ const Accommodation = ({ data: accommodationContents }) => {
       amenities={roomAmenities}
       sliderContents={roomsCategories}
       buttonTitle="Booking"
-      buttonRouter="https://www.mithilayatriniwas.com/result.php?hotel_code=gBRaLW"
+      buttonRouter={booking}
       contentClassName="order-1"
       sliderClassName="order-2"
     />
