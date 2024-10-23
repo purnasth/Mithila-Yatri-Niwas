@@ -11,9 +11,19 @@ const ArticlePage = ({ data: articlePageContents }) => {
     return <NotFound />;
   }
 
+  const { html, title } = article;
+
   return (
     <>
-      <div dangerouslySetInnerHTML={{ __html: article.html }} />
+      <section className="responsive-banner bg-logo-bg">
+        <div className="text-center md:my-8 container space-y-6 mb-16">
+          <h2 class="text-2xl md:text-3xl capitalize">{title}</h2>
+          <div
+            className="space-y-8 text-center"
+            dangerouslySetInnerHTML={{ __html: html }}
+          />
+        </div>
+      </section>
     </>
   );
 };
