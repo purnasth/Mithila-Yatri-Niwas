@@ -6,8 +6,6 @@ import withDataFetching from "../../hoc/withDataFetching";
 const Rojai = ({ rojaiClassName, data: siteRegulars }) => {
   const { booking_code } = siteRegulars;
 
-  console.log(booking_code);
-
   return (
     <>
       <Link

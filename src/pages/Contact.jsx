@@ -1,18 +1,20 @@
 import React from "react";
 import {
+  withDataFetching,
   contactFormFields,
   Banner,
   Direction,
-  mithilaNight,
   SvgWave,
 } from "../constants/data";
 import ContactForm from "../components/ui/ContactForm";
 import ContactLocation from "../components/ui/ContactLocation";
 
-const Contact = () => {
+const Contact = ({ data: siteRegulars }) => {
+  const { contact_upload } = siteRegulars;
+
   return (
     <>
-      <Banner banner={mithilaNight} page="Contact" />
+      <Banner banner={contact_upload} page="Contact" />
 
       {/* <section className="bg-alt-bg">
         <div className="grid sm:grid-cols-2 items-center gap-16 p-8 mx-auto max-w-4xl bg-alt-logo-clr shadow-lg rounded-md text-custom-white">
@@ -105,10 +107,20 @@ const Contact = () => {
           </div>
         </div>
       </section>
-
       <Direction />
     </>
   );
 };
 
-export default Contact;
+const transformContactBanner = (data) => {
+  const safeData = (code) => {
+    const func = new Function(code + "return siteRegulars;");
+    return func();
+  };
+  return safeData(data);
+};
+
+export default withDataFetching(
+  "https://mithilayatriniwas.com/api/api_siteregulars.php",
+  transformContactBanner
+)(Contact);

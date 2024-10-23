@@ -18,8 +18,6 @@ const DinePage = ({ data: dineContents }) => {
     setActiveDine(selectedDine);
   };
 
-  console.log(menuPdf);
-
   return (
     <>
       <div className="responsive-banner relative overflow-hidden">
