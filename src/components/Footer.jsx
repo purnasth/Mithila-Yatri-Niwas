@@ -163,11 +163,12 @@ const Footer = () => {
             <span>
               Website by: &nbsp;
               <Link
-                to="https://www.longtail.info/"
+                to="https://www.purnashrestha.com.np/"
                 target="_blank"
                 className="font-bold"
               >
-                {author}
+{/*                 {author} */}
+                Purna Shrestha
               </Link>
             </span>
           </div>
