@@ -73,7 +73,9 @@ import { HelmetProvider } from "react-helmet-async";
 import withDataFetching from "./hoc/withDataFetching";
 
 const App = ({ data: metaData }) => {
-  const { title, meta_description, meta_keywords, favicon } = metaData;
+  const { title, meta_description, meta_keywords, favicon, fb_upload } =
+    metaData;
+
   return (
     <>
       <HelmetProvider>
@@ -83,12 +85,13 @@ const App = ({ data: metaData }) => {
             description={meta_description}
             keywords={meta_keywords}
             favicon={favicon}
+            fbUpload={fb_upload}
           />
           <Navbar />
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/accommodation" element={<AccommodationPage />} />
-            <Route path="/occasions" element={<HallPage />} />
+            <Route path="/hall" element={<HallPage />} />
             <Route path="/dine" element={<DinePage />} />
             <Route path="/gallery" element={<GalleryPage />} />
             <Route path="/contact" element={<Contact />} />
