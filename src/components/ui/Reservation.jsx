@@ -7,8 +7,6 @@ const Reservation = () => {
     <>
       <div className="container max-w-5xl relative bg-alt-bg/40 p-8">
         <div
-          // className={`absolute inset-0 h-full w-full bg-[url('https://img.freepik.com/premium-vector/simple-ornate-background-with-elegant-motifs_1442-34895.jpg?size=626&ext=jpg&ga=GA1.1.553209589.1714262400&semt=ais')] bg-repeat z-0 mix-blend-overlay opacity-35`}
-          // className={`absolute inset-0 h-full w-full bg-[url('/src/assets/graphics/hmm.png')] bg-repeat z-0 mix-blend-overlay opacity-35`}
           className={`absolute inset-0 h-full w-full bg-[url('/src/assets/graphics/pattern-mandala.avif')] bg-repeat -z-10 mix-blend-multiply opacity-70`}
         />
         <div className="contents">
