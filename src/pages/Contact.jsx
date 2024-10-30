@@ -8,12 +8,15 @@ import {
 } from "../constants/data";
 import ContactForm from "../components/ui/ContactForm";
 import ContactLocation from "../components/ui/ContactLocation";
+import Meta from "../utils/Meta";
 
 const Contact = ({ data: siteRegulars }) => {
-  const { contact_upload } = siteRegulars;
+  const { contact_upload, contact_meta_title } = siteRegulars;
 
   return (
     <>
+      <Meta title={contact_meta_title} />
+
       <Banner banner={contact_upload} page="Contact" />
 
       {/* <section className="bg-alt-bg">

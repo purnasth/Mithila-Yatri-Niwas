@@ -67,31 +67,55 @@ import HallPage from "./pages/HallPage";
 import AboutPage from "./pages/AboutPage";
 import ArticlePage from "./pages/ArticlePage";
 import Enquiry from "./pages/Enquiry";
+import Meta from "./utils/Meta";
 
-const App = () => {
+import { HelmetProvider } from "react-helmet-async";
+import withDataFetching from "./hoc/withDataFetching";
+
+const App = ({ data: metaData }) => {
+  const { title, meta_description, meta_keywords, favicon } = metaData;
   return (
     <>
-      <Router>
-        <Navbar />
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/accommodation" element={<AccommodationPage />} />
-          <Route path="/occasions" element={<HallPage />} />
-          <Route path="/dine" element={<DinePage />} />
-          <Route path="/gallery" element={<GalleryPage />} />
-          <Route path="/contact" element={<Contact />} />
-          <Route path="/places-to-visit" element={<Visit />} />
-          <Route path="/enquiry-form" element={<Enquiry />} />
-          <Route path="/about" element={<AboutPage />} />
-          <Route path="/:slug" element={<ArticlePage />} />
-          <Route path="*" element={<NotFound />} />
-        </Routes>
-        <Footer />
-        <BackToTop />
-        <WhatsApp />
-      </Router>
+      <HelmetProvider>
+        <Router>
+          <Meta
+            title={title}
+            description={meta_description}
+            keywords={meta_keywords}
+            favicon={favicon}
+          />
+          <Navbar />
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/accommodation" element={<AccommodationPage />} />
+            <Route path="/occasions" element={<HallPage />} />
+            <Route path="/dine" element={<DinePage />} />
+            <Route path="/gallery" element={<GalleryPage />} />
+            <Route path="/contact" element={<Contact />} />
+            <Route path="/places-to-visit" element={<Visit />} />
+            <Route path="/enquiry-form" element={<Enquiry />} />
+            <Route path="/about" element={<AboutPage />} />
+            <Route path="/:slug" element={<ArticlePage />} />
+            <Route path="*" element={<NotFound />} />
+          </Routes>
+          <Footer />
+          <BackToTop />
+          <WhatsApp />
+        </Router>
+      </HelmetProvider>
     </>
   );
 };
 
-export default App;
+const transformMetaData = (data) => {
+  const safeData = (code) => {
+    const func = new Function(code + "return metaData;");
+    return func();
+  };
+  return safeData(data);
+};
+
+export default withDataFetching(
+  "https://mithilayatriniwas.com/api/api_metadata.php",
+  transformMetaData
+)(App);

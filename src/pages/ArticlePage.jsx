@@ -2,6 +2,7 @@ import React from "react";
 import { useParams } from "react-router-dom";
 import NotFound from "./404";
 import { withDataFetching } from "../constants/data";
+import Meta from "../utils/Meta";
 
 const ArticlePage = ({ data: articlePageContents }) => {
   const { slug } = useParams();
@@ -11,10 +12,16 @@ const ArticlePage = ({ data: articlePageContents }) => {
     return <NotFound />;
   }
 
-  const { html, title } = article;
+  const { html, title, meta_description, meta_keywords } = article;
 
   return (
     <>
+      <Meta
+        title={title}
+        meta_description={meta_description}
+        meta_keywords={meta_keywords}
+      />
+
       <section className="responsive-banner bg-logo-bg">
         <div className="text-center md:my-8 container space-y-6 mb-16">
           <h2 class="text-2xl md:text-3xl capitalize">{title}</h2>

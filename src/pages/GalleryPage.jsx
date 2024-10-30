@@ -1,14 +1,15 @@
 import React from "react";
 import { withDataFetching, Banner, SvgWave } from "../constants/data";
 import GalleryDisplay from "../components/ui/GalleryDisplay";
+import Meta from "../utils/Meta";
 
 const GalleryPage = ({ data: siteRegulars }) => {
-  const { gallery_upload } = siteRegulars;
+  const { gallery_upload, gallery_meta_title } = siteRegulars;
 
   return (
     <>
+      <Meta title={gallery_meta_title} />
       <Banner banner={gallery_upload} page="Gallery" />
-
       <section className="bg-logo-bg">
         <SvgWave />
         <div className="text-center mb-16 container max-w-5xl mx-auto">
