@@ -95,7 +95,7 @@ const Contact = ({ data: siteRegulars }) => {
         <div className="text-center mb-24 container max-w-5xl mx-auto">
           <h2 className="text-3xl">Contact Form</h2>
           <p className="text-base text-gray-600 mt-4">
-            Connect with ease using our Contact Form. A simple, direct line for
+            Connect with ease using our contact form. A simple, direct line for
             your inquiries and feedback. Quick, responsive, and always here to
             listen.
           </p>
