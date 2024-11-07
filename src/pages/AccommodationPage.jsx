@@ -31,6 +31,7 @@ const AccommodationPage = ({ data: accommodationContents }) => {
         title={`${title} - Mithila Yatri Niwas`}
         keywords={meta_keywords}
         description={meta_description}
+        canonicalUrl="https://mithilayatriniwas.com/accommodation"
       />
       <div className="responsive-banner relative overflow-hidden">
         <PackageSlider

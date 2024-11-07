@@ -8,6 +8,7 @@ const Meta = ({
   favicon,
   fb_upload,
   twitter_upload,
+  canonicalUrl,
 }) => {
   return (
     <Helmet>
@@ -28,6 +29,7 @@ const Meta = ({
       <meta property="og:image:secure_url" content={fb_upload} />
       <meta property="og:image:type" content="image/png" />
       <meta property="og:image:width" content="1200" />
+      <link rel="canonical" href={canonicalUrl} />
     </Helmet>
   );
 };

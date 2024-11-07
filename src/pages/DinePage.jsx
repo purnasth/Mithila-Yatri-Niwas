@@ -33,6 +33,7 @@ const DinePage = ({ data: dineContents }) => {
         title={`${title} - Mithila Yatri Niwas`}
         keywords={meta_keywords}
         description={meta_description}
+        canonicalUrl="https://mithilayatriniwas.com/dine"
       />
       <div className="responsive-banner relative overflow-hidden">
         <PackageSlider

@@ -86,6 +86,7 @@ const App = ({ data: metaData }) => {
             keywords={meta_keywords}
             favicon={favicon}
             fbUpload={fb_upload}
+            canonicalUrl={"https://mithilayatriniwas.com"}
           />
           <Navbar />
           <Routes>

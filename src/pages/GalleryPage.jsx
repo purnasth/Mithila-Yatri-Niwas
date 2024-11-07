@@ -8,7 +8,10 @@ const GalleryPage = ({ data: siteRegulars }) => {
 
   return (
     <>
-      <Meta title={gallery_meta_title} />
+      <Meta
+        title={gallery_meta_title}
+        canonicalUrl={"https://mithilayatriniwas.com/gallery"}
+      />
       <Banner banner={gallery_upload} page="Gallery" />
       <section className="bg-logo-bg">
         <SvgWave />

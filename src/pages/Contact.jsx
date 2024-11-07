@@ -15,7 +15,10 @@ const Contact = ({ data: siteRegulars }) => {
 
   return (
     <>
-      <Meta title={contact_meta_title} />
+      <Meta
+        title={contact_meta_title}
+        canonicalUrl={"https://mithilayatriniwas.com/contact"}
+      />
 
       <Banner banner={contact_upload} page="Contact" />
 

@@ -30,6 +30,7 @@ const HallPage = ({ data: hallContents }) => {
         title={`${title} - Mithila Yatri Niwas`}
         keywords={meta_keywords}
         description={meta_description}
+        canonicalUrl="https://mithilayatriniwas.com/hall"
       />
       <div className="responsive-banner relative overflow-hidden">
         <PackageSlider

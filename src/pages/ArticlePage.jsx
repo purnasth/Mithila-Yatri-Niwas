@@ -20,6 +20,7 @@ const ArticlePage = ({ data: articlePageContents }) => {
         title={title}
         meta_description={meta_description}
         meta_keywords={meta_keywords}
+        canonicalUrl={`https://mithilayatriniwas.com/${slug}`}
       />
 
       <section className="responsive-banner bg-logo-bg">
