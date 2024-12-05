@@ -111,12 +111,12 @@ const Footer = ({ data: footerContents }) => {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="p-2 flex items-center justify-center"
-                aria-label={link.alt}
-                title={link.alt}
+                aria-label={link.title}
+                title={link.title}
               >
                 <img
                   src={link.icon}
-                  alt={link.alt}
+                  alt={link.title}
                   className="w-32 h-9 object-contain bg-white rounded-full shadow-md px-4 py-2"
                 />
               </Link>
