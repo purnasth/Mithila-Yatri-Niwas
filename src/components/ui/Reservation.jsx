@@ -31,12 +31,12 @@ const Reservation = () => {
               <span className="text-gray-600">
                 or call us directly
                 <Link
-                  to="tel:+9779820113410"
+                  to="tel:+9779820113412"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="ml-2 text-custom-black/90 text-xl font-semibold hover:text-alt-logo-clr transition-linear"
                 >
-                  +977-9820113410
+                  +977-9820113412
                 </Link>
               </span>
 

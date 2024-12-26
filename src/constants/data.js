@@ -290,7 +290,7 @@ export const socialLinks = [
   {
     icon: "TbPhone",
     title: "Number",
-    url: "tel:+9779820113410",
+    url: "tel:+9779820113412",
   },
   // {
   //   icon: HiOutlineMail,
@@ -879,9 +879,9 @@ export const locationDetails = [
     url: "https://maps.app.goo.gl/aaeWHF1y7NZuPC7J8",
   },
   {
-    title: "+977-9820113410",
+    title: "+977-9820113412",
     icon: "TbPhone",
-    url: "tel:+9779820113410",
+    url: "tel:+9779820113412",
   },
   {
     title: "fo@mithilayatriniwas.com",

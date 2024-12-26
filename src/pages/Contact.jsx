@@ -41,8 +41,8 @@ const Contact = ({ data: siteRegulars }) => {
 
               <li className="flex items-center justify-start gap-2 text-custom-white hover:scale-105 hover:text-white transition-linear">
                 <TbPhone className="text-xl" />
-                <a href="tel:+9779820113410" target="_blank" rel="noopener">
-                  +977-9820113410
+                <a href="tel:+9779820113412" target="_blank" rel="noopener">
+                  +977-9820113412
                 </a>
               </li>
               <li className="flex items-center justify-start gap-2 text-custom-white hover:scale-105 hover:text-white transition-linear">
